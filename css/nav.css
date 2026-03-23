@@ -102,7 +102,7 @@
   position: fixed;
   inset: 0;
   background: var(--color-bg);
-  z-index: 999;
+  z-index: 1001;
 }
 
 .nav__links.is-open a {

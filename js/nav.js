@@ -3,6 +3,8 @@
   var hamburger = document.getElementById('hamburger');
   var navLinks = document.getElementById('nav-links');
 
+  if (!nav || !hamburger || !navLinks) return;
+
   function updateNavStyle() {
     if (window.scrollY > 80) {
       nav.classList.remove('nav--transparent');
@@ -22,6 +24,12 @@
     hamburger.classList.toggle('is-open', isOpen);
     hamburger.setAttribute('aria-expanded', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
+    if (isOpen) {
+      var firstLink = navLinks.querySelector('a');
+      if (firstLink) firstLink.focus();
+    } else {
+      hamburger.focus();
+    }
   });
 
   navLinks.querySelectorAll('a').forEach(function (link) {
