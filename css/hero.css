@@ -1,0 +1,205 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--color-brown);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/hero-bg.svg');
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+}
+
+.hero__gopuram {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 600px;
+  opacity: 0.12;
+  filter: invert(1);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  width: 100%;
+  max-width: 800px;
+}
+
+.hero__ganesha {
+  margin-bottom: var(--space-sm);
+}
+
+.hero__ganesha img {
+  margin: 0 auto var(--space-xs);
+  filter: drop-shadow(0 0 8px rgba(200,150,62,0.6));
+}
+
+.hero__invocation {
+  font-family: var(--font-telugu);
+  font-size: var(--text-sm);
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+}
+
+.hero__arch-frame {
+  position: relative;
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  margin: var(--space-sm) 0;
+}
+
+.hero__arch {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.6;
+}
+
+.hero__garland {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+}
+
+.hero__peacocks {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  right: -60px;
+  transform: translateY(-50%);
+  width: calc(100% + 120px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.hero__names {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-sm) 0;
+}
+
+.hero__name-english {
+  font-family: var(--font-heading);
+  font-size: var(--text-hero);
+  color: var(--color-white);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+.hero__name-telugu {
+  font-family: var(--font-telugu);
+  font-size: var(--text-lg);
+  color: var(--color-gold);
+  margin-top: var(--space-xs);
+  letter-spacing: 0.1em;
+}
+
+.hero__date {
+  color: var(--color-gold);
+  margin: var(--space-sm) 0;
+  font-size: var(--text-sm);
+}
+
+.hero__countdown {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-md);
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.countdown__num {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.countdown__label {
+  color: var(--color-gold);
+  margin-top: 4px;
+  font-size: 0.6rem;
+}
+
+.countdown__married {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-gold);
+}
+
+.hero__vine {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.hero__vine--left  { left: 0; }
+.hero__vine--right { right: 0; transform: scaleX(-1); }
+
+@media (min-width: 1024px) {
+  .hero__vine { display: block; }
+  .hero__peacocks { left: -80px; right: -80px; width: calc(100% + 160px); }
+}
+
+/* Welcome section */
+.welcome {
+  text-align: center;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.welcome__text {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  font-style: italic;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.welcome__names {
+  font-family: var(--font-label);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  margin-top: var(--space-md);
+}
