@@ -1,0 +1,93 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-brown);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: var(--text-3xl);
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Section wrapper */
+.section {
+  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  font-size: var(--text-3xl);
+  color: var(--color-brown);
+  margin-bottom: var(--space-xs);
+}
+
+.section-title-telugu {
+  display: block;
+  font-family: var(--font-telugu);
+  font-size: var(--text-lg);
+  color: var(--color-gold);
+  margin-top: var(--space-xs);
+  letter-spacing: 0.05em;
+}
+
+/* Kolam divider */
+.kolam-divider {
+  width: 100%;
+  max-height: 40px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.7;
+}
+
+/* Gold label text */
+.label {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* Responsive typography scale-up */
+@media (min-width: 768px) {
+  h2 { font-size: calc(var(--text-3xl) * 1.2); }
+}
