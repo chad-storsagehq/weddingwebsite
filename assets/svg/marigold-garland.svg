@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60">
+  <!-- Horizontal marigold garland with 10 flowers connected by curved string - Gold with maroon centers -->
+
+  <!-- Connecting string/vine with gentle catenary curves -->
+  <path d="M30,20 Q60,35 100,25 Q140,15 180,25 Q220,35 260,25 Q300,15 340,25 Q380,35 420,25 Q460,15 500,25 Q540,35 580,25 Q620,15 660,25 Q700,35 740,25 Q770,15 775,20"
+        fill="none" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Small leaves along the garland string -->
+  <g fill="#C8963E" fill-opacity="0.5" stroke="#C8963E" stroke-width="0.6">
+    <path d="M55,28 Q58,24 62,26 Q59,30 55,28 Z"/>
+    <path d="M135,18 Q138,14 142,16 Q139,20 135,18 Z"/>
+    <path d="M215,28 Q218,24 222,26 Q219,30 215,28 Z"/>
+    <path d="M295,18 Q298,14 302,16 Q299,20 295,18 Z"/>
+    <path d="M375,28 Q378,24 382,26 Q379,30 375,28 Z"/>
+    <path d="M455,18 Q458,14 462,16 Q459,20 455,18 Z"/>
+    <path d="M535,28 Q538,24 542,26 Q539,30 535,28 Z"/>
+    <path d="M615,18 Q618,14 622,16 Q619,20 615,18 Z"/>
+    <path d="M695,28 Q698,24 702,26 Q699,30 695,28 Z"/>
+  </g>
+
+  <!-- Marigold flower macro definition - used 10 times -->
+  <!-- Flower 1 at x=30 -->
+  <g transform="translate(30, 22)">
+    <!-- Outer petals - 8 petals in ring -->
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7" fill="#C8963E"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <!-- Inner petals ring - smaller, offset -->
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 2 at x=100 -->
+  <g transform="translate(100, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 3 at x=180 -->
+  <g transform="translate(180, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 4 at x=260 -->
+  <g transform="translate(260, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 5 at x=340 -->
+  <g transform="translate(340, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 6 at x=420 -->
+  <g transform="translate(420, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 7 at x=500 -->
+  <g transform="translate(500, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 8 at x=580 -->
+  <g transform="translate(580, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 9 at x=660 -->
+  <g transform="translate(660, 24)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+
+  <!-- Flower 10 at x=770 -->
+  <g transform="translate(770, 22)">
+    <g fill="#C8963E" stroke="#C8963E" stroke-width="0.5">
+      <ellipse cx="0" cy="-10" rx="3.5" ry="7"/>
+      <ellipse cx="7" cy="-7" rx="3.5" ry="7" transform="rotate(45)"/>
+      <ellipse cx="10" cy="0" rx="3.5" ry="7" transform="rotate(90)"/>
+      <ellipse cx="7" cy="7" rx="3.5" ry="7" transform="rotate(135)"/>
+      <ellipse cx="0" cy="10" rx="3.5" ry="7" transform="rotate(180)"/>
+      <ellipse cx="-7" cy="7" rx="3.5" ry="7" transform="rotate(225)"/>
+      <ellipse cx="-10" cy="0" rx="3.5" ry="7" transform="rotate(270)"/>
+      <ellipse cx="-7" cy="-7" rx="3.5" ry="7" transform="rotate(315)"/>
+    </g>
+    <g fill="#D4A843" stroke="#D4A843" stroke-width="0.4">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="5" transform="rotate(22.5)"/>
+      <ellipse cx="6" cy="-6" rx="2.5" ry="5" transform="rotate(67.5)"/>
+      <ellipse cx="6" cy="0" rx="2.5" ry="5" transform="rotate(112.5)"/>
+      <ellipse cx="6" cy="6" rx="2.5" ry="5" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="6" rx="2.5" ry="5" transform="rotate(202.5)"/>
+      <ellipse cx="-6" cy="6" rx="2.5" ry="5" transform="rotate(247.5)"/>
+      <ellipse cx="-6" cy="0" rx="2.5" ry="5" transform="rotate(292.5)"/>
+      <ellipse cx="-6" cy="-6" rx="2.5" ry="5" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C8963E" stroke="none"/>
+  </g>
+</svg>

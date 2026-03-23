@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <!-- Simpler smaller Ganesha for RSVP section -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Crown -->
+    <path d="M42,15 L42,10 L45,6 L50,4 L55,6 L58,10 L58,15" stroke-width="1.2"/>
+    <circle cx="50" cy="5" r="2" fill="#C8963E" stroke="none"/>
+    <path d="M41,14 Q50,9 59,14" stroke-width="1"/>
+    <path d="M43,17 L44,13 L50,11 L56,13 L57,17" stroke-width="1"/>
+
+    <!-- Halo -->
+    <circle cx="50" cy="36" r="19" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+    <!-- Left Ear -->
+    <ellipse cx="31" cy="37" rx="11" ry="14" stroke-width="1.5"/>
+    <ellipse cx="32" cy="38" rx="7" ry="9" stroke-width="0.7"/>
+
+    <!-- Right Ear -->
+    <ellipse cx="69" cy="37" rx="11" ry="14" stroke-width="1.5"/>
+    <ellipse cx="68" cy="38" rx="7" ry="9" stroke-width="0.7"/>
+
+    <!-- Head -->
+    <ellipse cx="50" cy="36" rx="15" ry="16" stroke-width="1.8"/>
+
+    <!-- Tilak -->
+    <ellipse cx="50" cy="29" rx="2" ry="1.5" fill="#C8963E" stroke="none"/>
+
+    <!-- Eyes -->
+    <ellipse cx="44" cy="34" rx="3" ry="2.5" stroke-width="1.2"/>
+    <circle cx="44" cy="34" r="1.5" fill="#C8963E" stroke="none"/>
+    <ellipse cx="56" cy="34" rx="3" ry="2.5" stroke-width="1.2"/>
+    <circle cx="56" cy="34" r="1.5" fill="#C8963E" stroke="none"/>
+
+    <!-- Trunk curling right -->
+    <path d="M47,41 Q43,46 41,52 Q40,57 44,59 Q48,61 51,57 Q53,53 51,50" stroke-width="2"/>
+    <!-- Trunk tip curl -->
+    <path d="M51,50 Q55,47 53,43 Q50,41 49,45" stroke-width="1.5"/>
+
+    <!-- Tusks -->
+    <path d="M43,43 Q38,46 36,52 Q35,56 37,58" stroke-width="1.2"/>
+    <path d="M57,43 Q62,46 64,52 Q65,56 63,58" stroke-width="1.2"/>
+
+    <!-- Necklace -->
+    <path d="M38,52 Q50,58 62,52" stroke-width="1"/>
+    <circle cx="50" cy="57" r="2" stroke-width="1"/>
+    <circle cx="50" cy="57" r="1" fill="#C8963E" stroke="none"/>
+
+    <!-- Upper Arms -->
+    <path d="M38,58 Q28,57 22,52" stroke-width="1.8"/>
+    <path d="M22,52 Q18,48 19,43" stroke-width="1.5"/>
+    <!-- Axe shape -->
+    <path d="M19,43 Q14,40 13,35 Q15,31 19,33 Q21,35 20,41" stroke-width="1" fill="#C8963E" fill-opacity="0.3"/>
+
+    <path d="M62,58 Q72,57 78,52" stroke-width="1.8"/>
+    <path d="M78,52 Q82,48 81,43" stroke-width="1.5"/>
+    <!-- Rope/noose -->
+    <ellipse cx="83" cy="40" rx="3" ry="2.5" stroke-width="1"/>
+    <path d="M80,42 Q85,40 84,36 Q82,33 80,36" stroke-width="1"/>
+
+    <!-- Body/belly -->
+    <ellipse cx="50" cy="85" rx="18" ry="20" stroke-width="1.8"/>
+    <!-- Belt -->
+    <path d="M34,76 Q50,81 66,76" stroke-width="1.2"/>
+
+    <!-- Lower Arms -->
+    <path d="M36,68 Q28,76 26,88" stroke-width="1.5"/>
+    <!-- Blessing hand -->
+    <path d="M26,88 Q24,94 27,97 Q31,99 35,95 Q37,89 35,84" stroke-width="1.2"/>
+
+    <path d="M64,68 Q72,76 74,88" stroke-width="1.5"/>
+    <!-- Modak -->
+    <ellipse cx="74" cy="95" rx="5" ry="5.5" stroke-width="1.2"/>
+
+    <!-- Seated legs -->
+    <path d="M36,100 Q30,108 32,114 Q40,118 50,116" stroke-width="1.5"/>
+    <path d="M64,100 Q70,108 68,114 Q60,118 50,116" stroke-width="1.5"/>
+
+    <!-- Lotus seat -->
+    <path d="M30,112 Q40,106 50,110 Q60,106 70,112 Q60,118 50,116 Q40,118 30,112" stroke-width="1"/>
+    <ellipse cx="50" cy="116" rx="20" ry="5" stroke-width="1"/>
+
+    <!-- Mouse at feet -->
+    <ellipse cx="58" cy="116" rx="4" ry="2.5" stroke-width="0.7"/>
+    <circle cx="61" cy="115" r="1.5" stroke-width="0.7"/>
+    <!-- Tail -->
+    <path d="M54,117 Q50,119 48,118" stroke-width="0.6"/>
+  </g>
+</svg>

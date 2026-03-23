@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 400">
+  <!-- Vertical scrolling floral vine - curving stem with leaves and small flowers - Gold -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Main curving vertical stem -->
+    <path d="M30,400 Q22,380 30,360 Q38,340 30,320 Q22,300 30,280 Q38,260 30,240 Q22,220 30,200 Q38,180 30,160 Q22,140 30,120 Q38,100 30,80 Q22,60 30,40 Q36,20 30,5"
+          stroke-width="2" stroke="#C8963E"/>
+
+    <!-- === FLOWER 1 - near top, left branch === -->
+    <!-- Branch stem left -->
+    <path d="M30,40 Q20,36 12,30" stroke-width="1.2"/>
+    <!-- Leaf on branch -->
+    <path d="M22,36 Q18,28 14,32 Q16,38 22,36 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <!-- Small 5-petal flower at tip -->
+    <g transform="translate(12, 30)">
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(288)" fill="#C8963E"/>
+      <circle cx="0" cy="0" r="2" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+    </g>
+
+    <!-- === LEAF PAIR 1 - at ~y=55 === -->
+    <!-- Left leaf -->
+    <path d="M28,58 Q16,52 12,58 Q16,64 28,60 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <!-- Leaf vein -->
+    <path d="M28,59 Q20,59 14,60" stroke-width="0.6"/>
+    <!-- Right leaf -->
+    <path d="M32,56 Q44,50 48,56 Q44,62 32,58 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M32,57 Q40,57 46,58" stroke-width="0.6"/>
+
+    <!-- === FLOWER 2 - right branch at y=80 === -->
+    <path d="M30,80 Q42,76 50,70" stroke-width="1.2"/>
+    <path d="M40,75 Q44,67 48,71 Q46,77 40,75 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <g transform="translate(50, 70)">
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(288)" fill="#C8963E"/>
+      <circle cx="0" cy="0" r="2" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+    </g>
+
+    <!-- === BUD 1 - right side at y=100 === -->
+    <path d="M32,100 Q40,98 44,94" stroke-width="1"/>
+    <!-- Bud -->
+    <path d="M44,94 Q46,90 44,86 Q42,90 44,94 Z" fill="#C8963E" stroke-width="0.8"/>
+    <path d="M42,92 Q40,88 42,85" stroke-width="0.8"/>
+    <path d="M46,92 Q48,88 46,85" stroke-width="0.8"/>
+
+    <!-- === LEAF PAIR 2 - at ~y=115 === -->
+    <path d="M26,118 Q14,112 10,118 Q14,124 26,120 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M26,119 Q18,119 12,120" stroke-width="0.6"/>
+    <path d="M34,116 Q46,110 50,116 Q46,122 34,118 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M34,117 Q42,117 48,118" stroke-width="0.6"/>
+
+    <!-- === FLOWER 3 - left branch at y=138 === -->
+    <path d="M28,138 Q18,136 10,130" stroke-width="1.2"/>
+    <path d="M20,135 Q16,127 12,131 Q14,137 20,135 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <g transform="translate(10, 130)">
+      <ellipse cx="0" cy="-5" rx="2.2" ry="3.8" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2.2" ry="3.8" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2.2" ry="3.8" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2.2" ry="3.8" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2.2" ry="3.8" transform="rotate(288)" fill="#C8963E"/>
+      <circle cx="0" cy="0" r="2.2" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+    </g>
+
+    <!-- === BUD 2 - left side at y=155 === -->
+    <path d="M28,155 Q20,153 16,149" stroke-width="1"/>
+    <path d="M16,149 Q14,145 16,141 Q18,145 16,149 Z" fill="#C8963E" stroke-width="0.8"/>
+    <path d="M14,147 Q12,143 14,140" stroke-width="0.8"/>
+    <path d="M18,147 Q20,143 18,140" stroke-width="0.8"/>
+
+    <!-- === LEAF PAIR 3 - at ~y=172 === -->
+    <path d="M24,175 Q12,169 8,175 Q12,181 24,177 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M24,176 Q16,176 10,177" stroke-width="0.6"/>
+    <path d="M36,173 Q48,167 52,173 Q48,179 36,175 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M36,174 Q44,174 50,175" stroke-width="0.6"/>
+
+    <!-- === FLOWER 4 - right branch, larger at y=195 === -->
+    <path d="M32,195 Q44,191 52,184" stroke-width="1.2"/>
+    <path d="M42,190 Q46,182 50,186 Q48,192 42,190 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <!-- Larger flower -->
+    <g transform="translate(52, 184)">
+      <ellipse cx="0" cy="-6" rx="2.5" ry="4.5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6" rx="2.5" ry="4.5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6" rx="2.5" ry="4.5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6" rx="2.5" ry="4.5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6" rx="2.5" ry="4.5" transform="rotate(288)" fill="#C8963E"/>
+      <!-- Inner ring of petals -->
+      <ellipse cx="0" cy="-3.5" rx="1.5" ry="2.5" transform="rotate(36)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-3.5" rx="1.5" ry="2.5" transform="rotate(108)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-3.5" rx="1.5" ry="2.5" transform="rotate(180)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-3.5" rx="1.5" ry="2.5" transform="rotate(252)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-3.5" rx="1.5" ry="2.5" transform="rotate(324)" fill="#D4A843"/>
+      <circle cx="0" cy="0" r="2.5" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+      <circle cx="0" cy="0" r="1" fill="#C8963E" stroke="none"/>
+    </g>
+
+    <!-- === LEAF PAIR 4 - at ~y=215 === -->
+    <path d="M26,218 Q14,212 10,218 Q14,224 26,220 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M26,219 Q18,219 12,220" stroke-width="0.6"/>
+    <path d="M34,216 Q46,210 50,216 Q46,222 34,218 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M34,217 Q42,217 48,218" stroke-width="0.6"/>
+
+    <!-- === FLOWER 5 - left branch at y=238 === -->
+    <path d="M28,238 Q16,234 8,228" stroke-width="1.2"/>
+    <path d="M18,233 Q14,225 10,229 Q12,235 18,233 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <g transform="translate(8, 228)">
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(288)" fill="#C8963E"/>
+      <circle cx="0" cy="0" r="2" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+    </g>
+
+    <!-- === BUD 3 - right side at y=255 === -->
+    <path d="M32,255 Q40,253 44,247" stroke-width="1"/>
+    <path d="M44,247 Q46,243 44,239 Q42,243 44,247 Z" fill="#C8963E" stroke-width="0.8"/>
+    <path d="M42,245 Q40,241 42,238" stroke-width="0.8"/>
+    <path d="M46,245 Q48,241 46,238" stroke-width="0.8"/>
+
+    <!-- === LEAF PAIR 5 - at ~y=270 === -->
+    <path d="M24,273 Q12,267 8,273 Q12,279 24,275 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M24,274 Q16,274 10,275" stroke-width="0.6"/>
+    <path d="M36,271 Q48,265 52,271 Q48,277 36,273 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M36,272 Q44,272 50,273" stroke-width="0.6"/>
+
+    <!-- === FLOWER 6 - right branch at y=292 === -->
+    <path d="M30,292 Q42,288 50,280" stroke-width="1.2"/>
+    <path d="M40,287 Q44,279 48,283 Q46,289 40,287 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <g transform="translate(50, 280)">
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="3.5" transform="rotate(288)" fill="#C8963E"/>
+      <circle cx="0" cy="0" r="2" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.5"/>
+    </g>
+
+    <!-- === LEAF PAIR 6 - at ~y=315 === -->
+    <path d="M26,318 Q14,312 10,318 Q14,324 26,320 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M26,319 Q18,319 12,320" stroke-width="0.6"/>
+    <path d="M34,316 Q46,310 50,316 Q46,322 34,318 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M34,317 Q42,317 48,318" stroke-width="0.6"/>
+
+    <!-- === FLOWER 7 - left branch, large at y=340 === -->
+    <path d="M28,340 Q16,336 8,328" stroke-width="1.2"/>
+    <path d="M18,335 Q14,327 10,331 Q12,337 18,335 Z" fill="#C8963E" fill-opacity="0.4" stroke-width="0.8"/>
+    <!-- Largest flower near bottom -->
+    <g transform="translate(8, 328)">
+      <ellipse cx="0" cy="-6.5" rx="2.8" ry="5" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6.5" rx="2.8" ry="5" transform="rotate(72)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6.5" rx="2.8" ry="5" transform="rotate(144)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6.5" rx="2.8" ry="5" transform="rotate(216)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-6.5" rx="2.8" ry="5" transform="rotate(288)" fill="#C8963E"/>
+      <ellipse cx="0" cy="-4" rx="1.8" ry="2.8" transform="rotate(36)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-4" rx="1.8" ry="2.8" transform="rotate(108)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-4" rx="1.8" ry="2.8" transform="rotate(180)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-4" rx="1.8" ry="2.8" transform="rotate(252)" fill="#D4A843"/>
+      <ellipse cx="0" cy="-4" rx="1.8" ry="2.8" transform="rotate(324)" fill="#D4A843"/>
+      <circle cx="0" cy="0" r="3" fill="#8B1A1A" stroke="#C8963E" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="1.2" fill="#C8963E" stroke="none"/>
+    </g>
+
+    <!-- === BUD 4 - right side at y=360 === -->
+    <path d="M32,360 Q42,357 46,352" stroke-width="1"/>
+    <path d="M46,352 Q48,347 46,343 Q44,347 46,352 Z" fill="#C8963E" stroke-width="0.8"/>
+    <path d="M44,350 Q42,346 44,343" stroke-width="0.8"/>
+    <path d="M48,350 Q50,346 48,343" stroke-width="0.8"/>
+
+    <!-- === LEAF PAIR 7 - near bottom at ~y=380 === -->
+    <path d="M26,382 Q14,376 10,382 Q14,388 26,384 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M26,383 Q18,383 12,384" stroke-width="0.6"/>
+    <path d="M34,380 Q46,374 50,380 Q46,386 34,382 Z" fill="#C8963E" fill-opacity="0.3" stroke-width="1"/>
+    <path d="M34,381 Q42,381 48,382" stroke-width="0.6"/>
+
+    <!-- === Decorative curling tendril near base === -->
+    <path d="M30,395 Q26,398 28,400" stroke-width="0.8"/>
+    <path d="M30,395 Q34,398 32,400" stroke-width="0.8"/>
+  </g>
+</svg>

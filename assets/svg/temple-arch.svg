@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- South Indian temple torana arch - decorative doorway with ornate carved-style borders - Gold outline -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Main arch shape - the inner opening -->
+    <!-- Left pillar -->
+    <rect x="20" y="80" width="35" height="115" rx="2" stroke-width="1.5"/>
+    <!-- Right pillar -->
+    <rect x="245" y="80" width="35" height="115" rx="2" stroke-width="1.5"/>
+
+    <!-- Arch keystone/top curve -->
+    <path d="M55,80 Q55,20 150,15 Q245,20 245,80" stroke-width="2"/>
+    <!-- Inner arch curve -->
+    <path d="M64,82 Q64,28 150,24 Q236,28 236,82" stroke-width="1"/>
+    <!-- Innermost arch -->
+    <path d="M74,84 Q74,36 150,32 Q226,36 226,84" stroke-width="0.8"/>
+
+    <!-- Top finial/Kalasha at peak of arch -->
+    <line x1="150" y1="6" x2="150" y2="15" stroke-width="1.5"/>
+    <!-- Kalasha pot -->
+    <path d="M143,6 Q140,2 143,0 L157,0 Q160,2 157,6 Z" stroke-width="1.2" fill="#C8963E" fill-opacity="0.3"/>
+    <ellipse cx="150" cy="6" rx="8" ry="3" fill="#C8963E" fill-opacity="0.2" stroke-width="1"/>
+    <!-- Flame above kalasha -->
+    <path d="M148,0 Q150,-5 152,0 Q150,-2 148,0 Z" fill="#C8963E" stroke-width="0.8"/>
+
+    <!-- Side finials at arch shoulders -->
+    <!-- Left finial -->
+    <line x1="52" y1="58" x2="55" y2="80" stroke-width="1.2"/>
+    <path d="M46,58 Q43,54 46,52 L58,52 Q61,54 58,58 Z" stroke-width="1" fill="#C8963E" fill-opacity="0.2"/>
+    <ellipse cx="52" cy="58" rx="6" ry="2.5" fill="#C8963E" fill-opacity="0.2" stroke-width="0.8"/>
+    <path d="M50,52 Q52,47 54,52" fill="#C8963E" stroke-width="0.8"/>
+
+    <!-- Right finial -->
+    <line x1="248" y1="58" x2="245" y2="80" stroke-width="1.2"/>
+    <path d="M242,58 Q239,54 242,52 L254,52 Q257,54 254,58 Z" stroke-width="1" fill="#C8963E" fill-opacity="0.2"/>
+    <ellipse cx="248" cy="58" rx="6" ry="2.5" fill="#C8963E" fill-opacity="0.2" stroke-width="0.8"/>
+    <path d="M246,52 Q248,47 250,52" fill="#C8963E" stroke-width="0.8"/>
+
+    <!-- Tiered decorative cornice above arch - stepped tiers -->
+    <!-- Tier 1 - lowest/widest -->
+    <path d="M15,88 L15,82 L285,82 L285,88 Z" stroke-width="1" fill="#C8963E" fill-opacity="0.1"/>
+    <!-- Tier pattern along cornice -->
+    <path d="M15,82 L285,82" stroke-width="1.5"/>
+    <path d="M15,88 L285,88" stroke-width="0.8"/>
+
+    <!-- Decorative arch border - lotus chain along arch -->
+    <!-- Small lotus buds along the arch curve, every ~20px -->
+    <g fill="#C8963E" fill-opacity="0.6" stroke-width="0.5">
+      <!-- Along left arch -->
+      <ellipse cx="68" cy="76" rx="3" ry="4" transform="rotate(-20 68 76)"/>
+      <ellipse cx="78" cy="58" rx="3" ry="4" transform="rotate(-35 78 58)"/>
+      <ellipse cx="96" cy="44" rx="3" ry="4" transform="rotate(-50 96 44)"/>
+      <ellipse cx="118" cy="33" rx="3" ry="4" transform="rotate(-70 118 33)"/>
+      <!-- Center top -->
+      <ellipse cx="150" cy="28" rx="3" ry="4"/>
+      <!-- Along right arch -->
+      <ellipse cx="182" cy="33" rx="3" ry="4" transform="rotate(70 182 33)"/>
+      <ellipse cx="204" cy="44" rx="3" ry="4" transform="rotate(50 204 44)"/>
+      <ellipse cx="222" cy="58" rx="3" ry="4" transform="rotate(35 222 58)"/>
+      <ellipse cx="232" cy="76" rx="3" ry="4" transform="rotate(20 232 76)"/>
+    </g>
+
+    <!-- Left pillar decorative details -->
+    <!-- Capital at top of left pillar -->
+    <rect x="17" y="78" width="41" height="8" rx="1" stroke-width="1.2" fill="#C8963E" fill-opacity="0.15"/>
+    <!-- Left pillar carved horizontal bands -->
+    <line x1="20" y1="98" x2="55" y2="98" stroke-width="0.8"/>
+    <line x1="20" y1="108" x2="55" y2="108" stroke-width="0.8"/>
+    <line x1="20" y1="118" x2="55" y2="118" stroke-width="0.8"/>
+    <line x1="20" y1="128" x2="55" y2="128" stroke-width="0.8"/>
+    <line x1="20" y1="138" x2="55" y2="138" stroke-width="0.8"/>
+    <line x1="20" y1="148" x2="55" y2="148" stroke-width="0.8"/>
+    <line x1="20" y1="158" x2="55" y2="158" stroke-width="0.8"/>
+    <line x1="20" y1="168" x2="55" y2="168" stroke-width="0.8"/>
+    <!-- Left pillar decorative lotus panel center -->
+    <ellipse cx="37" cy="123" rx="8" ry="10" stroke-width="1"/>
+    <path d="M37,115 Q41,119 37,123 Q33,119 37,115 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M45,123 Q41,127 37,123 Q41,119 45,123 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M37,131 Q33,127 37,123 Q41,127 37,131 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M29,123 Q33,119 37,123 Q33,127 29,123 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <circle cx="37" cy="123" r="2.5" fill="#C8963E"/>
+    <!-- Left pillar base -->
+    <rect x="17" y="188" width="41" height="7" rx="1" stroke-width="1.2" fill="#C8963E" fill-opacity="0.15"/>
+
+    <!-- Right pillar decorative details -->
+    <rect x="243" y="78" width="41" height="8" rx="1" stroke-width="1.2" fill="#C8963E" fill-opacity="0.15"/>
+    <line x1="245" y1="98" x2="280" y2="98" stroke-width="0.8"/>
+    <line x1="245" y1="108" x2="280" y2="108" stroke-width="0.8"/>
+    <line x1="245" y1="118" x2="280" y2="118" stroke-width="0.8"/>
+    <line x1="245" y1="128" x2="280" y2="128" stroke-width="0.8"/>
+    <line x1="245" y1="138" x2="280" y2="138" stroke-width="0.8"/>
+    <line x1="245" y1="148" x2="280" y2="148" stroke-width="0.8"/>
+    <line x1="245" y1="158" x2="280" y2="158" stroke-width="0.8"/>
+    <line x1="245" y1="168" x2="280" y2="168" stroke-width="0.8"/>
+    <!-- Right pillar lotus panel -->
+    <ellipse cx="263" cy="123" rx="8" ry="10" stroke-width="1"/>
+    <path d="M263,115 Q267,119 263,123 Q259,119 263,115 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M271,123 Q267,127 263,123 Q267,119 271,123 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M263,131 Q259,127 263,123 Q267,127 263,131 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <path d="M255,123 Q259,119 263,123 Q259,127 255,123 Z" fill="#C8963E" fill-opacity="0.4"/>
+    <circle cx="263" cy="123" r="2.5" fill="#C8963E"/>
+    <rect x="243" y="188" width="41" height="7" rx="1" stroke-width="1.2" fill="#C8963E" fill-opacity="0.15"/>
+
+    <!-- Bottom threshold/step decoration -->
+    <rect x="10" y="193" width="280" height="7" rx="2" stroke-width="1.2" fill="#C8963E" fill-opacity="0.1"/>
+    <!-- Threshold decorative dots -->
+    <g fill="#C8963E">
+      <circle cx="30" cy="197" r="1.5"/>
+      <circle cx="50" cy="197" r="1.5"/>
+      <circle cx="70" cy="197" r="1.5"/>
+      <circle cx="90" cy="197" r="1.5"/>
+      <circle cx="110" cy="197" r="1.5"/>
+      <circle cx="130" cy="197" r="1.5"/>
+      <circle cx="150" cy="197" r="2"/>
+      <circle cx="170" cy="197" r="1.5"/>
+      <circle cx="190" cy="197" r="1.5"/>
+      <circle cx="210" cy="197" r="1.5"/>
+      <circle cx="230" cy="197" r="1.5"/>
+      <circle cx="250" cy="197" r="1.5"/>
+      <circle cx="270" cy="197" r="1.5"/>
+    </g>
+
+    <!-- Hanging bell motifs from arch apex -->
+    <line x1="140" y1="40" x2="140" y2="55" stroke-width="0.8"/>
+    <path d="M136,55 Q136,50 140,55 Q144,50 144,55 Q142,60 140,60 Q138,60 136,55 Z" stroke-width="0.8"/>
+    <circle cx="140" cy="61" r="1.5" fill="#C8963E"/>
+
+    <line x1="160" y1="40" x2="160" y2="55" stroke-width="0.8"/>
+    <path d="M156,55 Q156,50 160,55 Q164,50 164,55 Q162,60 160,60 Q158,60 156,55 Z" stroke-width="0.8"/>
+    <circle cx="160" cy="61" r="1.5" fill="#C8963E"/>
+
+    <!-- Top arch garland hint - thin decorative swag -->
+    <path d="M60,76 Q90,90 120,84 Q150,79 180,84 Q210,90 240,76" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <!-- Garland drops -->
+    <line x1="90" y1="90" x2="90" y2="96" stroke-width="0.6"/>
+    <circle cx="90" cy="97" r="1.5" fill="#C8963E"/>
+    <line x1="150" y1="80" x2="150" y2="86" stroke-width="0.6"/>
+    <circle cx="150" cy="87" r="1.5" fill="#C8963E"/>
+    <line x1="210" y1="90" x2="210" y2="96" stroke-width="0.6"/>
+    <circle cx="210" cy="97" r="1.5" fill="#C8963E"/>
+  </g>
+</svg>

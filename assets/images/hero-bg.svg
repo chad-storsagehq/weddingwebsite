@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Deep warm brown-to-gold gradient -->
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B1A00;stop-opacity:1"/>
+      <stop offset="35%" style="stop-color:#5C2800;stop-opacity:1"/>
+      <stop offset="65%" style="stop-color:#8B4800;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C8963E;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Radial overlay for depth -->
+    <radialGradient id="heroVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#7A3800;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#1A0A00;stop-opacity:0.7"/>
+    </radialGradient>
+    <!-- Subtle texture gradient -->
+    <linearGradient id="heroSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8963E;stop-opacity:0.12"/>
+      <stop offset="50%" style="stop-color:#C8963E;stop-opacity:0.0"/>
+      <stop offset="100%" style="stop-color:#3B1A00;stop-opacity:0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base gradient fill -->
+  <rect width="1920" height="1080" fill="url(#heroGradient)"/>
+
+  <!-- Vignette overlay for dramatic depth -->
+  <rect width="1920" height="1080" fill="url(#heroVignette)"/>
+
+  <!-- Subtle sheen/gloss overlay -->
+  <rect width="1920" height="1080" fill="url(#heroSheen)"/>
+
+  <!-- Very subtle diagonal texture lines - extremely faint -->
+  <g opacity="0.04" stroke="#C8963E" stroke-width="1" fill="none">
+    <line x1="0" y1="0" x2="1920" y2="1080"/>
+    <line x1="200" y1="0" x2="1920" y2="880"/>
+    <line x1="400" y1="0" x2="1920" y2="680"/>
+    <line x1="600" y1="0" x2="1920" y2="480"/>
+    <line x1="800" y1="0" x2="1920" y2="280"/>
+    <line x1="1000" y1="0" x2="1920" y2="80"/>
+    <line x1="0" y1="200" x2="920" y2="1080"/>
+    <line x1="0" y1="400" x2="680" y2="1080"/>
+    <line x1="0" y1="600" x2="480" y2="1080"/>
+    <line x1="0" y1="800" x2="280" y2="1080"/>
+  </g>
+</svg>

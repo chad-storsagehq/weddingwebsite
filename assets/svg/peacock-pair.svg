@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Two peacocks facing each other with fanned tail feathers - Gold -->
+
+  <!-- Left Peacock (facing right) -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Left Peacock Tail feathers fanned behind - spread to the left -->
+    <!-- Main tail fan arc going left and up -->
+    <path d="M120,130 Q80,80 30,60" stroke-width="1.2"/>
+    <path d="M120,130 Q70,90 20,80" stroke-width="1.2"/>
+    <path d="M120,130 Q72,100 18,105" stroke-width="1.2"/>
+    <path d="M120,130 Q75,110 20,125" stroke-width="1.2"/>
+    <path d="M120,130 Q80,118 22,145" stroke-width="1.2"/>
+    <path d="M120,130 Q82,128 30,160" stroke-width="1.2"/>
+    <path d="M120,130 Q85,135 40,172" stroke-width="1.2"/>
+    <!-- Feather eye details - teardrop shapes at end of each feather -->
+    <ellipse cx="30" cy="60" rx="5" ry="7" transform="rotate(-30 30 60)" stroke-width="1"/>
+    <circle cx="30" cy="60" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none" transform="rotate(-30 30 60)"/>
+    <ellipse cx="20" cy="80" rx="5" ry="7" transform="rotate(-15 20 80)" stroke-width="1"/>
+    <circle cx="20" cy="80" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="18" cy="105" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="18" cy="105" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="20" cy="125" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="20" cy="125" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="22" cy="145" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="22" cy="145" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="30" cy="160" rx="5" ry="7" transform="rotate(15 30 160)" stroke-width="1"/>
+    <circle cx="30" cy="160" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="40" cy="172" rx="5" ry="7" transform="rotate(25 40 172)" stroke-width="1"/>
+    <circle cx="40" cy="172" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+
+    <!-- Additional shorter feathers for fullness -->
+    <path d="M118,128 Q82,85 40,72" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <path d="M118,128 Q78,115 35,140" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <path d="M118,128 Q88,120 50,150" stroke-width="0.8" stroke-dasharray="3,2"/>
+
+    <!-- Left Peacock Body -->
+    <ellipse cx="130" cy="140" rx="18" ry="12" stroke-width="1.8"/>
+    <!-- Wing detail -->
+    <path d="M120,135 Q128,130 138,133 Q132,140 122,140" stroke-width="1" fill="#C8963E" fill-opacity="0.15"/>
+    <path d="M122,140 Q130,136 140,138 Q134,145 124,145" stroke-width="1" fill="#C8963E" fill-opacity="0.1"/>
+
+    <!-- Neck -->
+    <path d="M138,132 Q142,122 145,112 Q147,106 145,100" stroke-width="2"/>
+    <!-- Neck decorative scales -->
+    <path d="M139,128 Q143,126 145,130" stroke-width="0.7"/>
+    <path d="M140,122 Q144,120 146,124" stroke-width="0.7"/>
+    <path d="M141,116 Q145,114 146,118" stroke-width="0.7"/>
+
+    <!-- Head -->
+    <ellipse cx="144" cy="96" rx="9" ry="8" stroke-width="1.8"/>
+
+    <!-- Crest feathers on head -->
+    <path d="M140,90 Q138,82 136,76" stroke-width="1.2"/>
+    <circle cx="136" cy="74" r="2.5" stroke-width="1"/>
+    <circle cx="136" cy="74" r="1" fill="#C8963E" stroke="none"/>
+    <path d="M144,88 Q143,80 142,74" stroke-width="1.2"/>
+    <circle cx="142" cy="72" r="2.5" stroke-width="1"/>
+    <circle cx="142" cy="72" r="1" fill="#C8963E" stroke="none"/>
+    <path d="M148,90 Q150,82 152,76" stroke-width="1.2"/>
+    <circle cx="152" cy="74" r="2.5" stroke-width="1"/>
+    <circle cx="152" cy="74" r="1" fill="#C8963E" stroke="none"/>
+
+    <!-- Eye -->
+    <ellipse cx="148" cy="94" rx="3" ry="2.5" stroke-width="1.2"/>
+    <circle cx="149" cy="94" r="1.5" fill="#C8963E" stroke="none"/>
+
+    <!-- Beak (pointing right) -->
+    <path d="M153,97 Q160,96 163,98 Q160,100 153,100 Z" stroke-width="1" fill="#C8963E" fill-opacity="0.4"/>
+
+    <!-- Legs -->
+    <path d="M124,150 Q122,162 120,172 Q118,178 115,180" stroke-width="1.5"/>
+    <path d="M115,180 Q112,182 110,180 M115,180 Q114,183 112,184 M115,180 Q116,183 118,182" stroke-width="1.2"/>
+
+    <path d="M134,152 Q133,164 132,174 Q130,180 128,182" stroke-width="1.5"/>
+    <path d="M128,182 Q125,184 123,182 M128,182 Q127,185 125,186 M128,182 Q130,185 132,183" stroke-width="1.2"/>
+  </g>
+
+  <!-- Right Peacock (facing left, mirrored) -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round" transform="scale(-1,1) translate(-400,0)">
+
+    <!-- Right Peacock Tail feathers fanned behind (now going right) -->
+    <path d="M120,130 Q80,80 30,60" stroke-width="1.2"/>
+    <path d="M120,130 Q70,90 20,80" stroke-width="1.2"/>
+    <path d="M120,130 Q72,100 18,105" stroke-width="1.2"/>
+    <path d="M120,130 Q75,110 20,125" stroke-width="1.2"/>
+    <path d="M120,130 Q80,118 22,145" stroke-width="1.2"/>
+    <path d="M120,130 Q82,128 30,160" stroke-width="1.2"/>
+    <path d="M120,130 Q85,135 40,172" stroke-width="1.2"/>
+    <!-- Feather eyes -->
+    <ellipse cx="30" cy="60" rx="5" ry="7" transform="rotate(-30 30 60)" stroke-width="1"/>
+    <circle cx="30" cy="60" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none" transform="rotate(-30 30 60)"/>
+    <ellipse cx="20" cy="80" rx="5" ry="7" transform="rotate(-15 20 80)" stroke-width="1"/>
+    <circle cx="20" cy="80" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="18" cy="105" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="18" cy="105" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="20" cy="125" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="20" cy="125" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="22" cy="145" rx="5" ry="7" stroke-width="1"/>
+    <circle cx="22" cy="145" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="30" cy="160" rx="5" ry="7" transform="rotate(15 30 160)" stroke-width="1"/>
+    <circle cx="30" cy="160" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <ellipse cx="40" cy="172" rx="5" ry="7" transform="rotate(25 40 172)" stroke-width="1"/>
+    <circle cx="40" cy="172" r="2" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+
+    <!-- Additional shorter feathers -->
+    <path d="M118,128 Q82,85 40,72" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <path d="M118,128 Q78,115 35,140" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <path d="M118,128 Q88,120 50,150" stroke-width="0.8" stroke-dasharray="3,2"/>
+
+    <!-- Body -->
+    <ellipse cx="130" cy="140" rx="18" ry="12" stroke-width="1.8"/>
+    <path d="M120,135 Q128,130 138,133 Q132,140 122,140" stroke-width="1" fill="#C8963E" fill-opacity="0.15"/>
+    <path d="M122,140 Q130,136 140,138 Q134,145 124,145" stroke-width="1" fill="#C8963E" fill-opacity="0.1"/>
+
+    <!-- Neck -->
+    <path d="M138,132 Q142,122 145,112 Q147,106 145,100" stroke-width="2"/>
+    <path d="M139,128 Q143,126 145,130" stroke-width="0.7"/>
+    <path d="M140,122 Q144,120 146,124" stroke-width="0.7"/>
+    <path d="M141,116 Q145,114 146,118" stroke-width="0.7"/>
+
+    <!-- Head -->
+    <ellipse cx="144" cy="96" rx="9" ry="8" stroke-width="1.8"/>
+
+    <!-- Crest feathers -->
+    <path d="M140,90 Q138,82 136,76" stroke-width="1.2"/>
+    <circle cx="136" cy="74" r="2.5" stroke-width="1"/>
+    <circle cx="136" cy="74" r="1" fill="#C8963E" stroke="none"/>
+    <path d="M144,88 Q143,80 142,74" stroke-width="1.2"/>
+    <circle cx="142" cy="72" r="2.5" stroke-width="1"/>
+    <circle cx="142" cy="72" r="1" fill="#C8963E" stroke="none"/>
+    <path d="M148,90 Q150,82 152,76" stroke-width="1.2"/>
+    <circle cx="152" cy="74" r="2.5" stroke-width="1"/>
+    <circle cx="152" cy="74" r="1" fill="#C8963E" stroke="none"/>
+
+    <!-- Eye -->
+    <ellipse cx="148" cy="94" rx="3" ry="2.5" stroke-width="1.2"/>
+    <circle cx="149" cy="94" r="1.5" fill="#C8963E" stroke="none"/>
+
+    <!-- Beak -->
+    <path d="M153,97 Q160,96 163,98 Q160,100 153,100 Z" stroke-width="1" fill="#C8963E" fill-opacity="0.4"/>
+
+    <!-- Legs -->
+    <path d="M124,150 Q122,162 120,172 Q118,178 115,180" stroke-width="1.5"/>
+    <path d="M115,180 Q112,182 110,180 M115,180 Q114,183 112,184 M115,180 Q116,183 118,182" stroke-width="1.2"/>
+    <path d="M134,152 Q133,164 132,174 Q130,180 128,182" stroke-width="1.5"/>
+    <path d="M128,182 Q125,184 123,182 M128,182 Q127,185 125,186 M128,182 Q130,185 132,183" stroke-width="1.2"/>
+  </g>
+
+  <!-- Central decorative lotus where the two peacocks meet -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round">
+    <circle cx="200" cy="150" r="8" stroke-width="1.2"/>
+    <circle cx="200" cy="150" r="3" fill="#C8963E" stroke="none"/>
+    <path d="M192,150 Q196,142 200,144 Q204,142 208,150 Q204,158 200,156 Q196,158 192,150 Z" stroke-width="1"/>
+    <path d="M200,142 Q208,146 206,150 Q214,146 208,142 Z" stroke-width="0.8"/>
+    <path d="M200,142 Q192,146 194,150 Q186,146 192,142 Z" stroke-width="0.8"/>
+  </g>
+</svg>

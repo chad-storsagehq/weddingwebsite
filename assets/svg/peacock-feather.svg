@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 200">
+  <!-- Single elegant peacock feather with eye detail - Gold -->
+  <g fill="none" stroke="#C8963E" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Main quill/rachis - central stem -->
+    <path d="M40,195 Q39,160 38,130 Q37,100 40,70 Q41,50 40,25" stroke-width="2" stroke="#C8963E"/>
+
+    <!-- Feather vanes branching off quill - left side barbs -->
+    <path d="M39,175 Q34,172 30,168" stroke-width="0.8"/>
+    <path d="M39,165 Q32,162 27,157" stroke-width="0.8"/>
+    <path d="M39,155 Q31,151 26,145" stroke-width="0.8"/>
+    <path d="M39,145 Q30,140 25,133" stroke-width="0.8"/>
+    <path d="M39,135 Q30,129 26,121" stroke-width="0.8"/>
+    <path d="M39,125 Q30,118 28,110" stroke-width="0.8"/>
+    <path d="M39,115 Q31,108 30,100" stroke-width="0.8"/>
+    <path d="M39,105 Q32,98 32,90" stroke-width="0.8"/>
+    <path d="M39,95 Q33,88 34,80" stroke-width="0.8"/>
+    <path d="M39,85 Q35,78 36,70" stroke-width="0.8"/>
+    <path d="M39,75 Q36,68 37,60" stroke-width="0.8"/>
+    <path d="M39,65 Q37,58 38,50" stroke-width="0.8"/>
+    <path d="M39,55 Q38,48 38,42" stroke-width="0.8"/>
+
+    <!-- Right side barbs -->
+    <path d="M41,175 Q46,172 50,168" stroke-width="0.8"/>
+    <path d="M41,165 Q48,162 53,157" stroke-width="0.8"/>
+    <path d="M41,155 Q49,151 54,145" stroke-width="0.8"/>
+    <path d="M41,145 Q50,140 55,133" stroke-width="0.8"/>
+    <path d="M41,135 Q50,129 54,121" stroke-width="0.8"/>
+    <path d="M41,125 Q50,118 52,110" stroke-width="0.8"/>
+    <path d="M41,115 Q49,108 50,100" stroke-width="0.8"/>
+    <path d="M41,105 Q48,98 48,90" stroke-width="0.8"/>
+    <path d="M41,95 Q47,88 46,80" stroke-width="0.8"/>
+    <path d="M41,85 Q45,78 44,70" stroke-width="0.8"/>
+    <path d="M41,75 Q44,68 43,60" stroke-width="0.8"/>
+    <path d="M41,65 Q43,58 42,50" stroke-width="0.8"/>
+    <path d="M41,55 Q42,48 42,42" stroke-width="0.8"/>
+
+    <!-- Feather outline shape - the vane outline -->
+    <path d="M38,42 Q28,50 22,65 Q18,78 20,92 Q22,108 28,120 Q32,130 36,138 Q38,145 38,150" stroke-width="1"/>
+    <path d="M42,42 Q52,50 58,65 Q62,78 60,92 Q58,108 52,120 Q48,130 44,138 Q42,145 42,150" stroke-width="1"/>
+
+    <!-- Tip - connecting the two sides at top -->
+    <path d="M38,42 Q40,35 42,42" stroke-width="1.2"/>
+
+    <!-- Eye / ocellus - the characteristic "eye" of the peacock feather -->
+    <!-- Outer decorative rings -->
+    <ellipse cx="40" cy="70" rx="15" ry="18" stroke-width="1.5"/>
+    <ellipse cx="40" cy="70" rx="10" ry="12" stroke-width="1"/>
+    <ellipse cx="40" cy="70" rx="6" ry="7.5" fill="#C8963E" fill-opacity="0.2" stroke-width="1"/>
+    <!-- Inner eye fill -->
+    <ellipse cx="40" cy="70" rx="4" ry="5" fill="#C8963E" fill-opacity="0.5" stroke="none"/>
+    <!-- Eye highlight -->
+    <ellipse cx="40" cy="70" rx="2" ry="2.5" fill="#C8963E" stroke="none"/>
+
+    <!-- Decorative rays around the eye -->
+    <line x1="40" y1="50" x2="40" y2="45" stroke-width="0.8"/>
+    <line x1="40" y1="90" x2="40" y2="95" stroke-width="0.8"/>
+    <line x1="24" y1="70" x2="20" y2="70" stroke-width="0.8"/>
+    <line x1="56" y1="70" x2="60" y2="70" stroke-width="0.8"/>
+    <line x1="29" y1="57" x2="26" y2="54" stroke-width="0.8"/>
+    <line x1="51" y1="57" x2="54" y2="54" stroke-width="0.8"/>
+    <line x1="29" y1="83" x2="26" y2="86" stroke-width="0.8"/>
+    <line x1="51" y1="83" x2="54" y2="86" stroke-width="0.8"/>
+
+    <!-- Fine barbules/texture detail in lower feather -->
+    <!-- Herringbone texture suggests fine barb structure -->
+    <path d="M35,160 Q33,158 31,156 M37,162 Q34,160 32,158 M39,164 Q36,162 34,160" stroke-width="0.5" opacity="0.7"/>
+    <path d="M45,160 Q47,158 49,156 M43,162 Q46,160 48,158 M41,164 Q44,162 46,160" stroke-width="0.5" opacity="0.7"/>
+
+    <!-- Quill base - the calamus/hollow shaft at bottom -->
+    <path d="M38,190 Q37,192 38,195 Q40,197 42,195 Q43,192 42,190" stroke-width="1.2"/>
+    <line x1="40" y1="185" x2="40" y2="195" stroke-width="2.5"/>
+  </g>
+</svg>

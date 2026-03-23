@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <!-- South Indian gopuram silhouette - multi-tiered temple tower, gold fill watermark -->
+  <g fill="#C8963E" stroke="none">
+
+    <!-- Base platform / Adhishtana - widest -->
+    <rect x="20" y="370" width="260" height="30" rx="3"/>
+    <!-- Base step -->
+    <rect x="30" y="360" width="240" height="12" rx="2"/>
+    <!-- Second step -->
+    <rect x="42" y="350" width="216" height="12" rx="2"/>
+
+    <!-- Tier 1 - First story of tower (widest tower tier) -->
+    <path d="M50,350 L50,310 Q50,305 55,305 L245,305 Q250,305 250,310 L250,350 Z"/>
+    <!-- Tier 1 horizontal decorative band -->
+    <rect x="45" y="340" width="210" height="5" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="45" y="315" width="210" height="5" fill="#FDF6EC" fill-opacity="0.15"/>
+    <!-- Tier 1 small arch decorations - row of mini arches along top -->
+    <path d="M50,310 Q60,300 70,310 Q80,300 90,310 Q100,300 110,310 Q120,300 130,310 Q140,300 150,310 Q160,300 170,310 Q180,300 190,310 Q200,300 210,310 Q220,300 230,310 Q240,300 250,310" fill="none" stroke="#FDF6EC" stroke-width="2" stroke-opacity="0.2"/>
+    <!-- Tier 1 side niches with deity figures (simple shapes) -->
+    <rect x="55" y="318" width="22" height="28" rx="2" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="66" cy="317" rx="11" ry="4" fill="#8B1A1A" fill-opacity="0.4"/>
+    <rect x="223" y="318" width="22" height="28" rx="2" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="234" cy="317" rx="11" ry="4" fill="#8B1A1A" fill-opacity="0.4"/>
+
+    <!-- Tier 2 - Second story -->
+    <path d="M65,305 L65,268 Q65,263 70,263 L230,263 Q235,263 235,268 L235,305 Z"/>
+    <rect x="60" y="296" width="180" height="4" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="60" y="274" width="180" height="4" fill="#FDF6EC" fill-opacity="0.15"/>
+    <path d="M65,268 Q73,259 81,268 Q89,259 97,268 Q105,259 113,268 Q121,259 129,268 Q137,259 145,268 Q153,259 161,268 Q169,259 177,268 Q185,259 193,268 Q201,259 209,268 Q217,259 225,268 Q233,259 235,268" fill="none" stroke="#FDF6EC" stroke-width="1.5" stroke-opacity="0.2"/>
+    <!-- Tier 2 niches -->
+    <rect x="72" y="275" width="18" height="24" rx="1.5" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="81" cy="274" rx="9" ry="3.5" fill="#8B1A1A" fill-opacity="0.4"/>
+    <rect x="210" y="275" width="18" height="24" rx="1.5" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="219" cy="274" rx="9" ry="3.5" fill="#8B1A1A" fill-opacity="0.4"/>
+
+    <!-- Tier 3 - Third story -->
+    <path d="M82,263 L82,230 Q82,225 87,225 L213,225 Q218,225 218,230 L218,263 Z"/>
+    <rect x="77" y="254" width="146" height="4" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="77" y="234" width="146" height="4" fill="#FDF6EC" fill-opacity="0.15"/>
+    <path d="M82,230 Q89,222 96,230 Q103,222 110,230 Q117,222 124,230 Q131,222 138,230 Q145,222 152,230 Q159,222 166,230 Q173,222 180,230 Q187,222 194,230 Q201,222 208,230 Q215,222 218,230" fill="none" stroke="#FDF6EC" stroke-width="1.2" stroke-opacity="0.2"/>
+    <!-- Tier 3 niches -->
+    <rect x="90" y="236" width="15" height="22" rx="1.5" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="97" cy="235" rx="7.5" ry="3" fill="#8B1A1A" fill-opacity="0.4"/>
+    <rect x="195" y="236" width="15" height="22" rx="1.5" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="202" cy="235" rx="7.5" ry="3" fill="#8B1A1A" fill-opacity="0.4"/>
+
+    <!-- Tier 4 - Fourth story -->
+    <path d="M98,225 L98,196 Q98,191 103,191 L197,191 Q202,191 202,196 L202,225 Z"/>
+    <rect x="93" y="217" width="114" height="3.5" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="93" y="200" width="114" height="3.5" fill="#FDF6EC" fill-opacity="0.15"/>
+    <path d="M98,196 Q104,188 110,196 Q116,188 122,196 Q128,188 134,196 Q140,188 146,196 Q152,188 158,196 Q164,188 170,196 Q176,188 182,196 Q188,188 194,196 Q200,188 202,196" fill="none" stroke="#FDF6EC" stroke-width="1" stroke-opacity="0.2"/>
+    <!-- Tier 4 niches -->
+    <rect x="106" y="201" width="12" height="18" rx="1" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="112" cy="200" rx="6" ry="2.5" fill="#8B1A1A" fill-opacity="0.4"/>
+    <rect x="182" y="201" width="12" height="18" rx="1" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="188" cy="200" rx="6" ry="2.5" fill="#8B1A1A" fill-opacity="0.4"/>
+
+    <!-- Tier 5 - Fifth story -->
+    <path d="M113,191 L113,165 Q113,160 118,160 L182,160 Q187,160 187,165 L187,191 Z"/>
+    <rect x="108" y="183" width="84" height="3" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="108" y="168" width="84" height="3" fill="#FDF6EC" fill-opacity="0.15"/>
+    <path d="M113,165 Q118,158 123,165 Q128,158 133,165 Q138,158 143,165 Q148,158 153,165 Q158,158 163,165 Q168,158 173,165 Q178,158 183,165 Q187,158 187,165" fill="none" stroke="#FDF6EC" stroke-width="0.8" stroke-opacity="0.2"/>
+    <!-- Tier 5 niches -->
+    <rect x="120" y="169" width="10" height="16" rx="1" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="125" cy="168" rx="5" ry="2" fill="#8B1A1A" fill-opacity="0.4"/>
+    <rect x="170" y="169" width="10" height="16" rx="1" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="175" cy="168" rx="5" ry="2" fill="#8B1A1A" fill-opacity="0.4"/>
+
+    <!-- Tier 6 - Sixth story, narrowing -->
+    <path d="M126,160 L126,138 Q126,133 131,133 L169,133 Q174,133 174,138 L174,160 Z"/>
+    <rect x="121" y="153" width="58" height="3" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="121" y="141" width="58" height="3" fill="#FDF6EC" fill-opacity="0.15"/>
+    <path d="M126,138 Q130,131 134,138 Q138,131 142,138 Q146,131 150,138 Q154,131 158,138 Q162,131 166,138 Q170,131 174,138" fill="none" stroke="#FDF6EC" stroke-width="0.7" stroke-opacity="0.2"/>
+
+    <!-- Tier 7 - Seventh story, narrow -->
+    <path d="M134,133 L134,114 Q134,109 139,109 L161,109 Q166,109 166,114 L166,133 Z"/>
+    <rect x="129" y="126" width="42" height="2.5" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="129" y="116" width="42" height="2.5" fill="#FDF6EC" fill-opacity="0.15"/>
+
+    <!-- Tier 8 - Very narrow near top -->
+    <path d="M140,109 L140,92 Q140,87 145,87 L155,87 Q160,87 160,92 L160,109 Z"/>
+    <rect x="136" y="103" width="28" height="2" fill="#FDF6EC" fill-opacity="0.15"/>
+    <rect x="136" y="95" width="28" height="2" fill="#FDF6EC" fill-opacity="0.15"/>
+
+    <!-- Shikara / Curvilinear tower top -->
+    <path d="M140,87 Q138,75 140,65 Q142,55 145,45 Q147,35 150,25 Q153,35 155,45 Q158,55 160,65 Q162,75 160,87 Z"/>
+
+    <!-- Amalaka - ribbed disc at top of shikara -->
+    <ellipse cx="150" cy="25" rx="12" ry="5" />
+    <!-- Amalaka ribs -->
+    <ellipse cx="150" cy="24" rx="8" ry="3" fill="#8B1A1A" fill-opacity="0.3"/>
+    <ellipse cx="150" cy="26" rx="8" ry="3" fill="#8B1A1A" fill-opacity="0.3"/>
+
+    <!-- Kalasha (pot finial) at very top -->
+    <ellipse cx="150" cy="18" rx="7" ry="5"/>
+    <rect x="147" y="10" width="6" height="9" rx="1"/>
+    <!-- Neck of kalasha -->
+    <rect x="148" y="7" width="4" height="4" rx="1"/>
+    <!-- Coconut/flame on top -->
+    <ellipse cx="150" cy="6" rx="4" ry="4"/>
+    <path d="M148,3 Q150,-2 152,3" fill="#C8963E" stroke="none"/>
+
+    <!-- Decorative elephant faces at base corners (Gajasimha) -->
+    <!-- Left elephant -->
+    <circle cx="35" cy="355" r="8" fill="#8B1A1A" fill-opacity="0.5"/>
+    <ellipse cx="30" cy="356" rx="5" ry="8" fill="#8B1A1A" fill-opacity="0.4"/>
+    <ellipse cx="40" cy="356" rx="5" ry="8" fill="#8B1A1A" fill-opacity="0.4"/>
+    <path d="M30,362 Q35,368 40,362" fill="none" stroke="#FDF6EC" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- Right elephant -->
+    <circle cx="265" cy="355" r="8" fill="#8B1A1A" fill-opacity="0.5"/>
+    <ellipse cx="260" cy="356" rx="5" ry="8" fill="#8B1A1A" fill-opacity="0.4"/>
+    <ellipse cx="270" cy="356" rx="5" ry="8" fill="#8B1A1A" fill-opacity="0.4"/>
+    <path d="M260,362 Q265,368 270,362" fill="none" stroke="#FDF6EC" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- Central gateway arch opening (dark) -->
+    <path d="M122,355 L122,310 Q122,295 150,295 Q178,295 178,310 L178,355 Z" fill="#8B1A1A" fill-opacity="0.4"/>
+    <!-- Arch curve top -->
+    <path d="M122,310 Q122,290 150,288 Q178,290 178,310" fill="#8B1A1A" fill-opacity="0.5"/>
+
+  </g>
+</svg>
