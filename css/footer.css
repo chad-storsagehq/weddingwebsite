@@ -27,6 +27,11 @@
   pointer-events: none;
 }
 
+.footer__content {
+  position: relative;
+  z-index: 1;
+}
+
 .footer__names {
   font-family: var(--font-heading);
   font-size: var(--text-3xl);
