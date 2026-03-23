@@ -1,0 +1,92 @@
+.travel-section {
+  background-color: var(--color-bg);
+  padding: var(--space-xl) 0;
+}
+
+.travel-section__inner {
+  position: relative;
+}
+
+.travel__feather-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.travel__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.travel__card {
+  background: var(--color-white);
+  border: var(--border-gold);
+  border-radius: var(--card-radius);
+  padding: var(--space-md);
+}
+
+.travel__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: var(--border-gold);
+}
+
+.travel__card-body {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.travel__map {
+  height: 200px;
+  background: #f0ebe0;
+  border: var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--card-radius);
+}
+
+.travel__map-placeholder {
+  color: var(--color-gold);
+}
+
+.travel__hotels {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.travel__hotels a {
+  font-size: var(--text-sm);
+  color: var(--color-gold);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.travel__hotels a:hover {
+  border-bottom-color: var(--color-gold);
+}
+
+@media (min-width: 768px) {
+  .travel__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .travel__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
