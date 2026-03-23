@@ -1,6 +1,6 @@
 # Chad & Anusha Wedding Website — Design Spec
 **Date:** 2026-03-22
-**Wedding Date:** August 16, 2025
+**Wedding Date:** August 16, 2026
 **Domain:** ChadandAnusha.com (registered on name.com)
 **Location:** Lancaster, PA
 
@@ -86,7 +86,7 @@ Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP ·
   - Names: "Chad & Anusha" (Cormorant Garamond) with Telugu script below
   - Marigold garland draped across the arch
   - Peacock pair flanking the names
-  - Wedding date: August 16, 2025
+  - Wedding date: August 16, 2026
   - Location: Lancaster, PA
   - Live countdown: Days · Hours · Minutes · Seconds
 - **Welcome note** from Chad & Anusha (brief, warm paragraph)
@@ -129,6 +129,11 @@ Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP ·
 - Couple views all responses at app.netlify.com → Forms dashboard
 - Guests see only a confirmation message after submit: "Thank you! We can't wait to celebrate with you. 🪷"
 - Guest responses are never visible to other guests
+- **RSVP deadline:** TBD — couple to decide cutoff date (recommend ~3 weeks before wedding: ~July 26, 2026)
+- **Dietary notes** go to Netlify dashboard with all other responses; couple exports CSV to share with caterer
+- **Guest count** field: number input, min 1, max 10 (adjustable)
+- **Form error handling:** if submission fails, show inline error message with couple's email as fallback contact
+- **No guest-facing confirmation email** on free Netlify tier (Netlify notifies the couple's email on each submission). Guests should screenshot/note their confirmation message. Can upgrade if needed.
 
 ---
 
@@ -163,7 +168,7 @@ Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP ·
 - Couple's names in Cormorant Garamond
 - Wedding date
 - Small floral vine decoration
-- "Made with love for Chad & Anusha · August 16, 2025"
+- "Made with love for Chad & Anusha · August 16, 2026"
 
 ---
 
