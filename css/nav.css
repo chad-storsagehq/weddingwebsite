@@ -1,0 +1,120 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav--transparent {
+  background: transparent;
+}
+
+.nav--solid {
+  background: var(--color-bg);
+  border-bottom: var(--border-gold);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.nav__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav--solid .nav__logo {
+  color: var(--color-brown);
+}
+
+.nav__links {
+  display: none;
+  list-style: none;
+  gap: var(--space-md);
+}
+
+.nav__links a {
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+.nav--solid .nav__links a {
+  color: var(--color-brown);
+}
+
+.nav__links a:hover {
+  color: var(--color-gold);
+}
+
+.nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-white);
+  transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav--solid .nav__hamburger span {
+  background: var(--color-brown);
+}
+
+.nav__hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav__hamburger.is-open span:nth-child(2) { opacity: 0; }
+.nav__hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav__links.is-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  z-index: 999;
+}
+
+.nav__links.is-open a {
+  color: var(--color-brown);
+  font-size: var(--text-xl);
+}
+
+@media (min-width: 768px) {
+  .nav__links {
+    display: flex;
+  }
+  .nav__hamburger {
+    display: none;
+  }
+}
