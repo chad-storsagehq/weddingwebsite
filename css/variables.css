@@ -37,6 +37,7 @@
   /* Layout */
   --max-width:      1200px;
   --max-width-form: 720px;
+  --max-width-faq:  760px;
   --nav-height:   64px;
   --card-radius:  4px;
   --border-gold:  1px solid var(--color-gold-light);
