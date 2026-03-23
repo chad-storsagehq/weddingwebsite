@@ -82,7 +82,7 @@ All decorative elements are SVG — crisp at any resolution, lightweight.
 
 ### Page 1 — Home
 - **Hero section (full-bleed, Soria-style):**
-  - Full-width couple engagement photo as background (provided by couple)
+  - Full-width **custom composite image** as background: couple in traditional South Indian attire composited onto a South Indian temple (e.g. Madurai Meenakshi or Brihadeeswarar) — created using Canva Pro, Adobe Firefly, or Photoshop
   - Subtle dark overlay so text is readable
   - Ganesha illustration centered at top, in gold linework
   - Telugu invocation: "శ్రీ గణేశాయ నమః" (Shree Ganeshaya Namaha) — small, beneath Ganesha
@@ -191,8 +191,9 @@ All decorative elements are SVG — crisp at any resolution, lightweight.
 - [ ] Driving/parking notes
 - [ ] FAQ answers
 - [ ] Welcome message text
-- [ ] Couple photos (hero background, gallery if added later)
+- [ ] **Hero composite image:** photo of Chad & Anusha in traditional South Indian attire + temple background (Canva Pro / Adobe Firefly / Photoshop). High-res, landscape orientation preferred for desktop; will be cropped center for mobile.
 - [ ] Instagram links / additional photos for visual reference
+- [ ] RSVP deadline date
 
 ---
 
@@ -205,13 +206,34 @@ All decorative elements are SVG — crisp at any resolution, lightweight.
 
 ---
 
-## 8. Mobile Responsiveness
+## 8. Mobile-First Responsive Design
 
-- Single-column layout on mobile
-- Navigation collapses to hamburger menu
-- Event cards stack vertically
-- All SVG motifs scale cleanly
-- Countdown timer remains readable at small sizes
+The site is expected to be viewed primarily on mobile phones (QR code scans). Design and build **mobile-first** — start from the smallest screen and scale up.
+
+**Mobile (< 768px) — primary experience:**
+- Single-column layout throughout
+- Hamburger menu, full-screen overlay nav when opened
+- Large tap targets (min 44px)
+- Hero composite image center-cropped for portrait orientation
+- Event cards stacked vertically, full width
+- Font sizes optimized for phone screens (no pinch-to-zoom needed)
+- Countdown timer prominent and readable
+- Tally RSVP form fills full width, large input fields
+
+**Tablet (768px–1024px):**
+- 2-column event card layout
+- Wider padding/margins
+
+**Desktop (> 1024px):**
+- 3-column event card row
+- Full Soria-style wide layout with generous side margins
+- Nav expands to full horizontal links
+- Hero image shows full landscape composite
+
+**All breakpoints:**
+- All SVG motifs scale cleanly (vector, no blur)
+- Images lazy-loaded
+- No horizontal scroll at any size
 
 ---
 
