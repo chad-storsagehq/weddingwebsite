@@ -1,0 +1,103 @@
+.gifts-section {
+  background-color: var(--color-bg);
+  padding: var(--space-xl) 0;
+}
+
+.gifts-section__inner {
+  position: relative;
+  max-width: var(--max-width-form);
+}
+
+.gifts__intro {
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  max-width: 560px;
+  margin: var(--space-sm) auto var(--space-lg);
+  line-height: 1.8;
+}
+
+.gifts__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 480px) {
+  .gifts__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gifts__card {
+  background: var(--color-white);
+  border: var(--border-gold);
+  border-radius: var(--card-radius);
+  padding: var(--space-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  box-shadow: 0 2px 12px rgba(59,26,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.gifts__card:hover {
+  box-shadow: 0 4px 20px rgba(59,26,0,0.12);
+}
+
+.gifts__card-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.gifts__card-name {
+  font-family: var(--font-label);
+  font-size: var(--text-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brown);
+}
+
+.gifts__card-handle {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-charcoal);
+  word-break: break-all;
+}
+
+.gifts__card-note {
+  font-size: var(--text-xs);
+  color: rgba(44,44,44,0.6);
+  line-height: 1.6;
+}
+
+.gifts__card-btn {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  background: var(--color-gold);
+  color: var(--color-white);
+  font-family: var(--font-label);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 1.25rem;
+  min-height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.gifts__card-btn:hover {
+  background: var(--color-brown);
+  color: var(--color-white);
+}
+
+.gifts__note {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: rgba(44,44,44,0.55);
+  margin-top: var(--space-md);
+  font-style: italic;
+}

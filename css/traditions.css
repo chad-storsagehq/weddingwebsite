@@ -1,0 +1,148 @@
+.traditions-section {
+  background-color: var(--color-white);
+  padding: var(--space-xl) 0;
+}
+
+.traditions-section__inner {
+  position: relative;
+  max-width: var(--max-width-faq);
+}
+
+.traditions__feather-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.traditions__intro {
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  max-width: 580px;
+  margin: var(--space-sm) auto var(--space-lg);
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.traditions__list {
+  margin-top: var(--space-sm);
+}
+
+/* Each ceremony item */
+.traditions__item {
+  border-bottom: var(--border-gold);
+}
+
+.traditions__item:first-of-type {
+  border-top: var(--border-gold);
+}
+
+.traditions__toggle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-md) 0;
+  text-align: left;
+  position: relative;
+  min-height: 44px;
+  transition: color 0.2s;
+}
+
+.traditions__toggle-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.traditions__event-label {
+  font-size: var(--text-xs);
+  color: var(--color-maroon);
+  letter-spacing: 0.15em;
+}
+
+.traditions__event-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.traditions__item--open .traditions__event-name,
+.traditions__toggle:hover .traditions__event-name {
+  color: var(--color-gold);
+}
+
+.traditions__icon {
+  font-size: var(--text-xl);
+  color: var(--color-gold);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  margin-left: var(--space-sm);
+}
+
+.traditions__item--open .traditions__icon {
+  transform: rotate(45deg);
+}
+
+/* Content */
+.traditions__content {
+  padding: 0 0 var(--space-md);
+}
+
+.traditions__content h4 {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-maroon);
+  margin: var(--space-sm) 0 var(--space-xs);
+  font-weight: 400;
+}
+
+.traditions__content p {
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  line-height: 1.85;
+  margin-bottom: var(--space-xs);
+}
+
+.traditions__content ul {
+  list-style: none;
+  margin: var(--space-xs) 0 var(--space-sm) 0;
+}
+
+.traditions__content ul li {
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  line-height: 1.8;
+  padding: 4px 0 4px 1.4em;
+  position: relative;
+}
+
+.traditions__content ul li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-size: 0.5em;
+  top: 0.6em;
+}
+
+.traditions__tip {
+  background: rgba(200,150,62,0.08);
+  border-left: 3px solid var(--color-gold);
+  padding: var(--space-xs) var(--space-sm);
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-brown);
+  font-style: italic;
+  line-height: 1.7;
+}
