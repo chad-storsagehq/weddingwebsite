@@ -46,6 +46,10 @@
   margin-bottom: var(--space-sm);
 }
 
+.travel__card-body + .travel__card-body {
+  margin-top: var(--space-sm);
+}
+
 .travel__map {
   height: 200px;
   background: #f0ebe0;
