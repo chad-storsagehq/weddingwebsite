@@ -52,6 +52,12 @@ img {
   font-size: var(--text-3xl);
   color: var(--color-brown);
   margin-bottom: var(--space-xs);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .section-title { font-size: var(--text-4xl); }
 }
 
 .section-title-telugu {
@@ -83,5 +89,5 @@ img {
 
 /* Responsive typography scale-up */
 @media (min-width: 768px) {
-  h2 { font-size: calc(var(--text-3xl) * 1.2); }
+  h2 { font-size: var(--text-3xl); }
 }

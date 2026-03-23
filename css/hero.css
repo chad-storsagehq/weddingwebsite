@@ -11,9 +11,9 @@
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/hero-bg.svg');
+  background-image: url('../assets/images/hero-temple.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 25%;
   z-index: 0;
 }
 
@@ -31,7 +31,13 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: var(--color-overlay);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.65) 0%,
+    rgba(30,10,0,0.45) 40%,
+    rgba(30,10,0,0.55) 70%,
+    rgba(0,0,0,0.72) 100%
+  );
   z-index: 1;
 }
 
@@ -160,22 +166,25 @@
 }
 
 .hero__vine {
-  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 80px;
+  width: 50px;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.55;
   z-index: 2;
 }
 
 .hero__vine--left  { left: 0; }
 .hero__vine--right { right: 0; transform: scaleX(-1); }
 
+@media (min-width: 768px) {
+  .hero__vine { width: 70px; }
+}
+
 @media (min-width: 1024px) {
-  .hero__vine { display: block; }
+  .hero__vine { width: 80px; }
   .hero__peacocks { left: -80px; right: -80px; width: calc(100% + 160px); }
 }
 
@@ -193,7 +202,11 @@
   font-style: italic;
   max-width: 680px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.9;
+}
+
+@media (min-width: 768px) {
+  .welcome__text { font-size: var(--text-2xl); }
 }
 
 .welcome__names {
