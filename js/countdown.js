@@ -18,7 +18,7 @@
     var diff = WEDDING_DATE - now;
 
     if (diff <= 0) {
-      countdownEl.innerHTML = '<p class="countdown__married">We\'re married!</p>';
+      countdownEl.innerHTML = '<p class="countdown__married">We\'re married! \uD83C\uDF89</p>';
       return;
     }
 
