@@ -10,6 +10,8 @@
 
 A traditional South Indian wedding website for Chad and Anusha. The site serves as the primary information hub for guests, accessible via QR code on printed materials. It must make an immediate, culturally rich first impression when scanned, and be easy for the couple to update.
 
+**Design reference:** Soria Squarespace template — adopt its clean, full-bleed layout, transparent overlaying nav, generous white space, large typography, and photo-forward storytelling structure. Apply South Indian cultural design (gold, motifs, Telugu script) on top of that spacious, elegant foundation. The result should feel like Soria, but unmistakably South Indian.
+
 ---
 
 ## 2. Tech Stack
@@ -74,24 +76,25 @@ All decorative elements are SVG — crisp at any resolution, lightweight.
 ## 4. Site Architecture
 
 ### Navigation
-Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP · Travel · FAQ**. Collapses to hamburger menu on mobile. Smooth scroll to sections.
+**Transparent overlay nav** on the hero (Soria-style) — nav sits on top of the full-bleed photo, text in white/gold. Transitions to ivory background with gold border on scroll. Links: **Home · Events · RSVP · Travel · FAQ**. Collapses to hamburger menu on mobile. Smooth scroll to sections.
 
 ---
 
 ### Page 1 — Home
-- **Hero section:**
-  - Ganesha illustration at top center (gold linework, ornate)
-  - Telugu invocation: "శ్రీ గణేశాయ నమః" (Shree Ganeshaya Namaha)
+- **Hero section (full-bleed, Soria-style):**
+  - Full-width couple engagement photo as background (provided by couple)
+  - Subtle dark overlay so text is readable
+  - Ganesha illustration centered at top, in gold linework
+  - Telugu invocation: "శ్రీ గణేశాయ నమః" (Shree Ganeshaya Namaha) — small, beneath Ganesha
   - Torana arch framing the couple's names
-  - Names: "Chad & Anusha" (Cormorant Garamond) with Telugu script below
-  - Marigold garland draped across the arch
+  - Names: "Chad & Anusha" (Cormorant Garamond, large) with Telugu script below
+  - Marigold garland SVG draped across the arch
   - Peacock pair flanking the names
-  - Wedding date: August 16, 2026
-  - Location: Lancaster, PA
+  - Wedding date: August 16, 2026 · Lancaster, PA
   - Live countdown: Days · Hours · Minutes · Seconds
-- **Welcome note** from Chad & Anusha (brief, warm paragraph)
-- **Background:** Blurred couple photo (provided later) or rich ivory/gold textured pattern
-- Kolam band divider before welcome note
+- **Kolam band divider** transitioning out of hero into content
+- **Welcome note** — generous white space, centered, Cormorant Garamond, brief warm paragraph from Chad & Anusha
+- Clean, airy section layout below — lots of breathing room between elements (Soria-style spacing)
 
 ---
 
