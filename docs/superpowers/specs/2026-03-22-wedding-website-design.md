@@ -18,7 +18,7 @@ A traditional South Indian wedding website for Chad and Anusha. The site serves 
 |---|---|---|
 | UI Design | Google Stitch | Generate initial layout/prototype; export HTML/CSS |
 | Code | Static HTML + CSS + Vanilla JS | No frameworks, no build step |
-| Forms | Netlify Forms | Built-in, free (100 submissions/month), couple-only dashboard |
+| Forms | Tally.so | Free, unlimited submissions, embeds via iframe, syncs to Google Sheets |
 | Hosting | Netlify (free tier) | Auto-deploy from GitHub |
 | Domain | ChadandAnusha.com | Point name.com DNS to Netlify (A record + CNAME) |
 | Version Control | GitHub | Source of truth for all code |
@@ -122,18 +122,17 @@ Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP ·
   - Email Address (email, required)
   - Phone Number (text, optional)
   - Events attending (checkboxes): ☐ Haldi Ceremony ☐ Wedding Ceremony ☐ Reception
-  - Number of guests attending (number, per event or total)
+  - Number of guests attending (number, min 1, max 10)
   - Dietary restrictions / notes (textarea, optional)
   - Submit button (gold, "Send RSVP")
-- **Netlify Forms** handles submission (add `netlify` attribute to `<form>`)
-- Couple views all responses at app.netlify.com → Forms dashboard
+- **Tally.so** hosts the form; embedded in the RSVP page via iframe — guests never leave the site
+- Couple views all responses at tally.so dashboard
+- Tally syncs responses to a **Google Sheet** in real time — easy to share with caterer, filter by event, track headcount
 - Guests see only a confirmation message after submit: "Thank you! We can't wait to celebrate with you. 🪷"
 - Guest responses are never visible to other guests
+- **Unlimited submissions** — no cap regardless of guest count
 - **RSVP deadline:** TBD — couple to decide cutoff date (recommend ~3 weeks before wedding: ~July 26, 2026)
-- **Dietary notes** go to Netlify dashboard with all other responses; couple exports CSV to share with caterer
-- **Guest count** field: number input, min 1, max 10 (adjustable)
-- **Form error handling:** if submission fails, show inline error message with couple's email as fallback contact
-- **No guest-facing confirmation email** on free Netlify tier (Netlify notifies the couple's email on each submission). Guests should screenshot/note their confirmation message. Can upgrade if needed.
+- **Form error handling:** if submission fails, Tally shows inline error; couple's email listed as fallback contact
 
 ---
 
@@ -174,11 +173,12 @@ Fixed top bar, gold border, ivory background. Links: **Home · Events · RSVP ·
 
 ## 5. RSVP Technical Details
 
-- **Service:** Netlify Forms (free, no backend code needed)
-- **Implementation:** `<form name="rsvp" method="POST" netlify>` — Netlify detects and handles automatically
-- **Spam protection:** Netlify honeypot field (`netlify-honeypot="bot-field"`)
-- **Guest view:** Form → success message. No list of other RSVPs shown.
-- **Couple view:** app.netlify.com → Site → Forms → "rsvp" — see all submissions, export to CSV
+- **Service:** [Tally.so](https://tally.so) — free, unlimited submissions
+- **Implementation:** Tally form embedded via `<iframe>` on the RSVP page. Couple builds the form in Tally's editor (no code needed), then pastes the embed code.
+- **Spam protection:** Tally's built-in spam filtering
+- **Guest view:** Embedded form → confirmation message. No other responses visible.
+- **Couple view:** tally.so dashboard → all submissions, filterable by field; export to CSV anytime
+- **Google Sheets sync:** Connect Tally → Google Sheets in one click (Tally integrations). Sheet auto-updates on every new submission — ideal for tracking 500 guests across 3 events.
 
 ---
 
