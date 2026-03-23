@@ -1,0 +1,56 @@
+.footer {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__jasmine {
+  display: block;
+  width: 100%;
+  max-height: 30px;
+  object-fit: cover;
+  opacity: 0.4;
+  margin-bottom: var(--space-md);
+  filter: invert(1);
+}
+
+.footer__vine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.footer__names {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-gold);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.footer__names-telugu {
+  font-family: var(--font-telugu);
+  font-size: var(--text-lg);
+  color: var(--color-gold-light);
+  margin-top: var(--space-xs);
+  opacity: 0.8;
+}
+
+.footer__date {
+  color: rgba(255,255,255,0.6);
+  margin-top: var(--space-sm);
+}
+
+.footer__credit {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.3);
+  margin-top: var(--space-lg);
+  letter-spacing: 0.1em;
+}
