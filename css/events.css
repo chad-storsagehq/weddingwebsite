@@ -20,7 +20,7 @@
   grid-template-columns: 1fr;
   gap: var(--space-lg);
   margin-top: var(--space-lg);
-  padding: 0 var(--space-md);
+  padding: 0;
 }
 
 /* Card */
