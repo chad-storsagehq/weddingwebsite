@@ -117,11 +117,15 @@ button.gifts__card-btn {
   font-size: var(--text-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0 1.25rem;
-  min-height: 40px;
-  line-height: 40px;
+  padding: 0.65rem 1.5rem;
   border-radius: 2px;
+  white-space: nowrap;
   transition: background 0.2s;
+}
+
+.gifts__stripe-wrap {
+  margin-top: var(--space-xs);
+  width: 100%;
 }
 
 .gifts__card-btn:hover {
