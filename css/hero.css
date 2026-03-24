@@ -17,17 +17,6 @@
   z-index: 0;
 }
 
-.hero__gopuram {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  max-width: 600px;
-  opacity: 0.12;
-  filter: invert(1);
-}
-
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -50,15 +39,6 @@
   max-width: 800px;
 }
 
-.hero__ganesha {
-  margin-bottom: var(--space-sm);
-}
-
-.hero__ganesha img {
-  margin: 0 auto var(--space-xs);
-  filter: drop-shadow(0 0 8px rgba(200,150,62,0.6));
-}
-
 .hero__invocation {
   font-family: var(--font-telugu);
   font-size: var(--text-sm);
@@ -66,41 +46,12 @@
   letter-spacing: 0.08em;
 }
 
-.hero__arch-frame {
-  position: relative;
-  display: inline-block;
-  padding: var(--space-md) var(--space-xl);
-  margin: var(--space-sm) 0;
-}
-
-.hero__arch {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  opacity: 0.6;
-}
-
-.hero__garland {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 40px;
-  object-fit: cover;
-}
-
-.hero__peacocks {
-  position: absolute;
-  top: 50%;
-  left: -60px;
-  right: -60px;
-  transform: translateY(-50%);
-  width: calc(100% + 120px);
-  opacity: 0.85;
-  pointer-events: none;
+.hero__divider {
+  width: 160px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  margin: var(--space-sm) auto;
+  opacity: 0.7;
 }
 
 .hero__names {
@@ -185,34 +136,4 @@
 
 @media (min-width: 1024px) {
   .hero__vine { width: 80px; }
-  .hero__peacocks { left: -80px; right: -80px; width: calc(100% + 160px); }
-}
-
-/* Welcome section */
-.welcome {
-  text-align: center;
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
-}
-
-.welcome__text {
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  color: var(--color-brown);
-  font-style: italic;
-  max-width: 680px;
-  margin: 0 auto;
-  line-height: 1.9;
-}
-
-@media (min-width: 768px) {
-  .welcome__text { font-size: var(--text-2xl); }
-}
-
-.welcome__names {
-  font-family: var(--font-label);
-  font-size: var(--text-sm);
-  letter-spacing: 0.1em;
-  color: var(--color-gold);
-  margin-top: var(--space-md);
 }
