@@ -1,11 +1,41 @@
 .gifts-section {
   background-color: var(--color-bg);
   padding: var(--space-xl) 0;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .gifts-section::before,
+  .gifts-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 72px;
+    background-image: url('../assets/svg/floral-vine.svg');
+    background-repeat: repeat-y;
+    background-size: 72px auto;
+    opacity: 0.14;
+    pointer-events: none;
+  }
+  .gifts-section::before { left: 0; }
+  .gifts-section::after  { right: 0; transform: scaleX(-1); }
 }
 
 .gifts-section__inner {
   position: relative;
   max-width: var(--max-width-form);
+}
+
+.gifts__watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 340px;
+  opacity: 0.035;
+  pointer-events: none;
 }
 
 .gifts__intro {
@@ -19,13 +49,13 @@
 
 .gifts__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-sm);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 600px) {
   .gifts__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

@@ -1,6 +1,25 @@
 .travel-section {
   background-color: var(--color-bg);
   padding: var(--space-xl) 0;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .travel-section::before,
+  .travel-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 56px;
+    background-image: url('../assets/svg/floral-vine.svg');
+    background-repeat: repeat-y;
+    background-size: 56px auto;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  .travel-section::before { left: 0; }
+  .travel-section::after  { right: 0; transform: scaleX(-1); }
 }
 
 .travel-section__inner {
