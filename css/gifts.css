@@ -123,11 +123,6 @@ button.gifts__card-btn {
   transition: background 0.2s;
 }
 
-.gifts__stripe-wrap {
-  margin-top: var(--space-xs);
-  width: 100%;
-}
-
 .gifts__card-btn:hover {
   background: var(--color-brown);
   color: var(--color-white);
