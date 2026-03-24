@@ -116,6 +116,51 @@
   color: var(--color-gold);
 }
 
+/* Ganesha motif above invocation text */
+.hero__ganesha-motif {
+  display: block;
+  width: 140px;
+  margin: 0 auto var(--space-sm);
+  filter: drop-shadow(0 0 18px rgba(200,150,62,0.55)) drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Peacock photo decorations - sides of hero */
+.hero__peacock {
+  position: absolute;
+  bottom: 0;
+  width: 220px;
+  height: 68%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.42;
+}
+
+.hero__peacock--left {
+  left: 0;
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
+}
+
+.hero__peacock--right {
+  right: 0;
+  transform: scaleX(-1);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
+}
+
+@media (max-width: 600px) {
+  .hero__peacock { width: 110px; opacity: 0.28; height: 55%; }
+  .hero__ganesha-motif { width: 110px; }
+}
+
+@media (min-width: 1024px) {
+  .hero__peacock { width: 300px; }
+  .hero__ganesha-motif { width: 160px; }
+}
+
 .hero__vine {
   position: absolute;
   top: 0;

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <!-- Ganesha hero - filled gold with definition strokes, for hero placement -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E8B866" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#A0701A" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8963E" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#C8963E" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  <g fill="#C8963E" fill-opacity="0.5" stroke="#C8963E" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Crown -->
+    <path d="M85,30 L85,20 L90,12 L95,8 L100,6 L105,8 L110,12 L115,20 L115,30 L113,30 L113,22 L108,14 L100,10 L92,14 L87,22 L87,30 Z"/>
+    <circle cx="100" cy="10" r="4"/>
+    <circle cx="89" cy="16" r="3"/>
+    <circle cx="111" cy="16" r="3"/>
+    <path d="M83,28 Q100,18 117,28 L117,32 Q100,22 83,32 Z"/>
+    <path d="M86,32 L87,26 L100,22 L113,26 L114,32 L112,32 L111,27 L100,24 L89,27 L88,32 Z"/>
+
+    <!-- Halo rings - using gradient -->
+    <path fill="url(#haloGrad)" stroke="#C8963E" stroke-width="0.8"
+      d="M62,70 A38,38 0 1,1 138,70 A38,38 0 1,1 62,70 Z M66,70 A34,34 0 1,0 134,70 A34,34 0 1,0 66,70 Z"/>
+
+    <!-- Left Ear -->
+    <ellipse cx="62" cy="72" rx="22" ry="28"/>
+    <!-- Right Ear -->
+    <ellipse cx="138" cy="72" rx="22" ry="28"/>
+
+    <!-- Head - body gradient fill -->
+    <ellipse fill="url(#bodyGrad)" stroke="#C8963E" stroke-width="0.8" cx="100" cy="72" rx="30" ry="32"/>
+
+    <!-- Forehead bindi -->
+    <ellipse cx="100" cy="58" rx="5" ry="3" fill-opacity="0.85"/>
+
+    <!-- Eyes -->
+    <ellipse cx="88" cy="68" rx="6" ry="5"/>
+    <ellipse cx="112" cy="68" rx="6" ry="5"/>
+
+    <!-- Trunk -->
+    <path d="M93,82 Q86,90 82,98 Q78,110 85,117 Q93,122 100,118 Q107,114 105,107 Q111,101 107,94 Q103,89 99,93 Q97,96 98,100 Q99,104 103,105 Q107,111 101,117 Q95,121 88,115 Q82,108 84,98 Q88,90 95,82 Z"/>
+
+    <!-- Tusks -->
+    <path d="M83,84 Q73,88 70,98 Q67,106 71,111 Q74,114 76,112 Q72,106 75,98 Q78,90 86,86 Z"/>
+    <path d="M117,84 Q127,88 130,98 Q133,106 129,111 Q126,114 124,112 Q128,106 125,98 Q122,90 115,86 Z"/>
+
+    <!-- Body -->
+    <path fill="url(#bodyGrad)" stroke="#C8963E" stroke-width="0.8"
+      d="M70,100 Q60,115 60,130 Q60,150 72,155 Q65,160 65,200 Q100,215 135,200 Q135,160 128,155 Q140,150 140,130 Q140,115 130,100 Q115,108 100,108 Q85,108 70,100 Z"/>
+
+    <!-- Belly -->
+    <ellipse cx="100" cy="172" rx="35" ry="38"/>
+
+    <!-- Arms - upper left -->
+    <path d="M72,120 Q55,116 45,108 Q38,103 37,94 Q35,85 40,86 Q28,82 25,74 Q26,66 33,68 Q37,70 38,78 L44,88 Q42,85 46,90 Q52,110 70,116 Z"/>
+    <!-- Upper right arm -->
+    <path d="M128,120 Q145,116 155,108 Q162,103 163,94 Q165,85 160,86 Q162,82 164,76 Q163,68 157,68 Q158,72 160,80 Q156,88 158,86 Q154,90 148,110 L130,116 Z"/>
+    <!-- Noose detail -->
+    <ellipse cx="164" cy="74" rx="7" ry="6"/>
+
+    <!-- Lower left arm -->
+    <path d="M72,138 Q60,150 56,165 Q54,175 58,183 Q53,190 58,198 Q64,202 70,198 Q76,192 74,183 Q72,174 76,164 Q80,150 74,140 Z"/>
+
+    <!-- Lower right arm + modak -->
+    <path d="M128,138 Q140,150 144,165 Q146,175 142,183 L132,183 Q136,176 134,166 Q130,151 126,140 Z"/>
+    <ellipse cx="142" cy="190" rx="9" ry="10"/>
+
+    <!-- Seated legs -->
+    <path d="M72,202 Q64,213 62,224 Q64,232 73,234 Q88,236 100,234 Q112,236 127,234 Q136,232 138,224 Q136,213 128,202 Q115,212 100,212 Q85,212 72,202 Z"/>
+
+    <!-- Lotus seat -->
+    <path d="M58,228 Q70,218 82,226 Q70,234 58,228 Z" fill-opacity="0.7"/>
+    <path d="M82,226 Q94,218 106,226 Q94,234 82,226 Z" fill-opacity="0.7"/>
+    <path d="M106,226 Q118,218 130,226 Q118,234 106,226 Z" fill-opacity="0.7"/>
+    <path d="M130,226 Q142,218 142,228 Q132,234 130,226 Z" fill-opacity="0.7"/>
+    <ellipse cx="100" cy="232" rx="42" ry="10"/>
+
+    <!-- Necklace -->
+    <path d="M76,102 Q100,116 124,102 Q122,107 100,118 Q78,107 76,102 Z" fill-opacity="0.7"/>
+
+    <!-- Om symbol on belly (simplified) -->
+    <circle cx="100" cy="172" r="8" fill="none" stroke="#C8963E" stroke-width="1" stroke-opacity="0.6"/>
+    <circle cx="100" cy="172" r="3" fill-opacity="0.6"/>
+  </g>
+</svg>
