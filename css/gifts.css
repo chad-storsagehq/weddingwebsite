@@ -103,6 +103,11 @@
   line-height: 1.6;
 }
 
+button.gifts__card-btn {
+  border: none;
+  cursor: pointer;
+}
+
 .gifts__card-btn {
   display: inline-block;
   margin-top: var(--space-xs);
