@@ -116,69 +116,38 @@
   color: var(--color-gold);
 }
 
-/* Ganesha motif above invocation text */
+/* Om symbol above invocation text */
 .hero__ganesha-motif {
   display: block;
-  width: 140px;
+  font-family: 'Noto Serif Telugu', serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--color-gold);
   margin: 0 auto var(--space-sm);
-  filter: drop-shadow(0 0 18px rgba(200,150,62,0.55)) drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  text-shadow: 0 0 28px rgba(200,150,62,0.55), 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Peacock photo decorations - sides of hero */
-.hero__peacock {
-  position: absolute;
-  bottom: 0;
-  width: 220px;
-  height: 68%;
-  max-height: 520px;
-  object-fit: cover;
-  object-position: top center;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.42;
-}
-
-.hero__peacock--left {
-  left: 0;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
-}
-
-.hero__peacock--right {
-  right: 0;
-  transform: scaleX(-1);
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 55%, transparent 100%);
-}
-
-@media (max-width: 600px) {
-  .hero__peacock { width: 110px; opacity: 0.28; height: 55%; }
-  .hero__ganesha-motif { width: 110px; }
-}
-
-@media (min-width: 1024px) {
-  .hero__peacock { width: 300px; }
-  .hero__ganesha-motif { width: 160px; }
-}
-
+/* Decorative floral vine - sides of hero */
 .hero__vine {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50px;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.55;
+  width: 56px;
+  background-image: url('../assets/svg/floral-vine.svg');
+  background-repeat: repeat-y;
+  background-size: 56px auto;
+  opacity: 0.38;
   z-index: 2;
+  pointer-events: none;
 }
 
 .hero__vine--left  { left: 0; }
 .hero__vine--right { right: 0; transform: scaleX(-1); }
 
 @media (min-width: 768px) {
-  .hero__vine { width: 70px; }
+  .hero__vine { width: 68px; background-size: 68px auto; }
 }
 
 @media (min-width: 1024px) {
-  .hero__vine { width: 80px; }
+  .hero__vine { width: 80px; background-size: 80px auto; opacity: 0.32; }
 }
