@@ -1,5 +1,5 @@
 .about-section {
-  background: rgba(250, 243, 234, 0.90);
+  background: transparent;
   padding: var(--space-xl) 0;
   position: relative;
   z-index: 2;
@@ -61,6 +61,20 @@
   font-family: var(--font-heading);
   font-size: var(--text-lg);
   line-height: 1.9;
-  color: var(--color-charcoal);
+  color: rgba(255,255,255,0.90);
   font-style: italic;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+
+/* Section title + Telugu subtitle on photo background */
+.about-section .section-title {
+  color: var(--color-white);
+  text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+}
+
+/* Corner frame — gold instead of mauve on dark bg */
+.about-section__inner.section::before,
+.about-section__inner.section::after {
+  border-color: var(--color-gold);
+  opacity: 0.4;
 }
