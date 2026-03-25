@@ -2,6 +2,7 @@
   position: relative;
   background-color: var(--color-blush);
   padding: var(--space-xl) 0;
+  overflow: hidden;
 }
 
 .events__watermark {
