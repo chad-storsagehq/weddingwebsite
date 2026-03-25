@@ -101,6 +101,70 @@ img {
   margin: 0;
 }
 
+/* Peacock photo strip between hero and first content section */
+.peacock-strip {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.peacock-strip__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .peacock-strip { height: 260px; }
+}
+
+@media (min-width: 1024px) {
+  .peacock-strip { height: 300px; }
+}
+
+/* Colored band divider between sections — warm marigold gradient */
+.section-band {
+  width: 100%;
+  height: 44px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(200,130,40,0.18) 15%,
+    rgba(195,85,25,0.22) 40%,
+    rgba(195,85,25,0.22) 60%,
+    rgba(200,130,40,0.18) 85%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-band::before,
+.section-band::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,150,62,0.6));
+  margin: 0 20px;
+}
+
+.section-band::after {
+  background: linear-gradient(to left, transparent, rgba(200,150,62,0.6));
+}
+
+.section-band__ornament {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
 /* Gold label text */
 .label {
   font-family: var(--font-label);
