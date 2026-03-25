@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="css/rsvp.css">
   <link rel="stylesheet" href="css/travel.css">
   <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/traditions.css">
+  <link rel="stylesheet" href="css/dresscode.css">
   <link rel="stylesheet" href="css/gifts.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="icon" type="image/svg+xml" href="assets/svg/lotus.svg">
@@ -36,8 +38,10 @@
       </button>
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
+        <li><a href="#about">Our Story</a></li>
         <li><a href="#events">Events</a></li>
         <li><a href="#guide">Guide</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
         <li><a href="#rsvp">RSVP</a></li>
         <li><a href="#travel">Travel</a></li>
         <li><a href="#gifts">Gifts</a></li>
@@ -97,6 +101,33 @@
     <!-- KOLAM DIVIDER -->
     <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
 
+    <!-- ABOUT US -->
+    <section id="about" class="about-section">
+      <div class="section about-section__inner">
+        <h2 class="section-title">
+          Our Story
+          <span class="section-title-telugu" lang="te">మా కథ</span>
+        </h2>
+
+        <div class="about__layout">
+          <div class="about__photo-wrap">
+            <!-- Replace this placeholder with your photo -->
+            <div class="about__photo-placeholder" aria-label="Photo of Chad and Anusha coming soon">
+              <span>Photo Coming Soon</span>
+            </div>
+          </div>
+          <div class="about__text">
+            <p class="about__story">
+              Story coming soon — we'll share how we met and our journey together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOLAM DIVIDER -->
+    <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
+
     <!-- EVENTS -->
     <section id="events" class="events-section">
       <div class="section">
@@ -123,10 +154,10 @@
           <span class="event-card__title-telugu" lang="te">హల్దీ వేడుక</span>
         </h3>
         <p class="label event-card__date">August 15, 2026</p>
-        <p class="event-card__time">Time TBD</p>
-        <p class="event-card__venue">Venue TBD</p>
-        <p class="event-card__address">Lancaster, PA</p>
-        <a href="" class="event-card__directions" aria-label="Get directions to Haldi Ceremony (venue to be confirmed)" aria-disabled="true" tabindex="-1">Get Directions</a>
+        <p class="event-card__time">11:00 AM</p>
+        <p class="event-card__venue">Sanivarapu Residence</p>
+        <p class="event-card__address">62 Cumberland Estates Dr, Mechanicsburg, PA 17050</p>
+        <a href="https://maps.google.com/?q=62+Cumberland+Estates+Dr+Mechanicsburg+PA+17050" class="event-card__directions" aria-label="Get directions to Haldi Ceremony" target="_blank" rel="noopener noreferrer">Get Directions</a>
       </div>
     </article>
 
@@ -144,7 +175,7 @@
           <span class="event-card__title-telugu" lang="te">వివాహ వేడుక</span>
         </h3>
         <p class="label event-card__date">August 16, 2026</p>
-        <p class="event-card__time">Doors: 11:00 AM &nbsp;·&nbsp; Ceremony: 12:50 PM</p>
+        <p class="event-card__time">Arrival: 11:00 AM &nbsp;·&nbsp; Ceremony: 12:50 PM</p>
         <p class="event-card__venue">Stevens School Ballroom</p>
         <p class="event-card__address">355 W Chestnut St, Lancaster, PA 17603</p>
         <a href="https://maps.google.com/?q=355+W+Chestnut+St+Lancaster+PA+17603" class="event-card__directions" aria-label="Get directions to Stevens School Ballroom" target="_blank" rel="noopener noreferrer">Get Directions</a>
@@ -188,10 +219,6 @@
           Our Celebration Guide
           <span class="section-title-telugu" lang="te">వేడుక మార్గదర్శి</span>
         </h2>
-        <p class="traditions__intro">
-          Never been to a South Indian Hindu wedding? You're in for something beautiful.
-          Here's what to expect at each celebration — so you can be fully present in every moment.
-        </p>
 
         <div class="traditions__list">
 
@@ -200,12 +227,12 @@
             <button class="traditions__toggle" aria-expanded="false">
               <span class="traditions__event-label label">August 15 · Pre-Wedding</span>
               <div class="traditions__toggle-inner">
-                <span class="traditions__event-name">🌿 The Haldi Ceremony</span>
+                <span class="traditions__event-name">The Haldi Ceremony</span>
                 <span class="traditions__icon" aria-hidden="true">+</span>
               </div>
             </button>
             <div class="traditions__content" hidden>
-              <p>The Haldi is a joyful, informal pre-wedding celebration held the day before the wedding. "Haldi" means turmeric — and in Telugu tradition it is called <em>pasupu</em>. Family and friends gather to apply a paste of turmeric, sandalwood, and rose water to the bride and groom's face, arms, and feet.</p>
+              <p>The Haldi is an intimate pre-wedding celebration for close family and friends only, held the day before the wedding. "Haldi" means turmeric — and in Telugu tradition it is called <em>pasupu</em>. Loved ones gather to apply a paste of turmeric, sandalwood, and rose water to the bride and groom's face, arms, and feet.</p>
 
               <h4>Why turmeric?</h4>
               <p>In Hindu tradition, turmeric is sacred. It is believed to purify the body, protect from negative energy, and give the skin a natural glow before the wedding. Applying it is both a blessing and a celebration.</p>
@@ -246,7 +273,7 @@
             <button class="traditions__toggle" aria-expanded="false">
               <span class="traditions__event-label label">August 16 · The Wedding</span>
               <div class="traditions__toggle-inner">
-                <span class="traditions__event-name">🕉️ The Wedding Ceremony</span>
+                <span class="traditions__event-name">The Wedding Ceremony</span>
                 <span class="traditions__icon" aria-hidden="true">+</span>
               </div>
             </button>
@@ -310,7 +337,7 @@
             <button class="traditions__toggle" aria-expanded="false">
               <span class="traditions__event-label label">August 16 · Evening Celebration</span>
               <div class="traditions__toggle-inner">
-                <span class="traditions__event-name">🎉 The Reception</span>
+                <span class="traditions__event-name">The Reception</span>
                 <span class="traditions__icon" aria-hidden="true">+</span>
               </div>
             </button>
@@ -355,6 +382,99 @@
     <!-- KOLAM DIVIDER -->
     <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
 
+    <!-- DRESS CODE -->
+    <section id="dresscode" class="dresscode-section">
+      <div class="section dresscode-section__inner">
+        <h2 class="section-title">
+          Dress Code
+          <span class="section-title-telugu" lang="te">దుస్తుల నియమాలు</span>
+        </h2>
+        <p class="dresscode__intro">
+          South Indian celebrations are vibrant and colorful. Please embrace festive colors — your outfit is part of the celebration.
+        </p>
+
+        <div class="dresscode__grid">
+
+          <!-- Haldi -->
+          <div class="dresscode__card">
+            <div class="dresscode__card-header">
+              <span class="dresscode__event-label label">August 15 · Haldi</span>
+            </div>
+            <div class="dresscode__card-body">
+              <p class="dresscode__colors"><strong>Colors:</strong> Yellow &amp; orange — the colors of the day</p>
+              <p>Casual and comfortable is the goal. Turmeric stains, so avoid white, cream, and silk entirely.</p>
+              <p><strong>Women:</strong> Salwar kameez, anarkali, or a bright yellow sundress in yellow or orange. Avoid silk sarees — turmeric will stain permanently.</p>
+              <p><strong>Men:</strong> Kurta pajama in yellow, mustard, or orange. Simple and comfortable.</p>
+              <div class="dresscode__tip">Bring your phone fully charged — this ceremony has incredible photo moments. Turmeric on you is considered a blessing!</div>
+            </div>
+          </div>
+
+          <!-- Wedding -->
+          <div class="dresscode__card">
+            <div class="dresscode__card-header">
+              <span class="dresscode__event-label label">August 16 · Ceremony</span>
+            </div>
+            <div class="dresscode__card-body">
+              <p class="dresscode__colors"><strong>Colors:</strong> Gold, red, deep blue, emerald, jewel tones. Avoid white or black.</p>
+              <p><strong>Women (Indian):</strong> Kanchipuram or Kanjeevaram silk saree, lehenga choli, or formal anarkali.</p>
+              <p><strong>Men (Indian):</strong> Sherwani, dhoti kurta, or kurta pajama with Nehru jacket.</p>
+              <p><strong>Western formal equally welcome:</strong> Suit &amp; tie (men) or floor-length gown/cocktail dress in a rich festive color (women).</p>
+              <div class="dresscode__tip">Not sure? A suit and tie (men) or formal dress (women) in a bold, festive color is always perfect.</div>
+            </div>
+          </div>
+
+          <!-- Reception -->
+          <div class="dresscode__card">
+            <div class="dresscode__card-header">
+              <span class="dresscode__event-label label">August 16 · Reception</span>
+            </div>
+            <div class="dresscode__card-body">
+              <p class="dresscode__colors"><strong>Colors:</strong> Semi-formal, festive. You'll want something you can dance in.</p>
+              <p><strong>Women (Indian):</strong> Lighter chiffon or georgette saree, lehenga choli, anarkali, or Indo-western fusion.</p>
+              <p><strong>Men (Indian):</strong> Kurta pajama — more comfortable for dancing than a sherwani. A Nehru jacket over a kurta elevates the look.</p>
+              <p><strong>Western semi-formal equally welcome:</strong> Cocktail dress or midi for women, blazer or sport coat for men.</p>
+              <div class="dresscode__tip">Wear comfortable shoes you can dance in — the dance floor will be packed all night.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="dresscode__shopping">
+          <h3 class="dresscode__shopping-title">Where to Shop for Indian Attire</h3>
+          <div class="dresscode__shopping-grid">
+            <div>
+              <p class="dresscode__price-tier"><strong>Budget-friendly ($30–$150)</strong></p>
+              <ul>
+                <li><a href="https://www.amazon.com/s?k=indian+wedding+guest+attire" target="_blank" rel="noopener noreferrer">Amazon</a> — Wide selection</li>
+                <li><a href="https://www.etsy.com/search?q=indian+wedding+guest+dress" target="_blank" rel="noopener noreferrer">Etsy</a> — Independent designers</li>
+                <li><a href="https://www.cbazaar.com" target="_blank" rel="noopener noreferrer">Cbazaar.com</a></li>
+                <li><a href="https://www.utsavfashion.com" target="_blank" rel="noopener noreferrer">Utsav Fashion</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="dresscode__price-tier"><strong>Mid-range ($150–$400)</strong></p>
+              <ul>
+                <li><a href="https://www.koskii.com" target="_blank" rel="noopener noreferrer">Koskii</a></li>
+                <li><a href="https://www.panashindia.com" target="_blank" rel="noopener noreferrer">Panash India</a></li>
+                <li><a href="https://www.frontierraas.com" target="_blank" rel="noopener noreferrer">Frontier Raas</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="dresscode__price-tier"><strong>Luxury ($400+)</strong></p>
+              <ul>
+                <li><a href="https://www.pothys.com" target="_blank" rel="noopener noreferrer">Pothys</a> — Premier Kanchipuram silk sarees</li>
+                <li><a href="https://www.thenni.com" target="_blank" rel="noopener noreferrer">The Nni</a> — Modern South Indian designer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KOLAM DIVIDER -->
+    <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
+
     <!-- RSVP -->
     <section id="rsvp" class="rsvp-section">
       <div class="section rsvp-section__inner">
@@ -371,10 +491,10 @@
           <img src="assets/svg/lotus.svg" class="rsvp__lotus rsvp__lotus--right" alt="" aria-hidden="true">
 
           <iframe
-            src="https://tally.so/embed/ZjJ4xo?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/ZjJ4xo?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height="600"
+            height="300"
             title="RSVP Form"
             class="rsvp__iframe"
           ></iframe>
@@ -462,13 +582,13 @@
           <strong>Parking Garages (Downtown Lancaster):</strong><br>
           <br>
           <a href="https://maps.google.com/?q=225+N+Prince+St+Lancaster+PA+17603" target="_blank" rel="noopener noreferrer" class="travel__parking-link">Prince Street Garage</a><br>
-          225 N Prince St · Closest to Trust46 (~1 min walk) · ~$2/hr<br>
+          225 N Prince St · Closest to Trust46 (~1 min walk)<br>
           <br>
           <a href="https://maps.google.com/?q=220+N+Water+St+Lancaster+PA+17603" target="_blank" rel="noopener noreferrer" class="travel__parking-link">Water Street Garage</a><br>
-          220 N Water St · ~5 min walk to both venues · ~$1.50/hr<br>
+          220 N Water St · ~5 min walk to both venues<br>
           <br>
           <a href="https://maps.google.com/?q=28+S+Duke+St+Lancaster+PA+17602" target="_blank" rel="noopener noreferrer" class="travel__parking-link">Duke Street Garage</a><br>
-          28 S Duke St · ~6 min walk to both venues · ~$1.50/hr
+          28 S Duke St · ~6 min walk to both venues
         </p>
       </div>
     </div>
@@ -521,7 +641,7 @@
 
         </div>
 
-        <p class="gifts__note">Prefer to write a check? Make it out to "Chad Mullin" and include a note — we'd love to know it's from you.</p>
+        <p class="gifts__note">Checks accepted — just include a note so we know it's from you.</p>
       </div>
     </section>
 
@@ -592,20 +712,6 @@
       </div>
     </div>
 
-    <div class="faq__item">
-      <button class="faq__question" aria-expanded="false">
-        What time should I arrive?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </button>
-      <div class="faq__answer" hidden>
-        <p>We recommend arriving 15–20 minutes early for each event to get settled.</p>
-        <ul>
-          <li><strong>Haldi (Aug 15):</strong> Time and venue TBD — details coming soon.</li>
-          <li><strong>Wedding Ceremony (Aug 16):</strong> Doors open at 11:00 AM, ceremony begins at 12:50 PM. Plan to arrive by 11:00 AM to find your seat before the ceremony starts.</li>
-          <li><strong>Reception (Aug 16):</strong> Begins at 6:30 PM at Trust46. Aim to arrive by 6:15 PM for the cocktail hour.</li>
-        </ul>
-      </div>
-    </div>
 
     <div class="faq__item">
       <button class="faq__question" aria-expanded="false">
@@ -629,6 +735,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
   <script src="js/hero-parallax.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/countdown.js"></script>

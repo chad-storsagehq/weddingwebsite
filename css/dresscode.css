@@ -1,0 +1,130 @@
+.dresscode-section {
+  background-color: var(--color-bg);
+  padding: var(--space-xl) 0;
+  position: relative;
+}
+
+.dresscode-section__inner {
+  position: relative;
+  max-width: var(--max-width);
+}
+
+.dresscode__intro {
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--color-charcoal);
+  max-width: 560px;
+  margin: var(--space-sm) auto var(--space-lg);
+  line-height: 1.8;
+}
+
+.dresscode__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .dresscode__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.dresscode__card {
+  background: var(--color-white);
+  border: var(--border-gold);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(59,26,0,0.06);
+}
+
+.dresscode__card-header {
+  background: var(--color-gold);
+  padding: var(--space-xs) var(--space-md);
+}
+
+.dresscode__event-label {
+  color: var(--color-white);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+}
+
+.dresscode__card-body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.dresscode__card-body p {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.dresscode__colors {
+  color: var(--color-brown) !important;
+}
+
+.dresscode__tip {
+  margin-top: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: rgba(200,150,62,0.08);
+  border-left: 2px solid var(--color-gold);
+  font-size: var(--text-xs);
+  color: var(--color-charcoal);
+  line-height: 1.6;
+  font-style: italic;
+  border-radius: 0 2px 2px 0;
+}
+
+.dresscode__shopping {
+  border-top: var(--border-gold);
+  padding-top: var(--space-md);
+}
+
+.dresscode__shopping-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.dresscode__shopping-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 600px) {
+  .dresscode__shopping-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.dresscode__price-tier {
+  font-size: var(--text-sm);
+  color: var(--color-brown);
+  margin-bottom: var(--space-xs);
+}
+
+.dresscode__shopping ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dresscode__shopping a {
+  font-size: var(--text-sm);
+  color: var(--color-gold);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.dresscode__shopping a:hover {
+  border-bottom-color: var(--color-gold);
+}
