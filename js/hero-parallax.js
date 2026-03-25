@@ -6,23 +6,34 @@
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  var heroEl = document.getElementById('hero-area');
-  var heroBottom = 0;
+  var heroEl   = document.getElementById('hero-area');
+  var heroSection = document.getElementById('home');
+  var heroBottom  = 0;
+  var heroSectionBottom = 0;
 
   function recalc() {
-    heroBottom = heroEl ? heroEl.getBoundingClientRect().bottom + window.pageYOffset : 0;
+    var scrollY = window.pageYOffset;
+    heroBottom        = heroEl      ? heroEl.getBoundingClientRect().bottom      + scrollY : 0;
+    heroSectionBottom = heroSection ? heroSection.getBoundingClientRect().bottom + scrollY : 0;
   }
 
   function onScroll() {
     var scrollY = window.pageYOffset;
     if (scrollY > heroBottom) return;
 
-    // Progress 0→1 as user scrolls from page top through the entire hero+about area
-    var progress = Math.max(0, Math.min(1, scrollY / heroBottom));
+    var bgY;
 
-    // Map to background-position: 5% (sky at top) → 88% (ground at bottom)
-    // Temple is ~50% into image, visible around mid-scroll
-    var bgY = 5 + progress * 83;
+    if (scrollY <= heroSectionBottom) {
+      // Phase 1 — inside the Hero section: sky (5%) → temple center (52%)
+      var p1 = scrollY / heroSectionBottom;
+      bgY = 5 + p1 * 47;
+    } else {
+      // Phase 2 — inside the Our Story section: temple (52%) → ground (88%)
+      var remaining = heroBottom - heroSectionBottom;
+      var p2 = (scrollY - heroSectionBottom) / remaining;
+      bgY = 52 + p2 * 36;
+    }
+
     heroBg.style.backgroundPosition = 'center ' + bgY + '%';
   }
 
