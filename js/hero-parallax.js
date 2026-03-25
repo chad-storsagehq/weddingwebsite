@@ -4,7 +4,6 @@
   var heroBg = document.querySelector('.hero__bg');
   if (!heroBg) return;
 
-  // Respect user's reduced-motion preference
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var heroEl = document.getElementById('hero-area');
@@ -16,9 +15,15 @@
 
   function onScroll() {
     var scrollY = window.pageYOffset;
-    // Only run while hero is visible
     if (scrollY > heroBottom) return;
-    heroBg.style.transform = 'translateY(' + (scrollY * 0.38) + 'px)';
+
+    // Progress 0→1 as user scrolls from page top through the entire hero+about area
+    var progress = Math.max(0, Math.min(1, scrollY / heroBottom));
+
+    // Map to background-position: 5% (sky at top) → 88% (ground at bottom)
+    // Temple is ~50% into image, visible around mid-scroll
+    var bgY = 5 + progress * 83;
+    heroBg.style.backgroundPosition = 'center ' + bgY + '%';
   }
 
   recalc();
