@@ -7,7 +7,7 @@
   // Respect user's reduced-motion preference
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  var heroEl = document.getElementById('home');
+  var heroEl = document.getElementById('hero-area');
   var heroBottom = 0;
 
   function recalc() {

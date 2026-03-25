@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Colorful peacock pair facing each other — teal/blue/gold palette -->
+
+  <!-- LEFT PEACOCK -->
+  <g>
+    <!-- Tail fan feathers — deep teal, layered blues -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M120,130 Q80,80 30,60"   stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q70,90 20,80"   stroke="#1B6B8A" stroke-width="1.6"/>
+      <path d="M120,130 Q72,100 18,105" stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q75,110 20,125" stroke="#1A7A6E" stroke-width="1.6"/>
+      <path d="M120,130 Q80,118 22,145" stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q82,128 30,160" stroke="#1B6B8A" stroke-width="1.6"/>
+      <path d="M120,130 Q85,135 40,172" stroke="#2A9D8F" stroke-width="1.6"/>
+      <!-- Filler feathers -->
+      <path d="M119,128 Q82,85 40,72"    stroke="#6AB4D0" stroke-width="0.9" stroke-dasharray="3,2"/>
+      <path d="M119,128 Q78,115 35,140"  stroke="#6AB4D0" stroke-width="0.9" stroke-dasharray="3,2"/>
+    </g>
+
+    <!-- Feather eye ornaments — gold center, teal ring, blue outer -->
+    <g>
+      <ellipse cx="30"  cy="60"  rx="5.5" ry="7" transform="rotate(-30 30 60)"  fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="30"  cy="60"  r="2.5" fill="#C8963E" stroke="none" transform="rotate(-30 30 60)"/>
+      <ellipse cx="20"  cy="80"  rx="5.5" ry="7" transform="rotate(-15 20 80)"  fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="20"  cy="80"  r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="18"  cy="105" rx="5.5" ry="7"                                 fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="18"  cy="105" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="20"  cy="125" rx="5.5" ry="7"                                 fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="20"  cy="125" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="22"  cy="145" rx="5.5" ry="7"                                 fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="22"  cy="145" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="30"  cy="160" rx="5.5" ry="7" transform="rotate(15 30 160)"  fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="30"  cy="160" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="40"  cy="172" rx="5.5" ry="7" transform="rotate(25 40 172)"  fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="40"  cy="172" r="2.5" fill="#C8963E" stroke="none"/>
+    </g>
+
+    <!-- Body — filled teal -->
+    <ellipse cx="130" cy="140" rx="18" ry="12" fill="#2A9D8F" stroke="#1A7A6E" stroke-width="1.5"/>
+    <!-- Wing detail -->
+    <path d="M120,135 Q128,130 138,133 Q132,140 122,140 Z" fill="#1A7A6E" fill-opacity="0.5" stroke="none"/>
+    <path d="M122,140 Q130,136 140,138 Q134,145 124,145 Z" fill="#1A7A6E" fill-opacity="0.4" stroke="none"/>
+
+    <!-- Neck — blue-green -->
+    <path d="M138,132 Q142,122 145,112 Q147,106 145,100" stroke="#1A7A6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Neck scales -->
+    <path d="M139,128 Q143,126 145,130" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+    <path d="M140,122 Q144,120 146,124" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+    <path d="M141,116 Q145,114 146,118" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+
+    <!-- Head — dark teal -->
+    <ellipse cx="144" cy="96" rx="9" ry="8" fill="#264653" stroke="#1A7A6E" stroke-width="1.5"/>
+    <!-- Eye -->
+    <ellipse cx="148" cy="94" rx="3" ry="2.5" fill="#6AB4D0" stroke="#2A9D8F" stroke-width="1"/>
+    <circle  cx="149" cy="94" r="1.5" fill="#1A3040" stroke="none"/>
+
+    <!-- Crest feathers — gold -->
+    <path d="M140,90 Q138,82 136,76" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="136" cy="74" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <path d="M144,88 Q143,80 142,74" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="142" cy="72" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <path d="M148,90 Q150,82 152,76" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="152" cy="74" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+
+    <!-- Beak — gold -->
+    <path d="M153,97 Q160,96 163,98 Q160,100 153,100 Z" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+
+    <!-- Legs — dark teal -->
+    <path d="M124,150 Q122,162 120,172 Q118,178 115,180" stroke="#1A7A6E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M115,180 Q112,182 110,180 M115,180 Q114,183 112,184 M115,180 Q116,183 118,182" stroke="#1A7A6E" stroke-width="1.2" fill="none"/>
+    <path d="M134,152 Q133,164 132,174 Q130,180 128,182" stroke="#1A7A6E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M128,182 Q125,184 123,182 M128,182 Q127,185 125,186 M128,182 Q130,185 132,183" stroke="#1A7A6E" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- RIGHT PEACOCK (mirror of left) -->
+  <g transform="scale(-1,1) translate(-400,0)">
+    <!-- Tail fan feathers -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M120,130 Q80,80 30,60"   stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q70,90 20,80"   stroke="#1B6B8A" stroke-width="1.6"/>
+      <path d="M120,130 Q72,100 18,105" stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q75,110 20,125" stroke="#1A7A6E" stroke-width="1.6"/>
+      <path d="M120,130 Q80,118 22,145" stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M120,130 Q82,128 30,160" stroke="#1B6B8A" stroke-width="1.6"/>
+      <path d="M120,130 Q85,135 40,172" stroke="#2A9D8F" stroke-width="1.6"/>
+      <path d="M119,128 Q82,85 40,72"   stroke="#6AB4D0" stroke-width="0.9" stroke-dasharray="3,2"/>
+      <path d="M119,128 Q78,115 35,140" stroke="#6AB4D0" stroke-width="0.9" stroke-dasharray="3,2"/>
+    </g>
+    <!-- Feather eye ornaments -->
+    <g>
+      <ellipse cx="30"  cy="60"  rx="5.5" ry="7" transform="rotate(-30 30 60)"  fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="30"  cy="60"  r="2.5" fill="#C8963E" stroke="none" transform="rotate(-30 30 60)"/>
+      <ellipse cx="20"  cy="80"  rx="5.5" ry="7" transform="rotate(-15 20 80)"  fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="20"  cy="80"  r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="18"  cy="105" rx="5.5" ry="7"                                 fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="18"  cy="105" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="20"  cy="125" rx="5.5" ry="7"                                 fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="20"  cy="125" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="22"  cy="145" rx="5.5" ry="7"                                 fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="22"  cy="145" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="30"  cy="160" rx="5.5" ry="7" transform="rotate(15 30 160)"  fill="#264653" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle  cx="30"  cy="160" r="2.5" fill="#C8963E" stroke="none"/>
+      <ellipse cx="40"  cy="172" rx="5.5" ry="7" transform="rotate(25 40 172)"  fill="#264653" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle  cx="40"  cy="172" r="2.5" fill="#C8963E" stroke="none"/>
+    </g>
+    <!-- Body -->
+    <ellipse cx="130" cy="140" rx="18" ry="12" fill="#2A9D8F" stroke="#1A7A6E" stroke-width="1.5"/>
+    <path d="M120,135 Q128,130 138,133 Q132,140 122,140 Z" fill="#1A7A6E" fill-opacity="0.5" stroke="none"/>
+    <path d="M122,140 Q130,136 140,138 Q134,145 124,145 Z" fill="#1A7A6E" fill-opacity="0.4" stroke="none"/>
+    <!-- Neck -->
+    <path d="M138,132 Q142,122 145,112 Q147,106 145,100" stroke="#1A7A6E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M139,128 Q143,126 145,130" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+    <path d="M140,122 Q144,120 146,124" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+    <path d="M141,116 Q145,114 146,118" stroke="#6AB4D0" stroke-width="0.8" fill="none"/>
+    <!-- Head -->
+    <ellipse cx="144" cy="96" rx="9" ry="8" fill="#264653" stroke="#1A7A6E" stroke-width="1.5"/>
+    <ellipse cx="148" cy="94" rx="3" ry="2.5" fill="#6AB4D0" stroke="#2A9D8F" stroke-width="1"/>
+    <circle  cx="149" cy="94" r="1.5" fill="#1A3040" stroke="none"/>
+    <!-- Crest -->
+    <path d="M140,90 Q138,82 136,76" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="136" cy="74" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <path d="M144,88 Q143,80 142,74" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="142" cy="72" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <path d="M148,90 Q150,82 152,76" stroke="#C8963E" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <circle cx="152" cy="74" r="3" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <!-- Beak -->
+    <path d="M153,97 Q160,96 163,98 Q160,100 153,100 Z" fill="#C8963E" stroke="#9B7B2A" stroke-width="0.8"/>
+    <!-- Legs -->
+    <path d="M124,150 Q122,162 120,172 Q118,178 115,180" stroke="#1A7A6E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M115,180 Q112,182 110,180 M115,180 Q114,183 112,184 M115,180 Q116,183 118,182" stroke="#1A7A6E" stroke-width="1.2" fill="none"/>
+    <path d="M134,152 Q133,164 132,174 Q130,180 128,182" stroke="#1A7A6E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M128,182 Q125,184 123,182 M128,182 Q127,185 125,186 M128,182 Q130,185 132,183" stroke="#1A7A6E" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- Central lotus ornament — gold/teal -->
+  <g>
+    <circle cx="200" cy="148" r="10" fill="#FAF3EA" stroke="#C8963E" stroke-width="1.5"/>
+    <circle cx="200" cy="148" r="5"  fill="#C8963E" stroke="none"/>
+    <!-- Petals -->
+    <path d="M200,138 Q206,140 204,148 Q206,156 200,158 Q194,156 196,148 Q194,140 200,138 Z" fill="none" stroke="#C8963E" stroke-width="1.2"/>
+    <path d="M190,148 Q192,142 200,144 Q208,142 210,148 Q208,154 200,152 Q192,154 190,148 Z" fill="none" stroke="#C8963E" stroke-width="1.2"/>
+    <!-- Teal accent dots -->
+    <circle cx="200" cy="133" r="2.5" fill="#2A9D8F"/>
+    <circle cx="215" cy="138" r="2"   fill="#2A9D8F"/>
+    <circle cx="185" cy="138" r="2"   fill="#2A9D8F"/>
+  </g>
+</svg>

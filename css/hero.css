@@ -1,11 +1,15 @@
+.hero-area {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero {
   position: relative;
+  z-index: 2;
   min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-color: var(--color-brown);
 }
 
 .hero__bg {
@@ -27,11 +31,13 @@
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,0.65) 0%,
-    rgba(30,10,0,0.45) 40%,
-    rgba(30,10,0,0.55) 70%,
-    rgba(0,0,0,0.72) 100%
+    rgba(30,10,0,0.45) 35%,
+    rgba(30,10,0,0.55) 55%,
+    rgba(30,10,0,0.25) 75%,
+    rgba(30,10,0,0.05) 100%
   );
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero__content {

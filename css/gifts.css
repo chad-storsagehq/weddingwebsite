@@ -60,14 +60,14 @@
 .gifts__card::after {
   content: '';
   position: absolute;
-  top: 6px;
-  right: 8px;
-  width: 28px;
-  height: 56px;
+  top: 4px;
+  right: 6px;
+  width: 44px;
+  height: 88px;
   background-image: url('../assets/svg/peacock-feather-color.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.75;
   transform: rotate(10deg);
   pointer-events: none;
 }

@@ -1,7 +1,8 @@
 .about-section {
-  background-color: var(--color-bg);
+  background: rgba(250, 243, 234, 0.90);
   padding: var(--space-xl) 0;
   position: relative;
+  z-index: 2;
 }
 
 .about-section__inner {

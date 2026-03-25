@@ -93,6 +93,13 @@ img {
   letter-spacing: 0.05em;
 }
 
+/* Colorful peacock pair section ornament */
+.section-peacocks {
+  display: block;
+  margin: var(--space-sm) auto var(--space-md);
+  opacity: 0.92;
+}
+
 /* Kolam divider */
 .kolam-divider {
   width: 100%;

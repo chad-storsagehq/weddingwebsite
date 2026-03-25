@@ -43,14 +43,14 @@
 .dresscode__card::after {
   content: '';
   position: absolute;
-  bottom: 8px;
-  right: 10px;
-  width: 24px;
-  height: 48px;
+  bottom: 6px;
+  right: 8px;
+  width: 40px;
+  height: 80px;
   background-image: url('../assets/svg/peacock-feather-color.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.7;
   transform: rotate(-8deg);
   pointer-events: none;
 }

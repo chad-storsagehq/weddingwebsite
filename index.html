@@ -52,10 +52,13 @@
 
   <main>
 
+    <!-- HERO AREA — hero + about share the temple background -->
+    <div class="hero-area" id="hero-area">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
     <!-- HERO -->
     <section id="home" class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__overlay" aria-hidden="true"></div>
 
       <!-- Decorative vines - left and right -->
       <div class="hero__vine hero__vine--left" aria-hidden="true"></div>
@@ -98,10 +101,7 @@
       <img src="assets/svg/floral-vine.svg" class="hero__vine hero__vine--right" alt="" aria-hidden="true" width="60" height="400">
     </section>
 
-    <!-- KOLAM DIVIDER -->
-    <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
-
-    <!-- ABOUT US -->
+    <!-- ABOUT US — no divider, flows directly from hero -->
     <section id="about" class="about-section">
       <div class="section about-section__inner">
         <h2 class="section-title">
@@ -124,6 +124,7 @@
         </div>
       </div>
     </section>
+    </div><!-- end hero-area -->
 
     <!-- KOLAM DIVIDER -->
     <img src="assets/svg/kolam-band.svg" alt="" class="kolam-divider" aria-hidden="true" width="800" height="40" loading="lazy">
@@ -137,6 +138,8 @@
     Our Celebrations
     <span class="section-title-telugu" lang="te">మా వేడుకలు</span>
   </h2>
+
+  <img src="assets/svg/peacock-pair-color.svg" class="section-peacocks" alt="" aria-hidden="true" width="280" height="140" loading="lazy">
 
   <div class="events__grid">
 
@@ -300,34 +303,8 @@
                 <li>Please keep phones put away during the ceremony — our photographer has everything covered</li>
               </ul>
 
-              <h4>What to wear</h4>
-              <p>The wedding ceremony calls for formal attire. Bright, festive colors are encouraged — gold, red, deep blue, emerald green, and jewel tones are all beautiful. Please avoid white or black, as these colors carry specific significance in Indian tradition.</p>
-              <p><strong>Women (Indian attire):</strong> A <em>Kanchipuram</em> or <em>Kanjeevaram silk saree</em> is the most traditional choice and fits the ceremony beautifully. A <em>lehenga choli</em> (full skirt, blouse, and dupatta) or a formal <em>anarkali suit</em> are equally stunning. All three options look spectacular for ceremony photos.</p>
-              <p><strong>Men (Indian attire):</strong> A <em>sherwani</em> (long embroidered coat) is the most formal option and perfect for the ceremony. A <em>dhoti kurta</em> (traditional draped lower garment with kurta) is very traditional and often worn by family. A <em>kurta pajama with a Nehru jacket</em> is a comfortable and polished choice.</p>
-              <p><strong>Western formal is equally welcome:</strong> A suit and tie (men) or a floor-length gown or formal cocktail dress in a rich, festive color (women). You'll fit right in and look wonderful.</p>
-
-              <h4>Where to shop for Indian attire</h4>
-              <p><strong>Budget-friendly ($30–$150):</strong></p>
-              <ul>
-                <li><a href="https://www.amazon.com/s?k=indian+wedding+guest+attire" target="_blank" rel="noopener noreferrer">Amazon</a> — Wide selection of salwar suits, kurtas, and sarees</li>
-                <li><a href="https://www.etsy.com/search?q=indian+wedding+guest+dress" target="_blank" rel="noopener noreferrer">Etsy</a> — Independent designers, often customizable</li>
-                <li><a href="https://www.cbazaar.com" target="_blank" rel="noopener noreferrer">Cbazaar.com</a> — Good quality, ships from India</li>
-                <li><a href="https://www.utsavfashion.com" target="_blank" rel="noopener noreferrer">Utsav Fashion</a> — Large selection at reasonable prices</li>
-              </ul>
-              <p><strong>Mid-range ($150–$400):</strong></p>
-              <ul>
-                <li><a href="https://www.koskii.com" target="_blank" rel="noopener noreferrer">Koskii</a> — Contemporary Indian fashion, easy to navigate</li>
-                <li><a href="https://www.panashindia.com" target="_blank" rel="noopener noreferrer">Panash India</a> — Great bridal guest collections</li>
-                <li><a href="https://www.frontierraas.com" target="_blank" rel="noopener noreferrer">Frontier Raas</a> — Higher-end lehengas and sarees</li>
-              </ul>
-              <p><strong>Luxury ($400+):</strong></p>
-              <ul>
-                <li><a href="https://www.pothys.com" target="_blank" rel="noopener noreferrer">Pothys</a> — Premier South Indian silk sarees (Kanchipuram)</li>
-                <li><a href="https://www.thenni.com" target="_blank" rel="noopener noreferrer">The Nni</a> — Modern designer South Indian pieces</li>
-              </ul>
-
               <div class="traditions__tip">
-                🌺 Not sure what to wear? A suit and tie (men) or formal dress (women) in a bold, festive color is always perfect — and very welcomed. The most important thing is that you feel comfortable and celebrate with us.
+                See the <a href="#dresscode">Dress Code</a> section for full attire guidance and shopping recommendations.
               </div>
             </div>
           </div>
@@ -393,6 +370,8 @@
           South Indian celebrations are vibrant and colorful. Please embrace festive colors — your outfit is part of the celebration.
         </p>
 
+        <img src="assets/svg/peacock-pair-color.svg" class="section-peacocks" alt="" aria-hidden="true" width="240" height="120" loading="lazy">
+
         <div class="dresscode__grid">
 
           <!-- Haldi -->
@@ -415,7 +394,7 @@
               <span class="dresscode__event-label label">August 16 · Ceremony</span>
             </div>
             <div class="dresscode__card-body">
-              <p class="dresscode__colors"><strong>Colors:</strong> Gold, red, deep blue, emerald, jewel tones. Avoid white or black.</p>
+              <p class="dresscode__colors"><strong>Colors:</strong> Gold, red, deep blue, emerald, jewel tones.</p>
               <p><strong>Women (Indian):</strong> Kanchipuram or Kanjeevaram silk saree, lehenga choli, or formal anarkali.</p>
               <p><strong>Men (Indian):</strong> Sherwani, dhoti kurta, or kurta pajama with Nehru jacket.</p>
               <p><strong>Western formal equally welcome:</strong> Suit &amp; tie (men) or floor-length gown/cocktail dress in a rich festive color (women).</p>
@@ -668,7 +647,7 @@
       <div class="faq__answer" hidden>
         <p>South Indian celebrations are colorful and joyful. Bright, festive colors are encouraged — gold, red, royal blue, emerald green, and jewel tones are all wonderful choices. Please avoid wearing white or black, as these carry particular significance in Indian tradition.</p>
         <p><strong>Traditional Indian attire is warmly welcomed</strong> — sarees, lehengas, salwar suits, kurtas, and sherwanis are all perfect. <strong>Western formal wear is equally appropriate</strong> — a suit and tie for men, a cocktail dress or gown for women in a festive color.</p>
-        <p>See our <a href="#guide">Celebration Guide</a> for detailed shopping recommendations at every budget level.</p>
+        <p>See our <a href="#dresscode">Dress Code</a> section for detailed attire guidance and shopping recommendations at every budget level.</p>
       </div>
     </div>
 
@@ -708,7 +687,7 @@
         <span class="faq__icon" aria-hidden="true">+</span>
       </button>
       <div class="faq__answer" hidden>
-        <p>Your presence is truly the greatest gift. For those who wish to contribute, we accept gifts via credit or debit card (Stripe), Venmo, or Zelle — see the <a href="#gifts">Celebration Gifts</a> section for all the details.</p>
+        <p>Your presence is truly the greatest gift. For those who wish to contribute, we accept gifts via check, Stripe, Venmo, or Zelle — see the <a href="#gifts">Celebration Gifts</a> section for all the details.</p>
       </div>
     </div>
 
