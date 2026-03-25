@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" preserveAspectRatio="xMidYMid meet">
+  <!-- Invitation-inspired panoramic scene: pavilions, deer, peacocks, tropical foliage -->
+  <!-- Palette: dusty blue sky, blue domes, cream pavilions, warm deer, teal peacocks, muted greens -->
+
+  <!-- Sky background -->
+  <rect width="800" height="115" fill="#C8D8E2" opacity="0.35"/>
+
+  <!-- Ground strip -->
+  <rect y="100" width="800" height="30" fill="#B8A898" opacity="0.5"/>
+  <rect y="98" width="800" height="4" fill="#9B8878" opacity="0.4"/>
+
+  <!-- ========== FOLIAGE — far background ========== -->
+  <!-- Left palm cluster -->
+  <g opacity="0.85">
+    <line x1="42" y1="100" x2="42" y2="55" stroke="#5A7040" stroke-width="3"/>
+    <path d="M42,58 Q20,42 8,35" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,58 Q25,38 18,28" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,58 Q42,35 42,20" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,62 Q60,45 72,38" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,62 Q58,52 68,48" stroke="#4A6030" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Leaf tips -->
+    <ellipse cx="8" cy="34" rx="4" ry="2.5" fill="#6A8848" transform="rotate(-20 8 34)"/>
+    <ellipse cx="18" cy="27" rx="4" ry="2.5" fill="#6A8848" transform="rotate(-40 18 27)"/>
+    <ellipse cx="42" cy="19" rx="4" ry="2.5" fill="#6A8848"/>
+    <ellipse cx="72" cy="37" rx="4" ry="2.5" fill="#6A8848" transform="rotate(20 72 37)"/>
+  </g>
+
+  <!-- Cactus left -->
+  <g opacity="0.8">
+    <rect x="78" y="65" width="7" height="36" rx="3.5" fill="#6A8050"/>
+    <rect x="65" y="72" width="13" height="6" rx="3" fill="#6A8050"/>
+    <rect x="65" y="68" width="7" height="18" rx="3.5" fill="#6A8050"/>
+    <rect x="85" y="78" width="12" height="6" rx="3" fill="#6A8050"/>
+    <rect x="90" y="72" width="7" height="18" rx="3.5" fill="#6A8050"/>
+  </g>
+
+  <!-- Right palm cluster -->
+  <g opacity="0.85" transform="scale(-1,1) translate(-800,0)">
+    <line x1="42" y1="100" x2="42" y2="55" stroke="#5A7040" stroke-width="3"/>
+    <path d="M42,58 Q20,42 8,35" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,58 Q25,38 18,28" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,58 Q42,35 42,20" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M42,62 Q60,45 72,38" stroke="#5A7040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="8" cy="34" rx="4" ry="2.5" fill="#6A8848" transform="rotate(-20 8 34)"/>
+    <ellipse cx="18" cy="27" rx="4" ry="2.5" fill="#6A8848" transform="rotate(-40 18 27)"/>
+    <ellipse cx="42" cy="19" rx="4" ry="2.5" fill="#6A8848"/>
+    <ellipse cx="72" cy="37" rx="4" ry="2.5" fill="#6A8848" transform="rotate(20 72 37)"/>
+  </g>
+  <!-- Cactus right -->
+  <g opacity="0.8" transform="scale(-1,1) translate(-800,0)">
+    <rect x="78" y="65" width="7" height="36" rx="3.5" fill="#6A8050"/>
+    <rect x="65" y="72" width="13" height="6" rx="3" fill="#6A8050"/>
+    <rect x="65" y="68" width="7" height="18" rx="3.5" fill="#6A8050"/>
+    <rect x="85" y="78" width="12" height="6" rx="3" fill="#6A8050"/>
+    <rect x="90" y="72" width="7" height="18" rx="3.5" fill="#6A8050"/>
+  </g>
+
+  <!-- ========== PAVILIONS ========== -->
+  <!-- Helper macro: pavilion at given cx -->
+
+  <!-- LEFT PAVILION (cx=200) -->
+  <g>
+    <!-- Base platform -->
+    <rect x="162" y="88" width="76" height="12" rx="2" fill="#D4C4B0"/>
+    <!-- Columns -->
+    <rect x="170" y="55" width="8" height="35" fill="#E0D0BC"/>
+    <rect x="222" y="55" width="8" height="35" fill="#E0D0BC"/>
+    <!-- Arch between columns -->
+    <path d="M170,78 L170,65 Q200,50 230,65 L230,78 Z" fill="#C8B89A" opacity="0.6"/>
+    <path d="M170,78 L170,65 Q200,50 230,65 L230,78" fill="none" stroke="#B8A080" stroke-width="2"/>
+    <!-- Pavilion roof base -->
+    <rect x="158" y="50" width="84" height="10" rx="2" fill="#D4C4B0"/>
+    <!-- Dome -->
+    <ellipse cx="200" cy="38" rx="26" ry="18" fill="#7BAAC4"/>
+    <ellipse cx="200" cy="38" rx="22" ry="15" fill="#8FBBD4" opacity="0.5"/>
+    <!-- Dome highlight -->
+    <path d="M185,30 Q200,22 215,30" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <!-- Finial -->
+    <line x1="200" y1="20" x2="200" y2="10" stroke="#C8963E" stroke-width="2"/>
+    <circle cx="200" cy="9" r="4" fill="#C8963E"/>
+    <circle cx="200" cy="9" r="2" fill="#E8B84C"/>
+    <!-- Dome band -->
+    <path d="M174,46 Q200,40 226,46" stroke="#6090B0" stroke-width="1.5" fill="none"/>
+    <!-- Door opening (dark) -->
+    <path d="M188,88 L188,68 Q200,60 212,68 L212,88 Z" fill="#8B7060" opacity="0.5"/>
+  </g>
+
+  <!-- CENTER PAVILION (cx=400) — slightly larger, main focal -->
+  <g>
+    <rect x="358" y="85" width="84" height="15" rx="2" fill="#D4C4B0"/>
+    <rect x="368" y="50" width="9" height="37" fill="#E0D0BC"/>
+    <rect x="423" y="50" width="9" height="37" fill="#E0D0BC"/>
+    <path d="M368,78 L368,63 Q400,46 432,63 L432,78 Z" fill="#C8B89A" opacity="0.6"/>
+    <path d="M368,78 L368,63 Q400,46 432,63 L432,78" fill="none" stroke="#B8A080" stroke-width="2"/>
+    <rect x="354" y="46" width="92" height="10" rx="2" fill="#D4C4B0"/>
+    <ellipse cx="400" cy="32" rx="30" ry="20" fill="#7BAAC4"/>
+    <ellipse cx="400" cy="32" rx="25" ry="17" fill="#8FBBD4" opacity="0.5"/>
+    <path d="M383,23 Q400,15 417,23" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <line x1="400" y1="12" x2="400" y2="2" stroke="#C8963E" stroke-width="2.5"/>
+    <circle cx="400" cy="1" r="5" fill="#C8963E"/>
+    <circle cx="400" cy="1" r="2.5" fill="#E8B84C"/>
+    <path d="M370,42 Q400,35 430,42" stroke="#6090B0" stroke-width="1.5" fill="none"/>
+    <path d="M386,100 L386,72 Q400,62 414,72 L414,100 Z" fill="#8B7060" opacity="0.5"/>
+  </g>
+
+  <!-- RIGHT PAVILION (cx=600) -->
+  <g>
+    <rect x="562" y="88" width="76" height="12" rx="2" fill="#D4C4B0"/>
+    <rect x="570" y="55" width="8" height="35" fill="#E0D0BC"/>
+    <rect x="622" y="55" width="8" height="35" fill="#E0D0BC"/>
+    <path d="M570,78 L570,65 Q600,50 630,65 L630,78 Z" fill="#C8B89A" opacity="0.6"/>
+    <path d="M570,78 L570,65 Q600,50 630,65 L630,78" fill="none" stroke="#B8A080" stroke-width="2"/>
+    <rect x="558" y="50" width="84" height="10" rx="2" fill="#D4C4B0"/>
+    <ellipse cx="600" cy="38" rx="26" ry="18" fill="#7BAAC4"/>
+    <ellipse cx="600" cy="38" rx="22" ry="15" fill="#8FBBD4" opacity="0.5"/>
+    <path d="M585,30 Q600,22 615,30" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <line x1="600" y1="20" x2="600" y2="10" stroke="#C8963E" stroke-width="2"/>
+    <circle cx="600" cy="9" r="4" fill="#C8963E"/>
+    <circle cx="600" cy="9" r="2" fill="#E8B84C"/>
+    <path d="M574,46 Q600,40 626,46" stroke="#6090B0" stroke-width="1.5" fill="none"/>
+    <path d="M588,88 L588,68 Q600,60 612,68 L612,88 Z" fill="#8B7060" opacity="0.5"/>
+  </g>
+
+  <!-- ========== DEER ========== -->
+  <!-- Left deer -->
+  <g fill="#C4926A" opacity="0.92">
+    <!-- Body -->
+    <ellipse cx="118" cy="84" rx="16" ry="10" fill="#C4926A"/>
+    <!-- Neck -->
+    <path d="M126,76 Q130,68 128,60" stroke="#C4926A" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- Head -->
+    <ellipse cx="127" cy="57" rx="7" ry="6" fill="#C4926A"/>
+    <!-- Ear -->
+    <ellipse cx="121" cy="53" rx="3" ry="4" fill="#C4926A" transform="rotate(-20 121 53)"/>
+    <!-- Snout -->
+    <ellipse cx="133" cy="59" rx="4" ry="3" fill="#B8825A"/>
+    <circle cx="135" cy="58" r="1" fill="#8B5A3A" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="128" cy="55" r="1.5" fill="#4A3020"/>
+    <!-- Antlers -->
+    <path d="M122,52 Q118,42 114,36" stroke="#9B7050" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M114,36 Q110,30 106,26" stroke="#9B7050" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M114,36 Q116,30 118,26" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M122,52 Q124,42 122,34" stroke="#9B7050" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M122,34 Q120,28 118,24" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M122,34 Q124,28 126,26" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="108" y1="92" x2="106" y2="112" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="115" y1="93" x2="113" y2="113" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="124" y1="93" x2="124" y2="113" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="131" y1="92" x2="132" y2="112" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <!-- Spots -->
+    <circle cx="112" cy="82" r="2" fill="#D4A878" opacity="0.6"/>
+    <circle cx="120" cy="78" r="1.5" fill="#D4A878" opacity="0.6"/>
+    <circle cx="118" cy="86" r="1.5" fill="#D4A878" opacity="0.6"/>
+  </g>
+
+  <!-- Right deer (mirrored) -->
+  <g transform="scale(-1,1) translate(-800,0)" fill="#C4926A" opacity="0.92">
+    <ellipse cx="118" cy="84" rx="16" ry="10" fill="#C4926A"/>
+    <path d="M126,76 Q130,68 128,60" stroke="#C4926A" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <ellipse cx="127" cy="57" rx="7" ry="6" fill="#C4926A"/>
+    <ellipse cx="121" cy="53" rx="3" ry="4" fill="#C4926A" transform="rotate(-20 121 53)"/>
+    <ellipse cx="133" cy="59" rx="4" ry="3" fill="#B8825A"/>
+    <circle cx="135" cy="58" r="1" fill="#8B5A3A" opacity="0.8"/>
+    <circle cx="128" cy="55" r="1.5" fill="#4A3020"/>
+    <path d="M122,52 Q118,42 114,36" stroke="#9B7050" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M114,36 Q110,30 106,26" stroke="#9B7050" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M114,36 Q116,30 118,26" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M122,52 Q124,42 122,34" stroke="#9B7050" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M122,34 Q120,28 118,24" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M122,34 Q124,28 126,26" stroke="#9B7050" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <line x1="108" y1="92" x2="106" y2="112" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="115" y1="93" x2="113" y2="113" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="124" y1="93" x2="124" y2="113" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="131" y1="92" x2="132" y2="112" stroke="#C4926A" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="112" cy="82" r="2" fill="#D4A878" opacity="0.6"/>
+    <circle cx="120" cy="78" r="1.5" fill="#D4A878" opacity="0.6"/>
+    <circle cx="118" cy="86" r="1.5" fill="#D4A878" opacity="0.6"/>
+  </g>
+
+  <!-- ========== PEACOCKS ========== -->
+  <!-- Left peacock (between left pavilion and center) -->
+  <g>
+    <!-- Tail fan — spread radiating feathers -->
+    <g opacity="0.9">
+      <path d="M290,90 Q268,68 252,50" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q265,72 248,58" stroke="#1B6B8A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q264,78 248,70" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q266,82 252,78" stroke="#3A8F5A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q270,88 258,90" stroke="#1B6B8A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q272,92 262,98" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Feather eye ornaments -->
+      <ellipse cx="252" cy="50" rx="5" ry="6" fill="#1A4050" stroke="#2A9D8F" stroke-width="1.2" transform="rotate(-25 252 50)"/>
+      <circle cx="252" cy="50" r="2.5" fill="#C8963E"/>
+      <ellipse cx="248" cy="58" rx="5" ry="6" fill="#1A4050" stroke="#1B6B8A" stroke-width="1.2" transform="rotate(-10 248 58)"/>
+      <circle cx="248" cy="58" r="2.5" fill="#C8963E"/>
+      <ellipse cx="248" cy="70" rx="5" ry="6" fill="#1A4050" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle cx="248" cy="70" r="2.5" fill="#C8963E"/>
+      <ellipse cx="252" cy="78" rx="5" ry="6" fill="#1A4050" stroke="#3A8F5A" stroke-width="1.2"/>
+      <circle cx="252" cy="78" r="2.5" fill="#C8963E"/>
+      <ellipse cx="258" cy="90" rx="5" ry="6" fill="#1A4050" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle cx="258" cy="90" r="2.5" fill="#C8963E"/>
+    </g>
+    <!-- Body -->
+    <ellipse cx="295" cy="95" rx="14" ry="9" fill="#2A9D8F"/>
+    <path d="M286,92 Q292,88 300,90 Q296,96 288,96 Z" fill="#1A7A6E" opacity="0.7"/>
+    <!-- Neck -->
+    <path d="M302,88 Q306,80 304,72" stroke="#1A7A6E" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Head -->
+    <ellipse cx="303" cy="69" rx="7" ry="6" fill="#264653"/>
+    <!-- Eye -->
+    <ellipse cx="306" cy="67" rx="2.5" ry="2" fill="#6AB4D0"/>
+    <circle cx="307" cy="67" r="1" fill="#1A3040"/>
+    <!-- Crest -->
+    <path d="M300,64 Q298,57 296,52" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="296" cy="51" r="3" fill="#C8963E"/>
+    <path d="M303,63 Q302,56 301,50" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="301" cy="49" r="3" fill="#C8963E"/>
+    <path d="M307,64 Q308,57 310,52" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="310" cy="51" r="3" fill="#C8963E"/>
+    <!-- Beak -->
+    <path d="M309,71 Q315,70 317,72 Q314,74 309,73 Z" fill="#C8963E"/>
+    <!-- Legs -->
+    <line x1="290" y1="103" x2="288" y2="115" stroke="#1A7A6E" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="298" y1="104" x2="297" y2="116" stroke="#1A7A6E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right peacock (between center and right pavilion) — facing left -->
+  <g transform="scale(-1,1) translate(-800,0)">
+    <g opacity="0.9">
+      <path d="M290,90 Q268,68 252,50" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q265,72 248,58" stroke="#3A8F5A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q264,78 248,70" stroke="#1B6B8A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q266,82 252,78" stroke="#2A9D8F" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q270,88 258,90" stroke="#3A8F5A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M290,90 Q272,92 262,98" stroke="#1B6B8A" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="252" cy="50" rx="5" ry="6" fill="#1A4050" stroke="#2A9D8F" stroke-width="1.2" transform="rotate(-25 252 50)"/>
+      <circle cx="252" cy="50" r="2.5" fill="#C8963E"/>
+      <ellipse cx="248" cy="58" rx="5" ry="6" fill="#1A4050" stroke="#3A8F5A" stroke-width="1.2" transform="rotate(-10 248 58)"/>
+      <circle cx="248" cy="58" r="2.5" fill="#C8963E"/>
+      <ellipse cx="248" cy="70" rx="5" ry="6" fill="#1A4050" stroke="#1B6B8A" stroke-width="1.2"/>
+      <circle cx="248" cy="70" r="2.5" fill="#C8963E"/>
+      <ellipse cx="252" cy="78" rx="5" ry="6" fill="#1A4050" stroke="#2A9D8F" stroke-width="1.2"/>
+      <circle cx="252" cy="78" r="2.5" fill="#C8963E"/>
+      <ellipse cx="258" cy="90" rx="5" ry="6" fill="#1A4050" stroke="#3A8F5A" stroke-width="1.2"/>
+      <circle cx="258" cy="90" r="2.5" fill="#C8963E"/>
+    </g>
+    <ellipse cx="295" cy="95" rx="14" ry="9" fill="#2A9D8F"/>
+    <path d="M286,92 Q292,88 300,90 Q296,96 288,96 Z" fill="#1A7A6E" opacity="0.7"/>
+    <path d="M302,88 Q306,80 304,72" stroke="#1A7A6E" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="303" cy="69" rx="7" ry="6" fill="#264653"/>
+    <ellipse cx="306" cy="67" rx="2.5" ry="2" fill="#6AB4D0"/>
+    <circle cx="307" cy="67" r="1" fill="#1A3040"/>
+    <path d="M300,64 Q298,57 296,52" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="296" cy="51" r="3" fill="#C8963E"/>
+    <path d="M303,63 Q302,56 301,50" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="301" cy="49" r="3" fill="#C8963E"/>
+    <path d="M307,64 Q308,57 310,52" stroke="#C8963E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="310" cy="51" r="3" fill="#C8963E"/>
+    <path d="M309,71 Q315,70 317,72 Q314,74 309,73 Z" fill="#C8963E"/>
+    <line x1="290" y1="103" x2="288" y2="115" stroke="#1A7A6E" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="298" y1="104" x2="297" y2="116" stroke="#1A7A6E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ========== DECORATIVE BORDER TOP ========== -->
+  <rect width="800" height="5" fill="#9B7B8A" opacity="0.5"/>
+  <!-- Geometric dot row -->
+  <g fill="#9B7B8A" opacity="0.4">
+    <circle cx="20" cy="10" r="2"/><circle cx="40" cy="10" r="2"/><circle cx="60" cy="10" r="2"/>
+    <circle cx="80" cy="10" r="2"/><circle cx="100" cy="10" r="2"/><circle cx="120" cy="10" r="2"/>
+    <circle cx="140" cy="10" r="2"/><circle cx="160" cy="10" r="2"/><circle cx="180" cy="10" r="2"/>
+    <circle cx="200" cy="10" r="2"/><circle cx="220" cy="10" r="2"/><circle cx="240" cy="10" r="2"/>
+    <circle cx="260" cy="10" r="2"/><circle cx="280" cy="10" r="2"/><circle cx="300" cy="10" r="2"/>
+    <circle cx="320" cy="10" r="2"/><circle cx="340" cy="10" r="2"/><circle cx="360" cy="10" r="2"/>
+    <circle cx="380" cy="10" r="2"/><circle cx="400" cy="10" r="2"/><circle cx="420" cy="10" r="2"/>
+    <circle cx="440" cy="10" r="2"/><circle cx="460" cy="10" r="2"/><circle cx="480" cy="10" r="2"/>
+    <circle cx="500" cy="10" r="2"/><circle cx="520" cy="10" r="2"/><circle cx="540" cy="10" r="2"/>
+    <circle cx="560" cy="10" r="2"/><circle cx="580" cy="10" r="2"/><circle cx="600" cy="10" r="2"/>
+    <circle cx="620" cy="10" r="2"/><circle cx="640" cy="10" r="2"/><circle cx="660" cy="10" r="2"/>
+    <circle cx="680" cy="10" r="2"/><circle cx="700" cy="10" r="2"/><circle cx="720" cy="10" r="2"/>
+    <circle cx="740" cy="10" r="2"/><circle cx="760" cy="10" r="2"/><circle cx="780" cy="10" r="2"/>
+  </g>
+</svg>

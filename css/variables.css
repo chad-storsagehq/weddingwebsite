@@ -9,10 +9,13 @@
   --color-white:      #FFFFFF;
   --color-overlay:    rgba(0, 0, 0, 0.45);
   /* Invitation-inspired palette */
-  --color-blush:      #E8D5CC;
+  --color-blush:      #E8D0C4;
+  --color-blush-deep: #D4B0A4;
   --color-mauve:      #9B7B8A;
   --color-teal:       #2A9D8F;
   --color-cream:      #FAF3EA;
+  --color-dome-blue:  #7BAAC4;
+  --color-sage:       #6A8848;
 
   /* Typography */
   --font-heading:  'Cormorant Garamond', Georgia, serif;
