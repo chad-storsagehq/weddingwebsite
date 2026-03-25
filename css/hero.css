@@ -1,6 +1,7 @@
 .hero-area {
   position: relative;
   overflow: hidden;
+  background-color: var(--color-brown);
 }
 
 .hero {
@@ -20,7 +21,7 @@
   height: 150%;
   background-image: url('../assets/images/hero-temple.jpg');
   background-size: cover;
-  background-position: center 62%;
+  background-position: center 80%;
   z-index: 0;
   will-change: transform;
 }

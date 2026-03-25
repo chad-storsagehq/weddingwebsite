@@ -93,28 +93,12 @@ img {
   letter-spacing: 0.05em;
 }
 
-/* Colorful peacock pair section ornament */
-.section-peacocks {
+/* Gold ornament divider between sections */
+.gold-divider {
   display: block;
-  margin: var(--space-sm) auto var(--space-md);
-  opacity: 0.92;
-}
-
-/* Invitation scene divider */
-.scene-divider {
   width: 100%;
-  display: block;
-  max-height: 130px;
-  object-fit: cover;
-}
-
-/* Kolam divider (kept for fallback) */
-.kolam-divider {
-  width: 100%;
-  max-height: 40px;
-  object-fit: cover;
-  display: block;
-  opacity: 0.7;
+  max-height: 24px;
+  margin: 0;
 }
 
 /* Gold label text */

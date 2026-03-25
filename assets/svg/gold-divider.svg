@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 24" preserveAspectRatio="xMidYMid meet">
+  <line x1="0" y1="12" x2="340" y2="12" stroke="#C8963E" stroke-width="0.75" opacity="0.6"/>
+  <line x1="460" y1="12" x2="800" y2="12" stroke="#C8963E" stroke-width="0.75" opacity="0.6"/>
+  <g transform="translate(400,12)" fill="#C8963E" opacity="0.85">
+    <polygon points="0,-6 4,0 0,6 -4,0"/>
+    <polygon points="0,-4 2.5,0 0,4 -2.5,0" fill="none" stroke="#C8963E" stroke-width="0.5"/>
+    <circle cx="-14" cy="0" r="1.5"/>
+    <circle cx="14" cy="0" r="1.5"/>
+    <circle cx="-22" cy="0" r="1"/>
+    <circle cx="22" cy="0" r="1"/>
+  </g>
+</svg>
