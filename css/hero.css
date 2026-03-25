@@ -10,11 +10,15 @@
 
 .hero__bg {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: -25%;
+  height: 150%;
   background-image: url('../assets/images/hero-temple.jpg');
   background-size: cover;
   background-position: center 25%;
   z-index: 0;
+  will-change: transform;
 }
 
 .hero__overlay {
