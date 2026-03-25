@@ -1,26 +1,9 @@
 .traditions-section {
-  background-color: var(--color-white);
+  background-color: var(--color-cream);
   padding: var(--space-xl) 0;
   position: relative;
 }
 
-@media (min-width: 900px) {
-  .traditions-section::before,
-  .traditions-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 72px;
-    background-image: url('../assets/svg/floral-vine.svg');
-    background-repeat: repeat-y;
-    background-size: 72px auto;
-    opacity: 0.14;
-    pointer-events: none;
-  }
-  .traditions-section::before { left: 0; }
-  .traditions-section::after  { right: 0; transform: scaleX(-1); }
-}
 
 .traditions-section__inner {
   position: relative;

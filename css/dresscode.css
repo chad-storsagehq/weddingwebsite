@@ -37,6 +37,22 @@
   border-radius: var(--card-radius);
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(59,26,0,0.06);
+  position: relative;
+}
+
+.dresscode__card::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  width: 24px;
+  height: 48px;
+  background-image: url('../assets/svg/peacock-feather-color.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  transform: rotate(-8deg);
+  pointer-events: none;
 }
 
 .dresscode__card-header {

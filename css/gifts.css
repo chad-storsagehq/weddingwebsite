@@ -4,23 +4,6 @@
   position: relative;
 }
 
-@media (min-width: 900px) {
-  .gifts-section::before,
-  .gifts-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 72px;
-    background-image: url('../assets/svg/floral-vine.svg');
-    background-repeat: repeat-y;
-    background-size: 72px auto;
-    opacity: 0.14;
-    pointer-events: none;
-  }
-  .gifts-section::before { left: 0; }
-  .gifts-section::after  { right: 0; transform: scaleX(-1); }
-}
 
 .gifts-section__inner {
   position: relative;
@@ -71,6 +54,22 @@
   gap: var(--space-xs);
   box-shadow: 0 2px 12px rgba(59,26,0,0.06);
   transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.gifts__card::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 28px;
+  height: 56px;
+  background-image: url('../assets/svg/peacock-feather-color.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  transform: rotate(10deg);
+  pointer-events: none;
 }
 
 .gifts__card:hover {

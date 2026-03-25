@@ -4,23 +4,6 @@
   position: relative;
 }
 
-@media (min-width: 900px) {
-  .rsvp-section::before,
-  .rsvp-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 72px;
-    background-image: url('../assets/svg/floral-vine.svg');
-    background-repeat: repeat-y;
-    background-size: 72px auto;
-    opacity: 0.14;
-    pointer-events: none;
-  }
-  .rsvp-section::before { left: 0; }
-  .rsvp-section::after  { right: 0; transform: scaleX(-1); }
-}
 
 .rsvp-section__inner {
   text-align: center;

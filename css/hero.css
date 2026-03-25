@@ -123,8 +123,8 @@
 /* Om symbol above invocation text */
 .hero__ganesha-motif {
   display: block;
-  font-family: 'Noto Serif Telugu', serif;
-  font-size: 64px;
+  font-family: var(--font-heading);
+  font-size: 72px;
   line-height: 1;
   color: var(--color-gold);
   margin: 0 auto var(--space-sm);

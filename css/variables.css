@@ -8,6 +8,11 @@
   --color-charcoal:   #2C2C2C;
   --color-white:      #FFFFFF;
   --color-overlay:    rgba(0, 0, 0, 0.45);
+  /* Invitation-inspired palette */
+  --color-blush:      #E8D5CC;
+  --color-mauve:      #9B7B8A;
+  --color-teal:       #2A9D8F;
+  --color-cream:      #FAF3EA;
 
   /* Typography */
   --font-heading:  'Cormorant Garamond', Georgia, serif;
