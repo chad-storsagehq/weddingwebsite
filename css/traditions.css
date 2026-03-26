@@ -148,3 +148,19 @@
   font-style: italic;
   line-height: 1.7;
 }
+
+/* Colorful peacock pair — bottom-right corner accent */
+.traditions__peacock-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.85;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 540px) {
+  .traditions__peacock-corner { display: none; }
+}

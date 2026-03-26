@@ -75,3 +75,18 @@
   color: var(--color-charcoal);
   line-height: 1.8;
 }
+
+/* Colorful peacock pair — top-right corner */
+.faq__peacock-corner {
+  position: absolute;
+  top: var(--space-md);
+  right: 0;
+  width: 120px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.80;
+}
+
+@media (max-width: 540px) {
+  .faq__peacock-corner { display: none; }
+}

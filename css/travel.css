@@ -126,3 +126,19 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Colorful peacock feather — left side accent */
+.travel__peacock-feather-color {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.75;
+}
+
+@media (max-width: 540px) {
+  .travel__peacock-feather-color { display: none; }
+}
