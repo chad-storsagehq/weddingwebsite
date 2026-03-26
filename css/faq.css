@@ -12,10 +12,10 @@
 }
 
 .faq-section .section-accent--peacock {
-  width: 170px;
-  opacity: 0.34;
+  width: 182px;
+  opacity: 0.5;
   z-index: 1;
-  filter: saturate(1.65) contrast(1.05) drop-shadow(0 6px 18px rgba(59,26,0,0.14));
+  filter: saturate(2) contrast(1.08) brightness(1.02) drop-shadow(0 7px 18px rgba(59,26,0,0.16));
 }
 
 .faq-section .section-accent--peacock-bl {
@@ -110,9 +110,9 @@
   .faq__thoranam-corner { display: none; }
 
   .faq-section .section-accent--peacock {
-    width: 112px;
-    opacity: 0.22;
-    filter: saturate(1.75) contrast(1.05) drop-shadow(0 4px 12px rgba(59,26,0,0.12));
+    width: 124px;
+    opacity: 0.34;
+    filter: saturate(2.05) contrast(1.08) brightness(1.02) drop-shadow(0 4px 12px rgba(59,26,0,0.14));
   }
 
   .faq-section .section-accent--peacock-bl {
