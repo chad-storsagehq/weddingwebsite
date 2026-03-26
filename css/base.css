@@ -112,17 +112,7 @@ img {
   pointer-events: none;
 }
 
-.invitation-divider__img {
-  width: 100%;
-  display: block;
-  height: auto;
-  max-height: 120px;
-  object-fit: cover;
-  object-position: center center;
-}
-
 @media (min-width: 768px) {
-  .invitation-divider__img { max-height: 160px; }
   .invitation-divider { margin-top: -28px; margin-bottom: -28px; }
 }
 
@@ -180,7 +170,6 @@ img {
 
 @media (min-width: 768px) {
   .peacock-accent { width: 200px; }
-  .invitation-divider__img { max-height: 180px; }
 }
 
 @media (max-width: 540px) {
