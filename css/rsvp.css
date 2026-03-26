@@ -64,16 +64,3 @@
   color: var(--color-charcoal);
 }
 
-/* Marigold garland — top of RSVP section */
-.rsvp__garland {
-  display: block;
-  width: 100%;
-  height: 48px;
-  object-fit: contain;
-  object-position: center;
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
-  filter: sepia(1) saturate(2.5) hue-rotate(5deg) brightness(0.75);
-  padding: 0 var(--space-md);
-}

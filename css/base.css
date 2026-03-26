@@ -107,41 +107,17 @@ img {
   .invitation-divider { margin-top: -28px; margin-bottom: -28px; }
 }
 
-/* Floral section divider — marigold garland over kolam band */
-.floral-divider {
-  position: relative;
+/* Floral section divider — Stitch-generated marigold field, full-width strip */
+.floral-divider__strip {
+  display: block;
   width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.floral-divider__kolam {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  height: 90px;
   object-fit: cover;
   object-position: center;
-  opacity: 0.18;
-  filter: sepia(1) saturate(2) hue-rotate(10deg) brightness(0.8);
-}
-
-.floral-divider__garland {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 900px;
-  height: 64px;
-  object-fit: contain;
-  filter: sepia(1) saturate(2.5) hue-rotate(5deg) brightness(0.75);
 }
 
 @media (min-width: 768px) {
-  .floral-divider { height: 120px; }
-  .floral-divider__garland { height: 96px; }
+  .floral-divider__strip { height: 120px; }
 }
 
 /* Peacock accent — transparent PNG cutout, placed at section corners */
