@@ -69,14 +69,28 @@
 .event-card__pillar--left  { left: 0; }
 .event-card__pillar--right { right: 0; transform: scaleX(-1); }
 
-.event-card__lotus {
+/* Thoranam (mango leaf garland) corner accents — subtle, behind content */
+.event-card__thoranam {
   position: absolute;
-  width: 28px;
-  opacity: 0.4;
+  width: 40px;
+  opacity: 0.35;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
+  z-index: 0;
 }
 
-.event-card__lotus--tl { top: 8px; left: 36px; }
-.event-card__lotus--tr { top: 8px; right: 36px; transform: scaleX(-1); }
+.event-card__thoranam--tl { top: 8px; left: 8px; }
+.event-card__thoranam--tr { top: 8px; right: 8px; transform: scaleX(-1); }
+
+/* Decorative gold corner brackets around event cards */
+.event-card::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(200,150,62,0.2);
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 0;
+}
 
 .event-card__content {
   position: relative;

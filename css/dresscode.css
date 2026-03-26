@@ -132,20 +132,20 @@
   border-bottom-color: var(--color-gold);
 }
 
-/* Lotus corner accents — top left and top right */
-.dresscode__lotus {
+/* Thoranam garland accents — top left and top right */
+.dresscode__thoranam {
   position: absolute;
   top: var(--space-md);
-  width: 72px;
+  width: 100px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.72;
-
+  opacity: 0.75;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
 }
 
-.dresscode__lotus--tl { left: var(--space-md); }
-.dresscode__lotus--tr { right: var(--space-md); transform: scaleX(-1); }
+.dresscode__thoranam--tl { left: var(--space-md); }
+.dresscode__thoranam--tr { right: var(--space-md); transform: scaleX(-1); }
 
 @media (max-width: 540px) {
-  .dresscode__lotus { display: none; }
+  .dresscode__thoranam { display: none; }
 }

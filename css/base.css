@@ -92,32 +92,48 @@ img {
   margin-top: var(--space-xs);
   letter-spacing: 0.05em;
 }
-/* Invitation border band — transparent ornate pattern, blends between sections */
+/* Invitation border band — ornate pattern bridging section transitions */
 .invitation-divider {
   width: 100%;
   line-height: 0;
   position: relative;
   z-index: 3;
-  margin-top: -20px;
-  margin-bottom: -20px;
+  margin-top: -30px;
+  margin-bottom: -30px;
   pointer-events: none;
+  background: var(--color-bg);
+}
+
+/* Transition modifiers: top-color to bottom-color */
+.invitation-divider--blush-to-bg {
+  background: linear-gradient(to bottom, var(--color-blush), var(--color-bg));
+}
+.invitation-divider--bg-to-blush {
+  background: linear-gradient(to bottom, var(--color-bg), var(--color-blush));
+}
+.invitation-divider--blush {
+  background: var(--color-blush);
 }
 
 @media (min-width: 768px) {
-  .invitation-divider { margin-top: -28px; margin-bottom: -28px; }
+  .invitation-divider { margin-top: -40px; margin-bottom: -40px; }
 }
 
-/* Floral section divider — Stitch-generated marigold field, full-width strip */
+/* Kolam section divider — ornate full-width border */
 .floral-divider__strip {
   display: block;
   width: 100%;
-  height: 90px;
+  height: 60px;
   object-fit: cover;
   object-position: center;
 }
 
 @media (min-width: 768px) {
-  .floral-divider__strip { height: 120px; }
+  .floral-divider__strip { height: 80px; }
+}
+
+@media (min-width: 1024px) {
+  .floral-divider__strip { height: 100px; }
 }
 
 /* Peacock accent — transparent PNG cutout, placed at section corners */

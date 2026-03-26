@@ -122,20 +122,28 @@ button.gifts__card-btn {
   font-style: italic;
 }
 
-/* Lotus corner accents — bottom left and bottom right */
-.gifts__lotus {
+/* Thoranam garland accents — bottom left and bottom right */
+.gifts__thoranam {
   position: absolute;
   bottom: var(--space-md);
-  width: 62px;
+  width: 100px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.72;
-
+  opacity: 0.75;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
 }
 
-.gifts__lotus--bl { left: var(--space-md); }
-.gifts__lotus--br { right: var(--space-md); transform: scaleX(-1); }
+.gifts__thoranam--bl { left: var(--space-md); }
+.gifts__thoranam--br { right: var(--space-md); transform: scaleX(-1); }
+
+/* Vilakku lamp icon above section title */
+.gifts__vilakku-icon {
+  display: block;
+  margin: 0 auto var(--space-sm);
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+}
 
 @media (max-width: 540px) {
-  .gifts__lotus { display: none; }
+  .gifts__thoranam { display: none; }
 }

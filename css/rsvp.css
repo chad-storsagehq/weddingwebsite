@@ -39,15 +39,17 @@
   pointer-events: none;
 }
 
-.rsvp__lotus {
+/* Thoranam garland accents */
+.rsvp__thoranam {
   position: absolute;
-  width: 32px;
+  width: 56px;
   top: var(--space-sm);
-  opacity: 0.4;
+  opacity: 0.6;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.15));
 }
 
-.rsvp__lotus--left  { left: var(--space-sm); }
-.rsvp__lotus--right { right: var(--space-sm); transform: scaleX(-1); }
+.rsvp__thoranam--left  { left: var(--space-sm); }
+.rsvp__thoranam--right { right: var(--space-sm); transform: scaleX(-1); }
 
 .rsvp__iframe {
   position: relative;

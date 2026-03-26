@@ -41,7 +41,7 @@
 
 .hero__content {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
   width: 100%;
@@ -53,6 +53,7 @@
   font-size: var(--text-sm);
   color: var(--color-gold);
   letter-spacing: 0.08em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 
 .hero__divider {
@@ -75,7 +76,7 @@
   color: var(--color-white);
   font-weight: 300;
   letter-spacing: 0.05em;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5);
 }
 
 .hero__name-telugu {
@@ -84,12 +85,14 @@
   color: var(--color-gold);
   margin-top: var(--space-xs);
   letter-spacing: 0.1em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 
 .hero__date {
   color: var(--color-gold);
   margin: var(--space-sm) 0;
   font-size: var(--text-sm);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 
 .hero__countdown {
@@ -111,12 +114,14 @@
   font-size: var(--text-3xl);
   color: var(--color-white);
   line-height: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 .countdown__label {
   color: var(--color-gold);
   margin-top: 4px;
   font-size: 0.6rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
 
 .countdown__married {
@@ -136,27 +141,51 @@
   text-shadow: 0 0 28px rgba(200,150,62,0.55), 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Decorative floral vine - sides of hero */
-.hero__vine {
+/* Decorative florals — flanking the names */
+.hero__corner {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 56px;
-  background-image: url('../assets/svg/floral-vine.svg');
-  background-repeat: repeat-y;
-  background-size: 56px auto;
-  opacity: 0.38;
-  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(160px, 22vw, 320px);
+  height: auto;
+  z-index: 3;
   pointer-events: none;
+  opacity: 0.92;
+  filter: saturate(1.15) drop-shadow(0 4px 24px rgba(0,0,0,0.5));
 }
 
-.hero__vine--left  { left: 0; }
-.hero__vine--right { right: 0; transform: scaleX(-1); }
+.hero__corner--left  { left: 0; }
+.hero__corner--right { right: 0; transform: translateY(-50%) scaleX(-1); }
+
+/* Bottom ornamental band — sits at very bottom, below all content */
+.hero__bottom-band {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+  filter: saturate(1.15) drop-shadow(0 -2px 16px rgba(0,0,0,0.4));
+}
+
+/* Responsive adjustments */
+@media (max-width: 540px) {
+  .hero__corner { width: 100px; opacity: 0.75; }
+  .hero__bottom-band { max-height: 120px; }
+}
 
 @media (min-width: 768px) {
-  .hero__vine { width: 68px; background-size: 68px auto; }
+  .hero__corner { width: clamp(180px, 22vw, 300px); }
+  .hero__bottom-band { max-height: 180px; }
 }
 
 @media (min-width: 1024px) {
-  .hero__vine { width: 80px; background-size: 80px auto; opacity: 0.32; }
+  .hero__corner { width: clamp(220px, 22vw, 350px); }
+  .hero__bottom-band { max-height: 240px; }
 }

@@ -149,18 +149,19 @@
   line-height: 1.7;
 }
 
-/* Colorful peacock pair — bottom-right corner accent */
-.traditions__peacock-corner {
+/* Thoranam garland — bottom-right corner accent */
+.traditions__thoranam-corner {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 160px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.92;
+  opacity: 0.85;
   transform: scaleX(-1);
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
 }
 
 @media (max-width: 540px) {
-  .traditions__peacock-corner { display: none; }
+  .traditions__thoranam-corner { display: none; }
 }

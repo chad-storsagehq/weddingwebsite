@@ -127,18 +127,19 @@
   }
 }
 
-/* Colorful peacock feather — left side accent */
-.travel__peacock-feather-color {
+/* Thoranam garland — left side accent */
+.travel__thoranam-accent {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 100px;
+  width: 120px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.88;
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
 }
 
 @media (max-width: 540px) {
-  .travel__peacock-feather-color { display: none; }
+  .travel__thoranam-accent { display: none; }
 }

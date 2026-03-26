@@ -24,14 +24,15 @@
     var bgY;
 
     if (scrollY <= heroSectionBottom) {
-      // Phase 1 — inside the Hero section: sky (5%) → temple center (52%)
+      // Phase 1 — inside the Hero section: sky (15%) → temple center (42%)
       var p1 = scrollY / heroSectionBottom;
-      bgY = 5 + p1 * 47;
+      bgY = 15 + p1 * 27;
     } else {
-      // Phase 2 — inside the Our Story section: temple (52%) → ground (88%)
+      // Phase 2 — inside the Our Story section: temple (42%) → lower temple (52%)
+      // Crowd at base is hidden by overlay gradient darkening
       var remaining = heroBottom - heroSectionBottom;
       var p2 = (scrollY - heroSectionBottom) / remaining;
-      bgY = 52 + p2 * 36;
+      bgY = 42 + p2 * 10;
     }
 
     heroBg.style.backgroundPosition = 'center ' + bgY + '%';
