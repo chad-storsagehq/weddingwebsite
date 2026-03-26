@@ -11,6 +11,23 @@
   max-width: var(--max-width-faq);
 }
 
+.faq-section .section-accent--peacock {
+  width: 170px;
+  opacity: 0.34;
+  z-index: 1;
+  filter: saturate(1.65) contrast(1.05) drop-shadow(0 6px 18px rgba(59,26,0,0.14));
+}
+
+.faq-section .section-accent--peacock-bl {
+  left: 8px;
+  bottom: 8px;
+}
+
+.faq-section .section-accent--peacock-br {
+  right: 8px;
+  bottom: 8px;
+}
+
 .faq__feather-bg {
   position: absolute;
   top: 0;
@@ -91,4 +108,20 @@
 
 @media (max-width: 540px) {
   .faq__thoranam-corner { display: none; }
+
+  .faq-section .section-accent--peacock {
+    width: 112px;
+    opacity: 0.22;
+    filter: saturate(1.75) contrast(1.05) drop-shadow(0 4px 12px rgba(59,26,0,0.12));
+  }
+
+  .faq-section .section-accent--peacock-bl {
+    left: -10px;
+    bottom: 28px;
+  }
+
+  .faq-section .section-accent--peacock-br {
+    right: -10px;
+    bottom: 28px;
+  }
 }

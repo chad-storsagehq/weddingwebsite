@@ -123,13 +123,23 @@
 
 .dresscode__shopping a {
   font-size: var(--text-sm);
-  color: var(--color-gold);
+  color: var(--color-maroon);
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 26, 26, 0.35);
+  text-underline-offset: 0.18em;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, text-decoration-color 0.2s;
 }
 
 .dresscode__shopping a:hover {
-  border-bottom-color: var(--color-gold);
+  color: var(--color-brown);
+  border-bottom-color: rgba(59, 26, 0, 0.35);
+  text-decoration-color: rgba(59, 26, 0, 0.45);
+}
+
+.dresscode__shopping a:focus-visible {
+  outline: 2px solid rgba(200, 150, 62, 0.45);
+  outline-offset: 2px;
 }
 
 /* Thoranam garland accents — top left and top right */
