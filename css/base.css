@@ -92,15 +92,6 @@ img {
   margin-top: var(--space-xs);
   letter-spacing: 0.05em;
 }
-
-/* Gold ornament divider between sections */
-.gold-divider {
-  display: block;
-  width: 100%;
-  max-height: 24px;
-  margin: 0;
-}
-
 /* Invitation border band — transparent ornate pattern, blends between sections */
 .invitation-divider {
   width: 100%;
