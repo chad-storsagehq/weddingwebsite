@@ -114,6 +114,15 @@ img {
 .invitation-divider--blush {
   background: var(--color-blush);
 }
+/* First divider (hero→events) — centered on the transition line */
+.invitation-divider--hero-blend {
+  background: transparent;
+  margin-top: -80px;
+  z-index: 4;
+}
+@media (min-width: 768px) {
+  .invitation-divider--hero-blend { margin-top: -100px; }
+}
 
 @media (min-width: 768px) {
   .invitation-divider { margin-top: -40px; margin-bottom: -40px; }
@@ -157,6 +166,67 @@ img {
 
 @media (max-width: 540px) {
   .peacock-accent { display: none; }
+}
+
+/* ── Subtle section accent decorations (Stitch-generated) ── */
+.section-accent {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Rangoli lotus mandala — centered watermark */
+.section-accent--rangoli {
+  width: 320px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.07;
+}
+
+/* Paisley vine — vertical side accents */
+.section-accent--vine {
+  height: 80%;
+  width: auto;
+  top: 10%;
+  opacity: 0.12;
+}
+.section-accent--vine-left {
+  left: 12px;
+}
+.section-accent--vine-right {
+  right: 12px;
+  transform: scaleX(-1);
+}
+
+/* Peacock corner accents */
+.section-accent--peacock {
+  width: 140px;
+  opacity: 0.10;
+  filter: saturate(1.2);
+}
+.section-accent--peacock-bl {
+  bottom: 16px;
+  left: 16px;
+}
+.section-accent--peacock-br {
+  bottom: 16px;
+  right: 16px;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .section-accent--rangoli { width: 200px; }
+  .section-accent--vine { opacity: 0.08; }
+  .section-accent--vine-left { left: 4px; }
+  .section-accent--vine-right { right: 4px; }
+  .section-accent--peacock { width: 100px; opacity: 0.08; }
+}
+
+@media (max-width: 540px) {
+  .section-accent--vine { display: none; }
+  .section-accent--rangoli { width: 150px; opacity: 0.05; }
+  .section-accent--peacock { width: 80px; opacity: 0.06; }
 }
 
 /* Gold label text */

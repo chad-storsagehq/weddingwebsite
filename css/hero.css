@@ -4,6 +4,19 @@
   background-color: var(--color-brown);
 }
 
+/* Gradient fade at bottom — blends dark temple photo into blush divider */
+.hero-area::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(232,208,196,0.3) 40%, rgba(232,208,196,0.7) 70%, var(--color-blush) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
 .hero {
   position: relative;
   z-index: 2;
