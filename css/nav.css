@@ -97,12 +97,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: var(--space-lg);
+  justify-content: flex-start;
+  gap: clamp(1rem, 3vh, 1.75rem);
   position: fixed;
   inset: 0;
   background: var(--color-bg);
   z-index: 1001;
+  padding: calc(var(--nav-height) + var(--space-md)) var(--space-md) calc(var(--space-lg) + env(safe-area-inset-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav__links.is-open a {
