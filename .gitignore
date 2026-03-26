@@ -1,2 +1,6 @@
 .DS_Store
 *.log
+.claude/
+CLAUDE.md
+node_modules/
+assets/images/elements/_*.jpg
