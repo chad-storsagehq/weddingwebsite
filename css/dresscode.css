@@ -136,11 +136,11 @@
 .dresscode__lotus {
   position: absolute;
   top: var(--space-md);
-  width: 60px;
+  width: 72px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.55;
-  filter: sepia(1) saturate(2) hue-rotate(5deg) brightness(0.8);
+  opacity: 0.72;
+
 }
 
 .dresscode__lotus--tl { left: var(--space-md); }

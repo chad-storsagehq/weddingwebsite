@@ -81,10 +81,10 @@
   position: absolute;
   top: var(--space-md);
   right: 0;
-  width: 120px;
+  width: 140px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.80;
+  opacity: 0.92;
 }
 
 @media (max-width: 540px) {

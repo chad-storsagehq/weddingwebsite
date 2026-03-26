@@ -126,11 +126,11 @@ button.gifts__card-btn {
 .gifts__lotus {
   position: absolute;
   bottom: var(--space-md);
-  width: 50px;
+  width: 62px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.55;
-  filter: sepia(1) saturate(2) hue-rotate(5deg) brightness(0.8);
+  opacity: 0.72;
+
 }
 
 .gifts__lotus--bl { left: var(--space-md); }

@@ -133,10 +133,10 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 80px;
+  width: 100px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.75;
+  opacity: 0.88;
 }
 
 @media (max-width: 540px) {

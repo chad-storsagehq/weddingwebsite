@@ -154,10 +154,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 140px;
+  width: 160px;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.85;
+  opacity: 0.92;
   transform: scaleX(-1);
 }
 
