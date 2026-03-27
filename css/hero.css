@@ -31,7 +31,7 @@
   inset: 0;
   background-image: url('../assets/images/hero-temple-stitch-clean-cropped2.png');
   background-size: cover;
-  background-position: center 8%;
+  background-position: center 18%;
   z-index: 0;
   will-change: background-position;
 }
@@ -205,7 +205,7 @@
     max-height: 180px;
     width: 120%;
   }
-  .hero__bg { background-position: center 10%; }
+  .hero__bg { background-position: center 14%; }
   .hero__date { font-size: 0.92rem; }
   .countdown__label { font-size: 0.8rem; }
 }
@@ -216,7 +216,7 @@
     bottom: -122px;
     max-height: 240px;
   }
-  .hero__bg { background-position: center 12%; }
+  .hero__bg { background-position: center 18%; }
 }
 
 @media (min-width: 1024px) {
@@ -225,5 +225,5 @@
     bottom: -128px;
     max-height: 300px;
   }
-  .hero__bg { background-position: center 6%; }
+  .hero__bg { background-position: center 22%; }
 }
