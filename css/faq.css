@@ -11,26 +11,6 @@
   max-width: var(--max-width-faq);
 }
 
-.faq__floral-peacock {
-  position: absolute;
-  top: 50%;
-  width: 136px;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.92;
-  filter: saturate(1.08) drop-shadow(0 6px 18px rgba(59,26,0,0.12));
-}
-
-.faq__floral-peacock--left {
-  left: 28px;
-  transform: translateY(-50%);
-}
-
-.faq__floral-peacock--right {
-  right: 28px;
-  transform: translateY(-50%) scaleX(-1);
-}
-
 .faq__feather-bg {
   position: absolute;
   top: 0;
@@ -111,18 +91,4 @@
 
 @media (max-width: 540px) {
   .faq__thoranam-corner { display: none; }
-
-  .faq__floral-peacock {
-    width: 92px;
-    top: 50%;
-    opacity: 0.84;
-  }
-
-  .faq__floral-peacock--left {
-    left: -4px;
-  }
-
-  .faq__floral-peacock--right {
-    right: -4px;
-  }
 }
