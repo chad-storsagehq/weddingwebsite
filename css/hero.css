@@ -237,8 +237,20 @@
 /* Responsive adjustments */
 @media (max-width: 540px) {
   .hero {
-    align-items: flex-start;
+    align-items: center;
     min-height: 100svh;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/images/hero-temple-mobile-portal-clean.png');
+    background-position: center 86px;
+    background-size: auto calc(100svh - 160px);
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
   }
 
   .hero__bg,
@@ -266,13 +278,15 @@
 
   .hero__content {
     max-width: 360px;
-    padding: calc(var(--nav-height) + 0.2rem) 0.9rem 2.55rem;
+    min-height: calc(100svh - var(--nav-height));
+    justify-content: center;
+    padding: calc(var(--nav-height) + 0.2rem) 0.9rem 2rem;
   }
 
   .hero__ganesha-motif {
     order: 1;
     font-size: 20px;
-    margin: 0 auto 0.08rem;
+    margin: 0 auto 0.22rem;
   }
 
   .hero__invocation {
@@ -286,19 +300,19 @@
     display: block;
     order: 3;
     width: 84px;
-    margin: 0.22rem auto 0.24rem;
+    margin: 0.35rem auto 0.32rem;
   }
 
   .hero__content > .hero__divider:last-of-type {
     display: block;
     order: 5;
     width: 92px;
-    margin: 0.18rem auto 0.22rem;
+    margin: 0.28rem auto 0.3rem;
   }
 
   .hero__names {
     order: 4;
-    padding: 0.15rem 0;
+    padding: 0.2rem 0;
     width: 100%;
   }
 
@@ -311,14 +325,14 @@
 
   .hero__name-telugu {
     font-size: 0.95rem;
-    margin-top: 0.12rem;
+    margin-top: 0.18rem;
     letter-spacing: 0.04em;
   }
 
   .hero__date {
     order: 6;
     font-size: 0.82rem;
-    margin: 0.14rem 0 0.18rem;
+    margin: 0.2rem 0 0.28rem;
     letter-spacing: 0.06em;
   }
 
@@ -326,7 +340,7 @@
     order: 7;
     display: flex;
     gap: 0.6rem;
-    margin-top: 0;
+    margin-top: 0.05rem;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
@@ -354,8 +368,8 @@
 
   .hero__bg {
     background-image: url('../assets/images/hero-temple-mobile-portal-clean.png');
-    background-position: center 88px;
-    background-size: auto calc(100svh - 160px);
+    background-position: center 24%;
+    background-size: auto calc(100% - 90px);
     background-repeat: no-repeat;
     transform-origin: center top;
   }
