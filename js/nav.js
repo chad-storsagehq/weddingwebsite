@@ -5,6 +5,13 @@
 
   if (!nav || !hamburger || !navLinks) return;
 
+  function closeMenu() {
+    navLinks.classList.remove('is-open');
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
   function updateNavStyle() {
     if (window.scrollY > 80) {
       nav.classList.remove('nav--transparent');
@@ -32,12 +39,16 @@
     }
   });
 
+  navLinks.addEventListener('click', function (event) {
+    if (event.target === navLinks) {
+      closeMenu();
+      hamburger.focus();
+    }
+  });
+
   navLinks.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
-      navLinks.classList.remove('is-open');
-      hamburger.classList.remove('is-open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
+      closeMenu();
     });
   });
 })();
