@@ -276,9 +276,10 @@
   }
 
   .hero__bg {
-    background-image: url('../assets/images/hero-temple-gopuram.png');
-    background-position: center 58%;
-    background-size: cover;
+    background-image: url('../assets/images/hero-temple-mobile-portal.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
