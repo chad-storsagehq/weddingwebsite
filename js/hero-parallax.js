@@ -9,29 +9,47 @@
   var heroEl = document.getElementById('hero-area');
   if (!heroEl) return;
   var mobileMq = window.matchMedia('(max-width: 540px)');
-  var ticking = false;
+  var currentShift = 0;
+  var targetShift = 0;
+  var currentScale = 1;
+  var targetScale = 1;
+  var rafId = 0;
 
   function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
   }
 
-  function update() {
+  function measure() {
     var rect = heroEl.getBoundingClientRect();
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var travel = rect.height + viewportHeight * 0.2;
     var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
-    var shift = mobileMq.matches ? progress * -18 : progress * -56;
-    var scale = mobileMq.matches ? 1.025 : 1.065;
+    targetShift = mobileMq.matches ? progress * -28 : progress * -62;
+    targetScale = mobileMq.matches ? 1.03 : 1.065;
+  }
 
-    heroBg.style.setProperty('--hero-bg-shift', shift.toFixed(2) + 'px');
-    heroBg.style.setProperty('--hero-bg-scale', scale.toFixed(3));
-    ticking = false;
+  function render() {
+    currentShift += (targetShift - currentShift) * 0.12;
+    currentScale += (targetScale - currentScale) * 0.12;
+
+    heroBg.style.setProperty('--hero-bg-shift', currentShift.toFixed(2) + 'px');
+    heroBg.style.setProperty('--hero-bg-scale', currentScale.toFixed(3));
+
+    if (Math.abs(targetShift - currentShift) > 0.1 || Math.abs(targetScale - currentScale) > 0.001) {
+      rafId = window.requestAnimationFrame(render);
+    } else {
+      currentShift = targetShift;
+      currentScale = targetScale;
+      heroBg.style.setProperty('--hero-bg-shift', currentShift.toFixed(2) + 'px');
+      heroBg.style.setProperty('--hero-bg-scale', currentScale.toFixed(3));
+      rafId = 0;
+    }
   }
 
   function requestUpdate() {
-    if (ticking) return;
-    ticking = true;
-    window.requestAnimationFrame(update);
+    measure();
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(render);
   }
 
   window.addEventListener('scroll', requestUpdate, { passive: true });

@@ -66,6 +66,9 @@
   padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
   width: 100%;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__invocation {
@@ -165,6 +168,31 @@
   color: var(--color-gold);
   margin: 0 auto 0.6rem;
   text-shadow: 0 0 28px rgba(200,150,62,0.55), 0 2px 8px rgba(0,0,0,0.5);
+  order: 1;
+}
+
+.hero__invocation {
+  order: 2;
+}
+
+.hero__content > .hero__divider:first-of-type {
+  order: 3;
+}
+
+.hero__names {
+  order: 4;
+}
+
+.hero__content > .hero__divider:last-of-type {
+  order: 5;
+}
+
+.hero__date {
+  order: 6;
+}
+
+.hero__countdown {
+  order: 7;
 }
 
 /* Decorative florals — flanking the names */
@@ -221,21 +249,24 @@
   }
 
   .hero__ganesha-motif {
-    font-size: 36px;
-    margin-bottom: 0.35rem;
+    order: 5;
+    font-size: 24px;
+    margin: 0.2rem auto 0;
   }
 
   .hero__invocation {
+    order: 5;
     font-size: 0.78rem;
     letter-spacing: 0.06em;
+    margin-top: 0.08rem;
   }
 
   .hero__divider {
-    width: 116px;
-    margin: 0.65rem auto;
+    display: none;
   }
 
   .hero__names {
+    order: 3;
     padding: 0.35rem 0;
   }
 
@@ -251,16 +282,18 @@
   }
 
   .hero__date {
+    order: 6;
     font-size: 0.9rem;
-    margin: 0.55rem 0 0.55rem;
+    margin: 0.35rem 0 0.3rem;
     letter-spacing: 0.07em;
   }
 
   .hero__countdown {
+    order: 7;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.55rem 0.95rem;
-    margin-top: 0.5rem;
+    margin-top: 0.35rem;
     max-width: 228px;
     margin-left: auto;
     margin-right: auto;
@@ -285,8 +318,8 @@
   }
 
   .hero__bg {
-    background-image: url('../assets/images/hero-temple-mobile-portal.png');
-    background-position: center calc(100% - 52px);
+    background-image: url('../assets/images/hero-temple-mobile-portal-clean.png');
+    background-position: center calc(100% - 120px);
     background-size: contain;
     background-repeat: no-repeat;
     transform-origin: center bottom;
