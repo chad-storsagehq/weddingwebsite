@@ -6,40 +6,35 @@
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  var heroEl   = document.getElementById('hero-area');
-  var heroSection = document.getElementById('home');
-  var heroBottom  = 0;
-  var heroSectionBottom = 0;
+  var heroEl = document.getElementById('hero-area');
+  if (!heroEl) return;
+  var mobileMq = window.matchMedia('(max-width: 540px)');
+  var ticking = false;
 
-  function recalc() {
-    var scrollY = window.pageYOffset;
-    heroBottom        = heroEl      ? heroEl.getBoundingClientRect().bottom      + scrollY : 0;
-    heroSectionBottom = heroSection ? heroSection.getBoundingClientRect().bottom + scrollY : 0;
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
   }
 
-  function onScroll() {
-    var scrollY = window.pageYOffset;
-    if (scrollY > heroBottom) return;
+  function update() {
+    var rect = heroEl.getBoundingClientRect();
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var travel = rect.height + viewportHeight * 0.2;
+    var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
+    var shift = mobileMq.matches ? progress * -18 : progress * -56;
+    var scale = mobileMq.matches ? 1.025 : 1.065;
 
-    var bgY;
-
-    if (scrollY <= heroSectionBottom) {
-      // Phase 1 — inside the Hero section: sky (15%) → temple center (42%)
-      var p1 = scrollY / heroSectionBottom;
-      bgY = 15 + p1 * 27;
-    } else {
-      // Phase 2 — inside the Our Story section: temple (42%) → lower temple (52%)
-      // Crowd at base is hidden by overlay gradient darkening
-      var remaining = heroBottom - heroSectionBottom;
-      var p2 = (scrollY - heroSectionBottom) / remaining;
-      bgY = 42 + p2 * 10;
-    }
-
-    heroBg.style.backgroundPosition = 'center ' + bgY + '%';
+    heroBg.style.setProperty('--hero-bg-shift', shift.toFixed(2) + 'px');
+    heroBg.style.setProperty('--hero-bg-scale', scale.toFixed(3));
+    ticking = false;
   }
 
-  recalc();
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', recalc, { passive: true });
-  onScroll();
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }
+
+  window.addEventListener('scroll', requestUpdate, { passive: true });
+  window.addEventListener('resize', requestUpdate, { passive: true });
+  requestUpdate();
 }());

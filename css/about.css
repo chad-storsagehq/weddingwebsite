@@ -1,6 +1,6 @@
 .about-section {
   background: transparent;
-  padding: var(--space-xl) 0;
+  padding: clamp(2.2rem, 7vw, 4.5rem) 0 var(--space-xl);
   position: relative;
   z-index: 2;
 }
