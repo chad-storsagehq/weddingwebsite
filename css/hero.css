@@ -222,8 +222,8 @@
 
   .hero__bg,
   .hero__overlay {
-    inset: 0 0 auto 0;
-    height: 100svh;
+    inset: 0;
+    height: 100%;
   }
 
   .hero__overlay {
@@ -245,24 +245,34 @@
 
   .hero__content {
     max-width: 360px;
-    padding: calc(var(--nav-height) + 0.45rem) 1.1rem 4.35rem;
+    padding: calc(var(--nav-height) + 0.35rem) 1.1rem 3.4rem;
   }
 
   .hero__ganesha-motif {
-    order: 5;
-    font-size: 24px;
-    margin: 0.2rem auto 0;
+    order: 1;
+    font-size: 28px;
+    margin: 0 auto 0.2rem;
   }
 
   .hero__invocation {
-    order: 5;
+    order: 2;
     font-size: 0.78rem;
     letter-spacing: 0.06em;
-    margin-top: 0.08rem;
+    margin-top: 0;
   }
 
-  .hero__divider {
-    display: none;
+  .hero__content > .hero__divider:first-of-type {
+    display: block;
+    order: 3;
+    width: 108px;
+    margin: 0.45rem auto 0.35rem;
+  }
+
+  .hero__content > .hero__divider:last-of-type {
+    display: block;
+    order: 5;
+    width: 108px;
+    margin: 0.35rem auto 0.35rem;
   }
 
   .hero__names {
@@ -284,7 +294,7 @@
   .hero__date {
     order: 6;
     font-size: 0.9rem;
-    margin: 0.35rem 0 0.3rem;
+    margin: 0.25rem 0 0.2rem;
     letter-spacing: 0.07em;
   }
 
@@ -319,10 +329,10 @@
 
   .hero__bg {
     background-image: url('../assets/images/hero-temple-mobile-portal-clean.png');
-    background-position: center calc(100% - 120px);
-    background-size: contain;
+    background-position: center 88px;
+    background-size: auto calc(100svh - 160px);
     background-repeat: no-repeat;
-    transform-origin: center bottom;
+    transform-origin: center top;
   }
 }
 

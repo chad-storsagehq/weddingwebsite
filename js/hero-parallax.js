@@ -24,13 +24,13 @@
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var travel = rect.height + viewportHeight * 0.2;
     var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
-    targetShift = mobileMq.matches ? progress * -28 : progress * -62;
+    targetShift = mobileMq.matches ? progress * -34 : progress * -62;
     targetScale = mobileMq.matches ? 1.03 : 1.065;
   }
 
   function render() {
-    currentShift += (targetShift - currentShift) * 0.12;
-    currentScale += (targetScale - currentScale) * 0.12;
+    currentShift += (targetShift - currentShift) * 0.09;
+    currentScale += (targetScale - currentScale) * 0.09;
 
     heroBg.style.setProperty('--hero-bg-shift', currentShift.toFixed(2) + 'px');
     heroBg.style.setProperty('--hero-bg-scale', currentScale.toFixed(3));
