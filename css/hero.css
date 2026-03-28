@@ -94,13 +94,33 @@
 }
 
 .hero__name-english {
-  font-family: var(--font-hero-script);
-  font-size: clamp(3.1rem, 9vw, 5.4rem);
+  font-family: var(--font-hero-decorative);
+  font-size: clamp(2.9rem, 8.2vw, 4.7rem);
   color: var(--color-white);
   font-weight: 400;
-  letter-spacing: 0.015em;
-  line-height: 0.94;
+  letter-spacing: 0.04em;
+  line-height: 0.96;
   text-shadow: 0 2px 24px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.5);
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.hero__name-part {
+  display: inline-block;
+}
+
+.hero__name-amp {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.52em;
+  line-height: 1;
+  margin: 0 0.02em;
+  transform: translateY(-0.08em);
 }
 
 .hero__name-telugu {
@@ -115,7 +135,7 @@
 .hero__date {
   font-family: var(--font-heading);
   color: rgba(253, 246, 236, 0.96);
-  margin: calc(var(--space-sm) + 0.25rem) 0 var(--space-sm);
+  margin: calc(var(--space-sm) + 0.1rem) 0 0.65rem;
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-shadow: 0 2px 14px rgba(0,0,0,0.72);
@@ -123,16 +143,17 @@
 
 .hero__countdown {
   display: flex;
-  gap: var(--space-md);
+  gap: 1.35rem;
   justify-content: center;
-  margin-top: var(--space-md);
+  margin-top: 0;
+  flex-wrap: nowrap;
 }
 
 .countdown__unit {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 60px;
+  min-width: 50px;
 }
 
 .countdown__num {
@@ -163,10 +184,10 @@
 .hero__ganesha-motif {
   display: block;
   font-family: var(--font-heading);
-  font-size: 44px;
+  font-size: 34px;
   line-height: 1;
   color: var(--color-gold);
-  margin: 0 auto 0.6rem;
+  margin: 0 auto 0.28rem;
   text-shadow: 0 0 28px rgba(200,150,62,0.55), 0 2px 8px rgba(0,0,0,0.5);
   order: 1;
 }
@@ -245,82 +266,86 @@
 
   .hero__content {
     max-width: 360px;
-    padding: calc(var(--nav-height) + 0.35rem) 1.1rem 3.4rem;
+    padding: calc(var(--nav-height) + 0.2rem) 0.9rem 2.55rem;
   }
 
   .hero__ganesha-motif {
     order: 1;
-    font-size: 28px;
-    margin: 0 auto 0.2rem;
+    font-size: 20px;
+    margin: 0 auto 0.08rem;
   }
 
   .hero__invocation {
     order: 2;
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
     margin-top: 0;
   }
 
   .hero__content > .hero__divider:first-of-type {
     display: block;
     order: 3;
-    width: 108px;
-    margin: 0.45rem auto 0.35rem;
+    width: 84px;
+    margin: 0.22rem auto 0.24rem;
   }
 
   .hero__content > .hero__divider:last-of-type {
     display: block;
     order: 5;
-    width: 108px;
-    margin: 0.35rem auto 0.35rem;
+    width: 92px;
+    margin: 0.18rem auto 0.22rem;
   }
 
   .hero__names {
-    order: 3;
-    padding: 0.35rem 0;
+    order: 4;
+    padding: 0.15rem 0;
+    width: 100%;
   }
 
   .hero__name-english {
-    font-size: clamp(2.95rem, 15vw, 4.15rem);
-    line-height: 0.9;
+    font-size: clamp(2.5rem, 8.5vw, 3.7rem);
+    letter-spacing: 0.018em;
+    line-height: 0.93;
+    gap: 0.12rem;
   }
 
   .hero__name-telugu {
-    font-size: 1.15rem;
-    margin-top: 0.35rem;
-    letter-spacing: 0.06em;
+    font-size: 0.95rem;
+    margin-top: 0.12rem;
+    letter-spacing: 0.04em;
   }
 
   .hero__date {
     order: 6;
-    font-size: 0.9rem;
-    margin: 0.25rem 0 0.2rem;
-    letter-spacing: 0.07em;
+    font-size: 0.82rem;
+    margin: 0.14rem 0 0.18rem;
+    letter-spacing: 0.06em;
   }
 
   .hero__countdown {
     order: 7;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem 0.95rem;
-    margin-top: 0.35rem;
-    max-width: 228px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
   .countdown__unit {
     min-width: 0;
+    flex: 0 1 72px;
   }
 
   .countdown__num {
-    font-size: clamp(2rem, 10vw, 2.35rem);
+    font-size: clamp(1.65rem, 7.4vw, 2.15rem);
   }
 
   .countdown__label {
-    font-size: 0.76rem;
-    margin-top: 0.22rem;
-    letter-spacing: 0.04em;
+    font-size: 0.63rem;
+    margin-top: 0.12rem;
+    letter-spacing: 0.03em;
   }
 
   .hero__bottom-band {
@@ -333,6 +358,25 @@
     background-size: auto calc(100svh - 160px);
     background-repeat: no-repeat;
     transform-origin: center top;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero__name-english {
+    font-size: clamp(2.32rem, 8.2vw, 3rem);
+    letter-spacing: 0.014em;
+  }
+
+  .hero__countdown {
+    gap: 0.32rem;
+  }
+
+  .countdown__unit {
+    flex-basis: 64px;
+  }
+
+  .countdown__num {
+    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
   }
 }
 
