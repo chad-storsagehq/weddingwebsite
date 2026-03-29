@@ -24,8 +24,8 @@
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var travel = rect.height + viewportHeight * 0.2;
     var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
-    targetShift = mobileMq.matches ? progress * 148 : progress * 62;
-    targetScale = mobileMq.matches ? 1.022 : 1.065;
+    targetShift = mobileMq.matches ? progress * 96 : progress * 62;
+    targetScale = mobileMq.matches ? 1.014 : 1.065;
   }
 
   function render() {
