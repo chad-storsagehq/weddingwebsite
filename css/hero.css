@@ -283,13 +283,16 @@
     max-width: 360px;
     min-height: auto;
     justify-content: flex-start;
-    padding: calc(var(--nav-height) + 1rem) 0.9rem 1.35rem;
+    padding: calc(var(--nav-height) + 3.25rem) 0.9rem 1.35rem;
   }
 
   .hero__ganesha-motif {
-    order: 1;
+    position: absolute;
+    top: calc(var(--nav-height) + 0.65rem);
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 18px;
-    margin: 0 auto 1.7rem;
+    margin: 0;
   }
 
   .hero__content > .hero__divider:first-of-type {
