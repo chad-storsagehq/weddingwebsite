@@ -1,53 +1,41 @@
 .about-section {
   background: transparent;
-  padding: clamp(2.2rem, 7vw, 4.5rem) 0 var(--space-xl);
+  padding: clamp(1rem, 4vw, 2rem) 0 clamp(0.8rem, 3vw, 1.6rem);
   position: relative;
   z-index: 2;
 }
 
 @media (max-width: 540px) {
   .about-section {
-    padding-top: 1.65rem;
-    padding-bottom: 0.85rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.3rem;
   }
 
   .about-section__inner {
-    padding-bottom: 2.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.6rem;
   }
 
   .about__layout {
-    margin-top: 1rem;
-    gap: 1.1rem;
+    margin-top: 0;
+    gap: 0;
   }
 
   .about__photo-wrap {
-    max-width: 280px;
-  }
-
-  .about__text {
-    gap: 0.85rem;
-    padding: 1rem 1rem 1.15rem;
-    border: 1px solid rgba(212, 168, 67, 0.4);
-    border-radius: 18px;
-    background: linear-gradient(
-      to bottom,
-      rgba(36, 15, 2, 0.22) 0%,
-      rgba(24, 10, 1, 0.42) 100%
-    );
-    backdrop-filter: blur(4px);
+    max-width: 250px;
   }
 }
 
 .about-section__inner {
   position: relative;
-  max-width: 900px;
+  max-width: 360px;
 }
 
 .about__layout {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
-  margin-top: var(--space-md);
+  gap: 0;
+  margin-top: 0;
   align-items: center;
 }
 
@@ -61,7 +49,7 @@
 .about__photo-wrap {
   flex: 0 0 auto;
   width: 100%;
-  max-width: 320px;
+  max-width: 290px;
 }
 
 .about__photo-wrap img {
@@ -90,38 +78,7 @@
   letter-spacing: 0.1em;
 }
 
-.about__text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-.about__story {
-  font-family: var(--font-heading);
-  font-size: var(--text-lg);
-  line-height: 1.85;
-  color: rgba(255,255,255,0.90);
-  font-style: italic;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
-}
-
-/* Section title + Telugu subtitle on photo background */
-.about-section .section-title {
-  color: var(--color-white);
-  text-shadow: 0 2px 14px rgba(0,0,0,0.5);
-}
-
-/* Corner frame — gold instead of mauve on dark bg */
 .about-section__inner.section::before,
 .about-section__inner.section::after {
-  border-color: var(--color-gold);
-  opacity: 0.4;
-}
-
-@media (max-width: 540px) {
-  .about__story {
-    font-size: 1.08rem;
-    line-height: 1.72;
-  }
+  display: none;
 }
