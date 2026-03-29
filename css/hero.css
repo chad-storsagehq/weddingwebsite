@@ -271,8 +271,8 @@
 
   .hero {
     align-items: flex-start;
-    min-height: clamp(70rem, 150svh, 86rem);
-    min-height: clamp(70rem, 150dvh, 86rem);
+    min-height: clamp(74rem, 158svh, 90rem);
+    min-height: clamp(74rem, 158dvh, 90rem);
   }
 
   .hero::before {
@@ -285,7 +285,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: clamp(4.75rem, 16vw, 7rem);
+    height: clamp(5.5rem, 18vw, 8rem);
     background: linear-gradient(
       to bottom,
       rgba(5, 2, 0, 0) 0%,
@@ -394,8 +394,8 @@
   }
 
   .hero__showcase {
-    bottom: 0.25rem;
-    width: clamp(8.9rem, 32vw, 10.9rem);
+    bottom: 2rem;
+    width: clamp(10rem, 35vw, 12.25rem);
     border-radius: 18px;
     box-shadow:
       0 16px 34px rgba(0,0,0,0.28),
