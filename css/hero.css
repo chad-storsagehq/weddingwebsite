@@ -368,8 +368,8 @@
 
   .hero__bg {
     background-image: url('../assets/images/hero-temple-mobile-portal-clean.png');
-    background-position: center 24%;
-    background-size: auto calc(100% - 90px);
+    background-position: center 40px;
+    background-size: auto calc(100% - 120px);
     background-repeat: no-repeat;
     transform-origin: center top;
   }
