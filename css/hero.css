@@ -249,7 +249,7 @@
 
   .hero {
     align-items: center;
-    min-height: clamp(34rem, 82svh, 46rem);
+    min-height: 100svh;
   }
 
   .hero::before {
@@ -281,7 +281,7 @@
 
   .hero__content {
     max-width: 360px;
-    min-height: auto;
+    min-height: calc(100svh - var(--nav-height));
     justify-content: flex-start;
     padding: calc(var(--nav-height) + 2.9rem) 0.9rem 1.35rem;
   }
@@ -357,8 +357,8 @@
   }
 
   .hero__bg {
-    background-image: url('../assets/images/hero-temple-mobile-long.jpeg');
-    background-position: center 14%;
+    background-image: url('../assets/images/hero-temple-mobile-landing.jpg');
+    background-position: center 18%;
     background-size: cover;
     background-repeat: no-repeat;
     transform-origin: center top;
@@ -378,10 +378,10 @@
         rgba(5, 2, 0, 0.82) 86%,
         #050200 100%
       ),
-      url('../assets/images/hero-temple-mobile-long.jpeg');
+      url('../assets/images/hero-temple-mobile-landing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 58%;
+    background-position: center 72%;
     background-color: #050200;
     opacity: 0.98;
   }
