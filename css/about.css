@@ -7,12 +7,13 @@
 
 @media (max-width: 540px) {
   .about-section {
-    padding-top: 0.9rem;
+    padding-top: 0.25rem;
     padding-bottom: 0.3rem;
+    margin-top: -0.2rem;
   }
 
   .about-section__inner {
-    padding-top: 0.25rem;
+    padding-top: 0;
     padding-bottom: 0.6rem;
   }
 
