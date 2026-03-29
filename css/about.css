@@ -7,23 +7,7 @@
 
 @media (max-width: 540px) {
   .about-section {
-    padding-top: clamp(3rem, 12vw, 4.5rem);
-    padding-bottom: 1.25rem;
-    margin-top: 0;
-  }
-
-  .about-section__inner {
-    padding-top: 0;
-    padding-bottom: 1rem;
-  }
-
-  .about__layout {
-    margin-top: 0;
-    gap: 0;
-  }
-
-  .about__photo-wrap {
-    max-width: 258px;
+    display: none;
   }
 }
 
