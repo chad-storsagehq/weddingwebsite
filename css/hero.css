@@ -358,7 +358,7 @@
 
   .hero__bg {
     background-image: url('../assets/images/hero-temple-mobile-long.jpeg');
-    background-position: center 16%;
+    background-position: center 14%;
     background-size: cover;
     background-repeat: no-repeat;
     transform-origin: center top;
@@ -367,7 +367,7 @@
   .hero-mobile-continuation {
     display: block;
     position: relative;
-    min-height: clamp(16rem, 52vw, 22rem);
+    min-height: clamp(14rem, 44vw, 18rem);
     margin-top: -0.5rem;
     background:
       linear-gradient(
@@ -381,7 +381,7 @@
       url('../assets/images/hero-temple-mobile-long.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 70%;
     background-color: #050200;
     opacity: 0.98;
   }
