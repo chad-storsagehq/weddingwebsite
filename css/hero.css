@@ -263,8 +263,8 @@
   .hero__content {
     max-width: 360px;
     min-height: calc(100svh - var(--nav-height));
-    justify-content: center;
-    padding: calc(var(--nav-height) + 0.1rem) 0.9rem 1.35rem;
+    justify-content: flex-start;
+    padding: calc(var(--nav-height) + 6.4rem) 0.9rem 0.8rem;
   }
 
   .hero__ganesha-motif {
@@ -303,7 +303,7 @@
   .hero__date {
     order: 6;
     font-size: 0.82rem;
-    margin: 0.15rem 0 0.24rem;
+    margin: 0.12rem 0 0.18rem;
     letter-spacing: 0.06em;
   }
 
@@ -340,7 +340,7 @@
   .hero__bg {
     background-image: url('../assets/images/hero-temple-mobile-shared.png');
     background-position: center top;
-    background-size: auto calc(100svh + 30rem);
+    background-size: auto calc(100svh + 24rem);
     background-repeat: no-repeat;
     transform-origin: center top;
   }
