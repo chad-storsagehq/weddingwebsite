@@ -208,6 +208,28 @@
   order: 7;
 }
 
+.hero__showcase {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(2rem, 5vw, 4rem);
+  transform: translateX(-50%);
+  width: clamp(11rem, 19vw, 15rem);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 168, 67, 0.92);
+  box-shadow:
+    0 24px 52px rgba(0,0,0,0.34),
+    0 0 0 10px rgba(255, 248, 238, 0.12);
+  z-index: 4;
+  background: rgba(255, 248, 238, 0.08);
+}
+
+.hero__showcase img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Decorative florals — flanking the names */
 /* Bottom ornamental band — sits at very bottom, below all content */
 .hero__bottom-band {
@@ -371,6 +393,15 @@
     letter-spacing: 0.03em;
   }
 
+  .hero__showcase {
+    bottom: 1.15rem;
+    width: clamp(8.75rem, 31vw, 10.75rem);
+    border-radius: 18px;
+    box-shadow:
+      0 16px 34px rgba(0,0,0,0.28),
+      0 0 0 7px rgba(255, 248, 238, 0.1);
+  }
+
   .hero__bottom-band {
     display: none;
   }
@@ -408,14 +439,16 @@
 }
 
 @media (min-width: 768px) {
-  .hero-mobile-continuation {
-    display: none;
-  }
-
   .hero__bottom-band {
     bottom: -122px;
     max-height: 240px;
   }
+
+  .hero__showcase {
+    width: clamp(12rem, 16vw, 14.5rem);
+    bottom: 1.75rem;
+  }
+
   .hero__bg {
     background-position: center 56%;
     background-size: cover;
