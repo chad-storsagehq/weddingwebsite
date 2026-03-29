@@ -271,8 +271,8 @@
 
   .hero {
     align-items: flex-start;
-    min-height: clamp(74rem, 158svh, 90rem);
-    min-height: clamp(74rem, 158dvh, 90rem);
+    min-height: clamp(82rem, 172svh, 98rem);
+    min-height: clamp(82rem, 172dvh, 98rem);
   }
 
   .hero::before {
@@ -394,8 +394,8 @@
   }
 
   .hero__showcase {
-    bottom: 2rem;
-    width: clamp(10rem, 35vw, 12.25rem);
+    bottom: 4.5rem;
+    width: clamp(11.5rem, 46vw, 14rem);
     border-radius: 18px;
     box-shadow:
       0 16px 34px rgba(0,0,0,0.28),
