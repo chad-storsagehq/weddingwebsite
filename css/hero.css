@@ -71,14 +71,6 @@
   align-items: center;
 }
 
-.hero__invocation {
-  font-family: var(--font-telugu);
-  font-size: var(--text-sm);
-  color: var(--color-gold);
-  letter-spacing: 0.08em;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
-}
-
 .hero__divider {
   width: 160px;
   height: 1px;
@@ -192,10 +184,6 @@
   order: 1;
 }
 
-.hero__invocation {
-  order: 2;
-}
-
 .hero__content > .hero__divider:first-of-type {
   order: 3;
 }
@@ -287,13 +275,6 @@
     order: 1;
     font-size: 20px;
     margin: 0 auto 0.22rem;
-  }
-
-  .hero__invocation {
-    order: 2;
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-    margin-top: 0;
   }
 
   .hero__content > .hero__divider:first-of-type {
