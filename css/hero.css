@@ -228,6 +228,10 @@
     content: none;
   }
 
+  .hero__divider {
+    display: none !important;
+  }
+
   .hero {
     align-items: center;
     min-height: 100svh;
@@ -264,27 +268,23 @@
     max-width: 360px;
     min-height: calc(100svh - var(--nav-height));
     justify-content: flex-start;
-    padding: calc(var(--nav-height) + 6.4rem) 0.9rem 0.8rem;
+    padding: calc(var(--nav-height) + 0.2rem) 0.9rem 0.8rem;
   }
 
   .hero__ganesha-motif {
     order: 1;
     font-size: 18px;
-    margin: 0 auto 0.18rem;
+    margin: 0 auto 2.4rem;
   }
 
   .hero__content > .hero__divider:first-of-type {
-    display: block;
+    display: none;
     order: 3;
-    width: 84px;
-    margin: 0.3rem auto 0.28rem;
   }
 
   .hero__content > .hero__divider:last-of-type {
-    display: block;
+    display: none;
     order: 5;
-    width: 92px;
-    margin: 0.24rem auto 0.26rem;
   }
 
   .hero__names {
