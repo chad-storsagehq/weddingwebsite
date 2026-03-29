@@ -120,6 +120,12 @@ img {
   margin-top: -80px;
   z-index: 4;
 }
+@media (max-width: 540px) {
+  .invitation-divider--hero-blend {
+    background: linear-gradient(to bottom, #050200 0%, rgba(5, 2, 0, 0.92) 28%, var(--color-blush) 100%);
+    margin-top: -16px;
+  }
+}
 @media (min-width: 768px) {
   .invitation-divider--hero-blend { margin-top: -100px; }
 }

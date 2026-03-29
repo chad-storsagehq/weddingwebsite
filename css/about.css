@@ -7,12 +7,34 @@
 
 @media (max-width: 540px) {
   .about-section {
-    padding-top: 0.35rem;
+    padding-top: 1.65rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .about-section__inner {
+    padding-bottom: 2.25rem;
   }
 
   .about__layout {
-    margin-top: 0.7rem;
-    gap: 1rem;
+    margin-top: 1rem;
+    gap: 1.1rem;
+  }
+
+  .about__photo-wrap {
+    max-width: 280px;
+  }
+
+  .about__text {
+    gap: 0.85rem;
+    padding: 1rem 1rem 1.15rem;
+    border: 1px solid rgba(212, 168, 67, 0.4);
+    border-radius: 18px;
+    background: linear-gradient(
+      to bottom,
+      rgba(36, 15, 2, 0.22) 0%,
+      rgba(24, 10, 1, 0.42) 100%
+    );
+    backdrop-filter: blur(4px);
   }
 }
 
@@ -95,4 +117,11 @@
 .about-section__inner.section::after {
   border-color: var(--color-gold);
   opacity: 0.4;
+}
+
+@media (max-width: 540px) {
+  .about__story {
+    font-size: 1.08rem;
+    line-height: 1.72;
+  }
 }

@@ -4,6 +4,10 @@
   background-color: var(--color-brown);
 }
 
+.hero-mobile-continuation {
+  display: none;
+}
+
 /* Gradient fade at bottom — blends dark temple photo into blush divider */
 .hero-area::after {
   content: '';
@@ -224,6 +228,17 @@
 
 /* Responsive adjustments */
 @media (max-width: 540px) {
+  .hero-area {
+    background:
+      linear-gradient(
+        to bottom,
+        #2b1406 0%,
+        #1a0b02 58%,
+        rgba(12, 5, 1, 0.98) 82%,
+        #050200 100%
+      );
+  }
+
   .hero-area::after {
     content: none;
   }
@@ -234,7 +249,7 @@
 
   .hero {
     align-items: center;
-    min-height: 100svh;
+    min-height: clamp(34rem, 82svh, 46rem);
   }
 
   .hero::before {
@@ -266,15 +281,15 @@
 
   .hero__content {
     max-width: 360px;
-    min-height: calc(100svh - var(--nav-height));
+    min-height: auto;
     justify-content: flex-start;
-    padding: calc(var(--nav-height) + 0.2rem) 0.9rem 0.8rem;
+    padding: calc(var(--nav-height) + 1rem) 0.9rem 1.35rem;
   }
 
   .hero__ganesha-motif {
     order: 1;
     font-size: 18px;
-    margin: 0 auto 2.4rem;
+    margin: 0 auto 1.7rem;
   }
 
   .hero__content > .hero__divider:first-of-type {
@@ -303,7 +318,7 @@
   .hero__date {
     order: 6;
     font-size: 0.82rem;
-    margin: 0.12rem 0 0.18rem;
+    margin: 0.18rem 0 0.4rem;
     letter-spacing: 0.06em;
   }
 
@@ -338,11 +353,47 @@
   }
 
   .hero__bg {
-    background-image: url('../assets/images/hero-temple-mobile-shared.png');
-    background-position: center top;
-    background-size: auto calc(100svh + 24rem);
+    background-image: url('../assets/images/hero-temple-mobile-long.jpeg');
+    background-position: center 16%;
+    background-size: cover;
     background-repeat: no-repeat;
     transform-origin: center top;
+  }
+
+  .hero-mobile-continuation {
+    display: block;
+    position: relative;
+    min-height: clamp(16rem, 52vw, 22rem);
+    margin-top: -0.5rem;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(18, 7, 1, 0) 0%,
+        rgba(12, 5, 1, 0.18) 18%,
+        rgba(8, 3, 0, 0.58) 52%,
+        rgba(5, 2, 0, 0.96) 88%,
+        #050200 100%
+      ),
+      url('../assets/images/hero-temple-mobile-long.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: #050200;
+    opacity: 0.98;
+  }
+
+  .hero-mobile-continuation::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 4, 0, 0) 0%,
+      rgba(10, 4, 0, 0.14) 38%,
+      rgba(6, 2, 0, 0.48) 68%,
+      rgba(5, 2, 0, 0.9) 88%,
+      #050200 100%
+    );
   }
 }
 
@@ -366,6 +417,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero-mobile-continuation {
+    display: none;
+  }
+
   .hero__bottom-band {
     bottom: -122px;
     max-height: 240px;
