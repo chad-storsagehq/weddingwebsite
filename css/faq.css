@@ -72,9 +72,16 @@
 }
 
 .faq__answer p {
-  font-size: var(--text-base);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
   color: var(--color-charcoal);
-  line-height: 1.8;
+  line-height: 1.65;
+}
+
+.faq__answer a {
+  color: var(--color-maroon);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
 /* Thoranam garland — top-right corner */
@@ -91,4 +98,17 @@
 
 @media (max-width: 540px) {
   .faq__thoranam-corner { display: none; }
+
+  .faq__question {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .faq__answer {
+    padding: 0 0 0.9rem;
+  }
+
+  .faq__answer p {
+    font-size: 0.94rem;
+  }
 }

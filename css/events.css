@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--color-blush);
   padding: var(--space-xl) 0;
-  overflow: hidden; /* keeps peacock accents clipped */
+  overflow: hidden;
 }
 
 .events__watermark {
@@ -30,7 +30,7 @@
   background: var(--color-white);
   border: var(--border-gold);
   border-radius: var(--card-radius);
-  padding: var(--space-lg) var(--space-md);
+  padding: 2.25rem 1.5rem 1.6rem;
   text-align: center;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(59,26,0,0.08);
@@ -63,7 +63,7 @@
   width: 28px;
   height: 100%;
   object-fit: cover;
-  opacity: 0.25;
+  opacity: 0.16;
 }
 
 .event-card__pillar--left  { left: 0; }
@@ -73,7 +73,7 @@
 .event-card__thoranam {
   position: absolute;
   width: 40px;
-  opacity: 0.35;
+  opacity: 0.22;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
   z-index: 0;
 }
@@ -86,7 +86,7 @@
   content: '';
   position: absolute;
   inset: 12px;
-  border: 1px solid rgba(200,150,62,0.2);
+  border: 1px solid rgba(200,150,62,0.14);
   border-radius: 2px;
   pointer-events: none;
   z-index: 0;
@@ -107,7 +107,7 @@
   font-size: var(--text-2xl);
   color: var(--color-brown);
   font-weight: 400;
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0.35rem;
 }
 
 .event-card__title-telugu {
@@ -119,20 +119,30 @@
 }
 
 .event-card__date {
-  margin: var(--space-sm) 0 var(--space-xs);
+  margin: 0.75rem 0 0.35rem;
 }
 
 .event-card__time,
 .event-card__venue {
-  font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
   color: var(--color-brown);
 }
 
+.event-card__time {
+  font-weight: 700;
+}
+
+.event-card__venue {
+  margin-top: 0.2rem;
+}
+
 .event-card__address {
-  font-size: var(--text-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
   color: var(--color-charcoal);
-  margin-bottom: var(--space-md);
+  line-height: 1.55;
+  margin: 0.45rem 0 1rem;
 }
 
 .event-card__directions {
@@ -148,6 +158,55 @@
   min-height: 44px;
   line-height: 44px;
   padding: 0 1.5rem;
+}
+
+@media (max-width: 540px) {
+  .events-section {
+    padding: 4.25rem 0;
+  }
+
+  .events__grid {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .event-card {
+    padding: 1.6rem 1rem 1rem;
+  }
+
+  .event-card__pillar,
+  .event-card__thoranam,
+  .event-card__arch {
+    opacity: 0.1;
+  }
+
+  .event-card__title {
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .event-card__title-telugu {
+    font-size: 0.95rem;
+  }
+
+  .event-card__date {
+    margin: 0.55rem 0 0.2rem;
+  }
+
+  .event-card__time,
+  .event-card__venue {
+    font-size: 0.98rem;
+  }
+
+  .event-card__address {
+    font-size: 0.88rem;
+    margin: 0.3rem 0 0.8rem;
+  }
+
+  .event-card__directions {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .event-card__directions:hover {

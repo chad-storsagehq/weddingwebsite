@@ -22,6 +22,7 @@
 
 .traditions__intro {
   text-align: center;
+  font-family: var(--font-body);
   font-size: var(--text-base);
   color: var(--color-charcoal);
   max-width: 580px;
@@ -67,6 +68,7 @@
 }
 
 .traditions__event-label {
+  font-family: var(--font-body);
   font-size: var(--text-xs);
   color: var(--color-maroon);
   letter-spacing: 0.15em;
@@ -104,17 +106,18 @@
 
 .traditions__content h4 {
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-size: 1.1rem;
   color: var(--color-maroon);
-  margin: var(--space-sm) 0 var(--space-xs);
+  margin: 0.85rem 0 0.35rem;
   font-weight: 400;
 }
 
 .traditions__content p {
-  font-size: var(--text-base);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
   color: var(--color-charcoal);
-  line-height: 1.85;
-  margin-bottom: var(--space-xs);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
 }
 
 .traditions__content ul {
@@ -123,10 +126,11 @@
 }
 
 .traditions__content ul li {
-  font-size: var(--text-base);
+  font-family: var(--font-body);
+  font-size: 0.96rem;
   color: var(--color-charcoal);
-  line-height: 1.8;
-  padding: 4px 0 4px 1.4em;
+  line-height: 1.65;
+  padding: 3px 0 3px 1.2em;
   position: relative;
 }
 
@@ -144,10 +148,16 @@
   border-left: 3px solid var(--color-gold);
   padding: var(--space-xs) var(--space-sm);
   margin-top: var(--space-sm);
-  font-size: var(--text-sm);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
   color: var(--color-brown);
-  font-style: italic;
-  line-height: 1.7;
+  line-height: 1.6;
+}
+
+.traditions__tip a {
+  color: var(--color-maroon);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
 /* Thoranam garland — bottom-right corner accent */
@@ -165,4 +175,26 @@
 
 @media (max-width: 540px) {
   .traditions__thoranam-corner { display: none; }
+
+  .traditions-section {
+    padding: 4.25rem 0;
+  }
+
+  .traditions__toggle {
+    padding: 1rem 0;
+  }
+
+  .traditions__event-name {
+    font-size: 1.35rem;
+  }
+
+  .traditions__content {
+    padding: 0 0 0.9rem;
+  }
+
+  .traditions__content p,
+  .traditions__content ul li,
+  .traditions__tip {
+    font-size: 0.94rem;
+  }
 }
