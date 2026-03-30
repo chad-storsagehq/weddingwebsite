@@ -99,13 +99,13 @@ img {
 
 .section-panel--rsvp {
   background:
-    radial-gradient(circle at top, rgba(27, 111, 106, 0.1), transparent 30%),
+    radial-gradient(circle at top, rgba(228, 169, 59, 0.12), transparent 30%),
     linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(247, 239, 226, 0.95));
 }
 
 .section-panel--travel {
   background:
-    radial-gradient(circle at left top, rgba(123, 170, 196, 0.16), transparent 30%),
+    radial-gradient(circle at left top, rgba(228, 169, 59, 0.12), transparent 30%),
     linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(242, 235, 223, 0.95));
 }
 
@@ -210,7 +210,7 @@ img {
 /* First divider (hero→events) — centered on the transition line */
 .invitation-divider--hero-blend {
   background: transparent;
-  margin-top: -80px;
+  margin-top: -18px;
   z-index: 4;
 }
 @media (max-width: 540px) {
@@ -221,7 +221,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .invitation-divider--hero-blend { margin-top: -100px; }
+  .invitation-divider--hero-blend { margin-top: -28px; }
 }
 
 @media (min-width: 768px) {
@@ -336,6 +336,72 @@ img {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--color-gold);
+}
+
+.feather-toggle {
+  position: relative;
+  width: 3.4rem;
+  height: 2.8rem;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feather-toggle__feather {
+  position: absolute;
+  bottom: 0.2rem;
+  width: 0.95rem;
+  height: 2rem;
+  border-radius: 999px 999px 999px 999px / 1.2rem 1.2rem 0.5rem 0.5rem;
+  background:
+    radial-gradient(circle at 50% 26%, rgba(255,255,255,0.85) 0 10%, transparent 11%),
+    linear-gradient(180deg, rgba(239, 193, 91, 0.95), rgba(30, 111, 106, 0.95));
+  border: 1px solid rgba(255,255,255,0.34);
+  box-shadow: 0 6px 10px rgba(59,26,0,0.12);
+  transform-origin: bottom center;
+  transition: transform var(--motion-base) var(--ease-soft), filter var(--motion-base) var(--ease-soft);
+}
+
+.feather-toggle__feather::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0.22rem;
+  bottom: 0.28rem;
+  width: 1px;
+  background: rgba(255,255,255,0.5);
+  transform: translateX(-50%);
+}
+
+.feather-toggle__feather--center {
+  z-index: 3;
+}
+
+.feather-toggle__feather--left {
+  transform: translateX(-0.62rem) rotate(-14deg);
+  z-index: 2;
+}
+
+.feather-toggle__feather--right {
+  transform: translateX(0.62rem) rotate(14deg);
+  z-index: 1;
+}
+
+.traditions__item--open .feather-toggle__feather--left,
+.faq__item--open .feather-toggle__feather--left {
+  transform: translateX(-1rem) rotate(-34deg) translateY(-0.08rem);
+}
+
+.traditions__item--open .feather-toggle__feather--center,
+.faq__item--open .feather-toggle__feather--center {
+  transform: translateY(-0.1rem) scaleY(1.05);
+  filter: saturate(1.15);
+}
+
+.traditions__item--open .feather-toggle__feather--right,
+.faq__item--open .feather-toggle__feather--right {
+  transform: translateX(1rem) rotate(34deg) translateY(-0.08rem);
 }
 
 .reveal {

@@ -24,11 +24,12 @@
 .hero {
   position: relative;
   z-index: 2;
-  min-height: 112svh;
+  min-height: 122svh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: var(--nav-height);
+  padding-bottom: 7rem;
 }
 
 .hero__bg {
@@ -68,9 +69,9 @@
   position: relative;
   z-index: 4;
   text-align: center;
-  min-height: calc(112svh - var(--nav-height));
+  min-height: calc(122svh - var(--nav-height) - 7rem);
   justify-content: center;
-  padding: clamp(1rem, 2vw, 2rem) var(--space-md) clamp(18rem, 28vw, 22rem);
+  padding: clamp(1rem, 2vw, 2rem) var(--space-md) clamp(17rem, 24vw, 20rem);
   width: 100%;
   max-width: 1100px;
   display: flex;
@@ -160,7 +161,7 @@
 .hero__showcase {
   position: absolute;
   left: 50%;
-  bottom: clamp(-0.5rem, 1vw, 0.75rem);
+  bottom: clamp(4.8rem, 8vw, 6.5rem);
   transform: translateX(-50%);
   width: clamp(10.5rem, 13vw, 11.6rem);
   border-radius: 24px;
@@ -184,13 +185,13 @@
 /* Bottom ornamental band — sits at very bottom, below all content */
 .hero__bottom-band {
   position: absolute;
-  bottom: -228px;
+  bottom: -252px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 1920px;
   height: auto;
-  max-height: 420px;
+  max-height: 430px;
   object-fit: contain;
   z-index: 2;
   pointer-events: none;
@@ -223,6 +224,7 @@
     align-items: flex-start;
     min-height: clamp(82rem, 172svh, 98rem);
     min-height: clamp(82rem, 172dvh, 98rem);
+    padding-bottom: 0;
   }
 
   .hero::before {
@@ -336,13 +338,13 @@
 
 @media (min-width: 768px) {
   .hero__bottom-band {
-    bottom: -240px;
-    max-height: 380px;
+    bottom: -264px;
+    max-height: 390px;
   }
 
   .hero__showcase {
     width: clamp(10rem, 12vw, 11.2rem);
-    bottom: -0.35rem;
+    bottom: 5.25rem;
   }
 
   .hero__bg {
@@ -360,8 +362,8 @@
 
 @media (min-width: 1024px) {
   .hero__bottom-band {
-    bottom: -252px;
-    max-height: 410px;
+    bottom: -278px;
+    max-height: 430px;
   }
   .hero__bg {
     background-position: center 38%;

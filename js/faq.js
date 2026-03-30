@@ -5,12 +5,10 @@
   function closeItem(item) {
     var button = item.querySelector('.faq__question');
     var answer = item.querySelector('.faq__answer');
-    var icon = item.querySelector('.faq__icon');
 
-    if (!button || !answer || !icon) return;
+    if (!button || !answer) return;
 
     button.setAttribute('aria-expanded', 'false');
-    icon.textContent = '+';
     item.classList.remove('faq__item--open');
 
     if (reduceMotion) {
@@ -28,15 +26,13 @@
   function openItem(item) {
     var button = item.querySelector('.faq__question');
     var answer = item.querySelector('.faq__answer');
-    var icon = item.querySelector('.faq__icon');
 
-    if (!button || !answer || !icon) return;
+    if (!button || !answer) return;
 
     answer.hidden = false;
     window.requestAnimationFrame(function () {
       item.classList.add('faq__item--open');
       button.setAttribute('aria-expanded', 'true');
-      icon.textContent = '−';
     });
   }
 

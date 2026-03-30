@@ -59,6 +59,16 @@
 
 .travel__directions-link {
   margin-bottom: var(--space-sm);
+  background: var(--color-peacock);
+  border-color: var(--color-peacock);
+  color: var(--color-white) !important;
+  box-shadow: 0 10px 20px rgba(15, 78, 84, 0.18);
+}
+
+.travel__directions-link:hover {
+  background: var(--color-brown);
+  border-color: var(--color-brown);
+  color: var(--color-white) !important;
 }
 
 .travel__hotels {
