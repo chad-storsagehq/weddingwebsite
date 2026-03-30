@@ -1,10 +1,9 @@
 .gifts-section {
-  background-color: var(--color-blush);
+  background: linear-gradient(180deg, #efd9d1 0%, #f6ebe4 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
 }
-
 
 .gifts-section__inner {
   position: relative;
@@ -44,28 +43,33 @@
 }
 
 .gifts__card {
-  background: var(--color-white);
-  border: var(--border-gold);
-  border-radius: var(--card-radius);
-  padding: var(--space-md);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,248,242,0.98));
+  border: 1px solid rgba(200, 150, 62, 0.18);
+  border-radius: 26px;
+  padding: 1.25rem var(--space-md);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-xs);
-  box-shadow: 0 2px 12px rgba(59,26,0,0.06);
-  transition: box-shadow 0.2s;
+  box-shadow: 0 18px 34px rgba(59,26,0,0.07);
   position: relative;
 }
 
-
-.gifts__card:hover {
-  box-shadow: 0 4px 20px rgba(59,26,0,0.12);
+.gifts__card::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(200,150,62,0.14);
+  border-radius: 18px;
+  pointer-events: none;
 }
 
-.gifts__card-icon {
-  font-size: 2.2rem;
-  line-height: 1;
+.gifts__card-emblem {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.1));
 }
 
 .gifts__card-name {
@@ -97,16 +101,16 @@ button.gifts__card-btn {
 .gifts__card-btn {
   display: inline-block;
   margin-top: var(--space-xs);
-  background: var(--color-gold);
+  background: linear-gradient(135deg, var(--color-lotus), var(--color-gold));
   color: var(--color-white);
   font-family: var(--font-label);
   font-size: var(--text-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.65rem 1.5rem;
-  border-radius: 2px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
   white-space: nowrap;
-  transition: background 0.2s;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
 .gifts__card-btn:hover {
@@ -122,7 +126,6 @@ button.gifts__card-btn {
   font-style: italic;
 }
 
-/* Thoranam garland accents — bottom left and bottom right */
 .gifts__thoranam {
   position: absolute;
   bottom: var(--space-md);
@@ -136,7 +139,6 @@ button.gifts__card-btn {
 .gifts__thoranam--bl { left: var(--space-md); }
 .gifts__thoranam--br { right: var(--space-md); transform: scaleX(-1); }
 
-/* Vilakku lamp icon above section title */
 .gifts__vilakku-icon {
   display: block;
   margin: 0 auto var(--space-sm);
@@ -146,4 +148,13 @@ button.gifts__card-btn {
 
 @media (max-width: 540px) {
   .gifts__thoranam { display: none; }
+
+  .gifts-section {
+    padding: 4.25rem 0;
+  }
+
+  .gifts__card {
+    border-radius: 22px;
+    padding: 1rem 1rem 1.1rem;
+  }
 }

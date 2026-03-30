@@ -1,28 +1,60 @@
 (function () {
-  const items = document.querySelectorAll('.faq__item');
+  var items = document.querySelectorAll('.faq__item');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function closeItem(item) {
+    var button = item.querySelector('.faq__question');
+    var answer = item.querySelector('.faq__answer');
+    var icon = item.querySelector('.faq__icon');
+
+    if (!button || !answer || !icon) return;
+
+    button.setAttribute('aria-expanded', 'false');
+    icon.textContent = '+';
+    item.classList.remove('faq__item--open');
+
+    if (reduceMotion) {
+      answer.hidden = true;
+      return;
+    }
+
+    window.setTimeout(function () {
+      if (!item.classList.contains('faq__item--open')) {
+        answer.hidden = true;
+      }
+    }, 420);
+  }
+
+  function openItem(item) {
+    var button = item.querySelector('.faq__question');
+    var answer = item.querySelector('.faq__answer');
+    var icon = item.querySelector('.faq__icon');
+
+    if (!button || !answer || !icon) return;
+
+    answer.hidden = false;
+    window.requestAnimationFrame(function () {
+      item.classList.add('faq__item--open');
+      button.setAttribute('aria-expanded', 'true');
+      icon.textContent = '−';
+    });
+  }
 
   items.forEach(function (item) {
-    const btn = item.querySelector('.faq__question');
-    const answer = item.querySelector('.faq__answer');
-    const icon = item.querySelector('.faq__icon');
+    var btn = item.querySelector('.faq__question');
+    if (!btn) return;
 
     btn.addEventListener('click', function () {
-      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      var isOpen = item.classList.contains('faq__item--open');
 
-      // Close all others
       items.forEach(function (other) {
-        other.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-        other.querySelector('.faq__answer').hidden = true;
-        other.querySelector('.faq__icon').textContent = '+';
-        other.classList.remove('faq__item--open');
+        if (other !== item) closeItem(other);
       });
 
-      // Toggle current
-      if (!isOpen) {
-        btn.setAttribute('aria-expanded', 'true');
-        answer.hidden = false;
-        icon.textContent = '−';
-        item.classList.add('faq__item--open');
+      if (isOpen) {
+        closeItem(item);
+      } else {
+        openItem(item);
       }
     });
   });

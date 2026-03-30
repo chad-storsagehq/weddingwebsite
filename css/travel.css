@@ -1,22 +1,12 @@
 .travel-section {
-  background-color: var(--color-bg);
+  background: linear-gradient(180deg, var(--color-bg) 0%, #f0e8da 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
 }
 
-
 .travel-section__inner {
   position: relative;
-}
-
-.travel__feather-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  opacity: 0.05;
-  pointer-events: none;
 }
 
 .travel__grid {
@@ -27,17 +17,24 @@
 }
 
 .travel__card {
-  background: var(--color-white);
-  border: var(--border-gold);
-  border-radius: var(--card-radius);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(252,247,241,0.98));
+  border: 1px solid rgba(123, 170, 196, 0.26);
+  border-radius: 28px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 18px 34px rgba(59,26,0,0.08);
 }
 
 .travel__card-body-wrap {
-  padding: var(--space-md);
+  padding: 1.35rem;
   flex: 1;
+}
+
+.travel__card-kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--color-peacock);
 }
 
 .travel__card-title {
@@ -46,7 +43,7 @@
   color: var(--color-brown);
   margin-bottom: var(--space-sm);
   padding-bottom: var(--space-xs);
-  border-bottom: var(--border-gold);
+  border-bottom: 1px solid rgba(27, 111, 106, 0.18);
 }
 
 .travel__card-body {
@@ -60,19 +57,8 @@
   margin-top: var(--space-sm);
 }
 
-.travel__map {
-  height: 200px;
-  background: #f0ebe0;
-  border: var(--border-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.travel__directions-link {
   margin-bottom: var(--space-sm);
-  border-radius: var(--card-radius);
-}
-
-.travel__map-placeholder {
-  color: var(--color-gold);
 }
 
 .travel__hotels {
@@ -90,13 +76,13 @@
 
 .travel__hotels a {
   font-size: var(--text-sm);
-  color: var(--color-gold);
+  color: var(--color-peacock);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .travel__hotels a:hover {
-  border-bottom-color: var(--color-gold);
+  border-bottom-color: var(--color-peacock);
 }
 
 .travel__hotel-dist {
@@ -107,13 +93,13 @@
 
 .travel__parking-link {
   font-weight: 600;
-  color: var(--color-gold);
+  color: var(--color-lotus);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .travel__parking-link:hover {
-  border-bottom-color: var(--color-gold);
+  border-bottom-color: var(--color-lotus);
 }
 
 @media (min-width: 768px) {
@@ -128,19 +114,21 @@
   }
 }
 
-/* Thoranam garland — left side accent */
-.travel__thoranam-accent {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 120px;
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0.8;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
-}
-
 @media (max-width: 540px) {
-  .travel__thoranam-accent { display: none; }
+  .travel-section {
+    padding: 4.25rem 0;
+  }
+
+  .travel__grid {
+    gap: 0.95rem;
+    margin-top: 1.4rem;
+  }
+
+  .travel__card {
+    border-radius: 22px;
+  }
+
+  .travel__card-body-wrap {
+    padding: 1rem;
+  }
 }

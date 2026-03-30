@@ -1,9 +1,10 @@
 .footer {
   background-color: var(--color-brown);
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.72);
   text-align: center;
   padding: var(--space-md) var(--space-md);
   font-size: var(--text-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }

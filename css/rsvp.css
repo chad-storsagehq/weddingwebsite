@@ -1,9 +1,8 @@
 .rsvp-section {
-  background-color: var(--color-bg);
+  background: linear-gradient(180deg, var(--color-bg) 0%, #f6ede0 100%);
   padding: var(--space-xl) 0;
   position: relative;
 }
-
 
 .rsvp-section__inner {
   text-align: center;
@@ -12,21 +11,25 @@
 
 .rsvp__ganesha {
   margin: 0 auto var(--space-sm);
+  opacity: 0.9;
 }
 
 .rsvp__deadline {
   margin-top: var(--space-xs);
   margin-bottom: var(--space-lg);
-  color: var(--color-maroon);
+  color: var(--color-peacock);
 }
 
 .rsvp__frame-wrapper {
   position: relative;
-  border: var(--border-gold);
-  border-radius: var(--card-radius);
+  border: 1px solid rgba(27, 111, 106, 0.22);
+  border-radius: 30px;
   padding: var(--space-md);
-  background: var(--color-white);
+  background:
+    radial-gradient(circle at top, rgba(27, 111, 106, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,249,243,0.98));
   overflow: hidden;
+  box-shadow: 0 22px 40px rgba(59,26,0,0.08);
 }
 
 .rsvp__arch {
@@ -46,6 +49,7 @@
   width: 100%;
   min-height: 600px;
   border: none;
+  border-radius: 18px;
 }
 
 .rsvp__fallback {

@@ -1,47 +1,36 @@
 .traditions-section {
-  background-color: var(--color-cream);
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-sandal) 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
 }
 
-
 .traditions-section__inner {
   position: relative;
-  max-width: var(--max-width-faq);
-}
-
-.traditions__feather-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 180px;
-  opacity: 0.04;
-  pointer-events: none;
-}
-
-.traditions__intro {
-  text-align: center;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-charcoal);
-  max-width: 580px;
-  margin: var(--space-sm) auto var(--space-lg);
-  line-height: 1.8;
-  font-style: italic;
+  max-width: 860px;
 }
 
 .traditions__list {
-  margin-top: var(--space-sm);
+  margin-top: var(--space-md);
+  display: grid;
+  gap: 1rem;
 }
 
-/* Each ceremony item */
 .traditions__item {
-  border-bottom: var(--border-gold);
+  position: relative;
+  background: rgba(255, 251, 246, 0.84);
+  border: 1px solid rgba(200, 150, 62, 0.18);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 28px rgba(59, 26, 0, 0.06);
 }
 
-.traditions__item:first-of-type {
-  border-top: var(--border-gold);
+.traditions__item::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--color-marigold), var(--color-lotus));
 }
 
 .traditions__toggle {
@@ -49,15 +38,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--space-md) 0;
+  padding: 1.2rem 1.35rem 1.15rem 1.6rem;
   text-align: left;
   position: relative;
   min-height: 44px;
-  transition: color 0.2s;
+  transition: color var(--motion-fast) var(--ease-soft);
 }
 
 .traditions__toggle-inner {
@@ -65,6 +54,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 1rem;
 }
 
 .traditions__event-label {
@@ -76,22 +66,29 @@
 
 .traditions__event-name {
   font-family: var(--font-heading);
-  font-size: var(--text-xl);
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
   color: var(--color-brown);
   font-weight: 400;
-  transition: color 0.2s;
+  transition: color var(--motion-fast) var(--ease-soft);
 }
 
 .traditions__item--open .traditions__event-name,
 .traditions__toggle:hover .traditions__event-name {
-  color: var(--color-gold);
+  color: var(--color-lotus);
 }
 
 .traditions__icon {
-  font-size: var(--text-xl);
-  color: var(--color-gold);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-lotus));
   flex-shrink: 0;
-  transition: transform 0.2s;
+  transition: transform var(--motion-base) var(--ease-soft);
   margin-left: var(--space-sm);
 }
 
@@ -99,9 +96,22 @@
   transform: rotate(45deg);
 }
 
-/* Content */
 .traditions__content {
-  padding: 0 0 var(--space-md);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--motion-slow) var(--ease-soft);
+}
+
+.traditions__item--open .traditions__content {
+  grid-template-rows: 1fr;
+}
+
+.traditions__content-inner {
+  overflow: hidden;
+}
+
+.traditions__content-body {
+  padding: 0 1.35rem 1.35rem 1.6rem;
 }
 
 .traditions__content h4 {
@@ -152,6 +162,7 @@
   font-size: 0.92rem;
   color: var(--color-brown);
   line-height: 1.6;
+  border-radius: 0 14px 14px 0;
 }
 
 .traditions__tip a {
@@ -160,36 +171,30 @@
   text-underline-offset: 0.14em;
 }
 
-/* Thoranam garland — bottom-right corner accent */
-.traditions__thoranam-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 160px;
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0.85;
-  transform: scaleX(-1);
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
-}
-
 @media (max-width: 540px) {
-  .traditions__thoranam-corner { display: none; }
-
   .traditions-section {
     padding: 4.25rem 0;
   }
 
+  .traditions__list {
+    gap: 0.85rem;
+    margin-top: 1.2rem;
+  }
+
+  .traditions__item {
+    border-radius: 20px;
+  }
+
   .traditions__toggle {
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 1.15rem;
   }
 
   .traditions__event-name {
     font-size: 1.35rem;
   }
 
-  .traditions__content {
-    padding: 0 0 0.9rem;
+  .traditions__content-body {
+    padding: 0 1rem 1rem 1.15rem;
   }
 
   .traditions__content p,

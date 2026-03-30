@@ -24,10 +24,11 @@
 .hero {
   position: relative;
   z-index: 2;
-  min-height: 100svh;
+  min-height: 112svh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: var(--nav-height);
 }
 
 .hero__bg {
@@ -35,7 +36,7 @@
   inset: 0;
   background-image: url('../assets/images/hero-temple-gopuram.png');
   background-size: cover;
-  background-position: center 60%;
+  background-position: center 43%;
   z-index: 0;
   transform: translate3d(0, var(--hero-bg-shift, 0px), 0) scale(var(--hero-bg-scale, 1));
   transform-origin: center center;
@@ -67,31 +68,30 @@
   position: relative;
   z-index: 4;
   text-align: center;
-  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-md) var(--space-xl);
+  min-height: calc(112svh - var(--nav-height));
+  justify-content: center;
+  padding: clamp(1rem, 2vw, 2rem) var(--space-md) clamp(18rem, 28vw, 22rem);
   width: 100%;
-  max-width: 800px;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.65rem;
 }
 
 .hero__divider {
-  width: 160px;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
-  margin: var(--space-sm) auto;
-  opacity: 0.7;
+  display: none;
 }
 
 .hero__names {
   position: relative;
   z-index: 2;
-  padding: var(--space-sm) 0;
+  padding: 0.15rem 0 0;
 }
 
 .hero__name-english {
   font-family: var(--font-hero-decorative);
-  font-size: clamp(2.9rem, 8.2vw, 4.7rem);
+  font-size: clamp(3.3rem, 7vw, 5.2rem);
   color: var(--color-white);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -131,89 +131,38 @@
 .hero__date {
   font-family: var(--font-heading);
   color: rgba(253, 246, 236, 0.96);
-  margin: calc(var(--space-sm) + 0.1rem) 0 0.65rem;
-  font-size: 1.05rem;
+  margin: 0.55rem 0 0.65rem;
+  font-size: 1.15rem;
   letter-spacing: 0.08em;
   text-shadow: 0 2px 14px rgba(0,0,0,0.72);
-}
-
-.hero__countdown {
-  display: flex;
-  gap: 1.35rem;
-  justify-content: center;
-  margin-top: 0;
-  flex-wrap: nowrap;
-}
-
-.countdown__unit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 50px;
-}
-
-.countdown__num {
-  font-family: var(--font-heading);
-  font-size: var(--text-3xl);
-  color: var(--color-white);
-  line-height: 1;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
-}
-
-.countdown__label {
-  font-family: var(--font-heading);
-  color: rgba(253, 246, 236, 0.9);
-  margin-top: 6px;
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  text-transform: none;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.72);
-}
-
-.countdown__married {
-  font-family: var(--font-heading);
-  font-size: var(--text-2xl);
-  color: var(--color-gold);
 }
 
 /* Om symbol above invocation text */
 .hero__ganesha-motif {
   display: block;
   font-family: var(--font-heading);
-  font-size: 34px;
+  font-size: 40px;
   line-height: 1;
   color: var(--color-gold);
-  margin: 0 auto 0.28rem;
+  margin: 0 auto 0.9rem;
   text-shadow: 0 0 28px rgba(200,150,62,0.55), 0 2px 8px rgba(0,0,0,0.5);
-  order: 1;
-}
-
-.hero__content > .hero__divider:first-of-type {
-  order: 3;
+  order: 0;
 }
 
 .hero__names {
-  order: 4;
-}
-
-.hero__content > .hero__divider:last-of-type {
-  order: 5;
+  order: 1;
 }
 
 .hero__date {
-  order: 6;
-}
-
-.hero__countdown {
-  order: 7;
+  order: 2;
 }
 
 .hero__showcase {
   position: absolute;
   left: 50%;
-  bottom: clamp(2rem, 5vw, 4rem);
+  bottom: clamp(-0.5rem, 1vw, 0.75rem);
   transform: translateX(-50%);
-  width: clamp(11rem, 19vw, 15rem);
+  width: clamp(10.5rem, 13vw, 11.6rem);
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid rgba(212, 168, 67, 0.92);
@@ -222,6 +171,7 @@
     0 0 0 10px rgba(255, 248, 238, 0.12);
   z-index: 4;
   background: rgba(255, 248, 238, 0.08);
+  transition: transform var(--motion-base) var(--ease-soft), box-shadow var(--motion-base) var(--ease-soft);
 }
 
 .hero__showcase img {
@@ -234,13 +184,13 @@
 /* Bottom ornamental band — sits at very bottom, below all content */
 .hero__bottom-band {
   position: absolute;
-  bottom: -138px;
+  bottom: -228px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 1920px;
   height: auto;
-  max-height: 320px;
+  max-height: 420px;
   object-fit: contain;
   z-index: 2;
   pointer-events: none;
@@ -324,31 +274,16 @@
     max-width: 360px;
     min-height: auto;
     justify-content: flex-start;
-    padding: calc(var(--nav-height) + 9.25rem) 0.9rem clamp(8.5rem, 24vw, 11rem);
+    padding: calc(var(--nav-height) + 5.5rem) 0.9rem clamp(8.5rem, 24vw, 11rem);
   }
 
   .hero__ganesha-motif {
-    position: absolute;
-    top: calc(var(--nav-height) + 0.15rem);
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto 0.2rem;
     z-index: 5;
   }
 
-  .hero__content > .hero__divider:first-of-type {
-    display: none;
-    order: 3;
-  }
-
-  .hero__content > .hero__divider:last-of-type {
-    display: none;
-    order: 5;
-  }
-
   .hero__names {
-    order: 4;
     padding: 0.2rem 0;
     width: 100%;
   }
@@ -361,34 +296,14 @@
   }
 
   .hero__date {
-    order: 6;
     font-size: 0.88rem;
     margin: 0.45rem 0 0;
     letter-spacing: 0.06em;
   }
 
-  .hero__countdown {
-    display: none;
-  }
-
-  .countdown__unit {
-    min-width: 0;
-    flex: 0 1 72px;
-  }
-
-  .countdown__num {
-    font-size: clamp(1.65rem, 7.4vw, 2.15rem);
-  }
-
-  .countdown__label {
-    font-size: 0.63rem;
-    margin-top: 0.12rem;
-    letter-spacing: 0.03em;
-  }
-
   .hero__showcase {
     bottom: 5.5rem;
-    width: clamp(14.5rem, 58vw, 18rem);
+    width: clamp(13.5rem, 54vw, 16rem);
     border-radius: 18px;
     box-shadow:
       0 16px 34px rgba(0,0,0,0.28),
@@ -417,44 +332,39 @@
     font-size: clamp(2.32rem, 8.2vw, 3rem);
     letter-spacing: 0.014em;
   }
-
-  .hero__countdown {
-    gap: 0.32rem;
-  }
-
-  .countdown__unit {
-    flex-basis: 64px;
-  }
-
-  .countdown__num {
-    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
-  }
 }
 
 @media (min-width: 768px) {
   .hero__bottom-band {
-    bottom: -122px;
-    max-height: 240px;
+    bottom: -240px;
+    max-height: 380px;
   }
 
   .hero__showcase {
-    width: clamp(12rem, 16vw, 14.5rem);
-    bottom: 1.75rem;
+    width: clamp(10rem, 12vw, 11.2rem);
+    bottom: -0.35rem;
   }
 
   .hero__bg {
-    background-position: center 56%;
+    background-position: center 41%;
     background-size: cover;
+  }
+
+  .hero__showcase:hover {
+    transform: translateX(-50%) translateY(-6px);
+    box-shadow:
+      0 28px 56px rgba(0,0,0,0.42),
+      0 0 0 10px rgba(255, 248, 238, 0.14);
   }
 }
 
 @media (min-width: 1024px) {
   .hero__bottom-band {
-    bottom: -128px;
-    max-height: 300px;
+    bottom: -252px;
+    max-height: 410px;
   }
   .hero__bg {
-    background-position: center 52%;
+    background-position: center 38%;
     background-size: cover;
   }
 }

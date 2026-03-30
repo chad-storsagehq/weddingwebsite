@@ -3,36 +3,63 @@
 
   var nav = document.querySelector('.nav');
   var items = document.querySelectorAll('.traditions__item');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function closeItem(item) {
+    var toggle = item.querySelector('.traditions__toggle');
+    var content = item.querySelector('.traditions__content');
+
+    if (!toggle || !content) return;
+
+    item.classList.remove('traditions__item--open');
+    toggle.setAttribute('aria-expanded', 'false');
+
+    if (reduceMotion) {
+      content.hidden = true;
+      return;
+    }
+
+    window.setTimeout(function () {
+      if (!item.classList.contains('traditions__item--open')) {
+        content.hidden = true;
+      }
+    }, 420);
+  }
+
+  function openItem(item) {
+    var toggle = item.querySelector('.traditions__toggle');
+    var content = item.querySelector('.traditions__content');
+
+    if (!toggle || !content) return;
+
+    content.hidden = false;
+    window.requestAnimationFrame(function () {
+      item.classList.add('traditions__item--open');
+      toggle.setAttribute('aria-expanded', 'true');
+    });
+
+    window.requestAnimationFrame(function () {
+      var navHeight = nav ? nav.offsetHeight : 60;
+      var top = item.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+      window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  }
 
   items.forEach(function (item) {
     var toggle = item.querySelector('.traditions__toggle');
-    var content = item.querySelector('.traditions__content');
-    if (!toggle || !content) return;
+    if (!toggle) return;
 
     toggle.addEventListener('click', function () {
       var isOpen = item.classList.contains('traditions__item--open');
 
-      // Close all open items
       items.forEach(function (other) {
-        other.classList.remove('traditions__item--open');
-        var otherToggle = other.querySelector('.traditions__toggle');
-        var otherContent = other.querySelector('.traditions__content');
-        if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
-        if (otherContent) otherContent.hidden = true;
+        if (other !== item) closeItem(other);
       });
 
-      // Open clicked item if it was closed, then scroll it into view
-      if (!isOpen) {
-        item.classList.add('traditions__item--open');
-        toggle.setAttribute('aria-expanded', 'true');
-        content.hidden = false;
-
-        // Scroll so the item header sits just below the nav
-        requestAnimationFrame(function () {
-          var navHeight = nav ? nav.offsetHeight : 60;
-          var top = item.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
-          window.scrollTo({ top: top, behavior: 'smooth' });
-        });
+      if (isOpen) {
+        closeItem(item);
+      } else {
+        openItem(item);
       }
     });
   });

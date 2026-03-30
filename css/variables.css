@@ -16,6 +16,16 @@
   --color-cream:      #FAF3EA;
   --color-dome-blue:  #7BAAC4;
   --color-sage:       #6A8848;
+  --color-marigold:   #E2A93B;
+  --color-saffron:    #D97A2B;
+  --color-lotus:      #C96B79;
+  --color-rose:       #B75D68;
+  --color-sandal:     #F4E5D2;
+  --color-peacock:    #1B6F6A;
+  --color-peacock-deep:#0F4E54;
+  --color-midnight:   #23415A;
+  --color-panel:      rgba(255, 250, 244, 0.82);
+  --color-panel-strong: rgba(255, 252, 248, 0.92);
 
   /* Typography */
   --font-heading:  'Cormorant Garamond', Georgia, serif;
@@ -50,4 +60,10 @@
   --nav-height:   64px;
   --card-radius:  4px;
   --border-gold:  1px solid var(--color-gold-light);
+  --shadow-soft: 0 18px 40px rgba(59, 26, 0, 0.08);
+  --shadow-card: 0 22px 48px rgba(59, 26, 0, 0.12);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 180ms;
+  --motion-base: 260ms;
+  --motion-slow: 400ms;
 }
