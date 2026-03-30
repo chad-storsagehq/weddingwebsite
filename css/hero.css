@@ -324,7 +324,7 @@
     max-width: 360px;
     min-height: auto;
     justify-content: flex-start;
-    padding: calc(var(--nav-height) + 4.6rem) 0.9rem clamp(8.5rem, 24vw, 11rem);
+    padding: calc(var(--nav-height) + 6rem) 0.9rem clamp(8.5rem, 24vw, 11rem);
   }
 
   .hero__ganesha-motif {
@@ -395,7 +395,7 @@
 
   .hero__showcase {
     bottom: 4.5rem;
-    width: clamp(12.5rem, 50vw, 15.5rem);
+    width: clamp(13.75rem, 54vw, 17rem);
     border-radius: 18px;
     box-shadow:
       0 16px 34px rgba(0,0,0,0.28),
