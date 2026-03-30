@@ -2,9 +2,11 @@
   'use strict';
 
   var heroBg = document.querySelector('.hero__bg');
+  var heroShowcase = document.querySelector('.hero__showcase');
   if (!heroBg) return;
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.body.classList.add('has-hero-motion');
 
   var heroEl = document.getElementById('hero-area');
   if (!heroEl) return;
@@ -26,6 +28,12 @@
     var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
     targetShift = mobileMq.matches ? progress * 96 : progress * 62;
     targetScale = mobileMq.matches ? 1.014 : 1.065;
+
+    if (heroShowcase) {
+      var revealProgress = mobileMq.matches ? clamp((progress - 0.16) / 0.2, 0, 1) : clamp((progress - 0.16) / 0.2, 0, 1);
+      heroShowcase.style.setProperty('--hero-showcase-opacity', revealProgress.toFixed(3));
+      heroShowcase.style.setProperty('--hero-showcase-shift', (190 - revealProgress * 190).toFixed(2) + 'px');
+    }
   }
 
   function render() {
