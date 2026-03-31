@@ -116,19 +116,10 @@
 
     fetch(endpoint, {
       method: 'POST',
-      mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'text/plain'
       },
       body: JSON.stringify(payload)
-    }).then(function (response) {
-      if (!response.ok) {
-        throw new Error('Request failed');
-      }
-
-      return response.json().catch(function () {
-        return {};
-      });
     }).then(function () {
       form.reset();
       setAttendance('');
