@@ -52,30 +52,6 @@
   letter-spacing: 0.12em;
 }
 
-.dresscode__swatches {
-  display: flex;
-  gap: 0.55rem;
-  padding: 0.85rem 1rem 0;
-}
-
-.dresscode__swatch {
-  width: 16px;
-  height: 16px;
-  border-radius: 999px;
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 4px 10px rgba(59,26,0,0.14);
-}
-
-.dresscode__swatch--marigold { background: #E9B643; }
-.dresscode__swatch--saffron { background: #D97A2B; }
-.dresscode__swatch--cream { background: #F8EFD9; }
-.dresscode__swatch--lotus { background: #C96B79; }
-.dresscode__swatch--peacock { background: #1B6F6A; }
-.dresscode__swatch--gold { background: #C8963E; }
-.dresscode__swatch--peach { background: #E0A182; }
-.dresscode__swatch--rose { background: #B75D68; }
-.dresscode__swatch--midnight { background: #23415A; }
-
 .dresscode__card-body {
   padding: 0.9rem 1rem 1rem;
   display: flex;
@@ -165,22 +141,7 @@
   outline-offset: 2px;
 }
 
-.dresscode__thoranam {
-  position: absolute;
-  top: var(--space-md);
-  width: 100px;
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0.75;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
-}
-
-.dresscode__thoranam--tl { left: var(--space-md); }
-.dresscode__thoranam--tr { right: var(--space-md); transform: scaleX(-1); }
-
 @media (max-width: 540px) {
-  .dresscode__thoranam { display: none; }
-
   .dresscode-section {
     padding: 4.25rem 0;
   }

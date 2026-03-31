@@ -25,7 +25,7 @@
   text-align: center;
   font-size: var(--text-base);
   color: var(--color-charcoal);
-  max-width: 560px;
+  max-width: 620px;
   margin: var(--space-sm) auto var(--space-lg);
   line-height: 1.8;
 }
@@ -33,7 +33,7 @@
 .gifts__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-sm);
+  gap: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -46,12 +46,12 @@
   background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,248,242,0.98));
   border: 1px solid rgba(200, 150, 62, 0.18);
   border-radius: 26px;
-  padding: 1.25rem var(--space-md);
+  padding: 1.5rem var(--space-md);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-xs);
+  gap: 0.45rem;
   box-shadow: 0 18px 34px rgba(59,26,0,0.07);
   position: relative;
 }
@@ -82,15 +82,10 @@
 
 .gifts__card-handle {
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-size: 1.35rem;
   color: var(--color-charcoal);
-  word-break: break-all;
-}
-
-.gifts__card-note {
-  font-size: var(--text-xs);
-  color: rgba(44,44,44,0.6);
-  line-height: 1.6;
+  word-break: break-word;
+  line-height: 1.25;
 }
 
 button.gifts__card-btn {
@@ -100,7 +95,7 @@ button.gifts__card-btn {
 
 .gifts__card-btn {
   display: inline-block;
-  margin-top: var(--space-xs);
+  margin-top: 0.35rem;
   background: linear-gradient(135deg, var(--color-lotus), var(--color-gold));
   color: var(--color-white);
   font-family: var(--font-label);
@@ -123,21 +118,8 @@ button.gifts__card-btn {
   font-size: var(--text-sm);
   color: rgba(44,44,44,0.55);
   margin-top: var(--space-md);
-  font-style: italic;
+  line-height: 1.6;
 }
-
-.gifts__thoranam {
-  position: absolute;
-  bottom: var(--space-md);
-  width: 100px;
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0.75;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
-}
-
-.gifts__thoranam--bl { left: var(--space-md); }
-.gifts__thoranam--br { right: var(--space-md); transform: scaleX(-1); }
 
 .gifts__vilakku-icon {
   display: block;
@@ -147,14 +129,12 @@ button.gifts__card-btn {
 }
 
 @media (max-width: 540px) {
-  .gifts__thoranam { display: none; }
-
   .gifts-section {
     padding: 4.25rem 0;
   }
 
   .gifts__card {
     border-radius: 22px;
-    padding: 1rem 1rem 1.1rem;
+    padding: 1.1rem 1rem 1.15rem;
   }
 }

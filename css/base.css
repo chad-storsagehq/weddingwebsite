@@ -59,11 +59,11 @@ img {
   content: '';
   position: absolute;
   inset: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 30px;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.72;
 }
 
 .section-panel--events,
@@ -80,80 +80,58 @@ img {
 
 .section-panel--events {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at top left, rgba(255, 214, 129, 0.32), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(201, 107, 121, 0.18), transparent 24%),
-    linear-gradient(135deg, rgba(255, 249, 240, 0.9), rgba(255, 246, 235, 0.82));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, top left, bottom right, center center;
-  background-size: 46px 82%, 46px 82%, auto, auto, auto;
+    radial-gradient(circle at 12% 16%, rgba(226, 169, 59, 0.30), transparent 22%),
+    radial-gradient(circle at 88% 82%, rgba(201, 107, 121, 0.24), transparent 26%),
+    linear-gradient(145deg, rgba(255, 250, 243, 0.96), rgba(248, 232, 223, 0.92));
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--guide {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at top, rgba(228, 169, 59, 0.15), transparent 24%),
-    linear-gradient(180deg, rgba(250, 243, 234, 0.97), rgba(244, 229, 210, 0.94));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, top center, center center;
-  background-size: 44px 80%, 44px 80%, auto, auto;
+    radial-gradient(circle at 50% 12%, rgba(226, 169, 59, 0.18), transparent 22%),
+    radial-gradient(circle at 8% 86%, rgba(27, 111, 106, 0.10), transparent 18%),
+    linear-gradient(180deg, rgba(251, 244, 236, 0.98), rgba(243, 229, 213, 0.95));
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--dresscode {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at right top, rgba(201, 107, 121, 0.16), transparent 32%),
-    linear-gradient(180deg, rgba(255, 247, 241, 0.98), rgba(250, 234, 223, 0.96));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, right top, center center;
-  background-size: 44px 80%, 44px 80%, auto, auto;
+    radial-gradient(circle at 84% 14%, rgba(201, 107, 121, 0.18), transparent 26%),
+    radial-gradient(circle at 16% 80%, rgba(226, 169, 59, 0.14), transparent 20%),
+    linear-gradient(180deg, rgba(255, 248, 243, 0.98), rgba(248, 231, 222, 0.96));
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--rsvp {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at top, rgba(228, 169, 59, 0.12), transparent 30%),
+    radial-gradient(circle at 50% 12%, rgba(226, 169, 59, 0.16), transparent 24%),
+    radial-gradient(circle at 14% 80%, rgba(155, 123, 138, 0.10), transparent 18%),
     linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(247, 239, 226, 0.95));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, top center, center center;
-  background-size: 42px 76%, 42px 76%, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--travel {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at left top, rgba(228, 169, 59, 0.12), transparent 30%),
+    radial-gradient(circle at 14% 16%, rgba(123, 170, 196, 0.20), transparent 24%),
+    radial-gradient(circle at 84% 82%, rgba(226, 169, 59, 0.18), transparent 22%),
     linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(242, 235, 223, 0.95));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, left top, center center;
-  background-size: 44px 80%, 44px 80%, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--gifts {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at center top, rgba(212, 176, 164, 0.28), transparent 28%),
-    linear-gradient(180deg, rgba(255, 248, 244, 0.98), rgba(250, 237, 228, 0.96));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, center top, center center;
-  background-size: 42px 76%, 42px 76%, auto, auto;
+    radial-gradient(circle at 50% 10%, rgba(201, 107, 121, 0.18), transparent 22%),
+    radial-gradient(circle at 18% 82%, rgba(226, 169, 59, 0.14), transparent 18%),
+    linear-gradient(180deg, rgba(255, 248, 244, 0.98), rgba(249, 236, 228, 0.96));
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .section-panel--faq {
   background:
-    url('../assets/images/custom/vine-border.png'),
-    url('../assets/images/custom/vine-border.png'),
-    radial-gradient(circle at top right, rgba(228, 169, 59, 0.12), transparent 24%),
+    radial-gradient(circle at 86% 14%, rgba(226, 169, 59, 0.16), transparent 20%),
+    radial-gradient(circle at 12% 84%, rgba(27, 111, 106, 0.08), transparent 18%),
     linear-gradient(180deg, rgba(255, 252, 247, 0.98), rgba(245, 237, 226, 0.94));
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left -18px center, right -18px center, top right, center center;
-  background-size: 40px 72%, 40px 72%, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 /* Invitation-style corner ornament frame on section containers */
@@ -301,67 +279,6 @@ img {
 
 @media (max-width: 540px) {
   .peacock-accent { display: none; }
-}
-
-/* ── Subtle section accent decorations (Stitch-generated) ── */
-.section-accent {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Rangoli lotus mandala — centered watermark */
-.section-accent--rangoli {
-  width: 320px;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.07;
-}
-
-/* Paisley vine — vertical side accents */
-.section-accent--vine {
-  height: 80%;
-  width: auto;
-  top: 10%;
-  opacity: 0.12;
-}
-.section-accent--vine-left {
-  left: 12px;
-}
-.section-accent--vine-right {
-  right: 12px;
-  transform: scaleX(-1);
-}
-
-/* Peacock corner accents */
-.section-accent--peacock {
-  width: 140px;
-  opacity: 0.10;
-  filter: saturate(1.2);
-}
-.section-accent--peacock-bl {
-  bottom: 16px;
-  left: 16px;
-}
-.section-accent--peacock-br {
-  bottom: 16px;
-  right: 16px;
-  transform: scaleX(-1);
-}
-
-@media (max-width: 768px) {
-  .section-accent--rangoli { width: 200px; }
-  .section-accent--vine { opacity: 0.08; }
-  .section-accent--vine-left { left: 4px; }
-  .section-accent--vine-right { right: 4px; }
-  .section-accent--peacock { width: 100px; opacity: 0.08; }
-}
-
-@media (max-width: 540px) {
-  .section-accent--vine { display: none; }
-  .section-accent--rangoli { width: 150px; opacity: 0.05; }
-  .section-accent--peacock { width: 80px; opacity: 0.06; }
 }
 
 /* Gold label text */
