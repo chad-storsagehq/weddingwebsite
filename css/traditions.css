@@ -1,5 +1,5 @@
 .traditions-section {
-  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-sandal) 100%);
+  background: linear-gradient(160deg, #f8e8c8 0%, #f0d0a0 40%, #e8c080 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
@@ -18,19 +18,38 @@
 
 .traditions__item {
   position: relative;
-  background: rgba(255, 251, 246, 0.84);
-  border: 1px solid rgba(200, 150, 62, 0.18);
+  background: rgba(255, 251, 242, 0.92);
+  border: 1px solid rgba(200, 150, 62, 0.28);
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 16px 28px rgba(59, 26, 0, 0.06);
+  box-shadow: 0 16px 32px rgba(59, 26, 0, 0.12);
 }
 
-.traditions__item::before {
+/* Haldi item (1st) — turmeric yellow */
+.traditions__item:nth-child(1)::before {
   content: '';
   position: absolute;
   inset: 0 auto 0 0;
-  width: 5px;
-  background: linear-gradient(180deg, var(--color-marigold), var(--color-lotus));
+  width: 6px;
+  background: linear-gradient(180deg, #f7c940, #e8901a);
+}
+
+/* Wedding item (2nd) — peacock teal */
+.traditions__item:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, #1f7e78, #0F4E54);
+}
+
+/* Reception item (3rd) — maroon rose */
+.traditions__item:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, #8B1A28, #c96b79);
 }
 
 .traditions__toggle {

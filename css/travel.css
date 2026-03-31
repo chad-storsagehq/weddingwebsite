@@ -1,5 +1,5 @@
 .travel-section {
-  background: linear-gradient(180deg, var(--color-bg) 0%, #f0e8da 100%);
+  background: linear-gradient(160deg, #e8f4f3 0%, #d0eae8 40%, #e8f0f4 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
@@ -17,13 +17,13 @@
 }
 
 .travel__card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(252,247,241,0.98));
-  border: 1px solid rgba(123, 170, 196, 0.26);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(240,252,251,0.98));
+  border: 1px solid rgba(27, 111, 106, 0.2);
   border-radius: 28px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 18px 34px rgba(59,26,0,0.08);
+  box-shadow: 0 18px 36px rgba(15, 78, 84, 0.1);
 }
 
 .travel__card-body-wrap {

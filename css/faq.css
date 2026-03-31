@@ -1,13 +1,32 @@
 .faq-section {
-  background: linear-gradient(180deg, var(--color-bg) 0%, #f3e9db 100%);
+  background: linear-gradient(160deg, #3d0c11 0%, #2a0a0d 55%, #1a0608 100%);
   padding: var(--space-xl) 0;
   position: relative;
   overflow: hidden;
 }
 
+/* warm gold glow at top */
+.faq-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(200, 150, 62, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
 .faq-section__inner {
   position: relative;
+  z-index: 1;
   max-width: var(--max-width-faq);
+}
+
+/* Section title on dark background */
+.faq-section .section-title {
+  color: rgba(255, 252, 240, 0.96);
+}
+
+.faq-section .section-title-telugu {
+  color: var(--color-marigold);
 }
 
 .faq__list {
@@ -17,11 +36,12 @@
 }
 
 .faq__item {
-  background: rgba(255, 251, 246, 0.88);
-  border: 1px solid rgba(200,150,62,0.18);
+  background: rgba(255, 251, 240, 0.07);
+  border: 1px solid rgba(200, 150, 62, 0.28);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 14px 24px rgba(59,26,0,0.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
 
 .faq__question {
@@ -37,14 +57,14 @@
   text-align: left;
   font-family: var(--font-heading);
   font-size: var(--text-lg);
-  color: var(--color-brown);
+  color: rgba(255, 252, 240, 0.9);
   min-height: 44px;
   transition: color var(--motion-fast) var(--ease-soft);
 }
 
 .faq__question:hover,
 .faq__item--open .faq__question {
-  color: var(--color-lotus);
+  color: var(--color-marigold);
 }
 
 .faq__icon {
@@ -67,17 +87,19 @@
 
 .faq__answer-body {
   padding: 0 1.25rem 1.2rem;
+  border-top: 1px solid rgba(200, 150, 62, 0.18);
 }
 
 .faq__answer p {
   font-family: var(--font-body);
   font-size: 0.98rem;
-  color: var(--color-charcoal);
-  line-height: 1.65;
+  color: rgba(255, 252, 240, 0.76);
+  line-height: 1.7;
+  margin-top: 0.85rem;
 }
 
 .faq__answer a {
-  color: var(--color-maroon);
+  color: var(--color-marigold);
   text-decoration: underline;
   text-underline-offset: 0.14em;
 }

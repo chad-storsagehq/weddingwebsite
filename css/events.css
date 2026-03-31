@@ -36,16 +36,88 @@
   box-shadow: 0 20px 38px rgba(59, 26, 0, 0.09);
 }
 
+/* === HALDI — Turmeric Yellow === */
 .event-card--haldi {
-  --event-accent: var(--color-marigold);
+  --event-accent: #d47f10;
+  background: linear-gradient(155deg, #f7c940 0%, #eda020 55%, #d97a2b 100%);
+  border-color: rgba(220, 155, 20, 0.5);
 }
 
+/* === WEDDING — Deep Peacock Teal === */
 .event-card--wedding {
-  --event-accent: var(--color-lotus);
+  --event-accent: #a8e6e0;
+  background: linear-gradient(155deg, #1f7e78 0%, #145960 55%, #0F4E54 100%);
+  border-color: rgba(100, 200, 196, 0.28);
 }
 
+/* === RECEPTION — Deep Maroon === */
 .event-card--reception {
-  --event-accent: var(--color-peacock);
+  --event-accent: #f5bfc5;
+  background: linear-gradient(155deg, #8B1A28 0%, #6a1520 55%, #4e1018 100%);
+  border-color: rgba(200, 100, 115, 0.28);
+}
+
+/* Light text for dark card variants (wedding + reception) */
+.event-card--wedding .event-card__title,
+.event-card--wedding .event-card__venue,
+.event-card--wedding .event-card__address,
+.event-card--reception .event-card__title,
+.event-card--reception .event-card__venue,
+.event-card--reception .event-card__address {
+  color: rgba(255, 252, 248, 0.95);
+}
+
+.event-card--wedding .event-card__title-telugu,
+.event-card--reception .event-card__title-telugu {
+  color: var(--event-accent);
+}
+
+.event-card--wedding .event-card__time,
+.event-card--reception .event-card__time {
+  color: var(--event-accent);
+}
+
+.event-card--wedding .event-card__date,
+.event-card--reception .event-card__date {
+  color: var(--event-accent);
+}
+
+/* Directions buttons on dark cards */
+.event-card--wedding .event-card__directions,
+.event-card--reception .event-card__directions {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.45);
+  color: var(--color-white);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.event-card--wedding .event-card__directions:hover,
+.event-card--reception .event-card__directions:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.65);
+  color: var(--color-white);
+}
+
+/* Boost arch/pillar/thoranam visibility on colorful cards */
+.event-card--haldi .event-card__arch,
+.event-card--wedding .event-card__arch,
+.event-card--reception .event-card__arch {
+  opacity: 0.2;
+  filter: brightness(3);
+}
+
+.event-card--haldi .event-card__pillar,
+.event-card--wedding .event-card__pillar,
+.event-card--reception .event-card__pillar {
+  opacity: 0.18;
+  filter: brightness(3);
+}
+
+.event-card--haldi .event-card__thoranam,
+.event-card--wedding .event-card__thoranam,
+.event-card--reception .event-card__thoranam {
+  opacity: 0.55;
+  filter: brightness(1.6);
 }
 
 .event-card::before {
