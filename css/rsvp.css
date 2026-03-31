@@ -9,11 +9,6 @@
   max-width: var(--max-width-form);
 }
 
-.rsvp__ganesha {
-  margin: 0 auto var(--space-sm);
-  opacity: 0.9;
-}
-
 .rsvp__deadline {
   margin-top: var(--space-xs);
   margin-bottom: 1.8rem;
@@ -234,33 +229,50 @@
 
 @media (max-width: 540px) {
   .rsvp-section {
-    padding: 3.6rem 0;
+    padding: 3rem 0;
   }
 
   .rsvp__frame-wrapper {
-    border-radius: 22px;
-    padding: 1rem 0.9rem;
+    border-radius: 20px;
+    padding: 0.8rem 0.75rem;
   }
 
   .rsvp-form {
-    gap: 1.15rem;
-    padding-top: 0.75rem;
+    gap: 0.95rem;
+    padding-top: 0.35rem;
   }
 
   .rsvp-form__legend {
-    font-size: 1.3rem;
+    font-size: 1.18rem;
   }
 
   .rsvp-form__choice {
-    min-width: 84px;
-    padding: 0.8rem 1rem;
+    min-width: 78px;
+    min-height: 44px;
+    padding: 0.72rem 0.9rem;
   }
 
   .rsvp-form__input {
-    min-height: 52px;
+    min-height: 48px;
+    padding: 0.82rem 0.9rem;
+  }
+
+  .rsvp-form__textarea {
+    min-height: 92px;
   }
 
   .rsvp-form__check {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    gap: 0.6rem;
+  }
+
+  .rsvp-form__check input {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rsvp-form__status {
+    font-size: 0.9rem;
   }
 }
