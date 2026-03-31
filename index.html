@@ -12,19 +12,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400;700&family=Noto+Serif+Telugu:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/variables.css?v=51">
-  <link rel="stylesheet" href="css/base.css?v=51">
-  <link rel="stylesheet" href="css/nav.css?v=51">
-  <link rel="stylesheet" href="css/hero.css?v=51">
-  <link rel="stylesheet" href="css/events.css?v=51">
-  <link rel="stylesheet" href="css/rsvp.css?v=51">
-  <link rel="stylesheet" href="css/travel.css?v=51">
-  <link rel="stylesheet" href="css/faq.css?v=51">
-  <link rel="stylesheet" href="css/traditions.css?v=51">
-  <link rel="stylesheet" href="css/dresscode.css?v=51">
-  <link rel="stylesheet" href="css/gifts.css?v=51">
-  <link rel="stylesheet" href="css/footer.css?v=51">
-  <link rel="icon" type="image/svg+xml" href="assets/svg/lotus.svg?v=51">
+  <link rel="stylesheet" href="css/variables.css?v=52">
+  <link rel="stylesheet" href="css/base.css?v=52">
+  <link rel="stylesheet" href="css/nav.css?v=52">
+  <link rel="stylesheet" href="css/hero.css?v=52">
+  <link rel="stylesheet" href="css/events.css?v=52">
+  <link rel="stylesheet" href="css/rsvp.css?v=52">
+  <link rel="stylesheet" href="css/travel.css?v=52">
+  <link rel="stylesheet" href="css/faq.css?v=52">
+  <link rel="stylesheet" href="css/traditions.css?v=52">
+  <link rel="stylesheet" href="css/dresscode.css?v=52">
+  <link rel="stylesheet" href="css/gifts.css?v=52">
+  <link rel="stylesheet" href="css/footer.css?v=52">
+  <link rel="icon" type="image/svg+xml" href="assets/svg/lotus.svg?v=52">
 </head>
 <body>
 
@@ -743,9 +743,18 @@
         </p>
 
         <div class="gifts__actions reveal">
-          <a href="https://buy.stripe.com/5kQ14n5eWgZh4Oyg7bak000" class="gifts__pill" target="_blank" rel="noopener noreferrer">Stripe</a>
-          <a href="venmo://paycharge?txn=pay&recipients=chad-mullin&note=Wedding%20Gift" class="gifts__pill">Venmo</a>
-          <button class="gifts__pill gifts__pill--button" data-copy="chadandanusha@gmail.com">Zelle</button>
+          <a href="https://buy.stripe.com/5kQ14n5eWgZh4Oyg7bak000" class="gifts__pill gifts__pill--stripe" target="_blank" rel="noopener noreferrer">
+            <span class="gifts__pill-logo" aria-hidden="true">S</span>
+            <span class="gifts__pill-label">Stripe</span>
+          </a>
+          <a href="https://account.venmo.com/u/chad-mullin" class="gifts__pill gifts__pill--venmo" data-mobile-href="venmo://paycharge?txn=pay&recipients=chad-mullin&note=Wedding%20Gift" target="_blank" rel="noopener noreferrer">
+            <span class="gifts__pill-logo" aria-hidden="true">V</span>
+            <span class="gifts__pill-label">Venmo</span>
+          </a>
+          <button class="gifts__pill gifts__pill--zelle gifts__pill--button" data-copy="chadandanusha@gmail.com">
+            <span class="gifts__pill-logo" aria-hidden="true">Z</span>
+            <span class="gifts__pill-label">Zelle</span>
+          </button>
         </div>
 
         <p class="gifts__note">Choosing Zelle copies our email address. Checks are welcome too.</p>

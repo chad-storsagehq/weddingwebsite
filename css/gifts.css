@@ -42,6 +42,10 @@
   border: 1px solid rgba(200, 150, 62, 0.28);
   background: rgba(255,255,255,0.92);
   color: var(--color-brown);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
   font-family: var(--font-label);
   font-size: 0.82rem;
   letter-spacing: 0.14em;
@@ -55,6 +59,40 @@
 
 button.gifts__pill {
   cursor: pointer;
+}
+
+.gifts__pill-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--color-white);
+  flex: 0 0 auto;
+}
+
+.gifts__pill-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(1px);
+}
+
+.gifts__pill--stripe .gifts__pill-logo {
+  background: #635bff;
+}
+
+.gifts__pill--venmo .gifts__pill-logo {
+  background: #008cff;
+}
+
+.gifts__pill--zelle .gifts__pill-logo {
+  background: #6d1ed4;
 }
 
 .gifts__pill:hover,
