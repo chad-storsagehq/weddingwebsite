@@ -53,17 +53,14 @@ img {
 
 .section-panel {
   isolation: isolate;
+  background: none;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .section-panel::after {
-  content: '';
-  position: absolute;
-  inset: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 30px;
-  pointer-events: none;
-  z-index: -1;
-  opacity: 0.72;
+  content: none;
 }
 
 .section-panel--events,
@@ -73,88 +70,16 @@ img {
 .section-panel--travel,
 .section-panel--gifts,
 .section-panel--faq {
-  border-radius: 34px;
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-}
-
-.section-panel--events {
-  background:
-    radial-gradient(circle at 12% 16%, rgba(226, 169, 59, 0.30), transparent 22%),
-    radial-gradient(circle at 88% 82%, rgba(201, 107, 121, 0.24), transparent 26%),
-    linear-gradient(145deg, rgba(255, 250, 243, 0.96), rgba(248, 232, 223, 0.92));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--guide {
-  background:
-    radial-gradient(circle at 50% 12%, rgba(226, 169, 59, 0.18), transparent 22%),
-    radial-gradient(circle at 8% 86%, rgba(27, 111, 106, 0.10), transparent 18%),
-    linear-gradient(180deg, rgba(251, 244, 236, 0.98), rgba(243, 229, 213, 0.95));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--dresscode {
-  background:
-    radial-gradient(circle at 84% 14%, rgba(201, 107, 121, 0.18), transparent 26%),
-    radial-gradient(circle at 16% 80%, rgba(226, 169, 59, 0.14), transparent 20%),
-    linear-gradient(180deg, rgba(255, 248, 243, 0.98), rgba(248, 231, 222, 0.96));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--rsvp {
-  background:
-    radial-gradient(circle at 50% 12%, rgba(226, 169, 59, 0.16), transparent 24%),
-    radial-gradient(circle at 14% 80%, rgba(155, 123, 138, 0.10), transparent 18%),
-    linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(247, 239, 226, 0.95));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--travel {
-  background:
-    radial-gradient(circle at 14% 16%, rgba(123, 170, 196, 0.20), transparent 24%),
-    radial-gradient(circle at 84% 82%, rgba(226, 169, 59, 0.18), transparent 22%),
-    linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(242, 235, 223, 0.95));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--gifts {
-  background:
-    radial-gradient(circle at 50% 10%, rgba(201, 107, 121, 0.18), transparent 22%),
-    radial-gradient(circle at 18% 82%, rgba(226, 169, 59, 0.14), transparent 18%),
-    linear-gradient(180deg, rgba(255, 248, 244, 0.98), rgba(249, 236, 228, 0.96));
-  background-repeat: no-repeat, no-repeat, no-repeat;
-}
-
-.section-panel--faq {
-  background:
-    radial-gradient(circle at 86% 14%, rgba(226, 169, 59, 0.16), transparent 20%),
-    radial-gradient(circle at 12% 84%, rgba(27, 111, 106, 0.08), transparent 18%),
-    linear-gradient(180deg, rgba(255, 252, 247, 0.98), rgba(245, 237, 226, 0.94));
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  background: none;
 }
 
 /* Invitation-style corner ornament frame on section containers */
 .section::before,
 .section::after {
-  content: '';
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  border-color: var(--color-mauve);
-  border-style: solid;
-  pointer-events: none;
-  opacity: 0.5;
-}
-.section::before {
-  top: calc(var(--space-md));
-  left: calc(var(--space-md));
-  border-width: 2px 0 0 2px;
-}
-.section::after {
-  bottom: calc(var(--space-md));
-  right: calc(var(--space-md));
-  border-width: 0 2px 2px 0;
+  content: none;
 }
 
 /* Section title */
@@ -231,28 +156,6 @@ img {
     padding: 3.35rem 1rem;
   }
 
-  .section-panel::after {
-    inset: 18px;
-    border-radius: 24px;
-  }
-
-  .section-panel--events,
-  .section-panel--guide,
-  .section-panel--dresscode,
-  .section-panel--rsvp,
-  .section-panel--travel,
-  .section-panel--gifts,
-  .section-panel--faq {
-    border-radius: 26px;
-  }
-
-  .section::before,
-  .section::after {
-    width: 34px;
-    height: 34px;
-    opacity: 0.38;
-  }
-
   .invitation-divider--hero-blend {
     background: linear-gradient(to bottom, #050200 0%, rgba(5, 2, 0, 0.92) 28%, var(--color-blush) 100%);
     margin-top: 0;
@@ -316,6 +219,7 @@ img {
   color: var(--color-gold);
 }
 
+.creature-toggle,
 .peacock-toggle {
   position: relative;
   width: 5.5rem;
@@ -328,8 +232,7 @@ img {
   overflow: hidden;
   background: radial-gradient(circle at center, rgba(255, 250, 244, 0.98), rgba(250, 242, 230, 0.98));
   box-shadow: 0 8px 18px rgba(59,26,0,0.08);
-}
-
+.creature-toggle__img,
 .peacock-toggle__img {
   position: absolute;
   inset: 0;
@@ -342,23 +245,41 @@ img {
     filter var(--motion-base) var(--ease-soft);
 }
 
+.creature-toggle__img--closed,
 .peacock-toggle__img--closed {
   opacity: 1;
   transform: translateX(0) scale(1);
 }
 
+.creature-toggle__img--open,
 .peacock-toggle__img--open {
   opacity: 0;
   transform: scale(0.68);
   filter: saturate(0.92);
 }
 
+.creature-toggle--tiger {
+  width: 5.85rem;
+  height: 4rem;
+}
+
+.creature-toggle--elephant {
+  width: 6rem;
+  height: 4.6rem;
+}
+
+.traditions__item--open .creature-toggle__img--closed,
+.faq__item--open .creature-toggle__img--closed,
+.dresscode__shopping[open] .creature-toggle__img--closed,
 .traditions__item--open .peacock-toggle__img--closed,
 .faq__item--open .peacock-toggle__img--closed {
   opacity: 0;
   transform: translateX(-10px) scale(0.86);
 }
 
+.traditions__item--open .creature-toggle__img--open,
+.faq__item--open .creature-toggle__img--open,
+.dresscode__shopping[open] .creature-toggle__img--open,
 .traditions__item--open .peacock-toggle__img--open,
 .faq__item--open .peacock-toggle__img--open {
   opacity: 1;
@@ -439,23 +360,19 @@ img {
 }
 
 @media (max-width: 640px) {
-  .section-panel::after {
-    inset: 16px;
-    border-radius: 22px;
-  }
-
-  .section-panel--events,
-  .section-panel--guide,
-  .section-panel--dresscode,
-  .section-panel--rsvp,
-  .section-panel--travel,
-  .section-panel--gifts,
-  .section-panel--faq {
-    border-radius: 24px;
-  }
-
+  .creature-toggle,
   .peacock-toggle {
     width: 4.4rem;
     height: 3.5rem;
+  }
+
+  .creature-toggle--tiger {
+    width: 4.8rem;
+    height: 3.3rem;
+  }
+
+  .creature-toggle--elephant {
+    width: 5rem;
+    height: 3.8rem;
   }
 }
