@@ -232,6 +232,8 @@ img {
   overflow: hidden;
   background: radial-gradient(circle at center, rgba(255, 250, 244, 0.98), rgba(250, 242, 230, 0.98));
   box-shadow: 0 8px 18px rgba(59,26,0,0.08);
+}
+
 .creature-toggle__img,
 .peacock-toggle__img {
   position: absolute;
@@ -270,7 +272,6 @@ img {
 
 .traditions__item--open .creature-toggle__img--closed,
 .faq__item--open .creature-toggle__img--closed,
-.dresscode__shopping[open] .creature-toggle__img--closed,
 .traditions__item--open .peacock-toggle__img--closed,
 .faq__item--open .peacock-toggle__img--closed {
   opacity: 0;
@@ -279,7 +280,6 @@ img {
 
 .traditions__item--open .creature-toggle__img--open,
 .faq__item--open .creature-toggle__img--open,
-.dresscode__shopping[open] .creature-toggle__img--open,
 .traditions__item--open .peacock-toggle__img--open,
 .faq__item--open .peacock-toggle__img--open {
   opacity: 1;

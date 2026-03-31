@@ -125,12 +125,35 @@
   color: rgba(44,44,44,0.66);
 }
 
-.dresscode__shopping-summary-icon {
-  flex-shrink: 0;
-}
-
 .dresscode__shopping[open] .dresscode__shopping-summary {
   margin-bottom: 0.95rem;
+}
+
+.dresscode__shopping-summary-glyph {
+  width: 2.9rem;
+  height: 2.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(200,150,62,0.3);
+  background: rgba(255,255,255,0.72);
+  color: var(--color-gold);
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  line-height: 1;
+  box-shadow: 0 12px 24px rgba(59,26,0,0.06);
+  transition:
+    transform var(--motion-base) var(--ease-soft),
+    background-color var(--motion-fast) var(--ease-soft),
+    border-color var(--motion-fast) var(--ease-soft);
+}
+
+.dresscode__shopping[open] .dresscode__shopping-summary-glyph {
+  transform: rotate(45deg);
+  border-color: rgba(200,150,62,0.5);
+  background: rgba(255,250,244,0.92);
 }
 
 .dresscode__shopping-panel {
@@ -343,6 +366,12 @@
   .dresscode__shopping-summary-copy {
     font-size: 0.88rem;
     line-height: 1.5;
+  }
+
+  .dresscode__shopping-summary-glyph {
+    width: 2.55rem;
+    height: 2.55rem;
+    font-size: 1.6rem;
   }
 
   .dresscode__shopping-panel {
