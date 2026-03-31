@@ -24,12 +24,12 @@
 .hero {
   position: relative;
   z-index: 2;
-  min-height: 138svh;
+  min-height: 146svh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: var(--nav-height);
-  padding-bottom: 15rem;
+  padding-bottom: 21rem;
 }
 
 .hero__top-symbol {
@@ -81,9 +81,9 @@
   position: relative;
   z-index: 4;
   text-align: center;
-  min-height: calc(138svh - var(--nav-height) - 15rem);
+  min-height: calc(146svh - var(--nav-height) - 21rem);
   justify-content: center;
-  padding: clamp(4.6rem, 8vw, 6rem) var(--space-md) clamp(22rem, 31vw, 27rem);
+  padding: clamp(4.6rem, 8vw, 6rem) var(--space-md) clamp(28rem, 38vw, 34rem);
   width: 100%;
   max-width: 1100px;
   display: flex;
@@ -168,7 +168,7 @@
 .hero__showcase {
   position: absolute;
   left: 50%;
-  bottom: clamp(1.75rem, 3.5vw, 3rem);
+  bottom: clamp(4rem, 6vw, 6rem);
   transform: translateX(-50%);
   width: clamp(11.5rem, 14vw, 13rem);
   border-radius: 24px;
@@ -362,7 +362,7 @@
 
   .hero__showcase {
     width: clamp(11rem, 13vw, 12.5rem);
-    bottom: 3.25rem;
+    bottom: 6.5rem;
   }
 
   .hero__bg {
@@ -384,13 +384,13 @@
 
 @media (min-width: 1024px) {
   .hero {
-    min-height: clamp(60rem, 144svh, 86rem);
-    padding-bottom: 16rem;
+    min-height: clamp(66rem, 154svh, 92rem);
+    padding-bottom: 24rem;
   }
 
   .hero__content {
-    min-height: calc(clamp(60rem, 144svh, 86rem) - var(--nav-height) - 16rem);
-    padding-bottom: clamp(24rem, 33vw, 29rem);
+    min-height: calc(clamp(66rem, 154svh, 92rem) - var(--nav-height) - 24rem);
+    padding-bottom: clamp(31rem, 42vw, 38rem);
   }
 
   .hero__bottom-band {
@@ -399,7 +399,7 @@
   }
 
   .hero__showcase {
-    bottom: 4.5rem;
+    bottom: 10rem;
     width: clamp(11.6rem, 13.5vw, 13.25rem);
   }
 
