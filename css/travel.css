@@ -57,6 +57,40 @@
   margin-top: var(--space-sm);
 }
 
+.travel__venue-item {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.2rem 0 0.15rem;
+}
+
+.travel__venue-item + .travel__venue-item {
+  margin-top: 0.35rem;
+}
+
+.travel__venue-event {
+  color: var(--color-peacock);
+  margin-bottom: 0.1rem;
+}
+
+.travel__venue-name,
+.travel__venue-address {
+  margin: 0;
+}
+
+.travel__venue-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: var(--color-brown);
+}
+
+.travel__venue-address {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: rgba(44,44,44,0.72);
+}
+
 .travel__directions-link {
   margin-bottom: var(--space-sm);
   background: var(--color-peacock);
