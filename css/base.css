@@ -135,15 +135,24 @@ img {
   background: var(--color-bg);
 }
 
-/* Transition modifiers: top-color to bottom-color */
-.invitation-divider--blush-to-bg {
-  background: linear-gradient(to bottom, var(--color-blush), var(--color-bg));
+/* Section-to-section transition gradients */
+.invitation-divider--events-to-traditions {
+  background: linear-gradient(to bottom, #E8D0C4, #f8e8c8);
 }
-.invitation-divider--bg-to-blush {
-  background: linear-gradient(to bottom, var(--color-bg), var(--color-blush));
+.invitation-divider--traditions-to-dresscode {
+  background: linear-gradient(to bottom, #e8c080, #f5d5c8);
 }
-.invitation-divider--blush {
-  background: var(--color-blush);
+.invitation-divider--dresscode-to-rsvp {
+  background: linear-gradient(to bottom, #f8ebe5, #0d4a48);
+}
+.invitation-divider--rsvp-to-travel {
+  background: linear-gradient(to bottom, #1B6F6A, #e8f4f3);
+}
+.invitation-divider--travel-to-gifts {
+  background: linear-gradient(to bottom, #e8f0f4, #f5c518);
+}
+.invitation-divider--gifts-to-faq {
+  background: linear-gradient(to bottom, #d97a2b, #3d0c11);
 }
 /* First divider (hero→events) — centered on the transition line */
 .invitation-divider--hero-blend {

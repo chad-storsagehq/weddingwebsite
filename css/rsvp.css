@@ -102,10 +102,12 @@
 }
 
 .rsvp-form__legend {
-  font-family: var(--font-heading);
-  font-size: clamp(1.45rem, 2.6vw, 1.95rem);
-  color: rgba(255, 252, 240, 0.95);
-  line-height: 1.15;
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 240, 0.72);
+  line-height: 1.4;
 }
 
 .rsvp-form__required {
@@ -116,9 +118,9 @@
 }
 
 .rsvp-form__choice-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
-  flex-wrap: wrap;
 }
 
 .rsvp-form__choice {
@@ -127,9 +129,8 @@
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 252, 240, 0.9);
   border-radius: 16px;
-  padding: 0.9rem 1.6rem;
-  min-width: 96px;
-  min-height: 48px;
+  padding: 0.9rem 1rem;
+  min-height: 52px;
   font-family: var(--font-body);
   font-size: 1rem;
   cursor: pointer;
@@ -290,14 +291,13 @@
     padding-top: 0.35rem;
   }
 
-  .rsvp-form__legend {
-    font-size: 1.18rem;
+  .rsvp-form__choice-group {
+    grid-template-columns: 1fr 1fr;
   }
 
   .rsvp-form__choice {
-    min-width: 78px;
-    min-height: 44px;
-    padding: 0.72rem 1.1rem;
+    min-height: 48px;
+    padding: 0.72rem 0.75rem;
   }
 
   .rsvp-form__input {
