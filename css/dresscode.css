@@ -70,10 +70,11 @@
 }
 
 .dresscode__event-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   color: var(--color-white);
-  font-size: 0.98rem;
-  letter-spacing: 0.03em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0;
   text-transform: none;
 }
 
@@ -136,10 +137,11 @@
 }
 
 .dresscode__shopping-summary-label {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
   color: rgba(255, 230, 180, 0.88);
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
 }
 
 .dresscode__shopping-summary-title {
@@ -237,9 +239,9 @@
   border-radius: 999px;
   min-height: 44px;
   padding: 0.75rem 1.1rem;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.01em;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0;
   font-weight: 600;
   text-transform: none;
   cursor: pointer;
@@ -345,9 +347,10 @@
 }
 
 .dresscode__browse-shop {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.01em;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  letter-spacing: 0;
+  font-weight: 600;
   color: var(--color-maroon);
   margin-top: auto;
   padding-top: 0.15rem;
@@ -384,9 +387,10 @@
 }
 
 .dresscode__browse-kicker {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.01em;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  letter-spacing: 0;
+  font-weight: 600;
   text-transform: none;
   color: var(--color-lotus);
 }
@@ -484,6 +488,6 @@
   .dresscode__browse-kicker,
   .dresscode__browse-shop,
   .dresscode__shopping-summary-label {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 }

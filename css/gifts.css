@@ -66,9 +66,9 @@
   align-items: center;
   justify-content: center;
   gap: 0;
-  font-family: var(--font-heading);
-  font-size: 1.12rem;
-  letter-spacing: 0.01em;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  letter-spacing: 0;
   text-transform: none;
   min-height: 62px;
   min-width: 160px;
@@ -91,6 +91,7 @@ button.gifts__pill {
   justify-content: center;
   transform: translateY(1px);
   font-weight: 600;
+  font-family: var(--font-body);
 }
 
 .gifts__pill:hover,

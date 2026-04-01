@@ -77,10 +77,11 @@
 }
 
 .traditions__event-label {
-  font-family: var(--font-heading);
-  font-size: 0.98rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
   color: var(--color-maroon);
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
   line-height: 1.25;
 }
 
@@ -121,12 +122,12 @@
 }
 
 .traditions__content h4 {
-  font-family: var(--font-heading);
-  font-size: 1.32rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
   color: var(--color-maroon);
   margin: 0.85rem 0 0.35rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
 
 .traditions__content p {
@@ -201,7 +202,7 @@
   }
 
   .traditions__event-label {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
 
   .traditions__content-body {
@@ -209,7 +210,7 @@
   }
 
   .traditions__content h4 {
-    font-size: 1.18rem;
+    font-size: 0.96rem;
   }
 
   .traditions__content p,

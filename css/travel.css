@@ -35,9 +35,10 @@
   display: inline-block;
   margin-bottom: 0.75rem;
   color: var(--color-peacock);
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0;
   text-transform: none;
 }
 
@@ -75,9 +76,10 @@
 .travel__venue-event {
   color: var(--color-peacock);
   margin-bottom: 0.1rem;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
   text-transform: none;
 }
 
@@ -106,6 +108,9 @@
   border-color: var(--color-peacock);
   color: var(--color-white) !important;
   box-shadow: 0 10px 20px rgba(15, 78, 84, 0.18);
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  font-weight: 600;
 }
 
 .travel__directions-link:hover {
@@ -129,8 +134,9 @@
 }
 
 .travel__hotels a {
-  font-family: var(--font-heading);
-  font-size: 1.18rem;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
   color: var(--color-peacock);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
@@ -156,8 +162,8 @@
 }
 
 .travel__parking-link {
-  font-family: var(--font-heading);
-  font-size: 1.18rem;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
   font-weight: 600;
   color: var(--color-lotus);
   border-bottom: 1px solid transparent;

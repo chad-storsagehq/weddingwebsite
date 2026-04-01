@@ -56,9 +56,9 @@
   padding: 1.15rem 1.25rem;
   text-align: left;
   font-family: var(--font-heading);
-  font-size: 1.55rem;
+  font-size: 1.28rem;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(255, 252, 240, 0.9);
   min-height: 44px;
   transition: color var(--motion-fast) var(--ease-soft);
@@ -118,7 +118,7 @@
   }
 
   .faq__question {
-    font-size: 1.22rem;
+    font-size: 1.08rem;
     padding: 1rem;
   }
 
