@@ -2,12 +2,12 @@
   background:
     linear-gradient(180deg, rgba(10, 6, 8, 0.98), rgba(26, 6, 8, 1));
   text-align: center;
-  padding: clamp(2rem, 5vw, 3.25rem) var(--space-md);
+  padding: 0.85rem var(--space-md) 1.15rem;
   border-top: 1px solid rgba(200, 150, 62, 0.14);
 }
 
 .footer__logo {
-  width: min(100%, 360px);
+  width: min(100%, 160px);
   margin: 0 auto;
   height: auto;
   object-fit: contain;
@@ -16,10 +16,10 @@
 
 @media (max-width: 540px) {
   .footer {
-    padding: 1.5rem 1rem 2rem;
+    padding: 0.65rem 1rem 0.95rem;
   }
 
   .footer__logo {
-    width: min(100%, 240px);
+    width: min(100%, 124px);
   }
 }
