@@ -95,6 +95,10 @@
   gap: 1.35rem;
 }
 
+.rsvp-form__followup[hidden] {
+  display: none;
+}
+
 .rsvp-form__legend-row {
   display: flex;
   align-items: center;
