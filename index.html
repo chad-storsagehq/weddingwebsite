@@ -12,19 +12,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400;700&family=Noto+Serif+Telugu:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/variables.css?v=58">
-  <link rel="stylesheet" href="css/base.css?v=58">
-  <link rel="stylesheet" href="css/nav.css?v=58">
-  <link rel="stylesheet" href="css/hero.css?v=58">
-  <link rel="stylesheet" href="css/events.css?v=58">
-  <link rel="stylesheet" href="css/rsvp.css?v=58">
-  <link rel="stylesheet" href="css/travel.css?v=58">
-  <link rel="stylesheet" href="css/faq.css?v=58">
-  <link rel="stylesheet" href="css/traditions.css?v=58">
-  <link rel="stylesheet" href="css/dresscode.css?v=58">
-  <link rel="stylesheet" href="css/gifts.css?v=58">
-  <link rel="stylesheet" href="css/footer.css?v=58">
-  <link rel="icon" type="image/svg+xml" href="assets/svg/lotus.svg?v=58">
+  <link rel="stylesheet" href="css/variables.css?v=59">
+  <link rel="stylesheet" href="css/base.css?v=59">
+  <link rel="stylesheet" href="css/nav.css?v=59">
+  <link rel="stylesheet" href="css/hero.css?v=59">
+  <link rel="stylesheet" href="css/events.css?v=59">
+  <link rel="stylesheet" href="css/rsvp.css?v=59">
+  <link rel="stylesheet" href="css/travel.css?v=59">
+  <link rel="stylesheet" href="css/faq.css?v=59">
+  <link rel="stylesheet" href="css/traditions.css?v=59">
+  <link rel="stylesheet" href="css/dresscode.css?v=59">
+  <link rel="stylesheet" href="css/gifts.css?v=59">
+  <link rel="stylesheet" href="css/footer.css?v=59">
+  <link rel="icon" type="image/svg+xml" href="assets/svg/lotus.svg?v=59">
 </head>
 <body>
 
@@ -37,10 +37,9 @@
       </button>
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#guide">Guide</a></li>
-        <li><a href="#dresscode">Dress Code</a></li>
         <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#guide">Guide</a></li>
+        <li><a href="#dresscode">Attire</a></li>
         <li><a href="#travel">Travel</a></li>
         <li><a href="#gifts">Gifts</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -83,85 +82,91 @@
       <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="">
     </div>
 
-    <!-- EVENTS -->
-    <section id="events" class="events-section">
-      <div class="section section-panel section-panel--events reveal-parent">
-  <img src="assets/svg/ganesha-watermark.svg" class="events__watermark" alt="" aria-hidden="true">
+    <!-- RSVP -->
+    <section id="rsvp" class="rsvp-section">
+      <div class="section section-panel section-panel--rsvp rsvp-section__inner reveal-parent">
+        <h2 class="section-title reveal">
+          RSVP
+          <span class="section-title-telugu" lang="te">హాజరు నిర్ధారణ</span>
+        </h2>
+        <p class="rsvp__deadline label reveal">Kindly respond by July 26, 2026</p>
 
-  <h2 class="section-title reveal">
-    Our Celebrations
-    <span class="section-title-telugu" lang="te">మా వేడుకలు</span>
-  </h2>
+        <div class="rsvp__frame-wrapper reveal">
+          <form
+            class="rsvp-form"
+            id="rsvp-form"
+            data-endpoint="https://script.google.com/macros/s/AKfycbyenxfTnpxzx2eKRe9qRjpjbxbxRQn4NXH-1MoM4ST3EdpsaN-3gb3Ud5WNU2uCO3otGw/exec"
+            novalidate
+          >
+            <input type="hidden" name="attendance" id="rsvp-attendance" value="">
+            <input type="text" name="website" class="rsvp-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
+            <div class="rsvp-form__field">
+              <div class="rsvp-form__legend-row">
+                <label class="rsvp-form__legend">Will you be joining us?</label>
+                <span class="rsvp-form__required">*</span>
+              </div>
+              <div class="rsvp-form__choice-group" role="radiogroup" aria-label="Will you be joining us?">
+                <button type="button" class="rsvp-form__choice" data-attendance-choice="yes" aria-pressed="false">Yes, I'll be there</button>
+                <button type="button" class="rsvp-form__choice" data-attendance-choice="no" aria-pressed="false">Can't make it</button>
+              </div>
+            </div>
 
-  <div class="events__grid">
+            <div class="rsvp-form__field">
+              <div class="rsvp-form__legend-row">
+                <label class="rsvp-form__legend" for="rsvp-name">Your name</label>
+                <span class="rsvp-form__required">*</span>
+              </div>
+              <input id="rsvp-name" name="name" class="rsvp-form__input" type="text" placeholder="e.g. Priya &amp; Rahul Sharma" required>
+            </div>
 
-    <!-- Haldi Ceremony -->
-    <article class="event-card event-card--haldi reveal reveal--stagger">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--left" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--right" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tl" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tr" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-arch.svg" class="event-card__arch" alt="" aria-hidden="true">
-      <div class="event-card__content">
-        <h3 class="event-card__title">
-          Haldi Ceremony
-          <span class="event-card__title-telugu" lang="te">హల్దీ వేడుక</span>
-        </h3>
-        <p class="label event-card__date">August 15, 2026</p>
-        <p class="event-card__time">11:00 AM</p>
-        <p class="event-card__venue">Sanivarapu Residence</p>
-        <p class="event-card__address">62 Cumberland Estates Dr, Mechanicsburg, PA 17050</p>
-        <a href="https://maps.google.com/?q=62+Cumberland+Estates+Dr+Mechanicsburg+PA+17050" class="event-card__directions" aria-label="Get directions to Haldi Ceremony" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            <div class="rsvp-form__followup" id="rsvp-followup" hidden>
+              <div class="rsvp-form__field">
+                <div class="rsvp-form__legend-row">
+                  <label class="rsvp-form__legend" for="rsvp-party-size">Number of guests</label>
+                  <span class="rsvp-form__required">*</span>
+                </div>
+                <input id="rsvp-party-size" name="party_size" class="rsvp-form__input" type="number" min="1" max="12" inputmode="numeric" placeholder="Including yourself">
+              </div>
+
+              <div class="rsvp-form__field rsvp-form__field--checkboxes" role="group" aria-labelledby="rsvp-events-label">
+                <div class="rsvp-form__legend-row">
+                  <p class="rsvp-form__legend" id="rsvp-events-label">Which events will you attend?</p>
+                  <span class="rsvp-form__required">*</span>
+                </div>
+                <label class="rsvp-form__check">
+                  <input type="checkbox" name="events" value="Wedding Ceremony">
+                  <span>Wedding Ceremony · Stevens School Ballroom, Lancaster PA</span>
+                </label>
+                <label class="rsvp-form__check">
+                  <input type="checkbox" name="events" value="Reception">
+                  <span>Reception · Trust46, Lancaster PA</span>
+                </label>
+              </div>
+
+              <div class="rsvp-form__field">
+                <label class="rsvp-form__legend" for="rsvp-dietary">Dietary restrictions or notes</label>
+                <textarea id="rsvp-dietary" name="dietary_restrictions" class="rsvp-form__input rsvp-form__textarea" rows="3" placeholder="Optional — allergies, vegetarian, vegan, etc."></textarea>
+              </div>
+            </div>
+
+            <div class="rsvp-form__actions">
+              <button type="submit" class="rsvp-form__submit">Send RSVP →</button>
+            </div>
+
+            <p class="rsvp-form__status" id="rsvp-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <p class="rsvp__fallback">
+          Having trouble? Email us at
+          <a href="mailto:chadandanusha@gmail.com">chadandanusha@gmail.com</a>
+        </p>
       </div>
-    </article>
-
-    <!-- Wedding Ceremony -->
-    <article class="event-card event-card--wedding reveal reveal--stagger">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--left" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--right" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tl" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tr" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-arch.svg" class="event-card__arch" alt="" aria-hidden="true">
-      <div class="event-card__content">
-        <h3 class="event-card__title">
-          Wedding Ceremony
-          <span class="event-card__title-telugu" lang="te">వివాహ వేడుక</span>
-        </h3>
-        <p class="label event-card__date">August 16, 2026</p>
-        <p class="event-card__time">Arrival: 11:00 AM &nbsp;·&nbsp; Ceremony: 12:50 PM</p>
-        <p class="event-card__venue">Stevens School Ballroom</p>
-        <p class="event-card__address">355 W Chestnut St, Lancaster, PA 17603</p>
-        <a href="https://maps.google.com/?q=355+W+Chestnut+St+Lancaster+PA+17603" class="event-card__directions" aria-label="Get directions to Stevens School Ballroom" target="_blank" rel="noopener noreferrer">Get Directions</a>
-      </div>
-    </article>
-
-    <!-- Reception -->
-    <article class="event-card event-card--reception reveal reveal--stagger">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--left" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-pillar.svg" class="event-card__pillar event-card__pillar--right" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tl" alt="" aria-hidden="true">
-      <img src="assets/images/stitch/accent-thoranam-v2.png" class="event-card__thoranam event-card__thoranam--tr" alt="" aria-hidden="true">
-      <img src="assets/svg/temple-arch.svg" class="event-card__arch" alt="" aria-hidden="true">
-      <div class="event-card__content">
-        <h3 class="event-card__title">
-          Reception
-          <span class="event-card__title-telugu" lang="te">రిసెప్షన్</span>
-        </h3>
-        <p class="label event-card__date">August 16, 2026</p>
-        <p class="event-card__time">6:30 PM</p>
-        <p class="event-card__venue">Trust46</p>
-        <p class="event-card__address">46 E King St, Lancaster, PA 17602</p>
-        <a href="https://maps.google.com/?q=46+E+King+St+Lancaster+PA+17602" class="event-card__directions" aria-label="Get directions to Trust46" target="_blank" rel="noopener noreferrer">Get Directions</a>
-      </div>
-    </article>
-
-  </div>
-</div>
     </section>
 
     <!-- INVITATION BORDER -->
-    <div class="invitation-divider invitation-divider--events-to-traditions" aria-hidden="true">
+    <div class="invitation-divider invitation-divider--rsvp-to-guide" aria-hidden="true">
       <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="" loading="lazy">
     </div>
 
@@ -200,7 +205,7 @@
                   </ul>
 
                   <div class="traditions__tip">
-                    Wear something comfortable in yellow or orange, and do not worry about a little turmeric. For outfit ideas, see <a href="#dresscode">Dress Code</a>.
+                    Wear something comfortable in yellow or orange, and do not worry about a little turmeric. For outfit ideas, see <a href="#dresscode">Attire</a>.
                   </div>
                 </div>
               </div>
@@ -232,7 +237,7 @@
                   </ul>
 
                   <div class="traditions__tip">
-                    During the ceremony, we would love for you to stay present and keep phones tucked away. For what to wear, see <a href="#dresscode">Dress Code</a>.
+                    During the ceremony, we would love for you to stay present and keep phones tucked away. For what to wear, see <a href="#dresscode">Attire</a>.
                   </div>
                 </div>
               </div>
@@ -264,7 +269,7 @@
                   </ul>
 
                   <div class="traditions__tip">
-                    Wear something festive that you can move in, and come ready to dance. More details are in <a href="#dresscode">Dress Code</a>.
+                    Wear something festive that you can move in, and come ready to dance. More details are in <a href="#dresscode">Attire</a>.
                   </div>
                 </div>
               </div>
@@ -276,15 +281,15 @@
     </section>
 
     <!-- INVITATION BORDER -->
-    <div class="invitation-divider invitation-divider--traditions-to-dresscode" aria-hidden="true">
+    <div class="invitation-divider invitation-divider--guide-to-dresscode" aria-hidden="true">
       <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="" loading="lazy">
     </div>
 
-    <!-- DRESS CODE -->
+    <!-- ATTIRE -->
     <section id="dresscode" class="dresscode-section">
       <div class="section section-panel section-panel--dresscode dresscode-section__inner reveal-parent">
         <h2 class="section-title reveal">
-          Dress Code
+          Attire
           <span class="section-title-telugu" lang="te">దుస్తుల నియమాలు</span>
         </h2>
         <p class="dresscode__intro reveal">
@@ -293,7 +298,6 @@
 
 
         <div class="dresscode__grid">
-
           <!-- Haldi -->
           <div class="dresscode__card reveal reveal--stagger">
             <div class="dresscode__card-header">
@@ -329,7 +333,6 @@
               <p><strong>Gentlemen:</strong> Kurta, blazer, sport coat, or a polished semi-formal look.</p>
             </div>
           </div>
-
         </div>
 
         <details class="dresscode__shopping reveal">
@@ -582,96 +585,7 @@
     </section>
 
     <!-- INVITATION BORDER -->
-    <div class="invitation-divider invitation-divider--dresscode-to-rsvp" aria-hidden="true">
-      <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="" loading="lazy">
-    </div>
-
-    <!-- RSVP -->
-    <section id="rsvp" class="rsvp-section">
-      <div class="section section-panel section-panel--rsvp rsvp-section__inner reveal-parent">
-        <h2 class="section-title reveal">
-          RSVP
-          <span class="section-title-telugu" lang="te">హాజరు నిర్ధారణ</span>
-        </h2>
-        <p class="rsvp__deadline label reveal">Kindly respond by July 26, 2026</p>
-
-        <div class="rsvp__frame-wrapper reveal">
-          <img src="assets/svg/temple-arch.svg" class="rsvp__arch" alt="" aria-hidden="true">
-          <form
-            class="rsvp-form"
-            id="rsvp-form"
-            data-endpoint="https://script.google.com/macros/s/AKfycbyenxfTnpxzx2eKRe9qRjpjbxbxRQn4NXH-1MoM4ST3EdpsaN-3gb3Ud5WNU2uCO3otGw/exec"
-            novalidate
-          >
-            <input type="hidden" name="attendance" id="rsvp-attendance" value="">
-            <input type="text" name="website" class="rsvp-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-            <div class="rsvp-form__field">
-              <div class="rsvp-form__legend-row">
-                <label class="rsvp-form__legend">Will you be joining us?</label>
-                <span class="rsvp-form__required">*</span>
-              </div>
-              <div class="rsvp-form__choice-group" role="radiogroup" aria-label="Will you be joining us?">
-                <button type="button" class="rsvp-form__choice" data-attendance-choice="yes" aria-pressed="false">Yes, I'll be there</button>
-                <button type="button" class="rsvp-form__choice" data-attendance-choice="no" aria-pressed="false">Can't make it</button>
-              </div>
-            </div>
-
-            <div class="rsvp-form__field">
-              <div class="rsvp-form__legend-row">
-                <label class="rsvp-form__legend" for="rsvp-name">Your name</label>
-                <span class="rsvp-form__required">*</span>
-              </div>
-              <input id="rsvp-name" name="name" class="rsvp-form__input" type="text" placeholder="e.g. Priya &amp; Rahul Sharma" required>
-            </div>
-
-            <div class="rsvp-form__followup" id="rsvp-followup" hidden>
-              <div class="rsvp-form__field">
-                <div class="rsvp-form__legend-row">
-                  <label class="rsvp-form__legend" for="rsvp-party-size">Number of guests</label>
-                  <span class="rsvp-form__required">*</span>
-                </div>
-                <input id="rsvp-party-size" name="party_size" class="rsvp-form__input" type="number" min="1" max="12" inputmode="numeric" placeholder="Including yourself">
-              </div>
-
-              <div class="rsvp-form__field rsvp-form__field--checkboxes" role="group" aria-labelledby="rsvp-events-label">
-                <div class="rsvp-form__legend-row">
-                  <p class="rsvp-form__legend" id="rsvp-events-label">Which events will you attend?</p>
-                  <span class="rsvp-form__required">*</span>
-                </div>
-                <label class="rsvp-form__check">
-                  <input type="checkbox" name="events" value="Wedding Ceremony">
-                  <span>Wedding Ceremony · Stevens School Ballroom, Lancaster PA</span>
-                </label>
-                <label class="rsvp-form__check">
-                  <input type="checkbox" name="events" value="Reception">
-                  <span>Reception · Trust46, Lancaster PA</span>
-                </label>
-              </div>
-
-              <div class="rsvp-form__field">
-                <label class="rsvp-form__legend" for="rsvp-dietary">Dietary restrictions or notes</label>
-                <textarea id="rsvp-dietary" name="dietary_restrictions" class="rsvp-form__input rsvp-form__textarea" rows="3" placeholder="Optional — allergies, vegetarian, vegan, etc."></textarea>
-              </div>
-            </div>
-
-            <div class="rsvp-form__actions">
-              <button type="submit" class="rsvp-form__submit">Send RSVP →</button>
-            </div>
-
-            <p class="rsvp-form__status" id="rsvp-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-
-        <p class="rsvp__fallback">
-          Having trouble? Email us at
-          <a href="mailto:chadandanusha@gmail.com">chadandanusha@gmail.com</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- INVITATION BORDER -->
-    <div class="invitation-divider invitation-divider--rsvp-to-travel" aria-hidden="true">
+    <div class="invitation-divider invitation-divider--dresscode-to-travel" aria-hidden="true">
       <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="" loading="lazy">
     </div>
 
@@ -691,6 +605,12 @@
       <div class="travel__card-body-wrap">
         <span class="travel__card-kicker label">Wedding Weekend</span>
         <h3 class="travel__card-title">The Venues</h3>
+        <p class="travel__card-body">
+          <strong>Haldi</strong><br>
+          Sanivarapu Residence<br>
+          62 Cumberland Estates Dr, Mechanicsburg, PA 17050
+        </p>
+        <a href="https://maps.google.com/?q=62+Cumberland+Estates+Dr+Mechanicsburg+PA+17050" class="event-card__directions travel__directions-link" aria-label="Get directions to Haldi Ceremony" target="_blank" rel="noopener noreferrer">Get Directions</a>
         <p class="travel__card-body">
           <strong>Ceremony</strong><br>
           Stevens School Ballroom<br>
@@ -780,20 +700,17 @@
 
         <div class="gifts__actions reveal">
           <a href="https://buy.stripe.com/5kQ14n5eWgZh4Oyg7bak000" class="gifts__pill gifts__pill--stripe" target="_blank" rel="noopener noreferrer">
-            <span class="gifts__pill-logo" aria-hidden="true">S</span>
             <span class="gifts__pill-label">Stripe</span>
           </a>
           <a href="https://account.venmo.com/u/chad-mullin" class="gifts__pill gifts__pill--venmo" data-mobile-href="venmo://paycharge?txn=pay&recipients=chad-mullin&note=Wedding%20Gift" target="_blank" rel="noopener noreferrer">
-            <span class="gifts__pill-logo" aria-hidden="true">V</span>
             <span class="gifts__pill-label">Venmo</span>
           </a>
           <button class="gifts__pill gifts__pill--zelle gifts__pill--button" data-copy="chadandanusha@gmail.com">
-            <span class="gifts__pill-logo" aria-hidden="true">Z</span>
             <span class="gifts__pill-label">Zelle</span>
           </button>
         </div>
 
-        <p class="gifts__note">Choosing Zelle copies our email address. Checks are welcome too.</p>
+        <p class="gifts__note">Checks are welcome too.</p>
       </div>
     </section>
 
@@ -814,7 +731,7 @@
 
     <div class="faq__item">
       <button class="faq__question" aria-expanded="false">
-        What is the dress code?
+        What is the attire?
         <span class="faq__icon creature-toggle creature-toggle--peacock" aria-hidden="true">
           <img src="assets/images/custom/peacock-closed.png" class="creature-toggle__img creature-toggle__img--closed" alt="">
           <img src="assets/images/custom/peacock-open.png" class="creature-toggle__img creature-toggle__img--open" alt="">
@@ -823,7 +740,7 @@
       <div class="faq__answer" hidden>
         <div class="faq__answer-inner">
           <div class="faq__answer-body">
-            <p>Festive colors and Indian attire are warmly welcomed, and western formalwear is also perfect. See <a href="#dresscode">Dress Code</a> for full details.</p>
+            <p>Festive colors and Indian attire are warmly welcomed, and western formalwear is also perfect. See <a href="#dresscode">Attire</a> for full details.</p>
           </div>
         </div>
       </div>
@@ -848,7 +765,7 @@
 
     <div class="faq__item">
       <button class="faq__question" aria-expanded="false">
-        Are children welcome?
+        How far away is the reception venue to the wedding venue?
         <span class="faq__icon creature-toggle creature-toggle--tiger" aria-hidden="true">
           <img src="assets/images/custom/tiger-closed.png" class="creature-toggle__img creature-toggle__img--closed" alt="">
           <img src="assets/images/custom/tiger-open.png" class="creature-toggle__img creature-toggle__img--open" alt="">
@@ -857,7 +774,7 @@
       <div class="faq__answer" hidden>
         <div class="faq__answer-inner">
           <div class="faq__answer-body">
-            <p>Yes, children are welcome. Please include them in your count when you <a href="#rsvp">RSVP</a>.</p>
+            <p>The reception venue is about a 3-minute drive from the wedding venue. You can find both addresses and directions in <a href="#travel">Travel &amp; Stay</a>.</p>
           </div>
         </div>
       </div>
@@ -923,19 +840,19 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>August 16, 2026</p>
+    <img src="assets/images/footer-logo.png" alt="Chad and Anusha wedding logo" class="footer__logo" loading="lazy">
   </footer>
 
   <!-- Scripts -->
-  <script src="js/hero-parallax.js?v=58"></script>
-  <script src="js/nav.js?v=58"></script>
-  <script src="js/reveal.js?v=58"></script>
-  <script src="js/faq.js?v=58"></script>
-  <script src="js/traditions.js?v=58"></script>
-  <script src="js/gifts.js?v=58"></script>
-  <script src="js/rsvp.js?v=58"></script>
-  <script src="js/dresscode.js?v=58"></script>
-  <script src="js/img-fallback.js?v=58"></script>
+  <script src="js/hero-parallax.js?v=59"></script>
+  <script src="js/nav.js?v=59"></script>
+  <script src="js/reveal.js?v=59"></script>
+  <script src="js/faq.js?v=59"></script>
+  <script src="js/traditions.js?v=59"></script>
+  <script src="js/gifts.js?v=59"></script>
+  <script src="js/rsvp.js?v=59"></script>
+  <script src="js/dresscode.js?v=59"></script>
+  <script src="js/img-fallback.js?v=59"></script>
 
 </body>
 </html>

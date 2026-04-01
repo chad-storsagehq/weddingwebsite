@@ -136,17 +136,14 @@ img {
 }
 
 /* Section-to-section transition gradients */
-.invitation-divider--events-to-traditions {
-  background: linear-gradient(to bottom, #E8D0C4, #f8e8c8);
+.invitation-divider--rsvp-to-guide {
+  background: linear-gradient(to bottom, #1a0608, #f2e3d1);
 }
-.invitation-divider--traditions-to-dresscode {
-  background: linear-gradient(to bottom, #e8c080, #f5d5c8);
+.invitation-divider--guide-to-dresscode {
+  background: linear-gradient(to bottom, #f8e8c8, #0d4a48);
 }
-.invitation-divider--dresscode-to-rsvp {
-  background: linear-gradient(to bottom, #f8ebe5, #0d4a48);
-}
-.invitation-divider--rsvp-to-travel {
-  background: linear-gradient(to bottom, #1B6F6A, #e8f4f3);
+.invitation-divider--dresscode-to-travel {
+  background: linear-gradient(to bottom, #2a8a6a, #e8f4f3);
 }
 .invitation-divider--travel-to-gifts {
   background: linear-gradient(to bottom, #e8f0f4, #f5c518);

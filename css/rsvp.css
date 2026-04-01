@@ -1,15 +1,15 @@
 .rsvp-section {
-  background: linear-gradient(160deg, #0d4a48 0%, #1B6F6A 45%, #2a8a6a 100%);
+  background: linear-gradient(160deg, #3d0c11 0%, #2a0a0d 55%, #1a0608 100%);
   padding: 4.4rem 0;
   position: relative;
 }
 
-/* subtle radial glow at center */
+/* warm gold glow at top */
 .rsvp-section::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(226,169,59,0.12), transparent 70%);
+  background: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(200, 150, 62, 0.12), transparent 60%);
   pointer-events: none;
 }
 
@@ -37,28 +37,17 @@
 
 .rsvp__frame-wrapper {
   position: relative;
-  border: 1px solid rgba(226, 169, 59, 0.38);
-  border-radius: 26px;
+  border: 1px solid rgba(200, 150, 62, 0.28);
+  border-radius: 22px;
   padding: 1.75rem;
-  background:
-    radial-gradient(circle at top, rgba(226, 169, 59, 0.1), transparent 30%),
-    linear-gradient(180deg, rgba(255,255,255,0.11), rgba(255,255,255,0.07));
+  background: rgba(255, 251, 240, 0.07);
   overflow: hidden;
-  box-shadow:
-    0 24px 48px rgba(0, 0, 0, 0.28),
-    inset 0 1px 0 rgba(255,255,255,0.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(4px);
 }
 
 .rsvp__arch {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  opacity: 0.12;
-  pointer-events: none;
-  filter: brightness(4);
+  display: none;
 }
 
 .rsvp-form {
@@ -129,8 +118,8 @@
 
 .rsvp-form__choice {
   appearance: none;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(200, 150, 62, 0.24);
+  background: rgba(255, 255, 255, 0.06);
   color: rgba(255, 252, 240, 0.9);
   border-radius: 16px;
   padding: 0.9rem 1rem;
@@ -145,8 +134,8 @@
 .rsvp-form__choice:hover,
 .rsvp-form__choice:focus-visible {
   transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(200, 150, 62, 0.48);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* YES — saffron gold */
@@ -160,8 +149,8 @@
 
 /* NO — muted rose */
 .rsvp-form__choice[data-attendance-choice="no"].is-selected {
-  background: rgba(197, 107, 121, 0.7);
-  border-color: rgba(197, 107, 121, 0.9);
+  background: rgba(197, 107, 121, 0.62);
+  border-color: rgba(197, 107, 121, 0.82);
   color: var(--color-white);
   font-weight: 700;
 }
@@ -169,9 +158,9 @@
 .rsvp-form__input {
   width: 100%;
   min-height: 56px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(200, 150, 62, 0.22);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 252, 240, 0.95);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -187,7 +176,7 @@
 .rsvp-form__input:focus-visible {
   outline: none;
   border-color: rgba(226, 169, 59, 0.8);
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 0 4px rgba(226, 169, 59, 0.2);
 }
 

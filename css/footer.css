@@ -1,10 +1,25 @@
 .footer {
-  background-color: #0a0608;
-  color: rgba(255,255,255,0.72);
+  background:
+    linear-gradient(180deg, rgba(10, 6, 8, 0.98), rgba(26, 6, 8, 1));
   text-align: center;
-  padding: var(--space-md) var(--space-md);
-  font-size: var(--text-xs);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: clamp(2rem, 5vw, 3.25rem) var(--space-md);
+  border-top: 1px solid rgba(200, 150, 62, 0.14);
+}
+
+.footer__logo {
+  width: min(100%, 360px);
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 540px) {
+  .footer {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .footer__logo {
+    width: min(100%, 240px);
+  }
 }
