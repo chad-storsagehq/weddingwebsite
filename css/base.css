@@ -218,10 +218,10 @@ img {
 
 /* Gold label text */
 .label {
-  font-family: var(--font-label);
-  font-size: var(--text-xs);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--color-gold);
 }
 
