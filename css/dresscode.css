@@ -70,9 +70,11 @@
 }
 
 .dresscode__event-label {
+  font-family: var(--font-heading);
   color: var(--color-white);
-  font-size: var(--text-xs);
-  letter-spacing: 0.12em;
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
 }
 
 .dresscode__card-body {
@@ -134,18 +136,24 @@
 }
 
 .dresscode__shopping-summary-label {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
   color: rgba(255, 230, 180, 0.88);
+  letter-spacing: 0.02em;
 }
 
 .dresscode__shopping-summary-title {
   font-family: var(--font-heading);
-  font-size: 1.38rem;
+  font-size: 1.52rem;
+  line-height: 1.2;
   color: rgba(255, 252, 240, 0.94);
 }
 
 .dresscode__shopping-summary-copy {
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
   color: rgba(255, 252, 240, 0.72);
+  line-height: 1.6;
 }
 
 .dresscode__shopping[open] .dresscode__shopping-summary {
@@ -229,10 +237,11 @@
   border-radius: 999px;
   min-height: 44px;
   padding: 0.75rem 1.1rem;
-  font-family: var(--font-label);
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  text-transform: none;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(59,26,0,0.06);
   transition: background var(--motion-fast) var(--ease-soft), border-color var(--motion-fast) var(--ease-soft), transform var(--motion-fast) var(--ease-soft);
@@ -312,10 +321,10 @@
   background: rgba(0, 0, 0, 0.52);
   backdrop-filter: blur(6px);
   color: rgba(255, 255, 255, 0.95);
-  font-family: var(--font-label);
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
   padding: 0.28rem 0.65rem;
   border-radius: 6px;
   line-height: 1.2;
@@ -336,10 +345,9 @@
 }
 
 .dresscode__browse-shop {
-  font-family: var(--font-label);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
   color: var(--color-maroon);
   margin-top: auto;
   padding-top: 0.15rem;
@@ -376,6 +384,10 @@
 }
 
 .dresscode__browse-kicker {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
   color: var(--color-lotus);
 }
 
@@ -386,6 +398,7 @@
 }
 
 .dresscode__browse-copy {
+  font-family: var(--font-body);
   font-size: 0.94rem;
   line-height: 1.65;
   color: var(--color-charcoal);
@@ -464,5 +477,13 @@
   .dresscode__browse-visual {
     min-height: 150px;
     font-size: 1.3rem;
+  }
+
+  .dresscode__toggle-chip,
+  .dresscode__price-chip,
+  .dresscode__browse-kicker,
+  .dresscode__browse-shop,
+  .dresscode__shopping-summary-label {
+    font-size: 0.92rem;
   }
 }

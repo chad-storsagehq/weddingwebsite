@@ -56,7 +56,9 @@
   padding: 1.15rem 1.25rem;
   text-align: left;
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-size: 1.55rem;
+  line-height: 1.25;
+  font-weight: 600;
   color: rgba(255, 252, 240, 0.9);
   min-height: 44px;
   transition: color var(--motion-fast) var(--ease-soft);
@@ -92,7 +94,7 @@
 
 .faq__answer p {
   font-family: var(--font-body);
-  font-size: 0.98rem;
+  font-size: 1rem;
   color: rgba(255, 252, 240, 0.76);
   line-height: 1.7;
   margin-top: 0.85rem;
@@ -115,7 +117,7 @@
   }
 
   .faq__question {
-    font-size: 1.15rem;
+    font-size: 1.22rem;
     padding: 1rem;
   }
 
