@@ -5,6 +5,7 @@
   var eventPanels = Array.from(document.querySelectorAll('[data-dresscode-panel]'));
   var inspoTabs  = Array.from(document.querySelectorAll('[data-inspo-gender]'));
   var inspoGrids = Array.from(document.querySelectorAll('[data-inspo-panel]'));
+  var inspoCopyPanels = Array.from(document.querySelectorAll('[data-inspo-copy]'));
 
   function setActiveInspo(eventName, gender) {
     var activeKey = eventName + '-' + gender;
@@ -19,6 +20,11 @@
     inspoGrids.forEach(function (grid) {
       if (grid.dataset.inspoPanel.indexOf(eventName + '-') !== 0) return;
       grid.hidden = grid.dataset.inspoPanel !== activeKey;
+    });
+
+    inspoCopyPanels.forEach(function (panel) {
+      if (panel.dataset.inspoCopy.indexOf(eventName + '-') !== 0) return;
+      panel.hidden = panel.dataset.inspoCopy !== activeKey;
     });
   }
 
