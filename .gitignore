@@ -1,6 +1,8 @@
 .DS_Store
 *.log
 .claude/
+.playwright-cli/
+.superpowers/
 CLAUDE.md
 node_modules/
 assets/images/elements/_*.jpg

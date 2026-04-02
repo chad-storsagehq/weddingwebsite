@@ -113,6 +113,11 @@
   animation: dc-panel-in var(--motion-base) var(--ease-soft);
 }
 
+.dresscode__event-panel[hidden],
+.dresscode__inspo-grid[hidden] {
+  display: none !important;
+}
+
 @keyframes dc-panel-in {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -323,7 +328,7 @@
   background-color: var(--dc-fallback, #C8963E);
   background-image: var(--dc-photo);
   background-size: cover;
-  background-position: center top;
+  background-position: var(--dc-position, center top);
   position: relative;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
