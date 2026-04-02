@@ -288,65 +288,159 @@
     <!-- ATTIRE -->
     <section id="dresscode" class="dresscode-section">
       <div class="section section-panel section-panel--dresscode dresscode-section__inner reveal-parent">
+
         <h2 class="section-title reveal">
           Attire
           <span class="section-title-telugu" lang="te">దుస్తుల నియమాలు</span>
         </h2>
-        <p class="dresscode__intro reveal">
-          Festive colors are always welcome. We especially recommend yellow, orange, and white across the weekend.
-        </p>
+        <p class="dresscode__intro reveal">Indian celebrations traditionally place great importance on attire as a reflection of culture and festivity. The most important thing is that you feel comfortable and enjoy yourself — please try your best within the guidelines, but don't stress. We're just excited to celebrate with you!</p>
 
-
-        <div class="dresscode__grid">
-          <!-- Haldi -->
-          <div class="dresscode__card reveal reveal--stagger">
-            <div class="dresscode__card-header">
-              <span class="dresscode__event-label">August 15 · Haldi</span>
-            </div>
-            <div class="dresscode__card-body">
-              <p class="dresscode__colors"><strong>Recommended colors:</strong> Yellow, orange, and white.</p>
-              <p><strong>Ladies:</strong> Sundresses, sarees, lehengas, shararas, or chudidhars.</p>
-              <p><strong>Gentlemen:</strong> Cotton or linen pants with shirts or kurtas.</p>
-            </div>
-          </div>
-
-          <!-- Wedding -->
-          <div class="dresscode__card reveal reveal--stagger">
-            <div class="dresscode__card-header">
-              <span class="dresscode__event-label">August 16 · Ceremony</span>
-            </div>
-            <div class="dresscode__card-body">
-              <p class="dresscode__colors"><strong>Recommended look:</strong> Formal and festive.</p>
-              <p><strong>Ladies:</strong> Silk saree, lehenga, formal anarkali, floor-length gown, or cocktail dress.</p>
-              <p><strong>Gentlemen:</strong> Sherwani, dhoti kurta, kurta with a Nehru jacket, or a suit and tie.</p>
-            </div>
-          </div>
-
-          <!-- Reception -->
-          <div class="dresscode__card reveal reveal--stagger">
-            <div class="dresscode__card-header">
-              <span class="dresscode__event-label">August 16 · Reception</span>
-            </div>
-            <div class="dresscode__card-body">
-              <p class="dresscode__colors"><strong>Recommended look:</strong> Semi-formal and festive.</p>
-              <p><strong>Ladies:</strong> Saree, lehenga, anarkali, cocktail dress, or a dress you can comfortably dance in.</p>
-              <p><strong>Gentlemen:</strong> Kurta, blazer, sport coat, or a polished semi-formal look.</p>
-            </div>
-          </div>
+        <!-- ── Event Tabs ── -->
+        <div class="dresscode__event-tabs reveal" role="tablist">
+          <button class="dresscode__event-tab is-active" data-dresscode-event="haldi" role="tab" aria-selected="true">
+            <span class="dresscode__event-tab-dot dresscode__event-tab-dot--haldi"></span>
+            <span class="dresscode__event-tab-name">Haldi</span>
+            <span class="dresscode__event-tab-date">Aug 15</span>
+          </button>
+          <button class="dresscode__event-tab" data-dresscode-event="wedding" role="tab" aria-selected="false">
+            <span class="dresscode__event-tab-dot dresscode__event-tab-dot--wedding"></span>
+            <span class="dresscode__event-tab-name">Wedding &amp; Reception</span>
+            <span class="dresscode__event-tab-date">Aug 16</span>
+          </button>
         </div>
 
+        <!-- ══ HALDI PANEL ══ -->
+        <div class="dresscode__event-panel" data-dresscode-panel="haldi">
+
+          <div class="dresscode__panel-top">
+            <p class="dresscode__panel-desc">An intimate, joyous pre-wedding shower where turmeric and water are applied in a fun and messy ritual with games to signify purification. Yellow is considered auspicious — a color that brings happiness and positive energy, marking a fresh beginning for the couple.</p>
+            <div class="dresscode__panel-colors">
+              <span class="dresscode__colors-label">Colors</span>
+              <div class="dresscode__color-swatches">
+                <span class="dresscode__color-dot" style="background:#f7c940;" title="Yellow"></span>
+                <span class="dresscode__color-dot" style="background:#ffffff; box-shadow:inset 0 0 0 1px rgba(0,0,0,0.18);" title="White"></span>
+                <span class="dresscode__color-dot" style="background:#e8901a;" title="Orange"></span>
+              </div>
+              <span class="dresscode__colors-name">Yellow, White &amp; Orange</span>
+            </div>
+          </div>
+
+          <div class="dresscode__guidelines-row">
+            <div class="dresscode__guideline">
+              <span class="dresscode__guideline-label">Women</span>
+              <p class="dresscode__guideline-text">Traditional Indian attire (lehenga, sharara, chudidhar, saree) or a summer semi-formal long dress.</p>
+            </div>
+            <div class="dresscode__guideline">
+              <span class="dresscode__guideline-label">Men</span>
+              <p class="dresscode__guideline-text">Semi-formal cotton or linen shirt and pants, or a kurta.</p>
+            </div>
+          </div>
+
+          <div class="dresscode__inspo-section">
+            <div class="dresscode__inspo-header">
+              <h4 class="dresscode__inspo-heading">Outfit Inspiration</h4>
+              <div class="dresscode__inspo-tabs">
+                <button class="dresscode__inspo-tab is-active" data-inspo-gender="women" data-inspo-event="haldi">Women</button>
+                <button class="dresscode__inspo-tab" data-inspo-gender="men" data-inspo-event="haldi">Men</button>
+              </div>
+            </div>
+            <div class="dresscode__inspo-grid" data-inspo-panel="haldi-women">
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#f5d542;"><span class="dresscode__inspo-card-label">Yellow Lehenga</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1756483510837-83203eba47e9?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#f0b832;"><span class="dresscode__inspo-card-label">Yellow Sharara</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1544936951-fe1a0a21ac90?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#e8901a;"><span class="dresscode__inspo-card-label">Orange Anarkali</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1617897903246-719242758050?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#fde68a;"><span class="dresscode__inspo-card-label">Ethnic Set</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#fed7aa;"><span class="dresscode__inspo-card-label">Festive Dress</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#fef3c7;"><span class="dresscode__inspo-card-label">White Saree</span></div>
+            </div>
+            <div class="dresscode__inspo-grid" data-inspo-panel="haldi-men" hidden>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1768807478287-9e7953cfdca3?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#f7c940;"><span class="dresscode__inspo-card-label">Yellow Kurta</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#f5f5dc;"><span class="dresscode__inspo-card-label">Linen Shirt &amp; Pants</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#fffbeb;"><span class="dresscode__inspo-card-label">White Kurta</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#e8c86a;"><span class="dresscode__inspo-card-label">Cream Kurta Set</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1519058082700-08a515d00b30?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#fef9c3;"><span class="dresscode__inspo-card-label">Casual Indian</span></div>
+            </div>
+          </div>
+
+        </div><!-- /haldi panel -->
+
+        <!-- ══ WEDDING & RECEPTION PANEL ══ -->
+        <div class="dresscode__event-panel" data-dresscode-panel="wedding" hidden>
+
+          <div class="dresscode__outfit-change-note">
+            <span class="dresscode__outfit-change-icon" aria-hidden="true">✦</span>
+            <p>Traditionally Indian weddings have multiple outfit changes. Our close friends and family will be changing outfits from wedding to reception, and everyone is encouraged and welcome to do the same.</p>
+          </div>
+
+          <div class="dresscode__panel-top">
+            <p class="dresscode__panel-desc">A formal and festive celebration. For the ceremony, think traditional and elegant. For the reception, semi-formal and ready to dance.</p>
+            <div class="dresscode__panel-colors">
+              <span class="dresscode__colors-label">Colors</span>
+              <div class="dresscode__color-swatches">
+                <span class="dresscode__color-dot" style="background:#c4233e;" title="Red"></span>
+                <span class="dresscode__color-dot" style="background:#1f7e78;" title="Teal"></span>
+                <span class="dresscode__color-dot" style="background:#9c94d4;" title="Lavender"></span>
+                <span class="dresscode__color-dot" style="background:#6A8848;" title="Green"></span>
+                <span class="dresscode__color-dot" style="background:#23415A;" title="Navy"></span>
+                <span class="dresscode__color-dot" style="background:#c96b79;" title="Pink"></span>
+              </div>
+              <span class="dresscode__colors-name">Any color except white or gold</span>
+            </div>
+          </div>
+
+          <div class="dresscode__guidelines-row">
+            <div class="dresscode__guideline">
+              <span class="dresscode__guideline-label">Women</span>
+              <p class="dresscode__guideline-text">Traditional Indian attire or formal floor-length gowns — any color except white or gold.</p>
+            </div>
+            <div class="dresscode__guideline">
+              <span class="dresscode__guideline-label">Men</span>
+              <p class="dresscode__guideline-text">Formal suits or sherwanis — any color except white.</p>
+            </div>
+          </div>
+
+          <div class="dresscode__inspo-section">
+            <div class="dresscode__inspo-header">
+              <h4 class="dresscode__inspo-heading">Outfit Inspiration</h4>
+              <div class="dresscode__inspo-tabs">
+                <button class="dresscode__inspo-tab is-active" data-inspo-gender="women" data-inspo-event="wedding">Women</button>
+                <button class="dresscode__inspo-tab" data-inspo-gender="men" data-inspo-event="wedding">Men</button>
+              </div>
+            </div>
+            <div class="dresscode__inspo-grid" data-inspo-panel="wedding-women">
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#b75d68;"><span class="dresscode__inspo-card-label">Maroon Saree</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1756483510837-83203eba47e9?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#1B6F6A;"><span class="dresscode__inspo-card-label">Teal Lehenga</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1544936951-fe1a0a21ac90?w=350&h=450&fit=crop&crop=bottom&auto=format');--dc-fallback:#9c94d4;"><span class="dresscode__inspo-card-label">Lavender Sharara</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#6A8848;"><span class="dresscode__inspo-card-label">Green Lehenga</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1617897903246-719242758050?w=350&h=450&fit=crop&crop=bottom&auto=format');--dc-fallback:#c96b79;"><span class="dresscode__inspo-card-label">Pink Lehenga</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=350&h=450&fit=crop&crop=bottom&auto=format');--dc-fallback:#23415A;"><span class="dresscode__inspo-card-label">Blue Saree</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1619466636146-0d9d0c32a3a9?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#8B1A28;"><span class="dresscode__inspo-card-label">Formal Saree</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1614886187799-6b23d1c7f47c?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#4A3060;"><span class="dresscode__inspo-card-label">Floor-Length Gown</span></div>
+            </div>
+            <div class="dresscode__inspo-grid" data-inspo-panel="wedding-men" hidden>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#23415A;"><span class="dresscode__inspo-card-label">Dark Sherwani</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#2c2c2c;"><span class="dresscode__inspo-card-label">Formal Suit</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1768807478287-9e7953cfdca3?w=350&h=450&fit=crop&crop=bottom&auto=format');--dc-fallback:#1f7e78;"><span class="dresscode__inspo-card-label">Green Sherwani</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=350&h=450&fit=crop&crop=center&auto=format');--dc-fallback:#8B1A1A;"><span class="dresscode__inspo-card-label">Burgundy Sherwani</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1619082073796-be1d0b4df62b?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#3B1A00;"><span class="dresscode__inspo-card-label">Jodhpuri Suit</span></div>
+              <div class="dresscode__inspo-card" style="--dc-photo:url('https://images.unsplash.com/photo-1624506121081-4f4f4e5b5e2d?w=350&h=450&fit=crop&crop=top&auto=format');--dc-fallback:#1B1B2F;"><span class="dresscode__inspo-card-label">Embroidered Sherwani</span></div>
+            </div>
+          </div>
+
+        </div><!-- /wedding panel -->
+
+        <!-- ══ SHARED: WHERE TO SHOP ══ -->
         <details class="dresscode__shopping reveal">
           <summary class="dresscode__shopping-summary">
             <div class="dresscode__shopping-summary-text">
               <span class="dresscode__shopping-summary-label">Optional</span>
-              <span class="dresscode__shopping-summary-title">Need help finding Indian attire?</span>
+              <span class="dresscode__shopping-summary-title">Where to Shop for Indian Attire</span>
               <span class="dresscode__shopping-summary-copy">Curated links from low to high budget.</span>
             </div>
             <span class="dresscode__shopping-summary-glyph" aria-hidden="true">+</span>
           </summary>
 
           <div class="dresscode__shopping-panel">
-            <h3 class="dresscode__shopping-title">Where to Shop for Indian Attire</h3>
+            <h3 class="dresscode__shopping-title">Links</h3>
             <p class="dresscode__shopping-intro">From low to high budget.</p>
 
             <div class="dresscode__links-grid">
@@ -697,7 +791,7 @@
   <script src="js/traditions.js?v=62"></script>
   <script src="js/gifts.js?v=62"></script>
   <script src="js/rsvp.js?v=62"></script>
-  <script src="js/dresscode.js?v=62"></script>
+  <script src="js/dresscode.js?v=63"></script>
   <script src="js/img-fallback.js?v=62"></script>
 
 </body>

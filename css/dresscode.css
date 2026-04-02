@@ -1,3 +1,7 @@
+/* ══════════════════════════════════════════
+   DRESSCODE / ATTIRE SECTION
+   ══════════════════════════════════════════ */
+
 .dresscode-section {
   background: linear-gradient(160deg, #0d4a48 0%, #1B6F6A 45%, #2a8a6a 100%);
   padding: var(--space-xl) 0;
@@ -21,97 +25,347 @@
 .dresscode__intro {
   text-align: center;
   font-size: var(--text-base);
-  color: rgba(255, 252, 240, 0.82);
-  max-width: 560px;
-  margin: var(--space-sm) auto 1.5rem;
+  color: rgba(255, 252, 240, 0.78);
+  max-width: 600px;
+  margin: var(--space-sm) auto 2rem;
   line-height: 1.7;
 }
 
-.dresscode__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
-  margin-bottom: 1.6rem;
+/* ── Event Tabs ── */
+
+.dresscode__event-tabs {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1.75rem;
 }
 
-@media (min-width: 768px) {
-  .dresscode__grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.dresscode__card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(240,252,251,0.98));
-  border: 1px solid rgba(27, 111, 106, 0.22);
-  border-radius: 26px;
-  overflow: hidden;
-  box-shadow: 0 18px 34px rgba(59,26,0,0.08);
-  position: relative;
-}
-
-/* Default header — overridden per card below */
-.dresscode__card-header {
-  padding: 0.85rem var(--space-md);
-}
-
-/* Haldi card (1st) — turmeric yellow */
-.dresscode__card:nth-child(1) .dresscode__card-header {
-  background: linear-gradient(90deg, #f7c940, #e8901a);
-}
-
-/* Ceremony card (2nd) — peacock teal */
-.dresscode__card:nth-child(2) .dresscode__card-header {
-  background: linear-gradient(90deg, #1f7e78, #0F4E54);
-}
-
-/* Reception card (3rd) — maroon rose */
-.dresscode__card:nth-child(3) .dresscode__card-header {
-  background: linear-gradient(90deg, #8B1A28, #c96b79);
-}
-
-.dresscode__event-label {
-  font-family: var(--font-body);
-  color: var(--color-white);
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.dresscode__card-body {
-  padding: 0.9rem 1rem 1rem;
+.dresscode__event-tab {
+  appearance: none;
   display: flex;
   flex-direction: column;
-  gap: 0.42rem;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid rgba(255, 252, 240, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 252, 240, 0.85);
+  border-radius: 20px;
+  padding: 0.9rem 1.8rem;
+  min-width: 150px;
+  cursor: pointer;
+  transition: background var(--motion-fast) var(--ease-soft),
+              border-color var(--motion-fast) var(--ease-soft),
+              box-shadow var(--motion-fast) var(--ease-soft),
+              color var(--motion-fast) var(--ease-soft);
+  backdrop-filter: blur(4px);
 }
 
-.dresscode__card-body p {
-  font-size: var(--text-sm);
-  line-height: 1.55;
-  color: var(--color-charcoal);
+.dresscode__event-tab-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-bottom: 0.1rem;
+}
+
+.dresscode__event-tab-dot--haldi {
+  background: linear-gradient(135deg, #f7c940, #e8901a);
+}
+
+.dresscode__event-tab-dot--wedding {
+  background: linear-gradient(135deg, #c4233e, #9c94d4);
+}
+
+.dresscode__event-tab-name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.dresscode__event-tab-date {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 240, 0.5);
+}
+
+.dresscode__event-tab:hover {
+  border-color: rgba(226, 169, 59, 0.45);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.dresscode__event-tab.is-active {
+  border-color: var(--color-marigold);
+  background: var(--color-marigold);
+  color: #3B1A00;
+  box-shadow: 0 12px 28px rgba(226, 169, 59, 0.4);
+}
+
+.dresscode__event-tab.is-active .dresscode__event-tab-date {
+  color: rgba(59, 26, 0, 0.6);
+}
+
+/* ── Event Panel ── */
+
+.dresscode__event-panel {
+  animation: dc-panel-in var(--motion-base) var(--ease-soft);
+}
+
+@keyframes dc-panel-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Outfit Change Note ── */
+
+.dresscode__outfit-change-note {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  background: rgba(226, 169, 59, 0.13);
+  border: 1px solid rgba(226, 169, 59, 0.32);
+  border-radius: 18px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
+.dresscode__outfit-change-note p {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: rgba(255, 252, 240, 0.88);
+  line-height: 1.65;
   margin: 0;
 }
 
-.dresscode__colors {
-  color: var(--color-brown) !important;
+.dresscode__outfit-change-icon {
+  flex-shrink: 0;
+  color: var(--color-marigold);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
-.dresscode__tip {
-  margin-top: 0.35rem;
-  padding: 0.65rem 0.8rem;
-  background: rgba(200,150,62,0.08);
-  border-left: 2px solid var(--color-gold);
-  font-size: var(--text-xs);
-  color: var(--color-charcoal);
-  line-height: 1.6;
-  font-style: italic;
-  border-radius: 0 14px 14px 0;
+/* ── Panel Top: description + color swatches ── */
+
+.dresscode__panel-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.25rem;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 252, 240, 0.13);
+  border-radius: 20px;
+  padding: 1.2rem 1.35rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(4px);
 }
+
+.dresscode__panel-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: rgba(255, 252, 240, 0.8);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.dresscode__panel-colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 110px;
+}
+
+.dresscode__colors-label {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 240, 0.48);
+}
+
+.dresscode__color-swatches {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dresscode__color-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
+}
+
+.dresscode__colors-name {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: rgba(255, 252, 240, 0.65);
+  text-align: center;
+  line-height: 1.35;
+}
+
+/* ── Dress Guidelines ── */
+
+.dresscode__guidelines-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.dresscode__guideline {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 252, 240, 0.13);
+  border-radius: 18px;
+  padding: 1rem 1.1rem;
+  backdrop-filter: blur(4px);
+}
+
+.dresscode__guideline-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-marigold);
+  margin-bottom: 0.35rem;
+}
+
+.dresscode__guideline-text {
+  font-family: var(--font-body);
+  font-size: 0.93rem;
+  color: rgba(255, 252, 240, 0.85);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Inspo Gallery ── */
+
+.dresscode__inspo-section {
+  margin-bottom: 1.6rem;
+}
+
+.dresscode__inspo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.dresscode__inspo-heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: rgba(255, 252, 240, 0.92);
+  font-weight: 400;
+}
+
+.dresscode__inspo-tabs {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dresscode__inspo-tab {
+  appearance: none;
+  border: 1px solid rgba(255, 252, 240, 0.24);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 252, 240, 0.78);
+  border-radius: 999px;
+  padding: 0.42rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--motion-fast) var(--ease-soft);
+}
+
+.dresscode__inspo-tab.is-active {
+  background: rgba(226, 169, 59, 0.85);
+  border-color: var(--color-marigold);
+  color: #3B1A00;
+}
+
+.dresscode__inspo-tab:hover:not(.is-active) {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 252, 240, 0.38);
+}
+
+/* ── Photo Grid ── */
+
+.dresscode__inspo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+@media (min-width: 640px) {
+  .dresscode__inspo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dresscode__inspo-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.dresscode__inspo-card {
+  border-radius: 14px;
+  aspect-ratio: 3 / 4;
+  background-color: var(--dc-fallback, #C8963E);
+  background-image: var(--dc-photo);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  transition: transform var(--motion-fast) var(--ease-soft),
+              box-shadow var(--motion-fast) var(--ease-soft);
+}
+
+.dresscode__inspo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.38);
+}
+
+.dresscode__inspo-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.04) 45%, transparent 65%);
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+.dresscode__inspo-card-label {
+  position: absolute;
+  bottom: 0.55rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  z-index: 2;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.25;
+}
+
+/* ══════════════════════════════════════════
+   WHERE TO SHOP EXPANDER
+   ══════════════════════════════════════════ */
 
 .dresscode__shopping {
   border-top: 1px solid rgba(226, 169, 59, 0.22);
   padding-top: 1.35rem;
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
 }
 
 .dresscode__shopping-summary {
@@ -158,10 +412,6 @@
   line-height: 1.6;
 }
 
-.dresscode__shopping[open] .dresscode__shopping-summary {
-  margin-bottom: 0.95rem;
-}
-
 .dresscode__shopping-summary-glyph {
   width: 2.9rem;
   height: 2.9rem;
@@ -170,33 +420,36 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid rgba(226,169,59,0.38);
-  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(226, 169, 59, 0.38);
+  background: rgba(255, 255, 255, 0.14);
   color: var(--color-marigold);
   font-family: var(--font-heading);
   font-size: 1.9rem;
   line-height: 1;
-  box-shadow: 0 12px 24px rgba(59,26,0,0.06);
-  transition:
-    transform var(--motion-base) var(--ease-soft),
-    background-color var(--motion-fast) var(--ease-soft),
-    border-color var(--motion-fast) var(--ease-soft);
+  box-shadow: 0 12px 24px rgba(59, 26, 0, 0.06);
+  transition: transform var(--motion-base) var(--ease-soft),
+              background-color var(--motion-fast) var(--ease-soft),
+              border-color var(--motion-fast) var(--ease-soft);
 }
 
 .dresscode__shopping[open] .dresscode__shopping-summary-glyph {
   transform: rotate(45deg);
-  border-color: rgba(226,169,59,0.6);
-  background: rgba(255,250,244,0.2);
+  border-color: rgba(226, 169, 59, 0.6);
+  background: rgba(255, 250, 244, 0.2);
+}
+
+.dresscode__shopping[open] .dresscode__shopping-summary {
+  margin-bottom: 0.95rem;
 }
 
 .dresscode__shopping-panel {
   margin-top: 0.25rem;
   padding: 1.2rem;
-  border: 1px solid rgba(226,169,59,0.18);
+  border: 1px solid rgba(226, 169, 59, 0.18);
   border-radius: 28px;
   background:
-    radial-gradient(circle at top left, rgba(226,169,59,0.12), transparent 28%),
-    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(240,252,251,0.98));
+    radial-gradient(circle at top left, rgba(226, 169, 59, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 252, 251, 0.98));
   box-shadow: 0 18px 36px rgba(15, 78, 84, 0.12);
 }
 
@@ -214,285 +467,10 @@
   margin: 0 auto 1.3rem;
   font-size: 0.97rem;
   line-height: 1.7;
-  color: rgba(44,44,44,0.72);
+  color: rgba(44, 44, 44, 0.72);
 }
 
-.dresscode__browse-controls {
-  display: grid;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.dresscode__toggle-row {
-  display: flex;
-  justify-content: center;
-  gap: 0.7rem;
-  flex-wrap: wrap;
-}
-
-.dresscode__toggle-chip,
-.dresscode__price-chip {
-  appearance: none;
-  border: 1px solid rgba(200,150,62,0.22);
-  background: rgba(255,255,255,0.92);
-  color: var(--color-brown);
-  border-radius: 999px;
-  min-height: 44px;
-  padding: 0.75rem 1.1rem;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  letter-spacing: 0;
-  font-weight: 600;
-  text-transform: none;
-  cursor: pointer;
-  box-shadow: 0 10px 20px rgba(59,26,0,0.06);
-  transition: background var(--motion-fast) var(--ease-soft), border-color var(--motion-fast) var(--ease-soft), transform var(--motion-fast) var(--ease-soft);
-}
-
-.dresscode__toggle-chip.is-active,
-.dresscode__price-chip.is-active {
-  background: var(--color-gold);
-  border-color: var(--color-gold);
-  color: var(--color-white);
-  box-shadow: 0 10px 22px rgba(200, 150, 62, 0.35);
-}
-
-.dresscode__toggle-chip:hover,
-.dresscode__price-chip:hover,
-.dresscode__toggle-chip:focus-visible,
-.dresscode__price-chip:focus-visible {
-  transform: translateY(-1px);
-}
-
-.dresscode__browse-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .dresscode__browse-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.dresscode__browse-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,249,245,0.98));
-  border: 1px solid rgba(200,150,62,0.18);
-  border-radius: 24px;
-  padding: 0.9rem;
-  display: grid;
-  gap: 0.55rem;
-  box-shadow: 0 16px 30px rgba(59,26,0,0.06);
-}
-
-.dresscode__browse-card[hidden] {
-  display: none;
-}
-
-.dresscode__browse-visual {
-  min-height: 180px;
-  border-radius: 18px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 0.9rem;
-  color: var(--color-white);
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  line-height: 1;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.55);
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-}
-
-/* gradient overlay so label always reads clearly */
-.dresscode__browse-visual::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.08) 55%, transparent 100%);
-  pointer-events: none;
-}
-
-.dresscode__browse-badge {
-  position: relative;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.52);
-  backdrop-filter: blur(6px);
-  color: rgba(255, 255, 255, 0.95);
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  text-transform: none;
-  padding: 0.28rem 0.65rem;
-  border-radius: 6px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.dresscode__browse-card-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  color: inherit;
-  text-decoration: none;
-}
-
-.dresscode__browse-card-link:hover .dresscode__browse-visual,
-.dresscode__browse-card-link:focus-visible .dresscode__browse-visual {
-  filter: brightness(1.06);
-}
-
-.dresscode__browse-shop {
-  font-family: var(--font-body);
-  font-size: 0.94rem;
-  letter-spacing: 0;
-  font-weight: 600;
-  color: var(--color-maroon);
-  margin-top: auto;
-  padding-top: 0.15rem;
-}
-
-.dresscode__browse-visual--saree {
-  background-image: url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&h=360&fit=crop&auto=format');
-  background-color: #b75d68;
-}
-
-.dresscode__browse-visual--lehenga {
-  background-image: url('https://images.unsplash.com/photo-1756483510837-83203eba47e9?w=500&h=360&fit=crop&auto=format');
-  background-color: #c96b79;
-}
-
-.dresscode__browse-visual--anarkali {
-  background-image: url('https://images.unsplash.com/photo-1544936951-fe1a0a21ac90?w=500&h=360&fit=crop&auto=format');
-  background-color: #d97a2b;
-}
-
-.dresscode__browse-visual--kurta {
-  background-image: url('https://images.unsplash.com/photo-1768807478287-9e7953cfdca3?w=500&h=360&fit=crop&auto=format');
-  background-color: #1B6F6A;
-}
-
-.dresscode__browse-visual--jacket {
-  background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&h=360&fit=crop&auto=format');
-  background-color: #23415A;
-}
-
-.dresscode__browse-visual--sherwani {
-  background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&h=360&fit=crop&auto=format');
-  background-color: #3B1A00;
-}
-
-.dresscode__browse-kicker {
-  font-family: var(--font-body);
-  font-size: 0.92rem;
-  letter-spacing: 0;
-  font-weight: 600;
-  text-transform: none;
-  color: var(--color-lotus);
-}
-
-.dresscode__browse-title {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
-  color: var(--color-brown);
-}
-
-.dresscode__browse-copy {
-  font-family: var(--font-body);
-  font-size: 0.94rem;
-  line-height: 1.65;
-  color: var(--color-charcoal);
-}
-
-.dresscode__browse-card a.dresscode__browse-card-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (max-width: 540px) {
-  .dresscode-section {
-    padding: 4.25rem 0;
-  }
-
-  .dresscode__intro {
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .dresscode__grid {
-    gap: 0.85rem;
-    margin-bottom: 1rem;
-  }
-
-  .dresscode__card {
-    border-radius: 22px;
-  }
-
-  .dresscode__card-header {
-    padding: 0.55rem 0.9rem;
-  }
-
-  .dresscode__card-body {
-    padding: 0.8rem 0.9rem 0.9rem;
-    gap: 0.32rem;
-  }
-
-  .dresscode__card-body p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .dresscode__tip {
-    font-size: 0.78rem;
-    line-height: 1.45;
-    padding: 0.45rem 0.65rem;
-  }
-
-  .dresscode__shopping-summary {
-    align-items: flex-start;
-    gap: 0.65rem;
-  }
-
-  .dresscode__shopping-summary-title {
-    font-size: 1.12rem;
-  }
-
-  .dresscode__shopping-summary-copy {
-    font-size: 0.88rem;
-    line-height: 1.5;
-  }
-
-  .dresscode__shopping-summary-glyph {
-    width: 2.55rem;
-    height: 2.55rem;
-    font-size: 1.6rem;
-  }
-
-  .dresscode__shopping-panel {
-    padding: 1rem 0.9rem;
-    border-radius: 22px;
-  }
-
-  .dresscode__browse-visual {
-    min-height: 150px;
-    font-size: 1.3rem;
-  }
-
-  .dresscode__toggle-chip,
-  .dresscode__price-chip,
-  .dresscode__browse-kicker,
-  .dresscode__browse-shop,
-  .dresscode__shopping-summary-label {
-    font-size: 0.88rem;
-  }
-}
-
-/* ── Where to Shop: numbered links ── */
+/* ── Numbered Links ── */
 
 .dresscode__links-grid {
   display: grid;
@@ -510,7 +488,8 @@
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(200, 150, 62, 0.16);
   text-decoration: none;
-  transition: transform var(--motion-fast) var(--ease-soft), background var(--motion-fast) var(--ease-soft);
+  transition: transform var(--motion-fast) var(--ease-soft),
+              background var(--motion-fast) var(--ease-soft);
 }
 
 .dresscode__link-item:hover,
@@ -549,7 +528,7 @@
   line-height: 1.2;
 }
 
-/* ── Other Options sub-section ── */
+/* ── Other Options ── */
 
 .dresscode__other-options {
   margin-top: 1.6rem;
@@ -570,7 +549,7 @@
   margin-top: 0.75rem;
 }
 
-/* ── Online Shopping Tips ── */
+/* ── Online Tips ── */
 
 .dresscode__online-tips {
   margin-top: 1.6rem;
@@ -596,7 +575,7 @@
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(200, 150, 62, 0.18);
   border-radius: 20px;
-  padding: 1.1rem 1rem 1.1rem;
+  padding: 1.1rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -624,7 +603,7 @@
 
 .dresscode__tip-heading {
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -666,20 +645,60 @@
   font-weight: 700;
 }
 
-/* ── Responsive ── */
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
 
 @media (max-width: 768px) {
+  .dresscode__tips-grid {
+    grid-template-columns: 1fr;
+  }
+
   .dresscode__links-grid,
   .dresscode__links-grid--other {
     grid-template-columns: 1fr 1fr;
   }
 
-  .dresscode__tips-grid {
+  .dresscode__panel-top {
     grid-template-columns: 1fr;
+  }
+
+  .dresscode__panel-colors {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    min-width: 0;
   }
 }
 
 @media (max-width: 540px) {
+  .dresscode-section {
+    padding: 4.25rem 0;
+  }
+
+  .dresscode__event-tabs {
+    gap: 0.5rem;
+  }
+
+  .dresscode__event-tab {
+    min-width: 0;
+    flex: 1;
+    padding: 0.75rem 1rem;
+  }
+
+  .dresscode__event-tab-name {
+    font-size: 1.15rem;
+  }
+
+  .dresscode__guidelines-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dresscode__inspo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+  }
+
   .dresscode__links-grid,
   .dresscode__links-grid--other {
     grid-template-columns: 1fr;
@@ -694,5 +713,20 @@
 
   .dresscode__link-name {
     font-size: 1.2rem;
+  }
+
+  .dresscode__shopping-summary-glyph {
+    width: 2.55rem;
+    height: 2.55rem;
+    font-size: 1.6rem;
+  }
+
+  .dresscode__shopping-summary-title {
+    font-size: 1.12rem;
+  }
+
+  .dresscode__shopping-panel {
+    padding: 1rem 0.9rem;
+    border-radius: 22px;
   }
 }

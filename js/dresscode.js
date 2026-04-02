@@ -1,46 +1,54 @@
 (function () {
   'use strict';
 
-  var genderButtons = Array.prototype.slice.call(document.querySelectorAll('[data-dresscode-gender]'));
-  var priceButtons = Array.prototype.slice.call(document.querySelectorAll('[data-dresscode-price]'));
-  var cards = Array.prototype.slice.call(document.querySelectorAll('.dresscode__browse-card'));
+  // ── Main event tabs (Haldi / Wedding & Reception) ──
+  var eventTabs   = Array.from(document.querySelectorAll('[data-dresscode-event]'));
+  var eventPanels = Array.from(document.querySelectorAll('[data-dresscode-panel]'));
 
-  if (!genderButtons.length || !priceButtons.length || !cards.length) return;
+  if (eventTabs.length) {
+    eventTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var target = tab.dataset.dresscodeEvent;
 
-  var state = {
-    gender: 'women',
-    price: 'budget'
-  };
+        eventTabs.forEach(function (t) {
+          t.classList.toggle('is-active', t === tab);
+          t.setAttribute('aria-selected', t === tab ? 'true' : 'false');
+        });
 
-  function syncButtons(buttons, activeValue, attribute) {
-    buttons.forEach(function (button) {
-      button.classList.toggle('is-active', button.getAttribute(attribute) === activeValue);
+        eventPanels.forEach(function (panel) {
+          panel.hidden = panel.dataset.dresscodePanel !== target;
+        });
+      });
     });
   }
 
-  function renderCards() {
-    cards.forEach(function (card) {
-      var matches = card.dataset.gender === state.gender && card.dataset.price === state.price;
-      card.hidden = !matches;
-    });
+  // ── Inspo gender sub-tabs (Women / Men) ──
+  var inspoTabs  = Array.from(document.querySelectorAll('[data-inspo-gender]'));
+  var inspoGrids = Array.from(document.querySelectorAll('[data-inspo-panel]'));
 
-    syncButtons(genderButtons, state.gender, 'data-dresscode-gender');
-    syncButtons(priceButtons, state.price, 'data-dresscode-price');
+  if (inspoTabs.length) {
+    inspoTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var gender = tab.dataset.inspoGender;
+        var event  = tab.dataset.inspoEvent;
+        var key    = event + '-' + gender;
+
+        // Activate only sibling tabs for the same event
+        inspoTabs.forEach(function (t) {
+          if (t.dataset.inspoEvent === event) {
+            t.classList.toggle('is-active', t === tab);
+          }
+        });
+
+        // Show only the matching grid; hide others for this event
+        inspoGrids.forEach(function (grid) {
+          var panelKey = grid.dataset.inspoPanel;
+          if (panelKey.indexOf(event + '-') === 0) {
+            grid.hidden = panelKey !== key;
+          }
+        });
+      });
+    });
   }
 
-  genderButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      state.gender = button.dataset.dresscodeGender;
-      renderCards();
-    });
-  });
-
-  priceButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      state.price = button.dataset.dresscodePrice;
-      renderCards();
-    });
-  });
-
-  renderCards();
 }());
