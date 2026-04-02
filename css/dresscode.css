@@ -491,3 +491,208 @@
     font-size: 0.88rem;
   }
 }
+
+/* ── Where to Shop: numbered links ── */
+
+.dresscode__links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.dresscode__link-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(200, 150, 62, 0.16);
+  text-decoration: none;
+  transition: transform var(--motion-fast) var(--ease-soft), background var(--motion-fast) var(--ease-soft);
+}
+
+.dresscode__link-item:hover,
+.dresscode__link-item:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.dresscode__link-badge {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.dresscode__link-badge--1 { background: #9c94d4; }
+.dresscode__link-badge--2 { background: #c4233e; }
+.dresscode__link-badge--3 { background: #f5d542; color: #3B1A00; }
+.dresscode__link-badge--4 { background: #d4cfee; color: #3B1A00; }
+.dresscode__link-badge--5 { background: #2c2c2c; }
+.dresscode__link-badge--6 { background: #8a8f9a; }
+.dresscode__link-badge--other { background: #c4bde8; color: #3B1A00; }
+
+.dresscode__link-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-saffron);
+  line-height: 1.2;
+}
+
+/* ── Other Options sub-section ── */
+
+.dresscode__other-options {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(200, 150, 62, 0.2);
+}
+
+.dresscode__other-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.dresscode__links-grid--other {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.75rem;
+}
+
+/* ── Online Shopping Tips ── */
+
+.dresscode__online-tips {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(200, 150, 62, 0.2);
+}
+
+.dresscode__online-tips-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-brown);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.dresscode__tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.dresscode__tip-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(200, 150, 62, 0.18);
+  border-radius: 20px;
+  padding: 1.1rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dresscode__tip-badge {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+
+.dresscode__tip-badge--1 { background: #9c94d4; }
+.dresscode__tip-badge--2 { background: #c4233e; }
+.dresscode__tip-badge--3 { background: #f5d542; color: #3B1A00; }
+
+.dresscode__tip-heading {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.dresscode__tip-body {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-charcoal);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.dresscode__tip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dresscode__tip-list li {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--color-charcoal);
+  line-height: 1.5;
+  padding-left: 1em;
+  position: relative;
+}
+
+.dresscode__tip-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .dresscode__links-grid,
+  .dresscode__links-grid--other {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dresscode__tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .dresscode__links-grid,
+  .dresscode__links-grid--other {
+    grid-template-columns: 1fr;
+  }
+
+  .dresscode__link-badge {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+
+  .dresscode__link-name {
+    font-size: 1.2rem;
+  }
+}
