@@ -20,6 +20,16 @@ body {
     linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0));
 }
 
+p,
+li,
+label,
+input,
+textarea,
+select,
+summary {
+  font-family: var(--font-body);
+}
+
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--color-brown);
