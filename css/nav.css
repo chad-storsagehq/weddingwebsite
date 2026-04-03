@@ -97,13 +97,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: clamp(1rem, 3vh, 1.75rem);
+  justify-content: center;
+  gap: clamp(1.1rem, 3vh, 1.9rem);
   position: fixed;
   inset: 0;
-  background: var(--color-bg);
+  background: linear-gradient(180deg, #efe2bc 0%, #ead7a7 52%, #e2c981 100%);
   z-index: 1001;
-  padding: calc(var(--nav-height) + var(--space-md)) var(--space-md) calc(var(--space-lg) + env(safe-area-inset-bottom));
+  padding: calc(var(--nav-height) + var(--space-sm)) var(--space-md) calc(var(--space-lg) + env(safe-area-inset-bottom));
   overflow-y: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
@@ -111,7 +111,9 @@
 
 .nav__links.is-open a {
   color: var(--color-brown);
-  font-size: var(--text-xl);
+  font-size: clamp(1.7rem, 5.6vw, 2.15rem);
+  line-height: 1.1;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
