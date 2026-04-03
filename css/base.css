@@ -12,7 +12,13 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-charcoal);
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: normal;
+  font-variant-caps: normal;
+  font-feature-settings: normal;
   line-height: 1.7;
   overflow-x: hidden;
   background-image:
@@ -27,7 +33,13 @@ input,
 textarea,
 select,
 summary {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: normal;
+  font-variant-caps: normal;
+  font-feature-settings: normal;
 }
 
 h1, h2, h3, h4 {
