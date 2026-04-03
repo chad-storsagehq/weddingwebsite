@@ -29,7 +29,7 @@
 }
 
 .nav__logo {
-  font-family: var(--font-heading);
+  font-family: 'Cinzel', Georgia, serif;
   font-size: var(--text-xl);
   color: var(--color-white);
   letter-spacing: 0.05em;
@@ -47,7 +47,7 @@
 }
 
 .nav__links a {
-  font-family: var(--font-heading);
+  font-family: 'Cinzel', Georgia, serif;
   font-size: 1rem;
   letter-spacing: 0.02em;
   text-transform: none;
