@@ -28,10 +28,10 @@
   --color-panel-strong: rgba(255, 252, 248, 0.92);
 
   /* Typography */
-  --font-heading:  'Cormorant Garamond', Georgia, serif;
+  --font-heading:  'Cinzel', Georgia, serif;
   --font-hero-decorative: 'Cinzel Decorative', 'Cormorant Garamond', Georgia, serif;
   --font-telugu:   'Noto Serif Telugu', serif;
-  --font-body:     'Lato', Arial, sans-serif;
+  --font-body:     'Cinzel Decorative', Georgia, serif;
 
   /* Font sizes — mobile first */
   --text-xs:   0.75rem;
