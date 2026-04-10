@@ -179,6 +179,101 @@
   text-underline-offset: 0.14em;
 }
 
+.traditions__sequence {
+  margin-top: 1.15rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 249, 241, 0.96), rgba(244, 229, 210, 0.86));
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.traditions__sequence-intro {
+  margin: 0.2rem 0 0.9rem;
+  max-width: 60ch;
+  color: var(--color-brown);
+}
+
+.traditions__sequence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 0.9rem;
+  margin-top: 0.7rem;
+}
+
+.traditions__sequence-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.7rem;
+  align-items: start;
+  padding: 0.8rem 0.85rem;
+  background: rgba(255, 251, 242, 0.92);
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(59, 26, 0, 0.06);
+}
+
+.traditions__sequence-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c8963e, #d4a843);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.traditions__sequence-item strong {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  color: var(--color-maroon);
+  margin-bottom: 0.05rem;
+}
+
+.traditions__sequence-subtitle {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-lotus);
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.traditions__sequence-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.traditions__rows {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.95rem;
+}
+
+.traditions__row {
+  background: rgba(200,150,62,0.08);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 14px 14px 0;
+  padding: 0.55rem 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--color-brown);
+}
+
+.traditions__row a {
+  color: var(--color-maroon);
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
 @media (max-width: 540px) {
   .traditions-section {
     padding: 4.25rem 0;
@@ -216,6 +311,14 @@
   .traditions__content p,
   .traditions__content ul li,
   .traditions__tip {
+    font-size: 0.95rem;
+  }
+
+  .traditions__sequence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .traditions__row {
     font-size: 0.95rem;
   }
 }
