@@ -251,6 +251,223 @@
   line-height: 1.55;
 }
 
+.traditions__ceremony-guide {
+  margin-top: 1.15rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 249, 241, 0.98), rgba(244, 229, 210, 0.9));
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+}
+
+.traditions__guide-intro {
+  margin-bottom: 1rem;
+}
+
+.traditions__guide-intro-copy {
+  margin: 0.2rem 0 0;
+  max-width: 62ch;
+  color: var(--color-brown);
+}
+
+.traditions__ritual-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.traditions__ritual {
+  display: grid;
+  grid-template-columns: minmax(108px, 152px) 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.95rem;
+  background: rgba(255, 251, 242, 0.94);
+  border: 1px solid rgba(200, 150, 62, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(59, 26, 0, 0.06);
+}
+
+.traditions__ritual--media-right {
+  grid-template-columns: 1fr minmax(108px, 152px);
+}
+
+.traditions__ritual--media-right .traditions__ritual-media {
+  order: 2;
+}
+
+.traditions__ritual--media-right .traditions__ritual-copy {
+  order: 1;
+}
+
+.traditions__ritual-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: grid;
+  place-items: center;
+}
+
+.traditions__ritual--saptapadi .traditions__ritual-media {
+  aspect-ratio: 1 / 1;
+}
+
+.traditions__ritual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform: scale(1);
+  transform-origin: center;
+  mix-blend-mode: multiply;
+  opacity: 0.88;
+  filter: saturate(1.02) contrast(1.02);
+}
+
+.traditions__ritual-image--baraat {
+  object-position: center;
+  transform: scale(1.04);
+}
+
+.traditions__ritual-image--vara-agamana {
+  object-position: center;
+  transform: scale(1.08);
+}
+
+.traditions__ritual-image--ganesh-pooja {
+  object-position: center;
+  transform: scale(1.04);
+}
+
+.traditions__ritual-image--kanya-aagamanam {
+  object-position: center;
+  transform: scale(1.08);
+}
+
+.traditions__ritual-image--kanyadanam {
+  object-position: center;
+  transform: scale(1.04);
+}
+
+.traditions__ritual-image--jeelakarra-bellam {
+  object-position: center;
+  transform: scale(1.08);
+}
+
+.traditions__ritual-image--mangalya-dharanam {
+  object-position: center;
+  transform: scale(0.96);
+}
+
+.traditions__ritual-image--talambralu {
+  object-position: center;
+  transform: scale(1.06);
+}
+
+.traditions__ritual-image--varamala {
+  object-position: center;
+  transform: scale(1.02);
+}
+
+.traditions__ritual-image--silaarohanam {
+  object-position: center;
+  transform: scale(1.02);
+}
+
+.traditions__ritual-image--saptapadi {
+  object-position: center;
+  transform: scale(1.04);
+}
+
+.traditions__ritual-image--vungala-maaram {
+  object-position: center;
+  transform: scale(1);
+}
+
+.traditions__ritual-image--arundhati {
+  object-position: center;
+  transform: scale(1);
+}
+
+.traditions__ritual-image--aashirvaad {
+  object-position: center;
+  transform: scale(1.04);
+}
+
+.traditions__ritual-copy {
+  min-width: 0;
+}
+
+.traditions__ritual-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.traditions__ritual-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c8963e, #d4a843);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  line-height: 1;
+  flex-shrink: 0;
+  box-shadow: 0 8px 18px rgba(200, 150, 62, 0.24);
+}
+
+.traditions__ritual-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  color: var(--color-maroon);
+  margin-bottom: 0.05rem;
+}
+
+.traditions__ritual-subtitle {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-lotus);
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.traditions__ritual p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.62;
+}
+
+.traditions__ritual-vows {
+  margin: 0.55rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--color-charcoal);
+}
+
+.traditions__ritual-vows li {
+  padding-left: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.traditions__ritual-vows li + li {
+  margin-top: 0.18rem;
+}
+
+.traditions__ritual-vows li::before {
+  content: none;
+}
+
 .traditions__rows {
   display: grid;
   gap: 0.55rem;
@@ -314,8 +531,54 @@
     font-size: 0.95rem;
   }
 
-  .traditions__sequence-grid {
-    grid-template-columns: 1fr;
+  .traditions__ceremony-guide {
+    padding: 0.9rem;
+  }
+
+  .traditions__ritual,
+  .traditions__ritual--media-right {
+    grid-template-columns: minmax(92px, 112px) 1fr;
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0.8rem;
+  }
+
+  .traditions__ritual--media-right .traditions__ritual-media {
+    order: 1;
+  }
+
+  .traditions__ritual--media-right .traditions__ritual-copy {
+    order: 2;
+  }
+
+  .traditions__ritual-media,
+  .traditions__ritual--saptapadi .traditions__ritual-media {
+    aspect-ratio: 1 / 1;
+    border-radius: 0;
+  }
+
+  .traditions__ritual-heading {
+    gap: 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .traditions__ritual-number {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.88rem;
+  }
+
+  .traditions__ritual-title {
+    font-size: 1rem;
+  }
+
+  .traditions__ritual-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .traditions__ritual p,
+  .traditions__ritual-vows li {
+    font-size: 0.91rem;
   }
 
   .traditions__row {
