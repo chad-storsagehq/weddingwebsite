@@ -89,6 +89,15 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 252, 240, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.12rem;
+  line-height: 1.25;
+}
+
+.dresscode__event-tab-note {
+  font-size: 0.68rem;
 }
 
 .dresscode__event-tab:hover {

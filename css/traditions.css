@@ -276,9 +276,7 @@
 }
 
 .traditions__ritual {
-  display: grid;
-  grid-template-columns: minmax(108px, 152px) 1fr;
-  gap: 1rem;
+  display: block;
   align-items: center;
   padding: 0.95rem;
   background: rgba(255, 251, 242, 0.94);
@@ -287,114 +285,8 @@
   box-shadow: 0 10px 24px rgba(59, 26, 0, 0.06);
 }
 
-.traditions__ritual--media-right {
-  grid-template-columns: 1fr minmax(108px, 152px);
-}
-
-.traditions__ritual--media-right .traditions__ritual-media {
-  order: 2;
-}
-
-.traditions__ritual--media-right .traditions__ritual-copy {
-  order: 1;
-}
-
 .traditions__ritual-media {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  border-radius: 0;
-  overflow: hidden;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  display: grid;
-  place-items: center;
-}
-
-.traditions__ritual--saptapadi .traditions__ritual-media {
-  aspect-ratio: 1 / 1;
-}
-
-.traditions__ritual-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  transform: scale(1);
-  transform-origin: center;
-  mix-blend-mode: multiply;
-  opacity: 0.88;
-  filter: saturate(1.02) contrast(1.02);
-}
-
-.traditions__ritual-image--baraat {
-  object-position: center;
-  transform: scale(1.04);
-}
-
-.traditions__ritual-image--vara-agamana {
-  object-position: center;
-  transform: scale(1.08);
-}
-
-.traditions__ritual-image--ganesh-pooja {
-  object-position: center;
-  transform: scale(1.04);
-}
-
-.traditions__ritual-image--kanya-aagamanam {
-  object-position: center;
-  transform: scale(1.08);
-}
-
-.traditions__ritual-image--kanyadanam {
-  object-position: center;
-  transform: scale(1.04);
-}
-
-.traditions__ritual-image--jeelakarra-bellam {
-  object-position: center;
-  transform: scale(1.08);
-}
-
-.traditions__ritual-image--mangalya-dharanam {
-  object-position: center;
-  transform: scale(0.96);
-}
-
-.traditions__ritual-image--talambralu {
-  object-position: center;
-  transform: scale(1.06);
-}
-
-.traditions__ritual-image--varamala {
-  object-position: center;
-  transform: scale(1.02);
-}
-
-.traditions__ritual-image--silaarohanam {
-  object-position: center;
-  transform: scale(1.02);
-}
-
-.traditions__ritual-image--saptapadi {
-  object-position: center;
-  transform: scale(1.04);
-}
-
-.traditions__ritual-image--vungala-maaram {
-  object-position: center;
-  transform: scale(1);
-}
-
-.traditions__ritual-image--arundhati {
-  object-position: center;
-  transform: scale(1);
-}
-
-.traditions__ritual-image--aashirvaad {
-  object-position: center;
-  transform: scale(1.04);
+  display: none;
 }
 
 .traditions__ritual-copy {
