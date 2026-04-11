@@ -115,13 +115,12 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.08em;
-  display: block;
-  width: min(100%, 18rem);
-  padding: 0.9rem 1.2rem;
-  border-radius: 999px;
-  background: #f5eee3;
-  border: 1px solid rgba(139, 26, 40, 0.14);
-  box-shadow: 0 10px 24px rgba(59, 26, 0, 0.08);
+  display: inline-block;
+  width: auto;
+  padding: 0.35rem 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {
