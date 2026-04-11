@@ -109,6 +109,15 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.nav__links.is-open li {
+  list-style: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
 .nav__links.is-open a {
   color: var(--color-brown);
   font-size: clamp(1.35rem, 5vw, 1.8rem);
@@ -120,6 +129,7 @@
   padding: 0.35rem 0;
   background: transparent;
   border: none;
+  border-radius: 0;
   box-shadow: none;
 }
 
