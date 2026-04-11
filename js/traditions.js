@@ -4,6 +4,13 @@
   var nav = document.querySelector('.nav');
   var items = document.querySelectorAll('.traditions__item');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var COLLAPSE_DURATION = 420;
+
+  function scrollItemIntoView(item) {
+    var navHeight = nav ? nav.offsetHeight : 60;
+    var top = item.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+    window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
 
   function closeItem(item) {
     var toggle = item.querySelector('.traditions__toggle');
@@ -39,9 +46,19 @@
     });
 
     window.requestAnimationFrame(function () {
-      var navHeight = nav ? nav.offsetHeight : 60;
-      var top = item.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
-      window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+      scrollItemIntoView(item);
+    });
+
+    window.setTimeout(function () {
+      if (item.classList.contains('traditions__item--open')) {
+        scrollItemIntoView(item);
+      }
+    }, reduceMotion ? 0 : COLLAPSE_DURATION);
+  }
+
+  function hasOtherOpenItem(currentItem) {
+    return Array.prototype.some.call(items, function (other) {
+      return other !== currentItem && other.classList.contains('traditions__item--open');
     });
   }
 
@@ -59,7 +76,13 @@
       if (isOpen) {
         closeItem(item);
       } else {
-        openItem(item);
+        if (hasOtherOpenItem(item) && !reduceMotion) {
+          window.setTimeout(function () {
+            openItem(item);
+          }, COLLAPSE_DURATION / 2);
+        } else {
+          openItem(item);
+        }
       }
     });
   });
