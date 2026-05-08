@@ -14,9 +14,6 @@
     var nodes = document.querySelectorAll('[data-event="' + hide + '"]');
     for (var i = 0; i < nodes.length; i++) nodes[i].hidden = true;
 
-    var picker = document.querySelector('.rsvp-form__field--checkboxes');
-    if (picker) picker.hidden = true;
-
     var keep = document.querySelector(
       '[data-event="' + invite + '"] input[name="events"]'
     );
