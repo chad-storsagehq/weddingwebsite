@@ -214,6 +214,10 @@
   margin-top: 0.25rem;
 }
 
+.rsvp-form__check[hidden] {
+  display: none;
+}
+
 .rsvp-form__check input {
   width: 20px;
   height: 20px;
