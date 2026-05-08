@@ -28,6 +28,8 @@
 </head>
 <body>
 
+  <script src="js/invite-gate.js?v=2"></script>
+
   <!-- NAVIGATION -->
   <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
@@ -134,11 +136,11 @@
                   <p class="rsvp-form__legend" id="rsvp-events-label">Which events will you attend?</p>
                   <span class="rsvp-form__required">*</span>
                 </div>
-                <label class="rsvp-form__check">
+                <label class="rsvp-form__check" data-event="ceremony">
                   <input type="checkbox" name="events" value="Wedding Ceremony">
                   <span>Wedding Ceremony</span>
                 </label>
-                <label class="rsvp-form__check">
+                <label class="rsvp-form__check" data-event="reception">
                   <input type="checkbox" name="events" value="Reception">
                   <span>Reception</span>
                 </label>
@@ -213,7 +215,7 @@
           </div>
 
           <!-- WEDDING CEREMONY -->
-          <div class="traditions__item">
+          <div class="traditions__item" data-event="ceremony">
             <button class="traditions__toggle" aria-expanded="false">
               <span class="traditions__event-label">August 16 · The Wedding</span>
               <div class="traditions__toggle-inner">
@@ -480,7 +482,7 @@
           </div>
 
           <!-- RECEPTION -->
-          <div class="traditions__item">
+          <div class="traditions__item" data-event="reception">
             <button class="traditions__toggle" aria-expanded="false">
               <span class="traditions__event-label">August 16 · Evening Celebration</span>
               <div class="traditions__toggle-inner">
@@ -733,18 +735,18 @@
           <p class="travel__venue-address">62 Cumberland Estates Dr, Mechanicsburg, PA 17050</p>
         </div>
         <a href="https://maps.google.com/?q=62+Cumberland+Estates+Dr+Mechanicsburg+PA+17050" class="event-card__directions travel__directions-link" aria-label="Get directions to Haldi Ceremony" target="_blank" rel="noopener noreferrer">Get Directions</a>
-        <div class="travel__venue-item">
+        <div class="travel__venue-item" data-event="ceremony">
           <span class="travel__venue-event">Wedding Ceremony</span>
           <p class="travel__venue-name">Stevens School Ballroom</p>
           <p class="travel__venue-address">355 W Chestnut St, Lancaster, PA 17603</p>
         </div>
-        <a href="https://maps.google.com/?q=355+W+Chestnut+St+Lancaster+PA+17603" class="event-card__directions travel__directions-link" aria-label="Get directions to Stevens School Ballroom" target="_blank" rel="noopener noreferrer">Get Directions</a>
-        <div class="travel__venue-item">
+        <a href="https://maps.google.com/?q=355+W+Chestnut+St+Lancaster+PA+17603" class="event-card__directions travel__directions-link" aria-label="Get directions to Stevens School Ballroom" target="_blank" rel="noopener noreferrer" data-event="ceremony">Get Directions</a>
+        <div class="travel__venue-item" data-event="reception">
           <span class="travel__venue-event">Reception</span>
           <p class="travel__venue-name">Trust46</p>
           <p class="travel__venue-address">46 E King St, Lancaster, PA 17602</p>
         </div>
-        <a href="https://maps.google.com/?q=46+E+King+St+Lancaster+PA+17602" class="event-card__directions travel__directions-link" aria-label="Get directions to Trust46" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <a href="https://maps.google.com/?q=46+E+King+St+Lancaster+PA+17602" class="event-card__directions travel__directions-link" aria-label="Get directions to Trust46" target="_blank" rel="noopener noreferrer" data-event="reception">Get Directions</a>
       </div>
     </div>
 
