@@ -179,6 +179,33 @@ img {
   margin-top: -18px;
   z-index: 4;
 }
+
+/* Hide invitation borders for custom per-event invites; main URL keeps them. */
+html:not([data-invite="both"]) .invitation-divider {
+  display: none;
+}
+
+/* For per-event custom invites, show only Home + RSVP. Main URL keeps everything. */
+html:not([data-invite="both"]) #guide,
+html:not([data-invite="both"]) #dresscode,
+html:not([data-invite="both"]) #travel,
+html:not([data-invite="both"]) #gifts,
+html:not([data-invite="both"]) #faq,
+html:not([data-invite="both"]) .nav__links a[href="#guide"],
+html:not([data-invite="both"]) .nav__links a[href="#dresscode"],
+html:not([data-invite="both"]) .nav__links a[href="#travel"],
+html:not([data-invite="both"]) .nav__links a[href="#gifts"],
+html:not([data-invite="both"]) .nav__links a[href="#faq"],
+html:not([data-invite="both"]) .hero__showcase {
+  display: none;
+}
+
+/* On the main URL (and "both" invite), hide RSVP — it's only meaningful on per-event invites. */
+html[data-invite="both"] #rsvp,
+html[data-invite="both"] .nav__links a[href="#rsvp"],
+html[data-invite="both"] .invitation-divider--hero-blend {
+  display: none;
+}
 @media (max-width: 540px) {
   .section {
     padding: 3.35rem 1rem;
