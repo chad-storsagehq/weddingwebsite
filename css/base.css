@@ -179,6 +179,33 @@ img {
   margin-top: -18px;
   z-index: 4;
 }
+
+/* Hide invitation borders for invite URLs (any non-main); main URL keeps them. */
+html:not([data-invite="main"]) .invitation-divider {
+  display: none;
+}
+
+/* For invite URLs, show only Home + RSVP. Main URL keeps the full informational page. */
+html:not([data-invite="main"]) #guide,
+html:not([data-invite="main"]) #dresscode,
+html:not([data-invite="main"]) #travel,
+html:not([data-invite="main"]) #gifts,
+html:not([data-invite="main"]) #faq,
+html:not([data-invite="main"]) .nav__links a[href="#guide"],
+html:not([data-invite="main"]) .nav__links a[href="#dresscode"],
+html:not([data-invite="main"]) .nav__links a[href="#travel"],
+html:not([data-invite="main"]) .nav__links a[href="#gifts"],
+html:not([data-invite="main"]) .nav__links a[href="#faq"],
+html:not([data-invite="main"]) .hero__showcase {
+  display: none;
+}
+
+/* On the main URL, hide RSVP — it's only meaningful on invite URLs. */
+html[data-invite="main"] #rsvp,
+html[data-invite="main"] .nav__links a[href="#rsvp"],
+html[data-invite="main"] .invitation-divider--hero-blend {
+  display: none;
+}
 @media (max-width: 540px) {
   .section {
     padding: 3.35rem 1rem;
