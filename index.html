@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/hero.css?v=62">
   <link rel="stylesheet" href="css/events.css?v=62">
   <link rel="stylesheet" href="css/rsvp.css?v=64">
-  <link rel="stylesheet" href="css/travel.css?v=62">
+  <link rel="stylesheet" href="css/travel.css?v=63">
   <link rel="stylesheet" href="css/faq.css?v=62">
   <link rel="stylesheet" href="css/traditions.css?v=64">
   <link rel="stylesheet" href="css/dresscode.css?v=66">
@@ -756,12 +756,19 @@
       <div class="travel__card-body-wrap">
         <span class="travel__card-kicker">Stay Nearby</span>
         <h3 class="travel__card-title">Where to Stay</h3>
-        <p class="travel__card-body">These are all convenient options for the weekend, with some walkable downtown stays and some easy short-drive options:</p>
-        <ul class="travel__hotels">
-          <li>
-            <a href="https://www.marriott.com/en-us/hotels/lnsmc-lancaster-marriott-at-penn-square/overview/" target="_blank" rel="noopener noreferrer">Lancaster Marriott at Penn Square</a>
-            <span class="travel__hotel-dist">~15 min walk to ceremony · ~3 min walk to reception</span>
-          </li>
+
+        <!-- Preferred hotel / room block -->
+        <div class="travel__featured">
+          <span class="travel__featured-tag">Preferred Hotel · Room Block</span>
+          <a href="https://app.marriott.com/reslink?id=1780573175019&amp;key=GRP&amp;app=resvlink" class="travel__featured-name" target="_blank" rel="noopener noreferrer">Lancaster Marriott at Penn Square</a>
+          <span class="travel__hotel-dist">~15 min walk to ceremony · ~3 min walk to reception</span>
+          <p class="travel__featured-note">We've reserved a room block here at a discounted rate. Book online through the link below and our group rate is applied automatically.</p>
+          <a href="https://app.marriott.com/reslink?id=1780573175019&amp;key=GRP&amp;app=resvlink" class="travel__block-cta" target="_blank" rel="noopener noreferrer">Book the Room Block</a>
+          <p class="travel__featured-fineprint">Booking by phone? Ask for the <strong>Mullin Sanivarapu Wedding</strong> room rate.</p>
+        </div>
+
+        <p class="travel__card-body travel__hotels-intro">Other nearby options for the weekend, with walkable downtown stays and easy short-drive options:</p>
+        <ul class="travel__hotels travel__hotels--spaced">
           <li>
             <a href="https://lancasterartshotel.com" target="_blank" rel="noopener noreferrer">The Lancaster Arts Hotel</a>
             <span class="travel__hotel-dist">~12 min walk to ceremony · ~22 min walk to reception</span>

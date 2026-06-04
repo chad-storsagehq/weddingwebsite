@@ -153,6 +153,89 @@
   font-style: italic;
 }
 
+/* Preferred hotel / room block */
+.travel__featured {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: var(--space-md);
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(27, 111, 106, 0.28);
+  border-radius: 10px;
+  background: rgba(27, 111, 106, 0.06);
+}
+
+.travel__featured-tag {
+  align-self: flex-start;
+  margin-bottom: 0.15rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  background: var(--color-peacock);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.travel__featured-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--color-brown);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.travel__featured-name:hover {
+  border-bottom-color: var(--color-brown);
+}
+
+.travel__featured-note {
+  margin: 0.1rem 0 0.25rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+.travel__block-cta {
+  align-self: flex-start;
+  margin-top: 0.1rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  background: var(--color-peacock);
+  color: var(--color-white) !important;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 20px rgba(15, 78, 84, 0.18);
+  transition: background 0.2s;
+}
+
+.travel__block-cta:hover {
+  background: var(--color-brown);
+}
+
+.travel__featured-fineprint {
+  margin: 0.4rem 0 0;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  line-height: 1.7;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.travel__hotels-intro {
+  margin-bottom: var(--space-xs);
+}
+
+/* More breathing room between the other hotel options */
+.travel__hotels--spaced {
+  gap: var(--space-md);
+}
+
 .travel__hotels--parking {
   margin-top: -0.2rem;
 }
