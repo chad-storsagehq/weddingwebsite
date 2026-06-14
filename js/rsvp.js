@@ -14,6 +14,22 @@
   var dietaryInput = document.getElementById('rsvp-dietary');
   var status = document.getElementById('rsvp-status');
   var submitButton = form.querySelector('.rsvp-form__submit');
+  var partyError = document.getElementById('rsvp-party-size-error');
+  var partyErrorText = partyError ? partyError.querySelector('.rsvp-form__field-error-text') : null;
+
+  function setPartyError(message) {
+    if (!partyError) return;
+    if (message) {
+      if (partyErrorText) partyErrorText.textContent = message;
+      partyError.hidden = false;
+      partySizeInput.classList.add('rsvp-form__input--error');
+      partySizeInput.setAttribute('aria-invalid', 'true');
+    } else {
+      partyError.hidden = true;
+      partySizeInput.classList.remove('rsvp-form__input--error');
+      partySizeInput.removeAttribute('aria-invalid');
+    }
+  }
 
   function setStatus(message, isSuccess) {
     status.textContent = message;
@@ -39,6 +55,7 @@
       eventInputs.forEach(function (input) {
         input.checked = false;
       });
+      setPartyError('');
     }
   }
 
@@ -60,12 +77,12 @@
     return cap > 0 && Number(value) > cap;
   }
 
+  function guestCapMessage() {
+    return 'Too many guests — this invite allows up to ' + getGuestCap() + ' (including yourself). Please lower the number.';
+  }
+
   partySizeInput.addEventListener('input', function () {
-    if (overGuestCap(partySizeInput.value)) {
-      setStatus('Please keep it to a maximum of ' + getGuestCap() + ' guests including yourself.', false);
-    } else {
-      setStatus('', false);
-    }
+    setPartyError(overGuestCap(partySizeInput.value) ? guestCapMessage() : '');
   });
 
   function getSelectedEvents() {
@@ -109,7 +126,7 @@
       }
 
       if (overGuestCap(partySize)) {
-        setStatus('Please keep it to a maximum of ' + getGuestCap() + ' guests including yourself.', false);
+        setPartyError(guestCapMessage());
         partySizeInput.focus();
         return;
       }
