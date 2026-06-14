@@ -194,6 +194,50 @@
   resize: vertical;
 }
 
+/* Invalid input state — red border + glow to draw the eye to the field. */
+.rsvp-form__input--error,
+.rsvp-form__input--error:focus-visible {
+  border-color: rgba(232, 96, 116, 0.85);
+  background: rgba(232, 96, 116, 0.1);
+  box-shadow: 0 0 0 4px rgba(232, 96, 116, 0.22);
+}
+
+/* Inline field-level error message, shown directly under the input. */
+.rsvp-form__field-error {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(232, 96, 116, 0.5);
+  background: rgba(232, 96, 116, 0.16);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #ffd7dd;
+}
+
+.rsvp-form__field-error[hidden] {
+  display: none;
+}
+
+.rsvp-form__field-error-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(232, 96, 116, 0.95);
+  color: #3a0610;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .rsvp-form__check {
   display: flex;
   align-items: flex-start;
