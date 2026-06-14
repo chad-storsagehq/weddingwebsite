@@ -9,18 +9,26 @@
   if (invite !== 'ceremony' && invite !== 'reception' && invite !== 'both') invite = 'main';
 
   document.documentElement.setAttribute('data-invite', invite);
-  if (invite !== 'ceremony' && invite !== 'reception') return;
+  if (invite === 'main') return;
 
-  var hide = invite === 'ceremony' ? 'reception' : 'ceremony';
+  var hide = invite === 'ceremony' ? 'reception' : invite === 'reception' ? 'ceremony' : null;
 
   function applyGate() {
-    var nodes = document.querySelectorAll('[data-event="' + hide + '"]');
-    for (var i = 0; i < nodes.length; i++) nodes[i].hidden = true;
+    if (hide) {
+      var nodes = document.querySelectorAll('[data-event="' + hide + '"]');
+      for (var i = 0; i < nodes.length; i++) nodes[i].hidden = true;
 
-    var keep = document.querySelector(
-      '[data-event="' + invite + '"] input[name="events"]'
-    );
-    if (keep) keep.checked = true;
+      var keep = document.querySelector(
+        '[data-event="' + invite + '"] input[name="events"]'
+      );
+      if (keep) keep.checked = true;
+    }
+
+    var partySize = document.getElementById('rsvp-party-size');
+    if (partySize) {
+      partySize.max = '2';
+      if (Number(partySize.value) > 2) partySize.value = '2';
+    }
   }
 
   if (document.readyState === 'loading') {
