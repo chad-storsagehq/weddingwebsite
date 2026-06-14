@@ -196,6 +196,26 @@ html:not([data-invite="main"]) .hero__showcase {
   display: none;
 }
 
+/*
+ * Invite links show a reduced section set: Home → RSVP → Attire → Gifts.
+ * Re-show one divider at each remaining seam and re-blend the two seams that
+ * no longer border their original sections. (No trailing divider after Gifts,
+ * matching the main page, which has none after its last section.)
+ */
+html:not([data-invite="main"]) .invitation-divider--hero-blend,
+html:not([data-invite="main"]) .invitation-divider--rsvp-to-guide,
+html:not([data-invite="main"]) .invitation-divider--dresscode-to-travel {
+  display: block;
+}
+html:not([data-invite="main"]) .invitation-divider--rsvp-to-guide {
+  /* RSVP (dark) → Attire (teal) */
+  background: linear-gradient(to bottom, #1a0608, #0d4a48);
+}
+html:not([data-invite="main"]) .invitation-divider--dresscode-to-travel {
+  /* Attire (green) → Gifts (gold) */
+  background: linear-gradient(to bottom, #2a8a6a, #f5c518);
+}
+
 @media (max-width: 540px) {
   .section {
     padding: 3.35rem 1rem;
