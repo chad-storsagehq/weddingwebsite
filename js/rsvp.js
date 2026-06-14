@@ -49,6 +49,25 @@
     });
   });
 
+  // On invite links, the guest count is capped (data-guest-cap set by invite-gate.js).
+  // Returns 0 when no cap applies (e.g. the main URL), meaning "no limit beyond the field max".
+  function getGuestCap() {
+    return Number(partySizeInput.getAttribute('data-guest-cap')) || 0;
+  }
+
+  function overGuestCap(value) {
+    var cap = getGuestCap();
+    return cap > 0 && Number(value) > cap;
+  }
+
+  partySizeInput.addEventListener('input', function () {
+    if (overGuestCap(partySizeInput.value)) {
+      setStatus('Please keep it to a maximum of ' + getGuestCap() + ' guests including yourself.', false);
+    } else {
+      setStatus('', false);
+    }
+  });
+
   function getSelectedEvents() {
     return eventInputs.filter(function (input) {
       return input.checked;
@@ -85,6 +104,12 @@
     if (attendance === 'yes') {
       if (!partySize || Number(partySize) < 1) {
         setStatus('Please tell us how many people are attending.', false);
+        partySizeInput.focus();
+        return;
+      }
+
+      if (overGuestCap(partySize)) {
+        setStatus('Please keep it to a maximum of ' + getGuestCap() + ' guests including yourself.', false);
         partySizeInput.focus();
         return;
       }

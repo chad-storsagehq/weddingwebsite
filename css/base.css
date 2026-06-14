@@ -185,16 +185,12 @@ html:not([data-invite="main"]) .invitation-divider {
   display: none;
 }
 
-/* For invite URLs, show only Home + RSVP. Main URL keeps the full informational page. */
+/* For invite URLs, show Home + RSVP + Attire + Gifts. Main URL keeps the full informational page. */
 html:not([data-invite="main"]) #guide,
-html:not([data-invite="main"]) #dresscode,
 html:not([data-invite="main"]) #travel,
-html:not([data-invite="main"]) #gifts,
 html:not([data-invite="main"]) #faq,
 html:not([data-invite="main"]) .nav__links a[href="#guide"],
-html:not([data-invite="main"]) .nav__links a[href="#dresscode"],
 html:not([data-invite="main"]) .nav__links a[href="#travel"],
-html:not([data-invite="main"]) .nav__links a[href="#gifts"],
 html:not([data-invite="main"]) .nav__links a[href="#faq"],
 html:not([data-invite="main"]) .hero__showcase {
   display: none;
