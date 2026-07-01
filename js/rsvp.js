@@ -78,7 +78,7 @@
   }
 
   function guestCapMessage() {
-    return 'Too many guests — this invite allows up to ' + getGuestCap() + ' (including yourself). Please lower the number.';
+    return 'Too many guests — this RSVP allows up to ' + getGuestCap() + ' (including yourself). Please lower the number.';
   }
 
   partySizeInput.addEventListener('input', function () {
