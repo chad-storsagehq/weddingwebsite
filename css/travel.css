@@ -69,6 +69,11 @@
   padding: 0.2rem 0 0.15rem;
 }
 
+.travel__venue-item[hidden],
+.travel__directions-link[hidden] {
+  display: none;
+}
+
 .travel__venue-item + .travel__venue-item {
   margin-top: 0.35rem;
 }
