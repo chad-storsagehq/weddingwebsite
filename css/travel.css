@@ -89,8 +89,18 @@
 }
 
 .travel__venue-name,
-.travel__venue-address {
+.travel__venue-address,
+.travel__venue-time {
   margin: 0;
+}
+
+.travel__venue-time {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--color-peacock);
+  margin-top: 0.15rem;
 }
 
 .travel__venue-name {

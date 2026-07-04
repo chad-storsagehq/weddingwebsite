@@ -13,12 +13,12 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/variables.css?v=64">
-  <link rel="stylesheet" href="css/base.css?v=74">
-  <link rel="stylesheet" href="css/nav.css?v=66">
-  <link rel="stylesheet" href="css/hero.css?v=62">
+  <link rel="stylesheet" href="css/base.css?v=75">
+  <link rel="stylesheet" href="css/nav.css?v=67">
+  <link rel="stylesheet" href="css/hero.css?v=63">
   <link rel="stylesheet" href="css/events.css?v=62">
   <link rel="stylesheet" href="css/rsvp.css?v=65">
-  <link rel="stylesheet" href="css/travel.css?v=64">
+  <link rel="stylesheet" href="css/travel.css?v=65">
   <link rel="stylesheet" href="css/faq.css?v=62">
   <link rel="stylesheet" href="css/traditions.css?v=64">
   <link rel="stylesheet" href="css/dresscode.css?v=66">
@@ -34,7 +34,10 @@
   <!-- NAVIGATION -->
   <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#home" class="nav__logo">Chad &amp; Anusha</a>
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span data-main-only>Chad &amp; Anusha</span>
+        <span class="nav__logo-om" data-invite-only aria-hidden="true">ॐ</span>
+      </a>
       <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -67,6 +70,13 @@
           <h1 class="hero__name-english"><span class="hero__name-part">Chad</span><span class="hero__name-amp">&amp;</span><span class="hero__name-part">Anusha</span></h1>
         </div>
 
+        <div class="hero__event" data-invite-only>
+          <p class="hero__event-name" data-event="ceremony">Wedding Ceremony</p>
+          <p class="hero__event-time" data-event="ceremony">Arrival 11:00 AM &middot; Muhurtam 12:50 PM</p>
+          <p class="hero__event-name" data-event="reception">Reception</p>
+          <p class="hero__event-time" data-event="reception">6:00 PM</p>
+        </div>
+
         <p class="hero__date label">August 16, 2026</p>
       </div>
 
@@ -92,7 +102,7 @@
           RSVP
           <span class="section-title-telugu" lang="te">హాజరు నిర్ధారణ</span>
         </h2>
-        <p class="rsvp__deadline reveal">Kindly respond by July 26, 2026</p>
+        <p class="rsvp__deadline reveal">Kindly respond by July 16, 2026</p>
 
         <div class="rsvp__frame-wrapper reveal">
           <form
@@ -532,7 +542,7 @@
 
         <!-- ── Event Tabs ── -->
         <div class="dresscode__event-tabs reveal" role="tablist">
-          <button class="dresscode__event-tab" data-dresscode-event="haldi" role="tab" aria-selected="false">
+          <button class="dresscode__event-tab" data-dresscode-event="haldi" role="tab" aria-selected="false" data-main-only>
             <span class="dresscode__event-tab-dot dresscode__event-tab-dot--haldi"></span>
             <span class="dresscode__event-tab-name">Haldi</span>
             <span class="dresscode__event-tab-date">
@@ -548,7 +558,7 @@
         </div>
 
         <!-- ══ HALDI PANEL ══ -->
-        <div class="dresscode__event-panel" data-dresscode-panel="haldi" hidden>
+        <div class="dresscode__event-panel" data-dresscode-panel="haldi" hidden data-main-only>
 
           <div class="dresscode__panel-top">
             <p class="dresscode__panel-desc">An intimate, joyous pre-wedding shower where turmeric and water are applied in a fun and messy ritual with games to signify purification. Yellow is considered auspicious — a color that brings happiness and positive energy, marking a fresh beginning for the couple.</p>
@@ -744,12 +754,14 @@
           <span class="travel__venue-event">Wedding Ceremony</span>
           <p class="travel__venue-name">Stevens School Ballroom</p>
           <p class="travel__venue-address">355 W Chestnut St, Lancaster, PA 17603</p>
+          <p class="travel__venue-time">Arrival 11:00 AM &middot; Muhurtam 12:50 PM</p>
         </div>
         <a href="https://maps.google.com/?q=355+W+Chestnut+St+Lancaster+PA+17603" class="event-card__directions travel__directions-link" aria-label="Get directions to Stevens School Ballroom" target="_blank" rel="noopener noreferrer" data-event="ceremony">Get Directions</a>
         <div class="travel__venue-item" data-event="reception">
           <span class="travel__venue-event">Reception</span>
           <p class="travel__venue-name">Trust46</p>
           <p class="travel__venue-address">46 E King St, Lancaster, PA 17602</p>
+          <p class="travel__venue-time">6:00 PM</p>
         </div>
         <a href="https://maps.google.com/?q=46+E+King+St+Lancaster+PA+17602" class="event-card__directions travel__directions-link" aria-label="Get directions to Trust46" target="_blank" rel="noopener noreferrer" data-event="reception">Get Directions</a>
       </div>

@@ -183,9 +183,16 @@ img {
 /* Invite URLs show the full page, event-scoped: [data-event] blocks for the
    other event are hidden by invite-gate.js, and content tagged data-main-only
    (Haldi, venue-distance FAQ) is reserved for the main URL. */
-html:not([data-invite="main"]) [data-main-only],
-html:not([data-invite="main"]) .hero__showcase {
+html:not([data-invite="main"]) [data-main-only] {
   display: none;
+}
+
+/* Content shown only on invite links (event name/time in hero, om in the nav). */
+[data-invite-only] {
+  display: none;
+}
+html:not([data-invite="main"]) [data-invite-only] {
+  display: revert;
 }
 
 @media (max-width: 540px) {
