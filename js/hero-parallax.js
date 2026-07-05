@@ -26,7 +26,11 @@
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var travel = rect.height + viewportHeight * 0.2;
     var progress = clamp((viewportHeight - rect.top) / travel, 0, 1);
-    targetShift = mobileMq.matches ? progress * 96 : progress * 62;
+    // The bg shift must be 0 while the page rests at the top, or the image
+    // slides down and exposes the hero-area backdrop as a bar above it.
+    var rest = clamp(viewportHeight / travel, 0, 0.95);
+    var drive = clamp((progress - rest) / (1 - rest), 0, 1);
+    targetShift = mobileMq.matches ? drive * 96 : drive * 62;
     targetScale = mobileMq.matches ? 1.014 : 1.065;
 
     if (heroShowcase) {
