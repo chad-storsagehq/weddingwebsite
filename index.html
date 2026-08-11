@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="css/nav.css?v=67">
   <link rel="stylesheet" href="css/hero.css?v=63">
   <link rel="stylesheet" href="css/events.css?v=62">
-  <link rel="stylesheet" href="css/rsvp.css?v=65">
   <link rel="stylesheet" href="css/travel.css?v=65">
   <link rel="stylesheet" href="css/faq.css?v=62">
   <link rel="stylesheet" href="css/traditions.css?v=64">
@@ -42,7 +41,6 @@
       </button>
       <ul class="nav__links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
         <li><a href="#guide">Guide</a></li>
         <li><a href="#dresscode">Attire</a></li>
         <li><a href="#travel">Travel</a></li>
@@ -73,7 +71,7 @@
           <p class="hero__event-name" data-event="ceremony">Wedding Ceremony</p>
           <p class="hero__event-time" data-event="ceremony">Arrival 11:00 AM &middot; Muhurtam 12:50 PM</p>
           <p class="hero__event-name" data-event="reception">Reception</p>
-          <p class="hero__event-time" data-event="reception">6:00 PM</p>
+          <p class="hero__event-time" data-event="reception">5:15 PM</p>
         </div>
 
         <p class="hero__date label">August 16, 2026</p>
@@ -92,98 +90,6 @@
     <!-- INVITATION BORDER — hero to events -->
     <div class="invitation-divider invitation-divider--hero-blend" aria-hidden="true">
       <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="">
-    </div>
-
-    <!-- RSVP -->
-    <section id="rsvp" class="rsvp-section">
-      <div class="section section-panel section-panel--rsvp rsvp-section__inner reveal-parent">
-        <h2 class="section-title reveal">
-          RSVP
-          <span class="section-title-telugu" lang="te">హాజరు నిర్ధారణ</span>
-        </h2>
-        <p class="rsvp__deadline reveal">Kindly respond by July 16, 2026</p>
-
-        <div class="rsvp__frame-wrapper reveal">
-          <form
-            class="rsvp-form"
-            id="rsvp-form"
-            data-endpoint="https://script.google.com/macros/s/AKfycbyenxfTnpxzx2eKRe9qRjpjbxbxRQn4NXH-1MoM4ST3EdpsaN-3gb3Ud5WNU2uCO3otGw/exec"
-            novalidate
-          >
-            <input type="hidden" name="attendance" id="rsvp-attendance" value="">
-            <input type="text" name="website" class="rsvp-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-            <div class="rsvp-form__field">
-              <div class="rsvp-form__legend-row">
-                <label class="rsvp-form__legend">Will you be joining us?</label>
-                <span class="rsvp-form__required">*</span>
-              </div>
-              <div class="rsvp-form__choice-group" role="radiogroup" aria-label="Will you be joining us?">
-                <button type="button" class="rsvp-form__choice" data-attendance-choice="yes" aria-pressed="false">Yes, I'll be there</button>
-                <button type="button" class="rsvp-form__choice" data-attendance-choice="no" aria-pressed="false">Can't make it</button>
-              </div>
-            </div>
-
-            <div class="rsvp-form__field">
-              <div class="rsvp-form__legend-row">
-                <label class="rsvp-form__legend" for="rsvp-name">Your name</label>
-                <span class="rsvp-form__required">*</span>
-              </div>
-              <input id="rsvp-name" name="name" class="rsvp-form__input" type="text" placeholder="Your Name(s) here" required>
-            </div>
-
-            <div class="rsvp-form__followup" id="rsvp-followup" hidden>
-              <div class="rsvp-form__field">
-                <div class="rsvp-form__legend-row">
-                  <label class="rsvp-form__legend" for="rsvp-party-size">Number of guests</label>
-                  <span class="rsvp-form__required">*</span>
-                </div>
-                <input id="rsvp-party-size" name="party_size" class="rsvp-form__input" type="number" min="1" max="12" inputmode="numeric" placeholder="Including yourself" aria-describedby="rsvp-party-size-error" data-guest-cap="2">
-                <p class="rsvp-form__field-error" id="rsvp-party-size-error" role="alert" hidden>
-                  <span class="rsvp-form__field-error-icon" aria-hidden="true">!</span>
-                  <span class="rsvp-form__field-error-text"></span>
-                </p>
-              </div>
-
-              <div class="rsvp-form__field rsvp-form__field--checkboxes" role="group" aria-labelledby="rsvp-events-label">
-                <div class="rsvp-form__legend-row">
-                  <p class="rsvp-form__legend" id="rsvp-events-label">Which events will you attend?</p>
-                  <span class="rsvp-form__required">*</span>
-                </div>
-                <label class="rsvp-form__check" data-event="ceremony">
-                  <input type="checkbox" name="events" value="Wedding Ceremony">
-                  <span>Wedding Ceremony</span>
-                </label>
-                <label class="rsvp-form__check" data-event="reception">
-                  <input type="checkbox" name="events" value="Reception">
-                  <span>Reception</span>
-                </label>
-              </div>
-
-              <div class="rsvp-form__field">
-                <label class="rsvp-form__legend" for="rsvp-dietary">Dietary restrictions or notes</label>
-                <textarea id="rsvp-dietary" name="dietary_restrictions" class="rsvp-form__input rsvp-form__textarea" rows="3" placeholder="Optional — allergies, vegetarian, vegan, etc."></textarea>
-              </div>
-            </div>
-
-            <div class="rsvp-form__actions">
-              <button type="submit" class="rsvp-form__submit">Send RSVP →</button>
-            </div>
-
-            <p class="rsvp-form__status" id="rsvp-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-
-        <p class="rsvp__fallback">
-          Having trouble? Email us at
-          <a href="mailto:chadandanusha@gmail.com">chadandanusha@gmail.com</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- INVITATION BORDER -->
-    <div class="invitation-divider invitation-divider--rsvp-to-guide" aria-hidden="true">
-      <img src="assets/images/stitch/divider-kolam-v3.png" class="floral-divider__strip" alt="" loading="lazy">
     </div>
 
     <!-- WEDDING GUIDE -->
@@ -760,7 +666,7 @@
           <span class="travel__venue-event">Reception</span>
           <p class="travel__venue-name">Trust46</p>
           <p class="travel__venue-address">46 E King St, Lancaster, PA 17602</p>
-          <p class="travel__venue-time">6:00 PM</p>
+          <p class="travel__venue-time">5:15 PM</p>
         </div>
         <a href="https://maps.google.com/?q=46+E+King+St+Lancaster+PA+17602" class="event-card__directions travel__directions-link" aria-label="Get directions to Trust46" target="_blank" rel="noopener noreferrer" data-event="reception">Get Directions</a>
       </div>
@@ -978,7 +884,7 @@
       <div class="faq__answer" hidden>
         <div class="faq__answer-inner">
           <div class="faq__answer-body">
-            <p>Yes. There will be vegetarian options, and you can share any dietary needs when you <a href="#rsvp">RSVP</a>.</p>
+            <p>Yes. There will be vegetarian options. If you have dietary needs we should know about, email us at <a href="mailto:chadandanusha@gmail.com">chadandanusha@gmail.com</a>.</p>
           </div>
         </div>
       </div>
@@ -1002,7 +908,6 @@
   <script src="js/faq.js?v=62"></script>
   <script src="js/traditions.js?v=63"></script>
   <script src="js/gifts.js?v=62"></script>
-  <script src="js/rsvp.js?v=66"></script>
   <script src="js/dresscode.js?v=65"></script>
   <script src="js/img-fallback.js?v=62"></script>
 

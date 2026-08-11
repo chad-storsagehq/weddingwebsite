@@ -88,7 +88,6 @@ img {
 .section-panel--events,
 .section-panel--guide,
 .section-panel--dresscode,
-.section-panel--rsvp,
 .section-panel--travel,
 .section-panel--gifts,
 .section-panel--faq {
@@ -158,9 +157,6 @@ img {
 }
 
 /* Section-to-section transition gradients */
-.invitation-divider--rsvp-to-guide {
-  background: linear-gradient(to bottom, #1a0608, #f2e3d1);
-}
 .invitation-divider--guide-to-dresscode {
   background: linear-gradient(to bottom, #f8e8c8, #0d4a48);
 }
@@ -173,9 +169,11 @@ img {
 .invitation-divider--gifts-to-faq {
   background: linear-gradient(to bottom, #d97a2b, #3d0c11);
 }
-/* First divider (hero→events) — centered on the transition line */
+/* First divider (hero→guide) — centered on the transition line.
+   Lands on the guide's top cream (#f8e8c8) now that the dark RSVP panel
+   that used to sit here is archived. */
 .invitation-divider--hero-blend {
-  background: linear-gradient(to bottom, rgba(5, 2, 0, 0.92) 0%, rgba(26, 6, 8, 0.98) 42%, #3d0c11 100%);
+  background: linear-gradient(to bottom, rgba(5, 2, 0, 0.92) 0%, rgba(26, 6, 8, 0.98) 42%, #f8e8c8 100%);
   margin-top: -18px;
   z-index: 4;
 }
@@ -201,7 +199,7 @@ html:not([data-invite="main"]) [data-invite-only] {
   }
 
   .invitation-divider--hero-blend {
-    background: linear-gradient(to bottom, #050200 0%, rgba(5, 2, 0, 0.94) 26%, rgba(26, 6, 8, 0.98) 58%, #3d0c11 100%);
+    background: linear-gradient(to bottom, #050200 0%, rgba(5, 2, 0, 0.94) 26%, rgba(26, 6, 8, 0.98) 58%, #f8e8c8 100%);
     margin-top: 0;
     margin-bottom: 0;
   }
