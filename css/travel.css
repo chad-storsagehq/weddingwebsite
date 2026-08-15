@@ -272,6 +272,19 @@
   border-bottom-color: var(--color-lotus);
 }
 
+/* Shuttle phone numbers: gold is too low-contrast on the light callout. */
+.travel__phone {
+  color: var(--color-peacock);
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.travel__phone:hover {
+  border-bottom-color: var(--color-peacock);
+}
+
 @media (min-width: 768px) {
   .travel__grid {
     grid-template-columns: 1fr 1fr;
